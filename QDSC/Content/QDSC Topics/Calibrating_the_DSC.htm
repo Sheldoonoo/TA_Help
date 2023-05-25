@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="prc;FACS;sinusoidally;MFC;HiResolution;Inc;HiRes;PDF;Ctrl;uncheck;AutoLid;Tzero;collet;CAL;XT;RT;OPTC;Uncheck;Cal;PDSC;Y;X-Y;min;www.astm.org;seq;GPIB;IP;Q;CHROMEL;C;cal;spline" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Calibrating the Instrument" MadCap:browseSequencePath="Calibrating the Instrument" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Calibrating the DSC</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor170"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Calibrating the DSC</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor171"></a>To obtain accurate experimental results you should calibrate the DSC 
+ cell when you first install it. &#160;For 
+ the best results, you should recalibrate periodically. &#160;The 
+ calibration procedures that you need to perform will vary depending on 
+ the instrument model and heat flow selection. These experiments will be 
+ performed using the instrument control software. See the chart below for 
+ a general guide to types of calibration. &#160;For 
+ details on how to perform that calibration, refer to linked topics in 
+ this section.</p>
+        <p>The various calibration procedures can be performed several different 
+ ways, depending upon the DSC instrument in use. </p>
+        <ul>
+            <li value="1"><span style="font-weight: bold;color: #00509f;">DSC 
+ Q2000, Q200, and Q20</span> instruments can be calibrated using the <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum™ 
+ functions</a>, the <a href="DSC_Calibration_Wizard_Intro.htm">Calibration 
+ Wizard</a>, or manually using the <a href="Available_DSC_Test_Templates.htm">templates</a>.</li>
+            <li value="2"><span style="font-weight: bold;color: #00509f;">DSC 
+ Q1000, Q100, and Q10</span> instruments can be calibrated using the <a href="DSC_Calibration_Wizard_Intro.htm">Calibration Wizard</a> or manually 
+ using the <a href="Available_DSC_Test_Templates.htm">templates</a>.</li>
+        </ul>
+        <p>Calibration consists of several different types of procedures specific 
+ to each cell, which are described briefly below. &#160;</p>
+        <p id="P2" style="font-weight: bold;color: #00509f;"><span style="font-weight: bold;color: #00509f;">Select 
+ from the following topics for more information:</span>
+        </p>
+        <ul>
+            <li value="1"><a href="#When_to_Calibrate">When 
+ to Calibrate</a>
+            </li>
+            <li value="2"><a href="Calibrating_the_T1_Baseline.htm" name="kanchor172">Calibrating 
+ the T1 Baseline</a> (T1 Heat Flow)</li>
+            <li value="3"><a href="Calibrating_Tzero.htm">Calibrating 
+ Tzero</a> (T4 and T4P Heat Flow)</li>
+            <li value="4"><a href="Calibrating_the_DSC_Enthalpy_(Cell_Constant)_and_Temperature.htm">Calibrating 
+ the DSC Enthalpy (Cell Constant) and Temperature</a>
+            </li>
+            <li value="5"><a href="Calibrating_DSC_Heat_Capacity.htm">Calibrating 
+ DSC Heat Capacity</a>
+            </li>
+            <li value="6"><a href="Baseline_Conditioning.htm">Baseline 
+ Conditioning</a>
+            </li>
+            <li value="7"><a href="Cell_Cooler_Conditioning.htm">Cell/Cooler 
+ Conditioning</a>
+            </li>
+            <li value="8"><a href="#Pressure%20calibration">Pressure 
+ Calibration</a>
+            </li>
+            <li value="9"><a href="Calibrating_Using_the_Platinum_Functions.htm">Calibrating 
+ Using the Platinum Functions</a> (Q2000/Q200/Q20 Only)</li>
+            <li value="10"><a href="Indium_Tracking.htm">Indium 
+ Tracking</a>
+            </li>
+            <li value="11"><a href="Procedure_to_Measure_Thermal_Conductivity_by_MDSC.htm">Procedure 
+ to Measure Thermal Conductivity by MDSC</a>
+            </li>
+            <li value="12"><a href="Configuring_and_Using_Multiple_Calibration_Sets.htm">Configuring 
+ and Using Multiple Calibration Sets</a> (Q2000/Q200/Q20 Only)</li>
+        </ul>
+        <p class="Notes">NOTE: &#160;At 
+ initial installation of the DSC, RCS, or LNCS or after the DSC has been 
+ shut down for more than 24 hours. It is recommended that the system be 
+ "conditioned" before you start calibration. Click here <img src="../QDSC Images/ocean_arrow_sm.gif" style="border: none;width: 7px;height: 13px;float: none;border-style: none;border-style: none;" width="7" height="13" border="0" /> <a href="Setting_Up_a_DSC_Cell_Cooler_Conditioning_Procedure.htm">Setting 
+ Up a DSC Cell/Cooler Conditioning Procedure</a> for details on the conditioning 
+ procedure.</p>
+        <p>&#160;</p>
+        <table style="x-border: 2px table;width: 103.494%;x-border-left: 2px table-solid;x-border-top: 2px table-solid;x-border-right: 2px table-solid;x-border-bottom: 2px table-solid;border-collapse: separate;border-spacing: 6px;x-border-left: 2px table-solid;x-border-top: 2px table-solid;x-border-right: 2px table-solid;x-border-bottom: 2px table-solid;border-collapse: separate;border-spacing: 6px;" cellspacing="6" width="103.494%" border="2">
+            <col style="width: 16.03%;" />
+            <col style="width: 13.925%;" />
+            <col style="width: 10.062%;" />
+            <col style="width: 15.493%;" />
+            <col style="width: 12.179%;" />
+            <col style="width: 10.372%;" />
+            <col style="width: 10.739%;" />
+            <col style="width: 16.197%;" />
+            <tr>
+                <td style="width: 16.03%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.03%">
+                    <p style="text-align: center;margin-bottom: 0;font-weight: bold;color: #00509f;font-size: 8pt;" align="center">Model</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 13.925%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="13.925%">
+                    <p style="text-align: center;font-weight: bold;font-size: 8pt;" align="center"><span style="color: #00509f;">Tzero</span>™ 
+ <span style="color: #00509f;font-size: 12pt;">*</span></p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.062%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.062%">
+                    <p style="text-align: center;font-weight: bold;font-size: 8pt;" align="center"><span style="color: #00509f;">Cell Constant</span> &#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 15.493%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="15.493%">
+                    <p style="text-align: center;font-weight: bold;color: #00509f;font-size: 8pt;" align="center">Temperature </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 12.179%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="12.179%">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;font-size: 8pt;">Baseline</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.372%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.372%">
+                    <p style="text-align: center;font-weight: bold;font-size: 8pt;" align="center"><span style="color: #00509f;">Pressure </span>&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.739%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.739%">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;text-align: center;font-size: 8pt;" align="center">Heat Capacity<span style="font-size: 12pt;">**</span></p>
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;text-align: center;font-size: 8pt;" align="center">MDSC®</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 16.197%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.197%">
+                    <p style="text-align: center;font-weight: bold;color: #00509f;font-size: 8pt;" align="center">Heat Capacity<span style="font-size: 12pt;">**</span></p>
+                    <p style="text-align: center;font-weight: bold;color: #00509f;font-size: 8pt;" align="center">Q1000</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 16.03%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.03%">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;font-size: 8pt;">DSC Q20/Q10</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 13.925%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="13.925%">
+                    <p>&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.062%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.062%">
+                    <p style="margin-bottom: 0;text-align: center;" align="center"><span style="text-align: center;"><span style="font-weight: bold;">X</span></span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 15.493%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="15.493%">
+                    <p style="margin-bottom: 0;text-align: center;" align="center"><span style="text-align: center;"><span style="font-weight: bold;">X</span></span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 12.179%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="12.179%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.372%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.372%">
+                    <p style="margin-bottom: 0;">&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.739%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.739%">
+                    <p style="margin-bottom: 0;">&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 16.197%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.197%">
+                    <p style="margin-bottom: 0;">&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1" style="width: 16.03%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.03%">
+                    <p style="margin-bottom: 0;color: #00509f;font-weight: bold;font-size: 8pt;"><span style="color: #00509f;font-weight: bold;font-size: 8pt;">DSC Q200/Q100</span>
+                    </p>
+                    <p style="margin-bottom: 0;color: #00509f;font-weight: bold;font-size: 8pt;">Heat Flow T4</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 13.925%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="13.925%">
+                    <p style="text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.062%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.062%">
+                    <p style="text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 15.493%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="15.493%">
+                    <p style="text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 12.179%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="12.179%">
+                    <p>&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.372%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.372%">
+                    <p>&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.739%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.739%">
+                    <p style="text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 16.197%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.197%">
+                    <p style="text-align: center;font-weight: bold;" align="center">&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 16.03%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.03%">
+                    <p style="margin-bottom: 0;color: #00509f;font-weight: bold;font-size: 8pt;">DSC Q200/Q100</p>
+                    <p style="margin-bottom: 0;color: #00509f;font-weight: bold;font-size: 8pt;">Heat Flow T1</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 13.925%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="13.925%">
+                    <p>&#160;</p>
+                    <p style="text-align: center;font-weight: bold;" align="center">&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.062%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.062%">
+                    <p style="text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 15.493%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="15.493%">
+                    <p style="text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 12.179%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="12.179%">
+                    <p style="text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.372%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.372%">
+                    <p>&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.739%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.739%">
+                    <p>&#160;</p>
+                    <p style="text-align: center;font-weight: bold;" align="center">&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 16.197%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.197%">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1" style="width: 16.03%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.03%">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;font-size: 8pt;"><span style="font-weight: bold;color: #00509f;font-size: 8pt;">DSC Q1000 
+ (<span style="margin-bottom: 0;font-weight: bold;color: #00509f;font-size: 8pt;">with standard cell)</span></span>
+                    </p>
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;font-size: 8pt;">Heat Flow T4P</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 13.925%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="13.925%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.062%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.062%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 15.493%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="15.493%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 12.179%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="12.179%">
+                    <p style="margin-bottom: 0;">&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.372%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.372%">
+                    <p style="margin-bottom: 0;">&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.739%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.739%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 16.197%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.197%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1" style="width: 16.03%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.03%">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;font-size: 8pt;"><span style="font-weight: bold;color: #00509f;font-size: 8pt;">DSC Q2000/Q1000 
+ (with standard cell)</span>
+                    </p>
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;font-size: 8pt;">Heat Flow T4</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 13.925%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="13.925%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.062%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.062%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 15.493%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="15.493%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 12.179%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="12.179%">
+                    <p style="margin-bottom: 0;">&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.372%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.372%">
+                    <p style="margin-bottom: 0;">&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.739%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.739%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 16.197%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.197%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 16.03%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.03%">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;font-size: 8pt;">DSC Q2000/Q1000 (<span style="margin-bottom: 0;font-weight: bold;color: #00509f;font-size: 8pt;">with 
+ standard cell)</span></p>
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;font-size: 8pt;">Heat Flow T1</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 13.925%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="13.925%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center">&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.062%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.062%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 15.493%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="15.493%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 12.179%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="12.179%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.372%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.372%">
+                    <p style="margin-bottom: 0;">&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.739%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.739%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center">&#160;</p>
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center">&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 16.197%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.197%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center">&#160;</p>
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center">&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 16.03%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.03%">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;font-size: 8pt;">DSC <span>Pressure Cell</span></p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 13.925%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="13.925%">
+                    <p style="margin-bottom: 0;">&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.062%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.062%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center">X</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 15.493%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="15.493%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 12.179%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="12.179%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.372%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.372%">
+                    <p style="margin-bottom: 0;text-align: center;font-weight: bold;" align="center"><span>X</span>
+                    </p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 10.739%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="10.739%">
+                    <p style="margin-bottom: 0;">&#160;</p>
+                </td>
+                <td colspan="1" rowspan="1" style="width: 16.197%;background-color: #DBDBDB;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" bgcolor="#DBDBDB" width="16.197%">
+                    <p style="margin-bottom: 0;">&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <p style="font-size: 8pt;"><span><span style="color: #00509f;"><a href="#top" style="font-size: 8pt;">B</a></span>ack to top</span>
+        </p>
+        <p>* &#160;Tzero™ describes 
+ proprietary technology invented by Robert Danley of TA Instruments—Waters 
+ LLC and patented by TA Instruments—Waters LLC (U.S. Patent No. 6,431,747).</p>
+        <p>** Heat Capacity calibration is NOT performed in cal mode and is not 
+ required except when making absolute measurements of heat capacity.</p>
+        <p class="Notes">NOTE: &#160;Perform 
+ calibration runs that encompass the temperature range you plan to use 
+ in your experiments. (We recommend calibration over the widest temperature 
+ range.) If your subsequent experiments cover a wider range, you may wish 
+ to recalibrate.</p>
+        <p class="Notes">NOTE: Please make sure that you run your experiments with 
+ the same gas that you used to calibrate the system. For example, if you 
+ calibrate using nitrogen, make your runs with nitrogen.</p>
+        <p>Calibration results may be viewed in the <a href="DSC_Cell_Calibration.htm">Cell</a>/<a href="DSC_Temperature_Table.htm">Temperature Table</a> window and by using 
+ the <a href="Calibration_Report.htm">Calibration Report</a>.</p>
+        <h3><a name="When_to_Calibrate"></a>When to Calibrate</h3>
+        <p>For optimum experimental results you will need to perform <span style="text-decoration: underline;">all</span><a name="kanchor173"></a> 
+ DSC calibrations whenever you <span style="font-weight: bold;">change</span> 
+ one of the following parameters:</p>
+        <ul>
+            <li value="1">First use of a new cell</li>
+            <li value="2">Purge gas change</li>
+            <li value="3">Cooling device or accessory 
+ (FACS, LNCS, RCS, or Quench Cooling Can) change</li>
+        </ul>
+        <p>For optimum experimental results you will need to perform all DSC calibrations 
+ <span style="font-style: italic;">except</span> Tzero whenever you <span style="font-weight: bold;">change</span> one of the following parameters:</p>
+        <ul>
+            <li value="1">Heat flow selection change 
+ (T4P, T4, etc.)</li>
+            <li value="2">Pressure (in PDSC experiments) 
+ change</li>
+        </ul>
+        <p>Calibration is performed in the instrument’s calibration mode, which 
+ is accessed through the <a href="Experimental_View_Pane_Summary_Page.htm">Experimental 
+ View/Summary Page</a>. &#160;(This 
+ does not apply to heat capacity calibration, which is performed in both 
+ the standard and MDSC modes, where applicable). The Q2000/Q200/Q20/Q20A 
+ can use multiple calibration sets. See <a href="Configuring_and_Using_Multiple_Calibration_Sets.htm">Configuring 
+ and Using Multiple Calibration Sets</a> for details.</p>
+        <p style="font-size: 8pt;"><span><a href="#top" style="font-size: 8pt;">Back to top</a></span>
+        </p>
+        <h3><a name="Pressure calibration"></a>Pressure Calibration</h3>
+        <p>Pressure calibration is an optional calibration procedure for the pressure 
+ DSC cells. &#160;It 
+ is based on comparing the pressure reading at two points, typically one 
+ atmosphere and another pressure selected by you, to the pressure reading 
+ on an external pressure gauge.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="font-size: 8pt;"><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Calibrating DSC Heat Capacity|Calibrating_DSC_Heat_Capacity.htm||Calibrating the Autosampler|Calibrating_the_Autosampler.htm||Calibrating the DSC Enthalpy (Cell Constant) and Temperature|Calibrating_the_DSC_Enthalpy_(Cell_Constant)_and_Temperature.htm||Calibrating the DSC Pressure Cell|Calibrating_the_DSC_Pressure_Cell.htm||Calibrating the Mass Flow Controller|Calibrating_the_Mass_Flow_Controller.htm||Calibrating the Q1000/Q100 Autosampler|Calibrating_the_Q1000_Q100_Autosampler.htm||Calibrating the Q2000/Q200/Auto Q20 Autosampler|Calibrating_the_Q2000_Q200_Auto_Q20_Autosampler.htm||Calibrating the T1 Baseline|Calibrating_the_T1_Baseline.htm||Calibrating Tzero|Calibrating_Tzero.htm||Calibration Report|Calibration_Report.htm||Indium Tracking|Indium_Tracking.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

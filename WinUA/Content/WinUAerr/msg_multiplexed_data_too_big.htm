@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Error and Information Messages" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Data Will Not Fit in Buffer</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../WinUAerr.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Data Will Not Fit in Buffer</h1>
+        <p class="Body_Text_3">The multiplexed data from this file will not fit in the data buffer. Some data points will be dropped. To prevent dropping of data, close all open data files and increase the data buffer size to a minimum of xxx points.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Problem:</p>
+        <p>The multiplexed data file contains too many points and must be compressed to fit into the current data buffer. Compressing the multiplexed data may give undesirable results because excess data points are discarded prior to being sorted by the multiplexed value (<span style="font-style: italic;">e.g</span>., frequency). In some cases the compression process will produce unequally spaced data points resulting in a misshapen curve.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Solution:</p>
+        <p>Close all open data files. Select File/Main Options, then click the <a href="../winhlp/Win_Main_Options_data_page.htm">Data page</a>. Enter at least the number of minimum points given in the message as the Data Buffer Size. A larger number is acceptable. Click the OK button. Then reopen the desired multiplexed data file. The entire file should be plotted as desired.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>If this error occurs frequently, the Data Buffer Size should be permanently set to a larger number by pressing the Save button on the Main Options  Data Page after entering a new buffer size.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

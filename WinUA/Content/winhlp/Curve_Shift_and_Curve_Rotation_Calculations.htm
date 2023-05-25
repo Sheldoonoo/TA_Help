@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Tools" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Curve Shift and Curve Rotation Calculations</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Curve Shift and Curve Rotation Calculations</h1>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The process of <span style="color: teal;font-weight: bold;">curve shifting</span> and <span style="color: teal;font-weight: bold;">curve rotation</span> causes a linear change to a curve's baseline. Curve shifting moves all of the data points on a curve up or down by a <span style="font-style: italic;">fixed</span> value. Curve rotation moves the data points on a curve up or down by a <span style="font-style: italic;">linearly changing</span> value.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: teal;font-weight: bold;">Curve Shifting</span>
+        </p>
+        <p>Curves are shifted by adding a fixed offset to the Y-value of each data point on the curve. When curve shifting is done manually (see <a href="Menu_tools_shift.htm">Shift</a>), the offset is the difference between the cursor Y-position and the interpolated curve value at the cursor X-position. Or, stated another way, the point on the curve at the vertical cursor is moved to the cursor position and all other points on the curve are moved up or down by this same amount.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: teal;font-weight: bold;">Curve Rotation</span>
+        </p>
+        <p>Curves are rotated by adding a computed offset to the Y-value of each data point on the curve. The offset for each data point is computed to be the difference between the Y-value of the data point and the Y-value of a straight line evaluated at the X-value of the data point. When curve rotation is done manually (see <a href="Menu_tools_rotate.htm">Rotate</a>), the straight line is defined by the X- and Y-coordinates of the two cursor positions. The slope and offset of this line is used to compute the offset at each data point. Or, stated another way, the two points on the curve at the vertical cursors are moved to the cursor positions and all other points on the curve are moved by a proportional amount.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: blue;">NOTE: Curve rotation is a skewing process that makes a linear change to a curve's baseline. It is not a rotation in two dimensions because the X-values of the curve are not changed.</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: blue;">NOTE: Clicking on a curve in a normal plot and dragging the curve to a new position changes the axis scaling, but not the curve data. Clicking on a curve in an overlay plot and dragging the curve to a new position changes the curve's Y-offset, but not the curve data. Shifting and rotating curves modifies the curve data.</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

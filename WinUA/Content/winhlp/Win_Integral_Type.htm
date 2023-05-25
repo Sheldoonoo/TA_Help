@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Integral Type Window</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Integral Type Window</h1>
+        <p>Use this window to select the following:</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: teal;font-weight: bold;">Running area type choices:</span>
+        </p>
+        <ul style="font-family: Arial;font-size: 10pt;">
+            <li value="1"><a href="Radio_button_integral.htm">Integral</a>: Select integral area, if desired. The program plots the raw integrated data.<br /><br /></li>
+            <li value="2"><a href="Radio_button_area_percent.htm">Area Percent</a>:&#160;The program takes the end result of the raw integration and shows the percent contribution of each peak in the selected region of the curve (assuming the selected region to be 100%). If you want to determine the percent composition of various components in a material, select the area percent option. Then, when the program finishes plotting the integral curve, use one of the <a href="Menu_analyze_curve_value_at_X.htm">Curve Value</a> functions to mark each step of the curve with its percent contribution.<br /><br /></li>
+            <li value="3"><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Checkbox_normalized_integral_type.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Normalized</a></span> <span style="font-style: italic;">For DSC files only</span>: The program plots the integral curve in normalized units (Joules/g).<br /><br /></li>
+            <li value="4"><a href="Checkbox_inverted_integral_type.htm">Inverted:</a> <span style="color: black;">The program multiplies the normal integral by minus one, and computes the area percent integral from 100 percent down to zero percent.</span></li>
+        </ul>
+        <p><span style="color: teal;font-weight: bold;">Running area baseline choices:</span>
+        </p>
+        <ul style="font-family: Arial;font-size: 10pt;">
+            <li value="1"><span style="font-weight: bold;">Linear/Sigmoidal Baseline</span>: <span style="color: black;">When you select this option the baseline will be anchored to the curve at the integral limit points. The area will be integrated with respect to the linear baseline between the analysis limits.</span><br /><br /></li>
+            <li value="2"><span style="font-weight: bold;">Zero Baseline(absolute integral)</span>: When you select this option, the area will be integrated with respect to a baseline set to zero on the y axis, which calculates the absolute integral.</li>
+        </ul>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Body_Text"><span style="color: #000fff;">NOTE: In both cases above the baseline is linear, unless the peak running integral is selected with Sigmoidal baseline peak integration.</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Click on the desired option, select click on the OK button.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpCheckList.First Draft,RoboHelpCheckList.Links,RoboHelpCheckList.Index keywords,RoboHelpStatus.In Progress" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="qtga.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Segment List</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" type="" />
+        <style type="text/css">
+
+/*
+<![CDATA[*/
+td ol,
+td ul {
+        margin-top: 0;
+        margin-bottom: 0;
+}
+/*]]></style>
+        <link href="HtmlHelp.css" rel="stylesheet" type="text/css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;" alt="" width="35" height="37" align="right" border="0" /></a></span><a name="top" id="top"></a><span style="margin-bottom: 0;">S</span>egment List</h1>
+        <p>&#160;</p>
+        <p>A segment is a preprogrammed series of instructions used in a method. Several segments can be linked together to create the desired method. The available segment list will vary depending on the instrument and optional accessories installed.</p>
+        <p>&#160;</p>
+        <p style="margin-top: 0.0pt;">For details on a specific segment see the table below:</p>
+        <p style="margin-bottom: 0;">&#160;</p>
+        <table style="border-collapse: separate;border-collapse: separate;" cellspacing="6" width="100%" border="2">
+            <col style="width: 30.843%;" />
+            <col style="width: 69.157%;" />
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="text-align: center;margin-bottom: 0;"><span style="font-weight: bold;"><span style="color: #00509F;">Segment</span></span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="text-align: center;margin-bottom: 0;"><span style="font-weight: bold;"><span style="color: #00509F;">Description</span></span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="font-weight: bold;color: #00509f;"><span>Abort next segment on limit</span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for DSC,TGA, and SDT Only: &#160;</span>The Abort next segment on limit segment allows you to skip over or terminate other method segments when specified limit conditions are met. Then the experiment proceeds to the next segment.</p>
+                    <ul>
+                        <li class="p" value="1">
+                            <p style="line-height: 10.0pt;margin-top: 0.0pt;margin-bottom: 0.0pt;">If the limit is reached at the beginning of a segment, then that segment is skipped and method execution continues with the next segment.</p>
+                        </li>
+                        <li class="p" value="2">
+                            <p style="line-height: 10.0pt;margin-top: 0.0pt;margin-bottom: 0.0pt;">If the limit is reached during the execution of a segment, then the remaining portion of the segment is skipped.</p>
+                        </li>
+                    </ul>
+                    <p class="Notes">NOTE: The Abort segment is generally followed by a Ramp, Isothermal, or Iso-track segment.</p>
+                    <p>Example (DSC):</p>
+                    <ol>
+                        <li class="p" value="1">
+                            <p style="line-height: 12.0pt;margin-top: 0.0pt;margin-bottom: 0.0pt;">Equilibrate at 200°C</p>
+                        </li>
+                        <li class="p" value="2">
+                            <p style="line-height: 12.0pt;margin-top: 0.0pt;margin-bottom: 0.0pt;">Abort next segment if mW&gt;1</p>
+                        </li>
+                        <li class="p" value="3">
+                            <p style="line-height: 12.0pt;margin-top: 0.0pt;margin-bottom: 0;">Isothermal for 100 min</p>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="font-weight: bold;color: #00509f;">Abort next segment on signal</p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for DMA and TMA Only: &#160;</span>The Abort next segment on signal segment allows you to skip over or terminate other method segments when specified limit conditions are met. Then the experiment proceeds to the next segment. The signal specified for limit checking can be any signal that is being saved into the datafile.</p>
+                    <ul>
+                        <li class="p" value="1">
+                            <p style="line-height: 10.0pt;margin-top: 0.0pt;margin-bottom: 0.0pt;">If the limit is reached at the beginning of a segment, then that segment is skipped and method execution continues with the next segment.</p>
+                        </li>
+                        <li class="p" value="2">
+                            <p style="line-height: 10.0pt;margin-top: 0.0pt;margin-bottom: 0.0pt;">If the limit is reached during the execution of a segment, then the remaining portion of the segment is skipped.</p>
+                        </li>
+                    </ul>
+                    <p>Example (DMA):</p>
+                    <ol>
+                        <li class="p" value="1">
+                            <p style="line-height: 12.0pt;margin-top: 0.0pt;margin-bottom: 0.0pt;">Equilibrate at 100°C</p>
+                        </li>
+                        <li class="p" value="2">
+                            <p style="line-height: 12.0pt;margin-top: 0.0pt;margin-bottom: 0.0pt;">Abort next segment if Storage Modulus &lt; 1000 Mpa</p>
+                        </li>
+                        <li class="p" value="3">
+                            <p style="line-height: 12.0pt;margin-top: 0.0pt;margin-bottom: 0.0pt;">Ramp 5°C/min to 200°C</p>
+                        </li>
+                        <li class="p" value="4">
+                            <p style="line-height: 12.0pt;margin-top: 0.0pt;margin-bottom: 0;">Isothermal for 10 min</p>
+                        </li>
+                        <li class="p" value="5">
+                            <p style="line-height: 12.0pt;margin-top: 0.0pt;margin-bottom: 0;">Ramp 5°C/min to 100°C</p>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="font-weight: bold;color: #00509f;">Air Cool</p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for DSC Only:</span> &#160;The Air Cool segment controls the internal cooling solenoid valve connected to compressed air (air cool feature). Air cool activates when the furnace is below 600°C.</p>
+                    <p>Example: &#160;Air Cool: On</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="font-weight: bold;color: #00509f;"><span>Data storage</span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p>The Data storage segment controls data collection during the experiment. If a Data Storage segment is not used, data storage will be automatically initiated by the first Ramp, Isothermal, or Step segment that appears in the method.</p>
+                    <p style="margin-bottom: 0;">Example: Data Storage: On</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="font-weight: bold;color: #00509f;">Equilibrate</p>
+                    <p style="font-weight: bold;color: #00509f;">&#160;</p>
+                    <p style="font-weight: bold;color: #00509f;">&#160;</p>
+                    <p style="color: #00509f;font-weight: normal;font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p>The Equilibrate segment heats or cools the furnace to the defined temperature, stabilizes the furnace at that temperature, then continues to the next segment. This segment does not automatically start data collection.</p>
+                    <p style="margin-bottom: 0;">Example: Equilibrate at 200°C</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;"><span>External Event</span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p>The Event segment controls the external event relay through the event jack on the back of the instrument. This is used to synchronize control of additional hardware through the method.</p>
+                    <p style="margin-bottom: 0;">Example: External Event: On</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">Fill Cooler</p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for DMA and DSC Only: &#160;</span>This segment is used to control the filling of the Gas Cooling Accessory (GCA) or Liquid Nitrogen Cooling System (LNCS) when it falls below an entered percentage during an experiment.</p>
+                    <p><span>Example: &#160;Fill Cooler if below 50%</span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">Flow Rate</p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for MFC Only: &#160;</span>The Flow Rate segment is used to alter the rate of flow of the selected gas when an instrument is equipped with a Mass Flow Controller.</p>
+                    <p>Example: &#160;Flow rate 50 mL/min</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">Force</p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for DMA Only: &#160;</span>The Force segment applies a constant static force to the sample, then executes the next segment. This segment is only valid for experiments done in the Controlled Force and Strain Rate modes.</p>
+                    <p>The Force segment in the Strain Rate mode shuts off displacement (strain) control when this segment is executed. Executing a subsequent Set Strain or Ramp Strain segment shuts off force control and resumes displacement (strain) control.</p>
+                    <p>Example: &#160;Force 0.5 N</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">Frequency Sweep</p>
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">&#160;</p>
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">&#160;</p>
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">&#160;</p>
+                    <p style="margin-bottom: 0;color: #00509f;font-weight: normal;font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for DMA Only: &#160;</span>The Frequency Sweep segment is used in multiple frequency experiments to collect data at each frequency in the selected frequency table at a constant temperature. This segment is only valid for DMA Multifrequency mode.</p>
+                    <p>This segment turns on data storage when it begins, and turns it off when it ends.</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;"><span>Gas Selection</span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available with the MFC Only: &#160;</span>The Gas segment controls the switching of gas, between Gas 1 and Gas 2 for an instrument with a Mass Flow Controller (MFC) installed. This segment is used to synchronize gas switching at a specific time or temperature in an experiment.</p>
+                    <p style="margin-bottom: 0;">Example: Select Gas1</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;"><span>Heater PID</span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p>The Heater PID segment is used to change the performance of the instrument furnace during the execution of a thermal method. PID stands for Proportional, Integral, and Derivative, the three modes of traditional temperature control. The Heater PID segment specifies the control coefficients for each mode of temperature control.</p>
+                    <p>For more detailed information, click here <img src="gif/ocean_arrow_sm.gif" style="border: none;" alt="" width="7" height="13" border="0" /> <a href="Heater_PID_Method_Segment.htm">more</a>.</p>
+                    <p>Example: P= 35 </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;"><span>High Resolution ramp</span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for TGA High Resolution instruments only.</span> The High Resolution ramp segment varies the heating/cooling rate of the furnace in response to changes in the rate of decomposition of the sample to improve weight change resolution.</p>
+                    <p style="margin-bottom: 0;">Example: Ramp 50.00°C/min res 4.0 to 800.00°C</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;"><span>High Resolution sensitivity</span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for TGA High Resolution instruments only.</span> The High Resolution sensitivity segment sets an additional parameter associated with the High Resolution ramp segments, which can be used to adjust the response of the High Resolution temperature control algorithm. This is sometimes necessary due to the wide variation in decomposition mechanisms of typical sample materials. The sensitivity setting is a unitless number ranging from 1.0 (lowest sensitivity) to 8.0 (highest sensitivity). Increasing sensitivity tends to increase experiment time.</p>
+                    <p style="margin-bottom: 0;">Example: High resolution sensitivity 2.0</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">Increment Force</p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for DMA Only: &#160;</span>The Increment Force segment raises or lowers the static force in a step, then executes the next segment. This segment is only valid for experiments done in controlled force mode.</p>
+                    <p>Example:</p>
+                    <p>1. Equilibrate to 50°C</p>
+                    <p>2. Isothermal for 5 min.</p>
+                    <p>3. Increment force 0.05 N</p>
+                    <p>4. Repeat segment 2 for 3 times</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;"><span>Increment Temperature</span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p>The Increment Temperature segment raises or lowers the temperature in a controlled step, lets the temperature equilibrate, then begins the next segment.</p>
+                    <p style="margin-bottom: 0;">Example: Increment by 5°C</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">Initial Temperature</p>
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">&#160;</p>
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">&#160;</p>
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">&#160;</p>
+                    <p style="margin-bottom: 0;color: #00509f;font-weight: normal;font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p>The Initial Temperature segment heats or cools the furnace to the defined temperature, stabilizes the furnace at that temperature, then holds the temperature until the experiment is continued by selecting Resume on the Tool Bar or menu, or pressing START on the instrument keypad. The instrument status will display "ready" when the temperature is stabilized. This segment does not automatically start data collection.</p>
+                    <p style="margin-bottom: 0;">Example: Initial Temp 200°C</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">Isostrain</p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for DMA Only: &#160;</span>The Isostrain segment applies an instantaneous strain to the sample and the force required to maintain the strain at a constant value is monitored.</p>
+                    <p>Example:</p>
+                    <p>1. Equilibrate 30°C</p>
+                    <p>2. Isostrain at 1%</p>
+                    <p>3. Ramp 3°C/min to 200°C</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;"><span style="font-weight: bold;"><span style="color: #00509F;">Isothermal</span></span>
+                    </p>
+                    <p>&#160;</p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p>The Isothermal segment holds the sample at the current temperature (as programmed by the previous segment) for a defined period of time. This segment automatically turns on data collection, except when preceded by a Data Storage OFF segment.</p>
+                    <p style="margin-bottom: 0;">Example: Isothermal for 10 min</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;"><span style="font-weight: bold;"><span style="color: #00509F;">Jump</span></span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p>The Jump segment instantly changes the set point temperature, causing ballistic changes in the sample temperature. This segment then allows the immediate execution of the next segment (which is usually the Isothermal segment). Note that large temperature overshoots may result from the use of this segment. This segment does not automatically start data collection.</p>
+                    <p style="margin-bottom: 0;">Example: Jump to 200°C</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;"><span>Mark end of cycle</span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p>The Mark end of cycle segment places a marker in the data for use by the data analysis programs. In general markers provide quick parsing of data to separate experimental segments (<span style="font-style: italic;">i.e.,</span> the heat-cool cycle). A cycle mark number of 0 will automatically increment the mark number each time it is used, providing a running cycle count.</p>
+                    <p style="margin-bottom: 0;">Example: Mark end of cycle 0</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;"><span>Modulate temperature</span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for Modulated Instruments Only:</span> This segment allows you to enter the peak modulation temperature amplitude and period (frequency) parameters that will be used with subsequent ramp or isothermal segments.</p>
+                    <p style="margin-bottom: 0;">Example: Modulate <span style="text-decoration: underline;">+</span> 5.00 °C every 200 seconds</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">Motor drive</p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for DMA Only: &#160;</span>The Motor Drive segment is used to automatically turn the drive motor on and off during an experiment. The motor will automatically start when the experiment is started, unless you select Motor Drive off as the first segment in a method.</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;"><span style="font-weight: bold;"><span style="color: #00509F;">Ramp</span></span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p>The Ramp segment heats or cools the sample at a fixed rate until it reaches the specified temperature, producing a linear plot of temperature versus time. This segment automatically turns on data collection, except when preceded by a Data Storage OFF segment.</p>
+                    <p style="margin-bottom: 0;">Example: Ramp 10°C/min to 200°C</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;color: #00509f;font-weight: bold;">Ramp Displacement</p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for DMA Only: &#160;</span>This segment ramps the displacement setpoint linearly with time to a final strain value. Only available in the strain rate mode.</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;color: #00509f;font-weight: bold;">Ramp Force</p>
+                    <p style="margin-bottom: 0;color: #00509f;font-weight: bold;">&#160;</p>
+                    <p style="margin-bottom: 0;color: #00509f;font-weight: bold;">&#160;</p>
+                    <p style="margin-bottom: 0;color: #00509f;font-size: 8pt;font-weight: normal;"><a href="#top" style="font-size: 8pt;font-weight: normal;">Back to top</a>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for DMA Only: &#160;</span>The Ramp Force segment raises or lowers the force at a fixed rate until a final force is reached, while the sample is held at a constant temperature. This segment is only valid for experiments done in the controlled force mode.</p>
+                    <p>Example: Ramp force 0.2 N/min to 1.0 N</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">Ramp Strain</p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for DMA Only: &#160;</span><span>This segment ramps the strain setpoint linearly with time to a final strain value. Only available in the strain rate mode.</span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;"><span style="font-weight: bold;"><span style="color: #00509F;">Repeat</span></span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p>The Repeat segment does exactly what the name implies, it repeats a group of one or more segments within a method for the number of times specified.</p>
+                    <p>Example:</p>
+                    <ol>
+                        <li class="p" value="1">
+                            <p style="margin-top: 0.0pt;margin-bottom: 0.0pt;">Ramp 5°C/min to 200°C</p>
+                        </li>
+                        <li class="p" value="2">
+                            <p style="margin-top: 0.0pt;margin-bottom: 0.0pt;">Ramp 5°C/min to 50°C</p>
+                        </li>
+                        <li class="p" value="3">
+                            <p style="margin-top: 0.0pt;margin-bottom: 0;">Repeat segment 1 for 2 times</p>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;"><span style="font-weight: bold;"><span style="color: #00509F;">Repeat Until</span></span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p>The Repeat Until segment repeats of group of one or more segments within a method until the specified final temperature is reached or passed.</p>
+                    <p>Example:</p>
+                    <ol>
+                        <li class="p" value="1">
+                            <p style="margin-top: 0pt;margin-bottom: 0pt;">Equilibrate at 50°C</p>
+                        </li>
+                        <li class="p" value="2">
+                            <p style="margin-top: 0pt;margin-bottom: 0pt;">Isothermal for 5 min</p>
+                        </li>
+                        <li class="p" value="3">
+                            <p style="margin-top: 0pt;margin-bottom: 0pt;">Increment 10°C</p>
+                        </li>
+                        <li class="p" value="4">
+                            <p style="margin-top: 0pt;margin-bottom: 0pt;">Repeat segment 2 until 200°C</p>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;"><span style="font-weight: bold;"><span style="color: #00509F;">Sample interval</span></span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p>The Sample interval segment allows you to define or change the rate at which data is to be collected (in seconds/point).</p>
+                    <p style="margin-bottom: 0;">Example: Sampling interval 0.2 sec/pt</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">Set Strain</p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p><span style="font-style: italic;">Available for DMA Only: &#160;</span><span>Allows you to change the strain setpoint during experiments run in the stress relaxation, isostrain, and strain rate modes.</span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;"><span>Step</span>
+                    </p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p>The Step segment causes the temperature to jump a specified number of degrees at a specified time interval until a final temperature is reached. This segment automatically turns on data collection, except when preceded by a Data Storage OFF segment.</p>
+                    <p style="margin-bottom: 0;">Example: Step 5°C for 2 min to 200°C</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">Strain Sweep</p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;"><span style="font-style: italic;">Available for DMA Only: &#160;</span>The Strain Sweep segment is used in multiple amplitude experiments to collect data at each amplitude in the selected amplitude table at a constant temperature. This segment is only valid for the DMA Multistrain mode.</p>
+                    <p style="margin-bottom: 0;">This segment turns on data storage when it begins, and turns it off when it ends<span style="margin-bottom: 0;">.</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30.843%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;font-weight: bold;color: #00509f;">Zero Heat Flow</p>
+                </td>
+                <td style="width: 69.157%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" bgcolor="#E0E0E0">
+                    <p style="margin-bottom: 0;"><span style="font-style: italic;">Available for DSC</span>: The Zero Heat Flow segment sets the absolute value of the heat flow signal to zero at the end of a five-minute isothermal period. This ensures that the heat flow signal is accurate, which is important for obtaining accurate total heat capacity signals.</p>
+                    <p style="margin-bottom: 0;">Example: Zero heat flow at 50°C.</p>
+                </td>
+            </tr>
+        </table>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Available TGA Test Templates|Available_TGA_Test_Templates.htm||Basic Steps Needed to Run a TGA Experiment|Basic_Steps_Needed_to_Run_a_TGA_Experiment_.htm||Creating Custom Methods|Creating_Custom_Methods.htm||Handling Run Sequences|Handling_Run_Sequences.htm||Modifying a Running Method|Modifying_a_Running_Method.htm"><img src="SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

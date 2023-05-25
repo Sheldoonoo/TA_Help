@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the TA System Manager" MadCap:browseSequencePath="Using the TA System Manager" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="21CFR.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Setting Up Groups</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor25"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span>
+            <img src="21CFR11 Images/IconGroups.gif" style="border: none;width: 35px;height: 31px;float: none;" width="35" height="31" border="0" />Setting Up Groups</h1>
+        <p>A <span style="font-style: italic;">Group</span><a name="kanchor26"></a> defines a set of privileges 
+ associated with the modules (<span style="font-style: italic;">e.g</span><a name="kanchor27"></a>., 
+ instruments and data analysis program) within the system. &#160;These 
+ groups are then assigned to user accounts to restrict actions to defined 
+ privileges. &#160;</p>
+        <p>One or more groups can be assigned to each user account. &#160;When 
+ multiple groups are assigned to a user account, the allowable "actions" 
+ are defined by the superset of these combined groups. &#160;In 
+ other words, if you belong to a group (e.g., Group A) that allows you 
+ access to a certain action, that access will be available for you when 
+ you log in, even if you belong to a second group (<span style="font-style: italic;">e.g</span>., 
+ Group 2) that does not allow access to that action. </p>
+        <p>Three default groups are available by default when the Advantage Integrity 
+ system is initially installed:</p>
+        <ul>
+            <li class="Bullet" value="1"><span style="font-weight: bold;color: #00509f;">System 
+ Manager</span>: &#160;This 
+ group has access to the TA System Manager program only and cannot be used 
+ to access any other modules in the system (such as instruments and data).</li>
+            <li class="Bullet" value="2"><span style="font-weight: bold;color: #00509f;">TA 
+ Service</span>: &#160;This 
+ group is used by the TA Service personnel to service the equipment when 
+ needed.</li>
+            <li class="Bullet" value="3"><span style="font-weight: bold;color: #00509f;">Operator</span>: 
+ &#160;This group 
+ allows access to data analysis and instrument modules, however the privileges 
+ list must be defined by the TA System Manager before the operator group 
+ is used. See <a href="#Assigning%20Privileges">Assigning 
+ Privileges</a> for more information.</li>
+        </ul>
+        <p>The following topics are available for more information:</p>
+        <ul>
+            <li class="Bullet" value="1"><a href="#Assigning%20Privileges">Assigning 
+ Privileges</a>
+            </li>
+            <li class="Bullet" value="2"><a href="#Assigning%20Groups%20to%20an%20Individual%20User">Assigning 
+ Groups to an Individual User</a>
+            </li>
+            <li class="Bullet" value="3"><a href="#Assigning%20Privileges%20to%20a%20Group">Assigning 
+ Privileges to a Group</a>
+            </li>
+            <li class="Bullet" value="4"><a href="#Assigning%20Groups%20to%20Privileges">Assigning 
+ Groups to Privileges</a>
+            </li>
+            <li class="Bullet" value="5"><a href="Resetting_Privileges.htm">Resetting 
+ Privileges</a>
+            </li>
+        </ul>
+        <p class="Bullet" style="text-align: center;" align="center">
+            <img src="OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+        </p>
+        <p>The System Manager and TA Service groups cannot be assigned in combination 
+ with any other group.</p>
+        <p>Follow these instructions to set up the groups:</p>
+        <ol>
+            <li class="NumberedIndent" value="1"><a href="Accessing_the_System.htm">Log 
+ into</a> the TA System Manager. </li>
+            <li class="NumberedIndent" value="2">Select Groups 
+ by clicking on the <span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="21CFR11 Images/IconGroups_37x36.gif" style="border: none;float: none;border-style: none;border-style: none;width: 37;height: 36;" border="0" /></a></span> 
+ icon in the left-hand pane. The <span style="font-weight: bold;color: #00509f;"><a name="kanchor28"></a>Group 
+ Manager/General Page</span> will be displayed.</li>
+            <li class="NumberedIndent" value="3">Click the 
+ <span style="font-weight: bold;color: #00509f;">New</span> button. &#160;</li>
+            <li class="NumberedIndent" value="4">Enter the 
+ <span style="font-weight: bold;color: #00509f;">Name</span> of the group 
+ you want to create.</li>
+            <li class="NumberedIndent" value="5">Choose "Enabled" 
+ from the drop-down <span style="font-weight: bold;color: #00509f;">Status</span> 
+ list. (This function allows you to disable a group at a later time when 
+ it is no longer needed.)</li>
+            <li class="NumberedIndent" value="6">Enter information 
+ that identifies the group and/or its functions in the <span style="font-weight: bold;color: #00509f;">Description</span> 
+ field.</li>
+            <li class="NumberedIndent" value="7">Click the 
+ <span style="font-weight: bold;color: #00509f;">Apply</span> button to 
+ add the new group. (If you change your mind after starting a new group, 
+ you can select the <span style="font-weight: bold;color: #00509f;">Reload</span> 
+ button to cancel the operation.)</li>
+            <li class="NumberedIndent" value="8">Repeat steps 
+ 3 through 7 for each new group you wish to add.</li>
+        </ol>
+        <p><a name="kanchor29"></a>After the groups have been set up they can be assigned to user accounts 
+ through either the Group Manager or User Manager functions.</p>
+        <ul>
+            <li class="Bullet" value="1">Use the <span style="font-weight: bold;color: #00509f;">Group 
+ Manager</span> when first setting up a user group since it allows multiple 
+ users to be assigned at once. <span style="font-weight: bold;color: #00509f;">See:</span> 
+ &#160;<a href="#Assigning%20Multiple%20Users%20to%20a%20Group">Assigning 
+ Multiple Users to a Group</a></li>
+            <li class="Bullet" value="2">Use the <span style="font-weight: bold;color: #00509f;">User 
+ Manager</span> to assign groups to an individual user account. <span style="font-weight: bold;color: #00509f;">See:</span> 
+ &#160;<a href="#Assigning%20Groups%20to%20an%20Individual%20User">Assigning 
+ &#160;Groups 
+ to an Individual User</a></li>
+        </ul>
+        <p>Once the group is defined you can assign privileges to the group. See 
+ <a href="#Assigning%20Groups%20to%20Privileges">Assigning 
+ Groups to Privileges</a> for information.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Assigning Multiple Users to a Group"></a>Assigning Multiple 
+ Users to a Group</h3>
+        <p>The System Manger can assign one or more users to each group by following 
+ the instructions below:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Select the 
+ <span style="font-weight: bold;color: #00509f;">Group Manager</span> 
+ by clicking on the <span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="21CFR11 Images/IconGroups_37x36.gif" style="border: none;float: none;border-style: none;border-style: none;width: 37;height: 36;" border="0" /></a></span> 
+ icon in the left-hand pane.</li>
+            <li class="NumberedIndent" value="2">Click the 
+ <span style="font-weight: bold;color: #00509f;">Users</span> Page.</li>
+            <li class="NumberedIndent" value="3"><a name="kanchor30"></a>Assign the 
+ users to a group by selecting the <span style="font-weight: bold;color: #00509f;">Group 
+ Name</span> from the list, then selecting the desired User(s) from the 
+ <span style="font-weight: bold;color: #00509f;">Unassigned Users</span> 
+ list and then clicking the <img src="21CFR11 Images/ButtonRightArrow.gif" style="border: none;width: 42px;height: 25px;float: none;border-style: none;border-style: none;" width="42" height="25" border="0" /> button to move the User(s) to 
+ the <span style="font-weight: bold;color: #00509f;">Assigned Users</span> 
+ list. &#160;Alternatively, 
+ you could use the <img src="21CFR11 Images/ButtonAllRightArrow.gif" style="border: none;width: 42px;height: 25px;float: none;border-style: none;border-style: none;" width="42" height="25" border="0" /> button to assign all Users to the selected 
+ group.</li>
+            <li class="NumberedIndent" value="4">Select <span style="font-weight: bold;color: #00509f;">Apply</span> to save these 
+ changes. </li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Assigning Groups to an Individual User"></a>Assigning Groups 
+ to an Individual User</h3>
+        <p class="Notes">NOTE: &#160;If 
+ you are assigning multiple user accounts to a group, access the <span style="font-weight: bold;color: #00509f;">Group Manager/User Page</span>. 
+ <span style="font-weight: bold;color: #00509f;">See also:</span> &#160;<a href="#Assigning%20Multiple%20Users%20to%20a%20Group">Assigning 
+ Multiple Users to a Group</a></p>
+        <p>The System Manager can assign one or more groups to each user account 
+ by following the instructions below. &#160;</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Click the 
+ <span style="font-weight: bold;color: #00509f;">User Accounts</span> 
+ icon, <img src="21CFR11 Images/IconUserAccounts_39x32.gif" style="border: none;float: none;border-style: none;border-style: none;width: 39;height: 32;" border="0" />, to open the <span style="font-weight: bold;color: #00509f;">User 
+ Account Manager</span>. &#160;</li>
+            <li class="NumberedIndent" value="2">Select the 
+ <span style="font-weight: bold;color: #00509f;">Groups Page</span>.</li>
+            <li class="NumberedIndent" value="3">Assign the 
+ groups to the user account by selecting the <span style="font-weight: bold;color: #00509f;">User 
+ ID</span> from the list, then selecting the desired group(s) from the 
+ <span style="font-weight: bold;color: #00509f;">Unassigned Groups</span> 
+ list and then clicking the <img src="21CFR11 Images/ButtonRightArrow.gif" style="border: none;width: 42px;height: 25px;float: none;border-style: none;border-style: none;" width="42" height="25" border="0" /> button to move the project to 
+ the <span style="font-weight: bold;color: #00509f;">Assigned Groups</span> 
+ list. Alternatively, you could use the <img src="21CFR11 Images/ButtonAllRightArrow.gif" style="border: none;width: 42px;height: 25px;float: none;border-style: none;border-style: none;" width="42" height="25" border="0" /> &#160;button 
+ to assign all available groups to the selected user account. Note that 
+ each user must be assigned to the “Operator” group at a minimum. The System 
+ Manger and TA Service groups cannot be assigned in conjunction with any 
+ other group.</li>
+            <li class="NumberedIndent" value="4">Click the 
+ <span style="font-weight: bold;color: #00509f;">Apply</span> button.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Assigning Privileges"></a><a name="kanchor31"></a><a name="kanchor32"></a>Assigning Privileges</h3>
+        <p>Each user assigned to a group is restricted to only those actions that 
+ are defined by the group's privilege list. Privileges may be defined for 
+ an individual instrument (<span style="font-style: italic;">e.g</span>., 
+ 0100–0123) or globally for the instrument type (<span style="font-style: italic;">e.g</span>., 
+ all DSC's or all AR's). In addition, one group defines privileges for 
+ all items in the module list. If privileges are not specified for each 
+ of these items, then no rights will be granted for that item.</p>
+        <p>Privileges may be set up through the Group Manager or using the Module 
+ Manager. Either option displays the same information but shows the items 
+ in a different relationship to each other.</p>
+        <ul>
+            <li class="Bullet" value="1">Use the <span style="font-weight: bold;color: #00509f;">Group 
+ Manager</span> to define the privileges by group. <span style="font-weight: bold;color: #00509f;">See:</span> <a href="#Assigning%20Privileges%20to%20a%20Group">Assigning 
+ Privileges to a Group</a></li>
+            <li class="Bullet" value="2">Use the <span style="font-weight: bold;color: #00509f;">Module 
+ Manager</span> to assign groups by individual controls (privileges list) 
+ for each module. <span style="font-weight: bold;color: #00509f;">See: 
+ </span><a href="#Assigning%20Groups%20to%20Privileges">Assigning 
+ Groups to Privileges</a>.</li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h4><a name="Assigning Privileges to a Group"></a>Assigning Privileges 
+ to a Group</h4>
+        <p>The System Manager can assign privileges to each group by following 
+ the instructions below:</p>
+        <ol>
+            <li class="NumberedIndent" value="1"><a href="Accessing_the_System.htm">Log 
+ into</a> the TA System Manager. </li>
+            <li class="NumberedIndent" value="2">Select the 
+ <span style="font-weight: bold;color: #00509f;">Group Manager</span> 
+ by clicking on the <span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="21CFR11 Images/IconGroups_37x36.gif" style="border: none;float: none;border-style: none;border-style: none;width: 37;height: 36;" border="0" /></a></span> 
+ icon in the left-hand pane.</li>
+            <li class="NumberedIndent" value="3">Select the 
+ <span style="font-weight: bold;color: #00509f;">Privileges</span> Page.</li>
+            <li class="NumberedIndent" value="4">Select the 
+ desired group from the <span style="font-weight: bold;color: #00509f;">Group 
+ Name</span> list.</li>
+            <li class="NumberedIndent" value="5">Uncheck the 
+ <span style="font-weight: bold;color: #00509f;">List All Modules for 
+ Selection</span> box, if you want to assign privileges for this group 
+ by module type (<span style="font-style: italic;">e.g</span>., DSC, TGA, 
+ AR) rather than individually for each specific module (<span style="font-style: italic;">e.g</span>., 
+ 0100 – 0123, 0500 – 0050, 200124, etc).</li>
+            <li class="NumberedIndent" value="6">Select a 
+ module from the drop-down list. &#160;(In 
+ our example, ALL DSC's will have the same set of &#160;privileges 
+ for the selected group.)</li>
+            <li class="NumberedIndent" value="7">Check each 
+ control item in the list that the members of this group will have the 
+ right to access. Any item not selected will be restricted (inaccessible) 
+ for that group.</li>
+            <li class="NumberedIndent" value="8">Select <span style="font-weight: bold;color: #00509f;">Save</span> to save the selections.</li>
+            <li class="NumberedIndent" value="9">Repeat steps 
+ 6 through 8 for each module in the drop-down list. &#160;(For 
+ example, you can set up DSC privileges, then TGA, then AR, then data analysis, 
+ etc.)</li>
+        </ol>
+        <p class="Notes">NOTE: &#160;You 
+ can also view the privilege list per module using the <span style="font-weight: bold;color: #00509f;">Module 
+ Manager</span>. <span style="font-weight: bold;color: #00509f;">See:</span> 
+ Assigning Module Access Privileges</p>
+        <ol start="10" style="list-style: decimal;list-style-type: decimal;">
+            <li class="NumberedIndent" value="10">Repeat steps 
+ 3 through 8 to grant privileges for any other group(s).</li>
+        </ol>
+        <p class="Notes">NOTE: &#160;Click 
+ the <span style="font-weight: bold;color: #00509f;">Import Items</span> 
+ button to update the scripts that are used to generate the list of privileges 
+ for each of the system module types. &#160;This 
+ option may be needed when a new version of instrument software is installed.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h4><a name="Assigning Groups to Privileges"></a>Assigning Groups to Privileges</h4>
+        <p>The System Manager can assign individual controls (privileges) to one 
+ or more groups by following the instructions below:</p>
+        <ol>
+            <li class="NumberedIndent" value="1"><a href="Accessing_the_System.htm">Log 
+ into</a> the TA System Manager. </li>
+            <li class="NumberedIndent" value="2">Select the 
+ <span style="font-weight: bold;color: #00509f;">Module Manager</span> 
+ by clicking on the <span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="21CFR11 Images/IconModules.gif" style="border: none;width: 36px;height: 36px;float: none;border-style: none;border-style: none;" width="36" height="36" border="0" /></a></span> 
+ icon in the left-hand pane. </li>
+            <li class="NumberedIndent" value="3">Access the 
+ <span style="font-weight: bold;color: #00509f;"><a name="kanchor33"></a><a name="kanchor34"></a>Privileges Page</span>.</li>
+            <li class="NumberedIndent" value="4">Uncheck the 
+ <span style="font-weight: bold;color: #00509f;">List All Modules for 
+ Selection</span> box, if you want to assign privileges for this group 
+ by module type (<span style="font-style: italic;">e.g</span>., DSC, TGA, 
+ AR) rather than individually for each specific module (<span style="font-style: italic;">e.g</span>., 
+ 0100 – 0123, 0500 – 0050, 200124).</li>
+            <li class="NumberedIndent" value="5">Select a 
+ module from the drop-down list.</li>
+            <li class="NumberedIndent" value="6">Select the 
+ first control item in the list from the <span style="font-weight: bold;color: #00509f;">Item 
+ Name</span> list. (Such as the Control/Start function.)</li>
+            <li class="NumberedIndent" value="7">(Using the 
+ list of groups displayed in the left-hand pane, check those groups that 
+ are granted access to this control for the selected module. &#160;Any 
+ groups that are not selected (left blank) will be restricted from having 
+ access to that item. &#160;(Alternatively, 
+ you can check <span style="font-weight: bold;color: #00509f;">Select 
+ All</span> to assign all of the groups to the selected control or uncheck 
+ <span style="font-weight: bold;color: #00509f;">Select All</span> to 
+ unassign all of the groups to the selected control.)</li>
+            <li class="NumberedIndent" value="8">Repeat steps 
+ 5 through 7 for each item in the control list.</li>
+            <li class="NumberedIndent" value="9">Select <span style="font-weight: bold;color: #00509f;">Save</span> to save the selections.</li>
+            <li class="NumberedIndent" value="10">Repeat steps 
+ 4 through 9 to grant access privileges to each item in the module drop-down 
+ list. [(For example, you can now set up access to the specific module 
+ items (TGA, DSC, AR, etc.), then WinUA (Universal Analysis) or RADATA 
+ (Rheology Data Analysis).</li>
+        </ol>
+        <h4>Assigning Module Privileges for DMA, TMA, SDT</h4>
+        <p>For information needed to add the DMA, TMA, or SDT modules to an existing 
+ Integrity database, see <a href="Adding_Module_Privileges.htm">Adding 
+ Module Privileges</a>.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

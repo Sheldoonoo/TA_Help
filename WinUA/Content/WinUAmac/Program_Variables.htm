@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Macro Menus" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Predefined Program Variables</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../WinUAmac.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Predefined Program Variables</h1>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Direct access to a number of program variables is available through the macro system. Program variables are predefined when a macro runs and do not require initialization (see definitions below). A program variable can be used in exactly the same way as a user defined variable except that the value of the variable is read or written directly from the current open data file in the program.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The following variables are predefined:</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="footnote_text"><span style="font-family: 'Arial';">x_cursor[i] &#160;= The last value of the ith x-axis cursor</span>
+        </p>
+        <p>y_cursor[i] &#160;= The last value of the ith y-axis cursor</p>
+        <p>i_cursor[i] &#160;= The data point index of the ith cursor (read only)</p>
+        <p>x_data[i] &#160;= The x-axis value of the ith data point</p>
+        <p>y_data[i] &#160;= The y-axis value of the ith data point</p>
+        <p>i_start &#160;= The point index of the first point in the analysis range</p>
+        <p>i_stop &#160;= The point index of the last point in the analysis range</p>
+        <p>i_max &#160;= The point index of the last data point.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>For program variables that have an index, the index of the first value is always 1. The maximum index for cursor variables is 6 and the maximum index for data variables is the value of i_max. Variable indexes may be constants or simple variables.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>To set the position of a cursor in a subsequent analysis step, assign new values to one or more of the x_cursor and/or y_cursor variables prior to executing the analysis step. Be sure to remove any conflicting Macro Cursor steps that come after the analysis step so they do not overwrite the previously assigned cursor position.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Body_Text">NOTE: Use caution when assigning values to program variables. Assigning inappropriate values can cause program errors or invalid results.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Body_Text">NOTE: Program variables will only appear in the <a href=""><span style="color: black;">Macro Watch List Window</span></a> if they are directly referenced by a macro. If you want to monitor the value of a program variable in the watch window, without actually reading or writing the variable, then you can do so by inserting a <a href=""><span style="color: black;">Test Variable</span></a> macro step anywhere in your macro that simply jumps, under any condition, to the next step in the macro. The inserted test variable step will not affect the execution of the macro but will establish a reference to the program variable so that it can be added to the macro watch window.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>See also:</p>
+        <p><a href="What_is_a_Macro_Variable_.htm">What is a Macro Variable?</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

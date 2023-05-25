@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Math Functionality" MadCap:browseSequencePath="Math Functionality" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="RA_Navigator2.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Defining Math Operators</title>
+        <link rel="StyleSheet" href="TAHtmlHelp.css" />
+        <style>
+        </style>
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor280"></a><span lang="EN-US"><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span></span><a name="top"></a>Defining Math Operators</h1>
+        <p>The <span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Mathematical_operators.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">mathematical operators</a></span><a name="kanchor281"></a> 
+ provided by Navigator 2 (+ - * / 1n exp pow) enable almost any operations 
+ in discrete mathematics to be performed. Operations such as taking a root 
+ or performing a trigonometric (cos, sin, tan, etc.) or hyperbolic (sinh, 
+ cosh, etc.) function are very simple, and the relevant equations are in 
+ mathematics textbooks. <span style="font-weight: bold;color: #00509f;">See 
+ also</span>: <a href="Variables.htm">Variables</a></p>
+        <h3>Example 1</h3>
+        <p>Taking a root, for example, can be done in at least two ways in Navigator 
+ 2. To obtain the cube root of 4<br />
+&#160;(<span style="font-style: italic;">i.e</span>., z = 3<span style="font-family: Symbol;">Ö</span>4), you can either:</p>
+        <ul>
+            <li style="margin-left: -20px;" class="Bullet" value="1">Enter the following:</li>
+        </ul>
+        <p>v90 = log (4)<br />
+v90 = v90/3<br />
+v90 = exp (v90)</p>
+        <p>Now v90 is 1.587, as it should be.</p>
+        <p>or</p>
+        <ul>
+            <li style="margin-left: -20px;" class="Bullet" value="1">Enter the following:</li>
+        </ul>
+        <p>v91 = 1/3<br />
+v91 = pow 4, v91)</p>
+        <p>Now v91 is 1.587.</p>
+        <p style="font-size: 8pt;"><span><a href="#top" style="font-size: 8pt;">Back to top</a></span>
+        </p>
+        <h3>Example 2</h3>
+        <p><a name="kanchor282"></a><a name="kanchor283"></a>To take the cosine of x, for example cos 32, you would enter as follows:</p>
+        <p>v90 = v32*0.017453<br />
+v92 = pow (v90,2)<br />
+v92 = v92/2<br />
+v94 = pow (v90,4)<br />
+v94 = v94/24<br />
+v96 = pow (v90,6)<br />
+v96 = v96/720<br />
+v98 = pow(v90,8)<br />
+v98 = v98/40320<br />
+v99 = 1 - v92 + v94 + v96 + v98</p>
+        <p>Now v99 is 0.8480 as it should be.</p>
+        <p>To reduce the number of variables used, you could consider using a loop.</p>
+        <p>You do not, of course, do this every time, but instead write it once 
+ and save it as a call script.</p>
+        <p>Probably the most relevant purpose of this feature of Navigator is that 
+ it allows any kind of statistical analysis to be performed. For example, 
+ you can simply obtain the mean and standard deviation for a number of 
+ measurements, or you can exclude the "silly" values by using 
+ the conditionals.</p>
+        <p>You can also consult mathematics textbooks for simple algorithms for 
+ curve fitting (by least squares, for example) and then incorporate the 
+ model of your choice into Navigator 2.</p>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="List of Navigator Commands|List_of_Navigator_Commands.htm||Mathematical Commands Overview|Mathematical_Commands_Overview.htm||Mathematical Operators|Mathematical_operators.htm||Variables|Variables.htm"><img src="SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="margin-bottom: 0;">&#160; </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

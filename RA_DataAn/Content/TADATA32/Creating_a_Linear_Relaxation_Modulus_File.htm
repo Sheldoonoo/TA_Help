@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Opening, Creating and Saving Information" MadCap:browseSequencePath="Opening, Creating and Saving Information" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="RA_DataAnal.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Creating a Linear Relaxation Modulus File</title>
+        <meta name="copyright" value="All information copyright © 1998-2003 TA Instruments" />
+        <link rel="StyleSheet" href="..\TAHtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../RAGlossary/ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor102"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span>Creating 
+ a Linear Relaxation Modulus File</h1>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text"><a name="kanchor103"></a><a name="kanchor104"></a>Used to create the linear relaxation modulus, G(t), 
+ from molecular weight distribution (mwd) data. You can either generate 
+ this from the Rheology Advantage software, or input it from an external 
+ source. </p>
+        <p class="Tip-Note-Text">Further information can be obtained from W.Thimm, 
+ C.Friedrich, M.Marth and J. Honerkamp, Journal of Rheology 43 (1999) 1663 
+ – 1672.</p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text"><span style="font-weight: bold;text-decoration: underline;">Alpha:</span> 
+ it is assumed that the <span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">0</span> 
+ = k M<span style="font-family: Symbol;"><span style="vertical-align: super;">a</span></span>, 
+ where M is the weight average molecular mass, and k and <span style="font-family: Symbol;">a</span> are constants obtained from experiment. The coefficient, 
+ k, is usually very small, the index <span style="font-family: Symbol;">a</span> (alpha) 
+ is about 3.4. <span style="font-family: Symbol;">a</span><a name="kanchor105"></a> defined in the polymer library 
+ as x.</p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text"><span style="font-weight: bold;text-decoration: underline;">M</span><span style="font-weight: bold;text-decoration: underline;"><span style="vertical-align: sub;">e</span></span><span style="text-decoration: underline;">:</span><a name="kanchor106"></a> 
+ this is the entanglement molecular weight, and is given for many polymers 
+ in the Polymer library</p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text"><span style="font-weight: bold;text-decoration: underline;">Plateau 
+ modulus, G</span><span style="font-weight: bold;text-decoration: underline;"><span style="vertical-align: sub;">N</span></span><span style="font-weight: bold;">:</span> 
+ this is the modulus in the rubbery regime, i.e. between the glassy regime 
+ and the melt. It is used because the glassy modulus is independent of 
+ the polymer molecular weight. G<span style="vertical-align: sub;">N</span> 
+ can be obtained approximately from M<span style="vertical-align: sub;">e</span> 
+ = <span style="font-family: Symbol;">r</span>RT/G<span style="vertical-align: sub;">N</span>, 
+ where <span style="font-family: Symbol;">r</span> is the sample density, R is the gas constant 
+ = 8.314 J mol<span style="vertical-align: super;">-1</span> K<span style="vertical-align: super;">-1</span> 
+ in the S.I. system</p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text"><span style="font-weight: bold;text-decoration: underline;">Coefficient:</span> 
+ the coefficient used in the G(t) from mwd calculation is defined by <span style="font-family: Symbol;">l</span>&#160;=&#160;K&#160;M<span style="font-family: Symbol;"><span style="vertical-align: super;">a</span></span>, 
+ where <span style="font-family: Symbol;">l</span> lambda is the dominant relaxation time. 
+ For practical purposes <span style="font-family: Symbol;">l</span> = <span style="font-family: Symbol;">h</span>J<span style="vertical-align: sub;">ss</span>, where J<span style="vertical-align: sub;">ss</span> 
+ is the steady state compliance. K is also given approximately by K = 1.7 
+ k/G<span style="vertical-align: sub;">N</span>, where k is defined given 
+ above.</p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text"><span style="font-weight: bold;text-decoration: underline;">Beta</span><span style="font-weight: bold;">:</span><a name="kanchor107"></a> Theory suggests this should be either 
+ 1 or 2; usually 2 is preferred.</p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text"><span style="font-weight: bold;text-decoration: underline;">Kernel:</span> 
+ this is defined by the theory used to obtain G(t) from mwd.</p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text"><span style="font-weight: bold;text-decoration: underline;">Start 
+ time lapse</span> is the start time for G(t) (non-zero, otherwise cannot 
+ be plotted on log scales). 0.01 s would be a reasonable default in most 
+ cases. </p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text"><span style="font-weight: bold;text-decoration: underline;">End 
+ time lapse</span> is the finish time for G(t). This could be anything 
+ form 10 s upwards. 1000 s might be typical.</p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text"><span style="font-weight: bold;text-decoration: underline;"><a name="kanchor108"></a>Number 
+ of points:</span> number of data points on the G(t) curve to be calculated, 
+ e.g. 10 per decade.</p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text"><span style="font-weight: bold;text-decoration: underline;">Integration 
+ steps:</span> number of summations performed in the calculation.</p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text"><span style="font-weight: bold;text-decoration: underline;">Mode:</span> 
+ i.e. log or linear</p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text"><span style="font-weight: bold;text-decoration: underline;">Cutoff 
+ modulus</span><span style="text-decoration: underline;">:</span> 
+ the modulus value below which the calculation should not be allowed to 
+ fall. The default is 10<span style="vertical-align: super;">-6</span></p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text"><span style="font-weight: bold;text-decoration: underline;">Convergence:</span> 
+ this defines the point at which the iteration is to cease, since no further 
+ progress is being made.</p>
+        <p class="Tip-Note-Text">Back to top</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

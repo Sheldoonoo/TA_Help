@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Analyzing Data Files" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Obtaining a Peak Endset</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Obtaining a Peak Endset</h1>
+        <h2>(Backside Onset)</h2>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>There are two approaches to obtaining a peak endset (onset analysis on the backside of a peak).</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: teal;font-weight: bold;"><a name="kanchor38"></a>Combined Peak Integration and Onset Point</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>This approach involves combining a normal Peak Integration analysis with an Onset Point analysis. The normal peak integration analysis is performed first, followed by an onset point analysis, using the peak maximum point and the peak end point as cursor positions for the onset analysis. This will produce both an onset point and an endset point on the graph.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>A frequent problem with combining a peak integration and onset point analysis is that the baselines for the two analyses may not overlay. This can be corrected visually as follows:</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ol>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Normal_Indent" style="margin-left: 24.00pt;">Maximize the graph and then zoom in on the onset analysis so that all three points of the onset analysis are visible on the plot.</p>
+            </li>
+            <li style="font-size: 10pt;" value="2">
+                <p class="Normal_Indent" style="margin-left: 24.00pt;">Select the <span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu_annotate_popup_adjust_result.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Adjust Result</a></span> function (right-click on the onset point label on the plot and select <span style="color: teal;font-weight: bold;">Adjust Result</span> from the menu). Three cursor points will appear defining the end point of the onset baseline, the end point of the onset line, and the intersection point of the two lines.</p>
+            </li>
+            <li style="font-size: 10pt;" value="3">
+                <p class="Normal_Indent" style="margin-left: 24.00pt;">Using the left mouse button, click on and drag the onset intersection point to a point on the peak integration baseline such that the onset and peak integration baselines overlay and the onset line has the same slope as before the adjustment.</p>
+            </li>
+            <li style="font-size: 10pt;" value="4">
+                <p class="Normal_Indent" style="margin-left: 24.00pt;">Accept the cursor position and the new onset line will be drawn.</p>
+            </li>
+        </ol>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: teal;font-weight: bold;"><a name="kanchor39"></a>Manual Onset Tangent Selection</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>This approach involves moving the normal peak integration onset to the backside of a peak as follows:</p>
+        <ol>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Normal_Indent" style="margin-left: 24.00pt;">Check the <span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Checkbox_manual_tangent_selection.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Manual Onset Tangent Selection</a></span> checkbox on the <a href="Win_Analysis_Options_onset_peak_integration.htm">Onset/Peak Integration Page</a> of <span style="color: teal;font-weight: bold;">Analysis Options</span> before performing the peak integration. After the cursor positions have been accepted for the peak integration, two additional cursors will appear for selection of the onset line.</p>
+            </li>
+            <li style="font-size: 10pt;" value="2">
+                <p class="Normal_Indent" style="margin-left: 24.00pt;">Move these cursors to two points on the backside of the curve that straddles the curve inflection point. The endset line will be drawn through these two points intersecting the peak baseline.</p>
+            </li>
+        </ol>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>To identify the curve inflection point more precisely, it may be helpful to plot the derivative of the curve being analyzed. The inflection point on the curve being analyzed will coincide with a peak in the derivative curve. If the derivative curve is not desired in the final plot, it can be removed after the analysis is complete (see <a href="Menu_graph_signals.htm">Signals</a> menu item in the <span style="color: teal;font-weight: bold;">Graph</span> menu). The analyses on the other curves will not be affected.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

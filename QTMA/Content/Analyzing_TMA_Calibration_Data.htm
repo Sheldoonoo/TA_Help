@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:ignoredWords="prc;FACS;sinusoidally;MFC;HiResolution;Inc;HiRes;PDF;Ctrl;uncheck;AutoLid;Tzero;collet" MadCap:fileTags="RoboHelpCheckList.First Draft,RoboHelpCheckList.Links,RoboHelpCheckList.Index keywords,RoboHelpStatus.In Progress" MadCap:tocPath="Calibrating the TMA" MadCap:browseSequencePath="Calibrating the TMA" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="QTMA.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Analyzing TMA Calibration Data</title>
+        <meta name="window-type" content="main" />
+        <link rel="StyleSheet" href="HtmlHelp.css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="ehlpdhtm.js">
+        </script>
+        <h1><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Analyzing TMA Calibration Data</h1>
+        <p>&#160;</p>
+        <p>Before analyzing the TMA cell constant or temperature calibration data 
+ you will need to conduct the necessary calibration experiments. Once the 
+ calibration experiments are complete, as indicated by a check mark next 
+ to the run number(s) on the sequence list, The steps needed to perform 
+ a calibration analysis are:</p>
+        <ul>
+            <li class="Bullet" value="1">Gather calibration data: 
+ </li>
+            <ul>
+                <li class="Bullet" value="1">For information on gathering 
+ temperature calibration data, see <a href="Calibrating_the_TMA_Temperature.htm">Calibrating 
+ the TMA Temperature</a>. </li>
+                <li class="Bullet" value="2">For information on gathering 
+ cell constant data, see <a href="Calibrating_TMA_Cell_Constant.htm">Calibrating 
+ TMA Cell Constant</a>.</li>
+            </ul>
+            <li class="Bullet" value="2"><a href="#Selecting%20a%20TMA%20Calibration%20File">Select 
+ a TMA Calibration File</a>
+            </li>
+            <li class="Bullet" value="3"><a href="#Choosing%20the%20TMA%20Calibration%20Type%20and%20Standard">Choose 
+ the TMA Calibration Type and Standard</a>
+            </li>
+            <li class="Bullet" value="4"><a href="Setting_Calibration_Limits.htm">Set 
+ Calibration Limits</a>
+            </li>
+            <li class="Bullet" value="5"><a href="#Rescaling%20the%20Plot">Rescale 
+ the Plot</a> (if desired)</li>
+            <li class="Bullet" value="6"><a href="#Performing%20the%20Analysis">Perform 
+ the Analysis</a>
+            </li>
+            <li class="Bullet" value="7">Save the results.</li>
+        </ul>
+        <p style="text-align: center;" align="center"><span><span><span style="text-align: center;"><span><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;float: none;width: 11px;height: 11px;border-style: none;border-style: none;" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;float: none;width: 11px;height: 11px;border-style: none;border-style: none;" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;float: none;width: 11px;height: 11px;border-style: none;border-style: none;" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;float: none;width: 11px;height: 11px;border-style: none;border-style: none;" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;float: none;width: 11px;height: 11px;border-style: none;border-style: none;" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;float: none;width: 11px;height: 11px;border-style: none;border-style: none;" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;float: none;width: 11px;height: 11px;border-style: none;border-style: none;" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;float: none;width: 11px;height: 11px;border-style: none;border-style: none;" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;float: none;width: 11px;height: 11px;border-style: none;border-style: none;" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;float: none;width: 11px;height: 11px;border-style: none;border-style: none;" width="11" height="11" border="0" /></span></span></span></span>
+        </p>
+        <h3><a name="Selecting a TMA Calibration File"></a>Selecting a TMA Calibration 
+ File</h3>
+        <p>After you have gathered your calibration files follow the instructions 
+ below to select the appropriate calibration file for analysis:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Select <span style="font-weight: bold;color: #00509f;">Calibrate/Analysis</span> or 
+ click the <img src="Button_DSC_Cal_Anal_30x30.jpg" style="border: none;float: none;width: 30;height: 30;" border="0" /> button to access the TMA <span style="font-weight: bold;color: #00509f;">Open 
+ Calibration File &#160;</span>window. 
+ </li>
+            <li class="NumberedIndent" value="2">Locate and 
+ open a TMA Q400 calibration file. </li>
+            <li class="NumberedIndent" value="3">Click the 
+ <span style="font-weight: bold;color: #00509f;">Open</span> button. A 
+ window is displayed to allow you to <a href="#Choosing%20the%20TMA%20Calibration%20Type%20and%20Standard">choose 
+ the calibration type</a> as directed in the next section.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Choosing the TMA Calibration Type and Standard"></a>Choosing 
+ the TMA Calibration Type and Standard</h3>
+        <p>After choosing a calibration file the <span style="font-weight: bold;color: #00509f;">Calibration 
+ Analysis Selection</span> window is displayed to allow you to choose from 
+ two types of calibration for the TMA: &#160;<a href="Calibrating_TMA_Cell_Constant.htm">cell 
+ constant</a> or <a href="Calibrating_the_TMA_Temperature.htm">temperature 
+ calibration</a>. Select the standard used for calibration.</p>
+        <h4><a name="Setting Up Calibration Standards"></a>Setting Up Temperature 
+ Calibration Standards</h4>
+        <p>This function is used &#160;to 
+ define the default settings for each TMA temperature calibration standard 
+ (<span style="font-style: italic;">e.g</span>., theoretical melting point), 
+ add new standards, and reset (reload) the default calibration table. </p>
+        <ol>
+            <li class="NumberedIndent" value="1">Place the 
+ instrument in calibration mode on the Summary Page. </li>
+            <li class="NumberedIndent" value="2">Access the 
+ TMA <span style="font-weight: bold;color: #00509f;">Calibration Analysis 
+ Selection</span> window by selecting <span style="font-weight: bold;color: #00509f;">Calibrate/Analysis</span> 
+ or click the <img src="Button_DSC_Cal_Anal_30x30.jpg" style="border: none;float: none;width: 30;height: 30;" border="0" /> button, then select a calibration file.</li>
+            <li class="NumberedIndent" value="3">Select the 
+ <span style="font-weight: bold;color: #00509f;">Standard Name</span> 
+ from the list to edit or verify its default parameters displayed on this 
+ window. </li>
+            <ul>
+                <li class="Bullet" value="1">To edit a standard in 
+ this list, click the <span style="font-weight: bold;color: #00509f;">Edit</span> 
+ button to display the <span style="font-weight: bold;color: #00509f;">Calibration 
+ Standard</span> window. Enter the literature Melting Point in °C. Consult 
+ your Chemistry handbook for the value. This standard will be edited when 
+ you click the <span style="font-weight: bold;color: #00509f;">OK</span> 
+ button.</li>
+                <li class="Bullet" value="2">To add a new standard 
+ to this list, click the <span style="font-weight: bold;color: #00509f;">Add</span> 
+ button to display the <span style="font-weight: bold;color: #00509f;">Calibration 
+ Standard</span> window. Enter the <span style="font-weight: bold;color: #00509f;">Standard 
+ Name</span> and its literature <span style="font-weight: bold;color: #00509f;">Melting 
+ Point</span> in °C. Consult your Chemistry handbook for the value. This 
+ standard will be saved when you click the <span style="font-weight: bold;color: #00509f;">OK</span> 
+ button.</li>
+            </ul>
+            <li class="NumberedIndent" value="4">Click the 
+ <span style="font-weight: bold;color: #00509f;">OK</span> button when 
+ finished. The calibration file will be plotted. To perform various functions 
+ right click to display the pop-up menu. This allows you to rescale the 
+ plot, choose another file (<span style="font-weight: bold;color: #00509f;">Next 
+ File</span>), change the data limits, etc. <span style="font-weight: bold;color: #00509f;">See 
+ also:</span> &#160;<a href="#Rescaling%20the%20Plot">Rescaling 
+ the Plot</a></li>
+        </ol>
+        <p class="Notes">NOTE: &#160;To 
+ return the standards list back to the default values, click on the <span style="font-weight: bold;color: #00509f;">Defaults</span> button. </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Rescaling the Plot"></a>Rescaling the Plot</h3>
+        <p>There are several different ways to rescale the analysis plot:</p>
+        <ul>
+            <li class="Bullet" value="1"><a href="#Expanding%20Part%20of%20the%20Curve">Expand 
+ part of the curve</a>
+            </li>
+            <li class="Bullet" value="2"><a href="#Using%20the%20Rescale%20Menu%20Options">Use 
+ the rescale options</a>
+            </li>
+        </ul>
+        <h4><a name="Expanding Part of the Curve"></a>Expanding Part of the Curve</h4>
+        <p>To zoom in on a particular portion of the analysis curve for calibration 
+ purposes:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Position 
+ the pointer in the general area that you wish to enlarge and hold down 
+ the mouse button &#160;As 
+ you move the mouse, a dotted line box will be drawn from the original 
+ pointer position.</li>
+            <li class="NumberedIndent" value="2">Move the 
+ mouse to draw a dotted line around the portion of the curve to be enlarged. 
+ </li>
+            <li class="NumberedIndent" value="3">Release the 
+ mouse button. The curve will be rescaled immediately. This process can 
+ be used repeatedly to expand a smaller portion of the curve.</li>
+        </ol>
+        <p>To reverse the expansion process, right click the mouse button to display 
+ the pop-up menu and select <span style="font-weight: bold;color: #00509f;">Previous 
+ Scale</span>. (Shortcut: &#160;Ctrl-B) 
+ You can repeatedly perform this action, until you have stepped backwards 
+ through the expansion increments to the desired point.</p>
+        <p>If you want to return the curve to its original full scale state, right 
+ click the mouse button to display the pop-up menu and select <span style="font-weight: bold;color: #00509f;">Full 
+ Scale</span>.</p>
+        <p class="Notes">NOTE: &#160;You 
+ can not expand the curve when the markers are displayed. Remove the markers 
+ by clicking on <span style="font-weight: bold;color: #00509f;">Cancel</span> 
+ from the pop-up menu.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p class="NumberedIndent">&#160;</p>
+        <h4><a name="Using the Rescale Menu Options"></a>Using the Rescale Menu 
+ Options</h4>
+        <p>You can rescale the calibration analysis plot by choosing any of the 
+ following items from the <span style="font-weight: bold;color: #00509f;">Analyze/Rescale</span> 
+ menu, which is available after the file is plotted:</p>
+        <ul>
+            <li class="Bullet" value="1"><span style="font-weight: bold;color: #00509f;">Previous 
+ Scale:</span> &#160;The 
+ Previous Scale option redraws the plot as it appeared before the most 
+ recent scaling changes. Previous Scale can be used repeatedly until the 
+ original limits are displayed. Shortcut: Ctrl-B</li>
+            <li class="Bullet" value="2"><span style="font-weight: bold;color: #00509f;">Full 
+ Scale:</span> &#160;The 
+ Full Scale option rescales the plot to display the entire curve in the 
+ plot window. If you rescale the graph, then decide to go back to the original 
+ scaling, choose the Full &#160;Scale 
+ option.</li>
+            <li class="Bullet" value="3"><span style="font-weight: bold;color: #00509f;">Data 
+ Limits:</span> &#160;See 
+ <a href="Setting_Calibration_Limits.htm">Setting Calibration Limits</a>.</li>
+            <li class="Bullet" value="4"><span style="font-weight: bold;color: #00509f;">X-Axis:</span> 
+ &#160;Use the 
+ <span style="font-weight: bold;color: #00509f;">X-Axis/Time</span> option 
+ to select the time signal to graph on the x axis. When you select this 
+ option the graph will be replotted immediately. No analysis functions 
+ are available when the axis is time. Use the <span style="font-weight: bold;color: #00509f;">X 
+ Axis/Temperature</span> option to select the temperature signal to graph 
+ on the x axis. When you select this option the graph will be replotted 
+ immediately.</li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Performing the Analysis"></a>Performing the Analysis</h3>
+        <p>To analyze the data in your calibration file, perform the following 
+ steps with the calibration file plotted:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Right click 
+ and select <span style="font-weight: bold;color: #00509f;">Analyze</span> 
+ from the pop-up menu). The current limit points will be indicated with 
+ markers on the graph. </li>
+        </ol>
+        <p class="Notes">&#160;NOTE: 
+ &#160;The active 
+ marker is indicated by a full-length vertical red line. Other markers 
+ are indicated by smaller red cross-hairs.</p>
+        <ol start="2" style="list-style: decimal;list-style-type: decimal;">
+            <li class="NumberedIndent" value="2">Move the 
+ active marker to the desired position on the curve using either the <a href="#Moving%20the%20Markers%20Using%20the%20Mouse">mouse</a> or <a href="#Moving%20the%20Markers%20Using%20the%20Keyboard">keyboard</a> 
+ (see the directions below). </li>
+            <li class="NumberedIndent" value="3">Select (activate) 
+ the next marker by: &#160;(a) 
+ Pressing the TAB key or (b) Positioning the pointer over a marker and 
+ clicking the left mouse button. (Pressing back TAB (Shift-TAB) will activate 
+ the previous marker)</li>
+            <li class="NumberedIndent" value="4">Repeat steps 
+ 2 and 3 until you have selected all the necessary points for analysis.</li>
+        </ol>
+        <p class="Notes">NOTE: &#160;The 
+ limits for TMA Temperature Calibration are chosen by placing the first 
+ marker before the dimension change onset and the second marker after the 
+ onset.</p>
+        <ol start="5" style="list-style: decimal;list-style-type: decimal;">
+            <li class="NumberedIndent" value="5">Select the 
+ <span style="font-weight: bold;color: #00509f;">Limits OK</span> button 
+ (or select <span style="font-weight: bold;color: #00509f;">Limits OK</span> 
+ from the pop-up menu) to accept the &#160;points. 
+ When calculated, the calibration results will be displayed.</li>
+            <li class="NumberedIndent" value="6">Accept the 
+ calibration results by selecting the <span style="font-weight: bold;color: #00509f;">Accept</span> 
+ button (or by selecting <span style="font-weight: bold;color: #00509f;">Analyze/Accept 
+ results</span> from the pop-up menu). You can delete results by selecting 
+ the <span style="font-weight: bold;color: #00509f;">Delete</span> button 
+ (or by selecting <span style="font-weight: bold;color: #00509f;">Analyze/Delete 
+ results</span> from the pop-up menu).</li>
+        </ol>
+        <p>You can verify this result by selecting <span style="color: #00509f;"><a href="Viewing_Calibration_Parameters.htm" style="font-weight: normal;">Cell/Temperature Table</a></span> from 
+ the <span style="font-weight: bold;color: #00509f;">Calibrate</span> 
+ menu.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h4><a name="Moving the Markers Using the Mouse"></a>Moving the Markers 
+ Using the Mouse:</h4>
+        <ol>
+            <li class="NumberedIndent" value="1">Position 
+ the pointer at the desired location.</li>
+            <li class="NumberedIndent" value="2">Double-click 
+ mouse button 1 to move the active marker to this point. This action causes 
+ the next marker to become active.</li>
+        </ol>
+        <p style="text-align: center;" align="center">or</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Position 
+ the pointer over the active marker.</li>
+            <li class="NumberedIndent" value="2">Press and 
+ hold down the left mouse button while you drag the marker to the desired 
+ location. </li>
+            <li class="NumberedIndent" value="3">Release the 
+ mouse button. At this point you may use the arrow keys to position the 
+ marker more closely (see the directions below).</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h4><a name="Moving the Markers Using the Keyboard"></a>Moving the Markers 
+ Using the Keyboard:</h4>
+        <p>Press the arrow keys to move the active marker to the desired position.</p>
+        <p>The marker will move in the following increments:</p>
+        <ul>
+            <li class="Bullet" value="1">Arrow key &#160;= 
+ &#160;smallest 
+ step</li>
+            <li class="Bullet" value="2">Alt/arrow key &#160;= 
+ &#160;second 
+ smallest step</li>
+            <li class="Bullet" value="3">Shift/arrow key &#160;= 
+ &#160;second 
+ largest step</li>
+            <li class="Bullet" value="4">Control/arrow key &#160;= 
+ &#160;largest 
+ step</li>
+        </ul>
+        <p style="color: #00509f;font-weight: normal;font-size: 8pt;"><span style="color: #000000;"><a href="#top" style="font-size: 8pt;">Back to top</a></span>
+        </p>
+        <p style="font-weight: bold;color: #00509f;"><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Calibrating the TMA|Calibrating_the_TMA.htm"><img src="SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

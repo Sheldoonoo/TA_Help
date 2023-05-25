@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Sigmoidal Tangent</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Sigmoidal Tangent</h1>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p style="border-bottom: 1.00pt solid teal;"><span style="color: teal;font-weight: bold;">Description of Sigmoidal Baselines</span>
+        </p>
+        <p>A sigmoidal baseline is an s-shaped line that changes in level and/or slope before or after a peak. It is used to compensate for the change in baseline that occurs during a transition; the baseline is adjusted for the fraction reacted (alpha) versus time.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>A sigmoidal baseline initially is calculated as a straight line from peak start to peak end. It is then recalculated for each data point between the peak limits as the weighted average between the projected <a href="Menu_analyze_integrate_peak_sig_horizontal.htm">horizontal</a> or tangent baselines at peak start and end. The weighting factors for a given point are: (1) one minus alpha times the initial baseline and (2) alpha times the final baseline. The area is then recalculated with the new baseline. If the new area differs from the previous area by more than one percent, the area is recalculated and the sigmoidal curve shifted repeatedly until two consecutive calculations of the area differ by no more than one percent. If the baseline fails to converge within ten iterations, the calculation is aborted. The convergence of the baseline can be observed by checking the "Draw sigmoidal baseline iterations" box on the <a href="Win_Analysis_Options_other_page.htm">Analysis Options  Other Page</a>.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p style="border-bottom: 1.00pt solid teal;"><span style="color: teal;font-weight: bold;">Sigmoidal Tangent Baselines</span>
+        </p>
+        <p>To calculate a sigmoidal tangent baseline, two tangent lines are fit within the selected limits on each side of the transition. A sigmoidal curve then joins the tangent lines.</p>
+        <p>
+            <img src="../Resources/Images/Tangnt3w.png" />
+        </p>
+        <p>Follow these steps to perform this analysis:</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">1.&#160;Select Sig Tangent from the Analyze/Integrate Peak menu. Markers will be displayed on the graph.</p>
+        <p class="Normal_Indent">2.&#160;Right click to display the <a href="Menu_analyze_popup.htm">Analyze pop-up menu</a>, then select Point 1 to activate the first marker.</p>
+        <p class="Normal_Indent">3.&#160;Position the first marker so that it intersects the curve where you want the first tangent line to begin.</p>
+        <p class="Normal_Indent">4.&#160;Right click to display the Analyze pop-up menu again, then select Point 2.</p>
+        <p class="Normal_Indent">3.&#160;Position the second marker where you want the first tangent line to end.</p>
+        <p class="Normal_Indent">5.&#160;Right click to display the Analyze pop-up menu again, then select Point 3.</p>
+        <p class="Normal_Indent">6.&#160;Position the third marker so that it intersects the curve where you want the second tangent line to begin.</p>
+        <p class="Normal_Indent">7.&#160;Right click to display the Analyze pop-up menu again, then select Point 4.</p>
+        <p class="Normal_Indent">8.&#160;Position the fourth marker where you want the second tangent line to end.</p>
+        <p class="Normal_Indent">9.&#160;Right click to display the Analyze pop-up menu, then select Accept Limits (or press Enter). The peak integration analysis results are displayed.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: blue;">NOTE: You can change the parameters of this analysis by setting the options found on the</span><a href="Win_Analysis_Options_onset_peak_integration.htm">Analysis Options  Onset/Peak Integration Page</a><span style="color: blue;">.</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>(If you use the <a href="Win_Manual_Limits.htm">Manual Limits Window</a> to enter the limit points, be sure to <span style="font-weight: bold;">specifically enter</span> or <span style="font-weight: bold;">tab through</span> all four entries for the limit points to ensure that the program picks up the exact limit values.)</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>See also:</p>
+        <p><a href="Tips_on_Using_Markers.htm">Tips on Using Markers</a>
+        </p>
+        <p><a href="Win_Analysis_Options_onset_peak_integration.htm">Analysis Options  Onset/Peak Integration Page</a>
+        </p>
+        <p><a href="Win_Analysis_Options_special_area.htm">Analysis Options  Special Area Page</a>
+        </p>
+        <p><a href="Menu_analyze_integrate_peak_linear.htm">Linear</a>
+        </p>
+        <p><a href="Menu_analyze_integrate_peak_sig_horizontal.htm">Sigmoidal Horizontal</a>
+        </p>
+        <p><a href="Menu_analyze_integrate_peak_extrapolated.htm">Extrapolated</a>
+        </p>
+        <p><a href="Peak_Area_Calculation.htm">Peak Area Calculation</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

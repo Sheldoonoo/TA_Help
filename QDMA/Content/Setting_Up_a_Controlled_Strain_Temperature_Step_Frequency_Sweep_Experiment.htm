@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:id="Setting Up a Temperature Step/Frequency Sweep Experiment" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpCheckList.First Draft,RoboHelpCheckList.Links,RoboHelpCheckList.Index keywords,RoboHelpStatus.In Progress" MadCap:tocPath="Using the Procedure Templates" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Setting Up a Controlled Strain Temperature Step/Frequency Sweep Experiment</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" type="text/css" />
+        <script src="SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor409"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="GIF/ques_blue.jpg" style="border: none;" alt="" width="35" height="37" align="right" border="0" /></a></span><a name="top" id="top"></a>Setting Up a Controlled Strain Temperature Step/Frequency Sweep Experiment</h1>
+        <p>&#160;</p>
+        <p>This experiment increases the temperature in steps and performs a frequency sweep at each step. This is the procedure used for frequency-based TTS experiments.</p>
+        <p>If you want to set up a DMA Temperature Step/Frequency Sweep procedure, you can choose one of two techniques—the <a href="#Using%20the%20DMA%20Wizard" class="selected">DMA Wizard</a> or the <a href="#Using%20the%20Experimental%20View%20Procedure%20Page" class="selected">Experimental View - Procedure Page</a>. See the instructions below for each technique.</p>
+        <p>When you perform a Multifrequency mode, DMA Temperature Step/Frequency Sweep experiment, the following parameters need to be chosen:</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet">Select between <span style="font-weight: bold;color: #00509f;">Amplitude</span> and <span style="font-weight: bold;color: #00509f;">Strain</span>, see the guidelines below:</p>
+            </li>
+            <li style="list-style: none;display: inline;">
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Amplitude</span> is defined as the maximum amount of oscillatory motion in micrometers (one half peak-to-peak) in a DMA experiment.</p>
+                    </li>
+                    <li class="p-Bullet" value="2">
+                        <p class="Bullet">Enter the desired oscillation amplitude for the sample. The DMA adjusts the oscillatory force applied to the sample to maintain this amplitude throughout the experiment.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p class="Notes">NOTE: &#160;In the multifrequency mode all experiments are performed at the same amplitude.</p>
+        <ul>
+            <li style="list-style: none;display: inline;">
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">The range of acceptable oscillation amplitudes is ±0.5 to 10,000 micrometers (µm). &#160;The actual usable range depends on geometry (clamp type), sample stiffness, and frequency. &#160;The DMA can generate from 0.0001 to 18 N of force and the force required to sustain the frequency and amplitude requested must be within that range. &#160;To determine approximate best amplitude for a specific sample, set an initial amplitude of 10-20 µm and an initial frequency (single) of 1 Hz. &#160;Monitor the drive force at the temperature of interest to ensure it falls within the range. &#160;If not, adjust the amplitude or change clamp. &#160;For most samples 10 to 50 µm amplitudes should yield good results. &#160;Amplitudes less than 5 mm are not recommended. &#160;However, for extremely stiff materials where the force limit is reached during oscillation even after trying different clamp arrangements, amplitudes as low as 1 µm should still provide useful results.</p>
+                    </li>
+                    <li class="p-Bullet" value="2">
+                        <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Strain:</span> &#160;&#160;Oscillation strain is the maximum displacement normalized by an initial or reference condition. Based on the kinematics of deformation (tension, bending, or shear) the strain has mathematical expressions. See <a href="Calculations_Based_on_Clamp_Type.htm">Calculations Based on Clamp Type</a> for these expressions depending on the clamp being used.</p>
+                    </li>
+                    <li class="p-Bullet" value="3">
+                        <p class="Bullet">A strain that is within the linear viscoelastic range (LVR) of the material is preferable. A good starting value is 0.01%. A multistrain experiment may be performed to assess the LVR accurately.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p class="Notes">NOTE: &#160;As a force-controlling instrument, the DMA adjusts the oscillatory force applied to the sample to maintain the specified amplitude or strain.</p>
+        <p class="Notes">NOTE: &#160;In a multifrequency mode each experiment is performed at a constant amplitude/strain.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Preload Force:</span> This is the force applied to the sample prior to initiating the experiment. &#160;</p>
+            </li>
+            <li style="list-style: none;display: inline;">
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">Preload force is not available when you select a nontensioning clamp (<span style="font-style: italic;">i.e</span>., single/dual cantilever, shear sandwich). &#160;</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">Preload force is required with the tensioning clamps (<span style="font-style: italic;">i.e</span>., 3-point bending, compression, and tension film/fiber) when running multifrequency and multistrain experiments in order to sustain oscillation (ensure that force is applied to the sample throughout the complete oscillation). &#160;Typical preload forces for those experiments are 0.01 to 0.5 N, depending on the stiffness of the sample.</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Force Track:</span> &#160;Force track automatically adjusts the total force (preload and dynamic) applied to the sample during multifrequency and multistrain experiments. &#160;</p>
+            </li>
+            <li style="list-style: none;display: inline;">
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">Force track is only used when one of the tensioning clamps (<span style="font-style: italic;">i.e</span>., 3-point bend, compression, tension film and tension fiber) is selected. It is not needed for nontensioning clamps (<span style="font-style: italic;">i.e</span>., single/dual cantilever, shear sandwich).</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">Force track essentially determines the dynamic force required to oscillate at the desired amplitude and frequency; it applies an additional static force that is a constant multiple of that dynamic force. This is necessary to avoid sample buckling in tension clamps and loss of contact with the sample for compression and 3-point bending clamps.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">Recommended force track values are 120% for thin films and low denier fibers (tension film and tension fiber clamps), 150% for thermoplastics (3-point bending clamps), and 125% for general applications.</p>
+                    </li>
+                    <li class="p-Bullet" value="2">
+                        <p class="Bullet" style="color: #000000;">As the temperature increases, the modulus of the material drops (provided that there is no cross-linking reaction). Since the static force is adjusted in proportion to the dynamic force, the sample does not creep or undergo permanent deformation during the experiment.</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Start &amp; Final Temperature:</span> &#160;The temperature range of the DMA is -145 to 600°C. &#160;This entire range is available if a Gas Cooling Accessory (GCA) is used. &#160;Isothermal experiments can be run at any temperature within this range. &#160;The initial and final temperature, as well as the temperature increment, are dependent on the transition(s) being evaluated. &#160;Obviously, the initial and final temperatures should bracket the entire range of interest. &#160;</p>
+            </li>
+            <li class="p-Bullet" value="4">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Temperature Increment:</span> &#160;The temperature increment should be small enough to provide good resolution of events. &#160;Typically, 3 to 10°C increment is used for TTS. If a two-decade wide frequency is selected, then the increment can be as high as 10°C.</p>
+            </li>
+            <li class="p-Bullet" value="5">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Isothermal Soak Time:</span> &#160;Because of the mass of the DMA furnace and clamps, as well as the large size for most DMA samples, an "Isothermal soak time" (<span style="font-style: italic;">i.e.</span>, time to equilibrate at temperature) is recommended particularly when starting experiments at subambient temperatures. &#160;Larger samples require longer soak times. For films, 3 to 5 minutes is usually sufficient.</p>
+            </li>
+            <li class="p-Bullet" value="6">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Frequency Table:</span> &#160;All Multifrequency mode tests require that you select one or more frequencies. The frequency range for the DMA is 0.01 to 200Hz. "Logarithmically spaced" frequencies (<span style="font-style: italic;">e.g</span>., 10, 5, 2, 1) are preferable rather than "linearly spaced" frequencies (<span style="font-style: italic;">e.g.</span>, 9, 7, 5, 3, 1). For more information on selecting frequencies, click here: &#160;Frequency Table.</p>
+            </li>
+            <li class="p-Bullet" value="7">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Additional Conditions:</span> &#160;There are additional experimental conditions that can be changed to optimize specific situations. &#160;These are accessed using <a href="Advanced_Parameters_Window.htm">Advanced Parameters</a> and <a href="Post_Test_Window.htm">Post-Test Conditions</a>. &#160;For most experiments, the system default values shown are recommended.</p>
+            </li>
+            <li class="p-Bullet" value="8">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">See also:</span> &#160;<a href="Guidelines_for_Running_Subambient_Experiments.htm">Guidelines for Running Subambient Experiments</a> and <a href="Displaying_the_DMA_Waveform.htm">Displaying the DMA Waveform</a>.</p>
+            </li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p class="Bullet" style="text-align: center;"><span style="text-align: center;"><span><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /></span></span>
+        </p>
+        <h3><a name="Using the DMA Wizard"></a>Using the DMA Wizard <img src="GIF/BUTTON_WIZARD_32x32.gif" style="border: none;width: 32;height: 32;" alt="" border="0" />: &#160;</h3>
+        <p>Enter the desired parameters, then select <span style="font-weight: bold;color: #00509f;">Next</span> to proceed.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h3><a name="Using the Experimental View Procedure Page"></a>Using the Experimental View <img src="GIF/Button_Experiment_View_32x32.gif" style="border: none;width: 32;height: 32;" alt="" border="0" /> Procedure Page:</h3>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent">Display the <span style="font-weight: bold;color: #00509f;">Procedure Page</span>. Select the desired experiment from the list of available preprogrammed templates.</p>
+            </li>
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent">Enter the desired parameters. When you have finished setting up this procedure, you can enter more information by selecting the <a href="Experimental_View_PaneNotes_Page.htm">Notes Page</a> and <a href="Experimental_View_PaneSummary.htm">Summary Page</a> for this run.</p>
+            </li>
+            <li class="p-NumberedIndent" value="3">
+                <p class="NumberedIndent">Click the <span style="font-weight: bold;color: #00509f;">Apply</span> button when finished to save these changes or the <span style="font-weight: bold;color: #00509f;">Append</span> button to save the changes to this run and add another run to the end of the sequence.</p>
+            </li>
+        </ol>
+        <p class="Notes">NOTE: &#160;You can use any test template as the basis for a custom test by selecting the desired test template from the list of tests, then click the <span style="font-weight: bold;color: #00509f;">Apply</span> button and change the test to "Custom." Then you can click on the <span style="font-weight: bold;color: #00509f;">Procedure Page</span> and then the <span style="font-weight: bold;color: #00509f;">Editor</span> button to make the changes desired.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Available DMA Clamps|Available_DMA_Clamps.htm||Available DMA Test Templates|Available_DMA_Tests.htm||Basic Steps Needed to Run a DMA Experiment|Basic_Steps_Needed_to_Run_a_DMA_Experiment_.htm||Creating a Custom Method in the Multifrequency Controlled Strain Mode|Creating_a_Custom_Method_in_the_Multifrequency_Controlled_Strain_Mode.htm||Selecting a DMA Operating Mode|Selecting_a_DMA_Operating_Mode.htm"><img src="SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Link Icon" />Related Topics</a>
+        </p>
+        <p>&#160;</p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

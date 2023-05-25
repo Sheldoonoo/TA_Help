@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Analyzing Data Files" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Difference Between Signal Max and Peak Max</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor36"></a>Difference Between Signal Max and Peak Max</h1>
+        <p>Signal Max and Peak Max (Peak Integration Height) appear to report the same analysis result, but they are actually different analyses. The result provided by each is highly dependant on the baseline selected.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Analyzing for <a href="Menu_analyze_signal_max.htm">Signal Max</a> reports the largest excursion of the data from a horizontal baseline placed halfway between the two cursor positions specified in the analysis. Analyzing for Peak Max reports the largest excursion of the data from a sloping baseline drawn directly between the two cursor positions as they intersect the data. When the baseline is horizontal, both analyses give the same result. But, when the Peak Max baseline is sloping it can give a different result than Signal Max. Typically, the more the Peak Max baseline slopes, the greater the difference in results.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Analyzing for <a href="Menu_analyze_peak_max.htm">Peak Max</a> gives the correct result for baseline resolved peaks. Signal Max does not (unless the baseline happens to be horizontal). Signal Max analysis is really intended for determining the largest value of a signal over a range, not the signal's maximum distance from a baseline. Signal Max is typically used in DMA analysis. Peak Max is typically used in DSC and DTA analysis.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>When the Signal Max analysis is applied to a step transition, Universal Analysis can become confused about which way to search for the maximum value because the program is looking both above and below a horizontal baseline drawn at the mid-point between the cursors. When the cursors are placed before and after a step transition, the signal maximum can be found at a point that is actually the numeric signal minimum, because this point is further away, in absolute value terms, from the horizontal baseline than the data point with the largest numeric value. In this case the Signal Max function is providing a "Signal Min" result (<span style="font-style: italic;">e.g</span>., for negative going data). This result typically only occurs with step transitions and linear signal ramps.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: teal;font-weight: bold;">See also:</span>
+        </p>
+        <p><a href="Menu_analyze_signal_max.htm">Signal Max</a>
+        </p>
+        <p><a href="Menu_analyze_peak_max.htm">Peak Max</a>
+        </p>
+        <p><a href="Menu_analyze_integrate_peak_linear.htm">Integrate Peak/Linear</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

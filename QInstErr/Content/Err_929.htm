@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="General Instrument Messages" MadCap:browseSequencePath="General Instrument Messages" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="QInstErr.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Message 929</title>
+        <link rel="StyleSheet" href="HtmlHelpSWErr.css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor183"></a>Message 929</h1>
+        <h4>Audit log checksum failure. &#160;Corrupt 
+ message discarded.</h4>
+        <p style="font-weight: bold;">Problem:</p>
+        <p>The checksum for a message computed when the message was put into the 
+ Integrity audit log buffer does not match when pulled from the buffer 
+ to send to the controller. &#160;This 
+ was most likely caused by shutting down the instrument without using the 
+ proper shutdown procedure. A power outage may also cause this error.</p>
+        <p style="font-weight: bold;">Solution:</p>
+        <p>Check the audit log from the time the instrument was last powered down 
+ or reset. Confirm that Message #911 (Shutdown) is in the database from 
+ that time. If it is not, then the instrument was not properly shutdown, 
+ which resulted in Message 929.</p>
+        <p>Make sure that you use the <span style="font-weight: bold;color: #00509f;">SHUTDOWN</span> 
+ key on the touch screen or <span style="font-weight: bold;color: #00509f;">Control/Shutdown 
+ Instrument</span> from the menu to shut down the instrument properly.</p>
+        <p>If you feel that improper shutdown was not the cause of this message, 
+ contact TA Instruments for service.</p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

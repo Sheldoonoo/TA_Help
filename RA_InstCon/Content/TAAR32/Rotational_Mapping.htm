@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Calibration" MadCap:browseSequencePath="Introducing the Rheometer" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="RA_InstCon.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Rotational Mapping</title>
+        <meta name="copyright" value="All information copyright © 1998-2003 TA Instruments" />
+        <link rel="StyleSheet" href="TAHtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../RAGlossary/ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor63"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../QUES_BLUE.JPG" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Rotational Mapping</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor64"></a><a name="kanchor65"></a><a name="kanchor66"></a>Due to the micron tolerances needed to make an air bearing work, any 
+ bearing will have small variations in behavior around one revolution of 
+ the shaft. They are consistent over time unless changes occur in the air 
+ bearing.</p>
+        <p><a name="kanchor67"></a><a name="kanchor68"></a><a name="kanchor69"></a><a name="kanchor70"></a><a name="kanchor71"></a>By combining the absolute angular position data from the optical encoder 
+ with microprocessor control of the motor, these small variations can be 
+ mapped automatically and stored in memory. To create a map, the software 
+ rotates the air bearing at a fixed speed, monitoring the torque required 
+ to maintain this speed through a full 360° of rotation. The number of 
+ points in the map (and the speed of rotation used) is dependent upon the 
+ mapping type used.</p>
+        <p><a name="kanchor72"></a>These variations can then be allowed for automatically by the microprocessor, 
+ which is in effect carrying out a baseline correction of the torque. This 
+ results in a very wide operating range of the bearing without operator 
+ intervention - a confidence check in bearing performance.</p>
+        <p><a name="kanchor73"></a>For maximum accuracy at the lower torque end of the rheometer, it is 
+ recommended that the mapping be performed each time a new measuring system 
+ is used.</p>
+        <p style="font-weight: bold;color: #00509f;">Click on the following topics 
+ for more information:</p>
+        <ul>
+            <li class="Bullet" value="1"><a href="#Using_the__Torque_Offset___Setting" name="kanchor74">Using 
+ the Torque Offset Setting</a>
+            </li>
+            <li class="Bullet" value="2"><a href="#Performing_a_Torque_Mapping" name="kanchor75">Performing 
+ a Torque Mapping</a>
+            </li>
+            <li class="Bullet" value="3"><a href="#Automatic_Prompting_for_Mapping">Automatic 
+ Prompting for Mapping</a>
+            </li>
+            <li class="Bullet" value="4"><a href="#Setting_the_Number_of_Mapping_iterations">Setting 
+ the Number of Mapping Iterations</a>
+            </li>
+            <li class="Bullet" value="5"><a href="#Clearing_the_Offset_Torque">Clearing 
+ the Offset Torque</a><a name="kanchor77"></a> (setting to zero)</li>
+            <li class="Bullet" value="6"><a href="Calibrating_the_Rheometer.htm">Calibrating 
+ the Rheometer</a>
+            </li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="text-align: center;" align="center">
+            <img src="../OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+        </p>
+        <h3><a name="Using_the__Torque_Offset___Setting"></a>Using the 'Torque Offset 
+ ' Setting</h3>
+        <p class="Tip-Note-Text"><a name="kanchor78"></a><a name="kanchor79"></a>In addition to the torque mapping function, the 
+ software also allows you to apply a fixed (bias) torque. This single value 
+ of torque is applied over the full 360° of rotation.</p>
+        <p class="Tip-Note-Text"><a name="kanchor80"></a><a name="kanchor81"></a>Under normal operation of the instrument, it is 
+ recommended that this calibration factor be set to zero.</p>
+        <h3><a name="Performing_a_Torque_Mapping"></a>Performing a Torque Mapping</h3>
+        <ol>
+            <li class="NumberedIndent" value="1"><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Attaching_Removing_a_Measuring_Geometry.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Attach</a></span><a name="kanchor82"></a> 
+ the required measuring geometry to the rheometer. </li>
+            <li class="NumberedIndent" value="2">Load the 
+ correct Geometry file into the software.</li>
+            <li class="NumberedIndent" value="3">Set the mapping 
+ type as follows:</li>
+        </ol>
+        <ol start="1">
+            <li class="LetterIndent" value="1">Select <span style="font-weight: bold;color: #00509f;">Instrument</span><a name="kanchor83"></a> on the menu.</li>
+            <li class="LetterIndent" value="2">Select <span style="font-weight: bold;color: #00509f;">Rotational Mapping</span>.</li>
+            <li class="LetterIndent" value="3">Select the <span style="font-weight: bold;color: #00509f;">Bearing mapping</span> required 
+ (<a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t1" name="kanchor84"><img style="border: none;margin-right: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Collapsed" MadCap:alt2="Expanded" class="MCTogglerIcon" />standard, fast, precision or extended</a>).<div MadCap:targetName="t1" style="display: none;"><h4>Mapping Types</h4><p>The following mapping types are available:</p><ul><li class="Bullet" value="1"><span style="font-weight: bold;color: #00509f;">Standard 
+ mapping</span> takes approximately 1 minute to complete. &#160;It 
+ is suitable for day to day use.</li><li class="Bullet" value="2"><span style="font-weight: bold;color: #00509f;">Fast 
+ mapping</span><a name="kanchor85"></a> takes approximately 45 seconds to complete. &#160;Less 
+ mapping points per revolution are used than standard or precision mode. 
+ &#160;It is around 
+ half as accurate as Standard mode. &#160;It 
+ is suitable for day-to-day use where low-end accuracy is not so much of 
+ a problem.</li><li class="Bullet" value="3"><span style="font-weight: bold;color: #00509f;">Precision 
+ mapping</span> gives the most accurate calibration of the rheometer but 
+ takes around 2 minutes to complete. This mode is approximately twice as 
+ accurate as Standard mode.</li><li class="Bullet" value="4"><span style="font-weight: bold;color: #00509f;">Extended 
+ mapping</span> (AR 2000 Only) gives the best low torque/velocity performance. 
+ The number of iterations can not be set for this type of mapping.</li></ul></div></li>
+            <li class="LetterIndent" value="4">Select the number 
+ of iterations.</li>
+            <li class="LetterIndent" value="5">Click <span style="font-weight: bold;color: #00509f;">Perform 
+ Mapping</span> button.</li>
+        </ol>
+        <p><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Automatic_Prompting_for_Mapping"></a>Automatic Prompting for 
+ Mapping</h3>
+        <p><a name="kanchor86"></a><a name="kanchor87"></a>The program can be set so that it will automatically prompt you to perform 
+ a mapping each time you change the installed measuring geometry. Follow 
+ these steps:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Select <span style="font-weight: bold;color: #00509f;"><a name="kanchor88"></a>Options</span> on the menu 
+ bar.</li>
+            <li class="NumberedIndent" value="2">Select <span style="font-weight: bold;color: #00509f;">Settings</span>.</li>
+            <li class="NumberedIndent" value="3">Click on 
+ the <span style="font-weight: bold;color: #00509f;">Mapping</span> tab.</li>
+            <li class="NumberedIndent" value="4">Ensure that 
+ <span style="font-weight: bold;color: #00509f;">Prompt user to map when 
+ geometry changed</span> is selected.</li>
+            <li class="NumberedIndent" value="5">Press the 
+ <span style="font-weight: bold;color: #00509f;">OK</span> button.</li>
+        </ol>
+        <p><a href="#top" style="font-size: 8pt;font-weight: normal;">Back to top</a>
+        </p>
+        <h3><a name="Setting_the_Number_of_Mapping_iterations"></a>Setting the Number 
+ of Mapping iterations</h3>
+        <p class="Tip-Note-Text">For optimum performance at very low torques (&lt;10 
+ µN.m) multiple mappings can be performed. Generally you will see little 
+ further improvement in performance after three consecutive mappings. To 
+ select the number of mapping iterations, use the following procedure:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Select <span style="font-weight: bold;color: #00509f;">Options</span> on the menu 
+ bar.</li>
+            <li class="NumberedIndent" value="2">Select <span style="font-weight: bold;color: #00509f;">Settings</span>.</li>
+            <li class="NumberedIndent" value="3">Click on 
+ the <span style="font-weight: bold;color: #00509f;">Mapping</span> tab.</li>
+            <li class="NumberedIndent" value="4">Enter the 
+ number of mapping iterations required. NOTE: &#160;Extended 
+ mapping does not support multiple iterations.</li>
+            <li class="NumberedIndent" value="5">Press the 
+ <span style="font-weight: bold;color: #00509f;">OK</span> button.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Clearing_the_Offset_Torque"></a>Clearing the Offset Torque</h3>
+        <p class="Topic-Text-Numbered" style="margin-bottom: 0.00pt;">Confirm that the single point 'Torque 
+ offset' is set to zero.</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Select <span style="font-weight: bold;color: #00509f;">Options</span> from the menu.</li>
+            <li class="NumberedIndent" value="2">Select <span style="font-weight: bold;color: #00509f;">Instrument</span>.</li>
+            <li class="NumberedIndent" value="3">Click on 
+ the <span style="font-weight: bold;color: #00509f;">Miscellaneous</span> 
+ tab.</li>
+            <li class="NumberedIndent" value="4">Ensure that 
+ the value for <span style="font-weight: bold;color: #00509f;">Torque 
+ offset (micro N.m)</span> is set to zero.</li>
+            <li class="NumberedIndent" value="5">Press the 
+ <span style="font-weight: bold;color: #00509f;">OK</span> button.</li>
+        </ol>
+        <p style="color: #00509f;font-size: 8pt;font-weight: normal;"><span style="color: #00509f;"><a href="#top" style="font-size: 8pt;"><span style="font-weight: normal;">Back to 
+ top</span></a></span>
+        </p>
+        <p>&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

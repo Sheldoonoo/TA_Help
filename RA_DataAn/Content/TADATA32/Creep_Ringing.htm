@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Data Analysis Functions|Performing an Analysis|Model Fitting|Creep" MadCap:browseSequencePath="Model Fitting" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="RA_DataAnal.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Creep Ringing</title>
+        <meta name="copyright" value="All information copyright © 1998-2003 TA Instruments" />
+        <link rel="StyleSheet" href="..\TAHtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../RAGlossary/ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor199"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Creep Ringing</h1>
+        <p style="text-align: justify;">&#160;</p>
+        <p>A standard creep experiment is performed by applying a constant, low, 
+ stress, <span style="font-family: Symbol;">s</span><span style="vertical-align: sub;">0</span> 
+ to a sample of material, and monitoring the strain response, <span style="font-family: Symbol;">g</span><a name="kanchor200"></a>(t). It is usual to display the data graphically 
+ either by plotting <span style="font-family: Symbol;">g</span>(t) against time, t, or 
+ the creep compliance J(t) against t, where J(t) is defined as <span style="font-family: Symbol;">g</span>(t)/<span style="font-family: Symbol;">s</span><span style="vertical-align: sub;">0</span>. 
+ Such a plot is referred to as a "creep curve". If <span style="font-family: Symbol;">s</span><span style="vertical-align: sub;">0</span> does 
+ not exceed a sample dependent critical stress, <span style="font-family: Symbol;">s</span><span style="vertical-align: sub;">c</span><a name="kanchor201"></a><a name="kanchor202"></a>, then J(t) is, for practical purposes, 
+ independent of the applied stress, behavior which can be treated by the 
+ theory of linear viscoelasticity. </p>
+        <p><a name="kanchor203"></a><a name="kanchor204"></a><a name="kanchor205"></a>This theory is discussed to some extent in all the standard text books 
+ on rheology [e.g. 1, 2], and at length in Tschoegl [3], but most texts 
+ are concerned only with J(t) as a material function, and not with the 
+ practical details of its measurement. In particular, they ignore the contribution 
+ of the measuring system inertia to the response. This is often a reasonable 
+ thing to do, since, almost by definition, a creep test is conducted at 
+ a low stress, and hence low torque, and the angular velocity of the measuring 
+ system is therefore also low. For the most part, the rate of change of 
+ angular velocity is also low, which is why the inertia can be ignored. 
+ But for first the second or so after the imposition of the stress, this 
+ is not the case. Here the inertial contribution can be significant, and 
+ failure to account for it requires that this early part of the creep curve 
+ should be discarded. This is unfortunate, since the very short timescale 
+ properties of the material can be of interest to the rheologist. Usually, 
+ these would have to be explored using some other technique, such as oscillatory 
+ rheometry. Rheologists have historically tried to reduce the problem by 
+ using a sample stiffness to the measuring system inertia ratio which is 
+ as large as possible, for example by using a measuring geometry of large 
+ radius. But it is more elegant and satisfactory to include the contribution 
+ of the measuring system inertia in the analysis of the response. This 
+ approach has been taken by several groups of workers [4, 5], most recently 
+ and fully by Baravian and Quemada [6]. TA Instruments’ software introduces 
+ an extension of previous analyses.</p>
+        <p><a name="kanchor206"></a><a name="kanchor207"></a>Linear viscoelastic theory allows us to analyze the creep compliance 
+ using a combination of elements formed from the units of a Newtonian liquid 
+ and a Hookean solid. These units are often represented diagrammatically 
+ as a dashpot and a spring respectively (Figure 1). The simplest model 
+ is then the Newtonian liquid, i.e. single dashpot, described by its viscosity, 
+ <span style="font-family: Symbol;">h</span>. Then J<span style="vertical-align: sub;">N</span>(t) 
+ = t / <span style="font-family: Symbol;">h,</span><a name="kanchor208"></a> the subscript indicating the model. The 
+ inclusion of inertia results in a function which increases monotonically 
+ with time, with a slope that approaches that of J<span style="vertical-align: sub;">N</span>(t) 
+ asymptotically. </p>
+        <p style="margin-left: 5.65pt;text-align: justify;">
+            <img src="../image/CreepRing-1.gif" alt="image\CreepRing-1.gif" style="width: 399px;height: 113px;border-style: none;border-style: none;" width="399" height="113" border="0" />
+        </p>
+        <p class="caption" style="font-weight: bold;color: #00509f;text-align: center;" align="center">Figure 1: Dashpot representing Newtonian liquid of viscosity 
+ h (left) and spring representing Hookean solid of elastic modulus G (right).</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p>Next in order of complexity is the Maxwell model, consisting of a spring 
+ and dashpot in series (Figure 2). For this model J<span style="vertical-align: sub;">M</span>(t) 
+ = 1 / G + t / <span style="font-family: Symbol;">h</span>, where G is the elastic modulus 
+ of the spring, and <span style="font-family: Symbol;">h</span> is the viscosity of the 
+ dashpot. When inertia is included, two cases result, an oscillating and 
+ a non-oscillating one. The oscillating (under damped) case arises when 
+ G <span style="font-family: Symbol;">³</span> G<span style="vertical-align: sub;">critical</span>. 
+ For the Maxwell model G<span style="vertical-align: sub;">critical</span> 
+ = 4<span style="font-family: Symbol;">h</span><span style="vertical-align: super;">2</span> 
+ / <span style="font-family: Symbol;">a</span>, where <span style="font-family: Symbol;">a</span> = I F<span style="font-family: Symbol;"><span style="vertical-align: sub;">s</span></span> / F<img src="../image/CreepRing-2.gif" alt="image\CreepRing-2.gif" style="width: 12px;height: 22px;border-style: none;border-style: none;" width="12" height="22" border="0" />, with I being the measuring system inertia, and F<span style="font-family: Symbol;"><span style="vertical-align: sub;">s</span></span> and 
+ F<img src="../image/CreepRing-3.gif" alt="image\CreepRing-3.gif" style="width: 12px;height: 22px;border-style: none;border-style: none;" width="12" height="22" border="0" /><a name="kanchor209"></a> the proportionality factors between the shear stress 
+ and torque, and shear rate and angular velocity, respectively. The non-oscillating 
+ (over damped) case arises when G &lt; 4<span style="font-family: Symbol;">h</span><span style="vertical-align: super;">2</span> / <span style="font-family: Symbol;">a</span>. </p>
+        <p style="margin-left: 5.65pt;text-align: center;" align="center">
+            <img src="../image/CreepRing-4.gif" alt="image\CreepRing-4.gif" style="width: 170px;height: 214px;border-style: none;border-style: none;" width="170" height="214" border="0" />
+        </p>
+        <p class="caption" style="font-weight: bold;color: #00509f;text-align: center;" align="center">Figure 2: Maxwell Model</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p>A Voigt model consists of a spring and dashpot in parallel (Figure 3). 
+ For this model, J<span style="vertical-align: sub;">V</span>(t)&#160;=&#160;(1/G)[1 
+ – exp(-tG/<span style="font-family: Symbol;">h</span>)].<span style="font-family: Symbol;">  <![CDATA[ ]]></span>Again an 
+ oscillating (under damped) case, when G <span style="font-family: Symbol;">³</span> G<span style="vertical-align: sub;">critical</span> and a non-oscillating (under 
+ damped) case, when G &lt; G<span style="vertical-align: sub;">critical</span>, 
+ arise. For the Voigt model, G<span style="vertical-align: sub;">critical</span> 
+ = <span style="font-family: Symbol;">h</span><span style="vertical-align: super;">2</span> 
+ / 4<span style="font-family: Symbol;">a</span>. </p>
+        <p style="margin-left: 5.65pt;text-align: center;" align="center">
+            <img src="../image/CreepRing-5.gif" alt="image\CreepRing-5.gif" style="width: 248px;height: 170px;border-style: none;border-style: none;" width="248" height="170" border="0" />
+        </p>
+        <p class="caption" style="font-weight: bold;color: #00509f;text-align: center;" align="center">Figure 3: Voigt Model</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p>A Jeffreys model consists of a Maxwell model and a dashpot in parallel 
+ (Figure 4). Then <img src="../image/CreepRing-6.gif" alt="image\CreepRing-6.gif" style="width: 310px;height: 60px;border-style: none;border-style: none;" width="310" height="60" border="0" />, where <span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">p</span> is the "polymer" viscosity, 
+ i.e. the viscosity of the dashpot within the Maxwell element, <span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">s</span> is 
+ the "solvent" viscosity, i.e. that of the isolated dashpot, 
+ and <span style="font-family: Symbol;">t</span> = (G/<span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">s</span> 
+ + G/<span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">p</span>)<span style="vertical-align: super;">-1</span>. The critical condition for oscillation 
+ is given by 4E<span style="vertical-align: sub;">c</span><span style="font-family: Symbol;">³</span> [1 + <span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">s</span><span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">p</span>/G<span style="font-family: Symbol;">a</span>]<span style="vertical-align: super;">2</span>, 
+ where E<span style="vertical-align: sub;">c</span> = G(<span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">s</span> + <span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">p</span>)/<span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">p</span><span style="font-family: Symbol;">a</span>. </p>
+        <p style="margin-left: 5.65pt;text-align: center;" align="center">
+            <img src="../image/CreepRing-7.gif" alt="image\CreepRing-7.gif" style="width: 238px;height: 221px;border-style: none;border-style: none;" width="238" height="221" border="0" />
+        </p>
+        <p class="caption" style="font-weight: bold;color: #00509f;text-align: center;" align="center">Figure 4: Jeffreys Model</p>
+        <p><span style="color: #000000;"><a href="#top" style="font-size: 8pt;">Back to top</a></span>
+        </p>
+        <p>The Jeffreys model can be recast as a Voigt element and dashpot in series 
+ (Figure 5). In terms of the previous form of the model, the parameters 
+ of this arrangement are given by: J&#160;=&#160;(1/G)[<span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">p</span>/(<span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">s</span> + <span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">p</span>)]<span style="vertical-align: super;">2</span>, 
+ <span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">V</span> 
+ = <span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">s</span>(<span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">s</span> + <span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">p</span>)/<span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">p</span> and 
+ <span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">0</span> 
+ = <span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">s</span> 
+ + <span style="font-family: Symbol;">h</span><span style="vertical-align: sub;">p</span>. 
+ In this form J is the spring compliance, i.e. the reciprocal of its elastic 
+ modulus. The oscillating condition is as for the Voigt model applied to 
+ the retardation step.</p>
+        <p style="margin-left: 5.65pt;text-align: center;" align="center">
+            <img src="../image/CreepRing-8.gif" alt="image\CreepRing-8.gif" style="width: 253px;height: 266px;border-style: none;border-style: none;" width="253" height="266" border="0" />
+        </p>
+        <p class="caption" style="font-weight: bold;color: #00509f;text-align: center;" align="center">Figure 5: Jeffreys Model Recast in Voigt /Dashpot Form</p>
+        <p>It is usual to perform a creep experiment in two steps, a "retardation" 
+ step, over which the stress is applied, followed a "relaxation" 
+ or recoil, step, over which the tress is zero. The relaxation step can 
+ also be analyzed for a Voigt model, using TA Instruments’ creep ringing 
+ software. </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p><a name="kanchor210"></a>Creep ringing analysis permits the extremely rapid determination of 
+ the viscoelastic properties of materials, including the zero shear viscosity, 
+ providing that one of the relatively simple models described above gives 
+ an adequate fit to the data. If the inertial contribution were not considered, 
+ then it would be necessary to wait for the system to achieve steady state 
+ before any analysis could be performed. For some materials this can take 
+ many minutes or even hours. In principle, creep ringing reduces the timescale 
+ to a matter of seconds. </p>
+        <ol>
+            <li style="text-align: justify; margin-left: 6pt; margin-bottom: 0; font-family: Arial, sans-serif; font-size: 10pt;" value="1"><a name="kanchor211"></a><a name="kanchor212"></a><a name="kanchor213"></a>H.A. Barnes, J.F. Hutton 
+ and K. Walters, "An Introduction to Rheology", Elsevier, Amsterdam, 
+ 1989.</li>
+            <li style="text-align: justify; margin-left: 6pt; margin-bottom: 0; font-family: Arial, sans-serif; font-size: 10pt;" value="2">R.I. Tanner, "Engineering 
+ Rheology", 2<span style="vertical-align: super;">nd</span> edition, 
+ OUP, Oxford, 2000.</li>
+            <li style="text-align: justify; margin-left: 6pt; margin-bottom: 0; font-family: Arial, sans-serif; font-size: 10pt;" value="3">N.W. Tschoegl, "The 
+ Phenomenological Theory of Linear Viscoelastic Behavior", Springer-Verlag, 
+ Berlin, 1989.</li>
+            <li style="text-align: justify; margin-left: 6pt; margin-bottom: 0; font-family: Arial, sans-serif; font-size: 10pt;" value="4">E. Roscoe, Journal of 
+ Physics. D, 2 (1969) 1261.</li>
+            <li style="text-align: justify; margin-left: 6pt; margin-bottom: 0; font-family: Arial, sans-serif; font-size: 10pt;" value="5">U. Zölzer and H-F. Eicke, 
+ Rheologica Acta, 32 (1993) 104.</li>
+            <li style="text-align: justify; margin-left: 6pt; margin-bottom: 0; font-family: Arial, sans-serif; font-size: 10pt;" value="6">C. Baravian and D. Quemada, 
+ Rheologica Acta, 37 (1998) 37.</li>
+        </ol>
+        <p style="margin-bottom: 0;font-weight: bold;color: #00509f;"><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Creating Your Own Models|Creating_Your_Own_Models.htm||Importing/Exporting User-Defined Models|Importing_Exporting_User_Defined_Models.htm||Introducing Model Fitting|Introducing_Model_Fitting.htm||Model List|Model_List.htm||Theory of Creep Models|Theory_of_Creep_Models.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Running UA from a DOS Command Line" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Running Universal Analysis from a DOS Command Line</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Running Universal Analysis from a DOS Command Line</h1>
+        <p>Instructions and tips on running the Universal Analysis program from a DOS prompt command are provided below in a question and answer format.</p>
+        <p class="Plain_Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="font-weight: bold;">Q. Can I get Universal Analysis to automatically enter the filename of my data file when I start the program?</span>
+        </p>
+        <p><span style="font-weight: bold;">A.</span> Yes. Simply add the name of your data file, separated by a space or comma, on the DOS command line (MS-DOS Prompt) or on the Windows command line (Run Command) following the program name. You may include up to 10 filenames on the command line and Universal Analysis will open each one in succession when the File Open function is requested.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="font-weight: bold;">Q. Can I run Universal Analysis from a batch job?</span>
+        </p>
+        <p><span style="font-weight: bold;">A.</span> Yes. Follow the normal conventions for any Windows program.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="font-weight: bold;">Q. Can I run a macro automatically when I start Universal Analysis?</span>
+        </p>
+        <p><span style="font-weight: bold;">A.</span> Yes. Include the name of the macro to run in double quotes as the argument to the "/M" program switch. You can also specify the filename of the macro file to load with the "/F" switch. For example, the command:</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>WinUA MyFile.001 /M"My Macro" /F"WinUA.mac"</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Will run Universal Analysis, enter file MyFile.001, load macro file WinUA.mac, and execute the macro My Macro from the macro file.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="font-weight: bold;">Tip.</span> If the command line is too long or you want to store the arguments in a separate file, you can specify an indirect command file that contains the command line string (up to a maximum length of 500 characters). On the command line following the program name, specify the filename and path of the command file, preceded by the "@" character. For example:</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>WinUA @\MyData\WinUAcmd</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Will run Universal Analysis, open the file \MyData\WinUAcmd and process its contents as if they were entered on the command line for WinUA.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

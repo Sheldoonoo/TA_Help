@@ -1,0 +1,9 @@
+CMCXmlParser._FilePathToXmlStringMap.Add(
+	'Skin',
+	'<?xml version=\"1.0\" encoding=\"utf-8\"?>' +
+	'<CatapultSkin Version=\"1\" AutoSyncTOC=\"false\" Tabs=\"Search\" Top=\"3px\" Left=\"770px\" Width=\"252px\" Height=\"379px\" DefaultTab=\"TOC\">' +
+	'    <HtmlHelpOptions ShowMenuBar=\"false\" TopmostWindowStyle=\"false\" AutoShowNavigationPane=\"false\" EnableButtonCaptions=\"false\" AdvancedSearch=\"false\" NavigationPaneWidth=\"0\" Buttons=\"Hide,Back,Options,Print\" HideNavigationOnStartup=\"false\" />' +
+	'    <Toc LinesBetweenItems=\"true\" LinesFromRoot=\"true\" SingleClick=\"true\" PlusMinusSquares=\"true\" AlwaysShowSelection=\"false\" FontFamily=\"Arial\" FontSize=\"8\" UseFolderIcons=\"false\" ImageListWidth=\"\" />' +
+	'    <Stylesheet Link=\"Stylesheet.xml\" />' +
+	'</CatapultSkin>'
+);

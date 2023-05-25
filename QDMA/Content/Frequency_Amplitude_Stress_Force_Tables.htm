@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:id="Frequency Tables" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpCheckList.First Draft,RoboHelpCheckList.Added To TOC,RoboHelpCheckList.Links,RoboHelpCheckList.Index keywords,RoboHelpStatus.In Progress" MadCap:tocPath="Using the DMA|Setting Up Experimental Parameters|Entering Instrument Parameters" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Using the Frequency/Amplitude/Stress/Force Tables</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" type="text/css" />
+        <script src="SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor373"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="GIF/ques_blue.jpg" style="border: none;" alt="" width="35" height="37" align="right" border="0" /></a></span><a name="top" id="top"></a>Using the Frequency/Amplitude/Stress/Force Tables</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor374"></a><a name="kanchor375"></a>Frequency tables are needed for Multifrequency Controlled Strain and Multifrequency Controlled Stress experiments, amplitude or stress tables are needed for Multistrain mode experiments, and stress or force tables are needed for Multistress mode experiments. These contain a listing of one or more entries (up to 50) over the allowable range.</p>
+        <p class="Notes">NOTE: &#160;When you create a table with more than one frequency, you can begin with the highest frequency and end with the lowest to shorten the sweep time. When you create an amplitude table with more than one amplitude, you can begin with the lowest amplitude and sweep to the highest value. &#160;When you create a stress table with more than one entry, you can begin with the lowest value and end with the highest value.</p>
+        <p>The allowable ranges are:</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Frequency</span> &#160;= &#160;0.01 to 200 Hz</p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Amplitude</span> &#160;= &#160;0.5 to 10,000.0 µm</p>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Force</span> &#160;= &#160;0 to 18 N</p>
+            </li>
+            <li class="p-Bullet" value="4">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Stress</span> = &#160;0 to 1E<span style="vertical-align: Super;">6</span> MPa</p>
+            </li>
+        </ul>
+        <p>To create a table, follow the guidelines below for the desired type of table entries:</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet"><a href="#Tables%20with%20Single%20Entries" class="selected">Tables with Single Entries</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet"><a href="#Tables%20with%20Multiple%20Entries" class="selected">Tables with Multiple Entries</a>
+                </p>
+            </li>
+            <li style="list-style: none;display: inline;">
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet"><a href="#Tables%20with%20Log%20Entries" class="selected">Tables with Log Entries</a>
+                        </p>
+                    </li>
+                    <li class="p-Bullet" value="2">
+                        <p class="Bullet"><a href="#Tables%20with%20Linear%20Entries" class="selected">Tables with Linear Entries</a>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet"><a href="#Tables%20with%20Discrete%20Entries" class="selected">Tables with Discrete Entries</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="4">
+                <p class="Bullet"><a href="#Saving%20a%20Table" class="selected">Saving a Table</a>
+                </p>
+            </li>
+        </ul>
+        <p class="Bullet" style="text-align: center;">
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+        </p>
+        <h3><a name="Tables with Single Entries"></a>Tables with Single Entries</h3>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent">Click the <span style="font-weight: bold;color: #00509f;">Single</span> radio button.</p>
+            </li>
+        </ol>
+        <p style="margin-left: 40px;">Single entry is used for screening and comparing materials at a reference value or at an end-use value. 1 or 10 Hz is preferred for single frequency experiments because more complete oscillations are obtained in a shorter time.</p>
+        <ol start="2" style="list-style: decimal;">
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent">Enter the desired value, then click <span style="font-weight: bold;color: #00509f;">Refresh Table</span> to update the displayed table.</p>
+            </li>
+        </ol>
+        <p style="margin-left: 40px;">For Multifrequency mode temperature ramp tests, one frequency is normally used. You can use more than one frequency, but they should be higher frequencies (above 1 Hz). To measure the time required to sweep through all of the frequencies in a table, observe the sweeping process using the <a href="Monitoring_Real_Time_Signals_(Signal_Display_Pane).htm">Signal Control Pane</a>, when the drive motor is turned on. Set the heating rate on the <span style="font-weight: bold;color: #00509f;">Procedure Page</span> so that the sweep time occurs in about 2 to 3 degrees.</p>
+        <p style="margin-left: 0px;font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h3><a name="Tables with Multiple Entries"></a>Tables with Multiple Entries</h3>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet"><span style="font-style: italic;">Multifrequency studies:</span> &#160;(useful for evaluating changes in material response with frequency) should be set up to cover multiple decades of frequency (usually 3-4 decades) and should begin with the highest frequency and end with the lowest.</p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet"><span style="font-style: italic;">Multiamplitude studies</span>: &#160;Up to 50 amplitudes over the range 0.5 to 10,000 µm are possible. &#160;In practice, however, the range of acceptable amplitudes is determined by the stiffness of the sample and the maximum drive force of the DMA (18N). &#160;When sweeping amplitudes, sweep from the lowest to the highest value.</p>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet"><span style="font-style: italic;">Multistress studies:</span> &#160;Up to 50 stress or force amplitudes are possible. In most cases it is desirable to sweep from lowest to highest stress or force to minimize recovery effects as the stress or force level is decreased.</p>
+            </li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h3><a name="Tables with Log Entries"></a>Tables with Log Entries</h3>
+        <p>Click the <span style="font-weight: bold;color: #00509f;">Log</span> radio button to space the entires “logarithmically” (<span style="font-style: italic;">e.g</span>., 10, 5, 2, ). Enter the initial and the final entries, then enter the number of Points Per Decade. The entries will be calculated automatically. Click the <span style="font-weight: bold;color: #00509f;">Refresh Table</span> button to update the table values displayed.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h3><a name="Tables with Linear Entries"></a>Tables with Linear Entries</h3>
+        <p>Select the <span style="font-weight: bold;color: #00509f;">Linear</span> radio button to space the entries linearly (<span style="font-style: italic;">e.g</span>., 11, 9, 7, 5, 3, 1). Enter the initial and the final entires, then enter the Number of Points desired between the range entered. The entries will be calculated automatically. Click the <span style="font-weight: bold;color: #00509f;">Refresh Table</span> button to update the table values displayed.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h3><a name="Tables with Discrete Entries"></a>Tables with Discrete Frequency/Amplitude/Stress Entries</h3>
+        <p>If you want to edit the table directly, select the <span style="font-weight: bold;color: #00509f;">Discrete</span> radio button. The buttons become available for use in editing the table. Place the cursor in the table at the desired point and make your editing changes. The entries will be used in order until the first 0.00 entry is encountered. An entry of 0.00 is recognized as the end of the table.</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet">Use the <span style="font-weight: bold;color: #00509f;">Insert</span> button to insert a new value at the selected location, shifting all of the other table entries down one position.</p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet">Use the <span style="font-weight: bold;color: #00509f;">Delete</span> button to remove the selected value, shifting all of the table values below the deleted entry up one position.</p>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet">Use the <span style="font-weight: bold;color: #00509f;">Reset</span> button to clear all of the table values, leaving only one entry.</p>
+            </li>
+        </ul>
+        <h3><a name="Saving a Table"></a>Saving a Table</h3>
+        <p>To save your table for future recall, save the entire procedure to a file using the <span style="font-weight: bold;color: #00509f;">Save</span> Button located at the top of the <a href="Procedure_Page.htm">Procedure Page</a>.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p style="font-weight: bold;color: #00509f;"><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Available DMA Test Templates|Available_DMA_Tests.htm||Basic Steps Needed to Run a DMA Experiment|Basic_Steps_Needed_to_Run_a_DMA_Experiment_.htm||Calculations Based on Clamp Type|Calculations_Based_on_Clamp_Type.htm||Introducing the DMA Options and Accessories|Introducing_the_DMA_Options_and_Accessories.htm#Air%20Filter%20Regulator||Selecting a DMA Operating Mode|Selecting_a_DMA_Operating_Mode.htm||Understanding the Different DMA Force Parameters|Understanding_the_Different_DMA_Force_Parameters.htm||Understanding the DMA Testing Modes and Their Applications|Understanding_the_DMA_Testing_Modes.htm"><img src="SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Link Icon" />Related Topics</a>
+        </p>
+        <p>&#160;</p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

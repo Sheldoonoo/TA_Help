@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Macro Menus" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Tips on Capturing Macros</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../WinUAmac.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Tips on Capturing Macros</h1>
+        <p>The successful completion of a macro, from beginning to end, depends on a continuous selection of steps that have a logical fit. Errors can arise due to changes in the state of the program. Listed below are some hints to help you produce a successful macro.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Normal_Indent"><span style="color: teal;font-weight: bold;">Filenames</span>–When selecting specific files to be used in a macro, it is helpful to make sure that the path listed is not one that will be subject to change. The macro will not be able to locate a file if the path entered is no longer accurate.</p>
+            </li>
+        </ul>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p><span style="color: teal;font-weight: bold;">Macro Editor</span>–View the Macro Editor when creating macros. This way you will be able to see what items are captured and have a better understanding how this process works.</p>
+            </li>
+            <li style="font-size: 10pt;" value="2">
+                <p><span style="color: teal;font-weight: bold;">Dialogs</span>–The capture function will capture only the changes made to a dialog. It will NOT capture the other selected (unchanged) items. To ensure the default state of the dialog, you may want to select the desired items again. Many times this may involve (1) selecting a different item then (2) reselecting the desired item. [The extra step (1) may be deleted without affecting the macro.]</p>
+            </li>
+            <li style="font-size: 10pt;" value="3">
+                <p><span style="color: teal;font-weight: bold;">Program Settings, Parameters, Options, and Units</span>–To ensure that these settings are in the same state each time a macro is run, capture the following sequence: Select the desired settings window, select the Default button, then make the desired changes. You can also insert an <a href="Macro_Editor_Insert_Menu_initialize.htm">initialize step</a> in your macro to keep your settings the same.</p>
+            </li>
+            <li style="font-size: 10pt;" value="4">
+                <p><span style="color: teal;font-weight: bold;">Labels</span>–When capturing moving or editing labels, it is important to make these changes right after you add them to the graph (versus after multiple analyses and annotations are displayed). The actual label location (mouse coordinates) may change from run to run, the previous mouse coordinates may not longer be valid. In order to capture a step that moves a label, it must be captured immediately using the most recent analysis result.</p>
+            </li>
+            <li style="font-size: 10pt;" value="5">
+                <p><span style="color: teal;font-weight: bold;">Menus</span>–It is always more reliable to select items from the standard menu or tool bar versus using their equivalent popup menu. For example, deleting an analysis can be accomplished either using Edit/Delete Results/Last from the standard menu or Delete Results from the analysis popup menu. The former is more reliable since exact label placement may vary from run to run.</p>
+            </li>
+            <li style="font-size: 10pt;" value="6">
+                <p><span style="color: teal;font-weight: bold;">Resolution</span>–Changes in computer resolution may alter the ability to perform macro steps involving mouse selection.</p>
+            </li>
+            <li style="font-size: 10pt;" value="7">
+                <p><span style="color: teal;font-weight: bold;">File Dialogs</span>–Functions which involve saving or opening a file (<span style="font-style: italic;">e.g</span>., Save Analysis, Save Session, Export Data File, etc.), when captured in a macro routine, will stop at the file dialog and wait for the operator to select the desired path and filename. Once this window is dismissed the macro will proceed with the remaining steps. [If the autoanalyze record is added to the queue from the controller then the macro will automatically continue on an Open File step.] You can <a href="Macro_Editor_Insert_menu_file_name.htm">insert a filename step</a> after a "File Open" or "File Save" step to avoid this problem.</p>
+            </li>
+            <li style="font-size: 10pt;" value="8">
+                <p><span style="color: teal;font-weight: bold;">Printing</span>–A macro containing the File/Print and File/Print Setup windows, will stop at these windows and wait for the operator to make the desired selections. Once this window is dismissed the macro will proceed with the remaining steps. [Tip: When printing to the default printer, use the Print tool bar button instead to obtain a continuous analysis macro because the tool bar button will not post a Print dialog that requires a click of the OK button to proceed.]</p>
+            </li>
+        </ul>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent"><span style="color: blue;">NOTE: to avoid losing your macros, periodically save them to the macro file (default selection is made on the</span><a href="../winhlp/Win_Main_Options_directory_page.htm">Main Options  Directory Page</a><span style="color: blue;">). Before editing a macro, you may want to make a backup copy so that you can restore the original, if necessary.</span>
+        </p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent"><span style="color: blue;">NOTE: For more details on creating, editing, and running macros, see the Universal Analysis online manual (Help/Manual) or use Acrobat Reader to access the UAmanual.pdf file contained on the CDROM.</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

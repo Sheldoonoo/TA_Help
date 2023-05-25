@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Error and Information Messages" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Cannot Create PDF File</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../WinUAerr.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor52"></a>Cannot Create PDF File</h1>
+        <p class="Body_Text_3" style="color: #ff0000;font-weight: bold;">PDFlib processor error.</p>
+        <p class="Body_Text_3" style="color: #ff0000;font-weight: bold;">Cannot create PDF file.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Problem:</p>
+        <p>This message is displayed if an error occurs during PDF file creation using Universal Analysis. The most common cause of the problem is a missing or unregistered dynamic link library file called pdflib_com.dll or pdflib_com_5.dll.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Solution:</p>
+        <p>For versions up to 3.9, search for the file pdflib_com.dll. For versions 4.0 or greater, search for the file pdflib_com_5.dll.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p style="margin-left: 2.40pt;">If the file does not exist, it can be reinstalled by reinstalling the Universal Analysis software.</p>
+            </li>
+        </ul>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p style="margin-left: 2.40pt;">If the file exists, it may not be registered. Should that be the case, try registering the file by typing "Regsvr32 pdflib_com" or "Regsvr32 pdflib_com_5," as appropriate, at a system command prompt.</p>
+            </li>
+        </ul>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The file pdflib_com.dll or pdflib_com_5.dll must appear in the normal executable search path for the system or in the same directory as the file WinUA.exe.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:id="Setting Up a Strain Ramp Experiment" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpStatus.In Progress" MadCap:tocPath="Using the Procedure Templates" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Setting Up a Strain Rate - Strain Ramp Experiment</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" type="text/css" />
+        <script src="SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="GIF/ques_blue.jpg" style="border: none;" alt="" width="35" height="37" align="right" border="0" /></a></span><a name="top" id="top"></a><a name="kanchor418"></a>Setting Up a Strain Rate - Strain Ramp Experiment</h1>
+        <p>&#160;</p>
+        <p>In a Strain Ramp experiment the sample is exposed to a constant strain rate while the temperature is held isothermal.</p>
+        <p>If you want to set up a DMA Strain Rate - Strain Ramp procedure, you can choose one of two techniques—the <a href="#Using%20the%20DMA%20Wizard" class="selected">DMA Wizard</a> or the <a href="#Using%20the%20Experimental%20View%20Procedure%20Page" class="selected">Experimental View - Procedure Page</a>. See the instructions below for each technique.</p>
+        <p>When you perform a Strain Ramp experiment, the following parameters need to be chosen:</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Preload Force:</span> This is the force applied to the sample prior to initiating the experiment. &#160;</p>
+            </li>
+            <li style="list-style: none;display: inline;">
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">No preload force is needed when you select a nontensioning clamp (<span style="font-style: italic;">i.e</span>., single/dual cantilever, shear sandwich). &#160;</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">When using tensioning clamps for stress/strain measurements, an initial preload force is applied to remove slack from the sample and to allow an accurate initial sample length to be measured (films and fibers) or to ensure good contact of the movable clamp (3-point bend nose or compressional upper plate) with the sample. &#160;The preload force used should be the minimum required to achieve the desired starting point since this preload force could affect the measurement (it is not added to the measured stress). &#160;0.001N is the lowest force which can be applied.</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet" style="font-weight: bold;color: #00509f;">Initial Strain: &#160;<span style="font-weight: normal;color: #000000;">This value specifies the strain percentage that will be established as an initial condition for the run. &#160;The first strain or displacement ramp segment of the method will start at this strain value.</span></p>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet" style="font-weight: bold;color: #00509f;">Initial Displacement: &#160;<span style="font-weight: normal;color: #000000;">This value specifies the displacement that will be established as an initial condition for the run. &#160;The first strain or displacement ramp segment of the method will start at this displacement value.</span></p>
+            </li>
+            <li class="p-Bullet" value="4">
+                <p class="Bullet" style="font-weight: bold;color: #00509f;">Isothermal Temperature: &#160;<span style="font-weight: normal;color: #000000;">This value sets the constant temperature to be maintained during the experiment.</span></p>
+            </li>
+            <li class="p-Bullet" value="5">
+                <p class="Bullet" style="font-weight: bold;color: #00509f;">Strain Rate: &#160;<span style="font-weight: normal;color: #000000;">This value sets the rate (in %/min) at which the sample length will be changed during the experiment.</span></p>
+            </li>
+            <li class="p-Bullet" value="6">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Final Strain:</span> &#160;The experiment will end when the sample length has been changed by this percentage.</p>
+            </li>
+            <li class="p-Bullet" value="7">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Additional Conditions:</span> &#160;There are additional experimental conditions that can be changed to optimize specific situations. &#160;These are accessed using <a href="Advanced_Parameters_Window.htm">Advanced Parameters</a> and <a href="Post_Test_Window.htm">Post-Test Conditions</a>. &#160;For most experiments, the system default values shown are recommended.</p>
+            </li>
+            <li class="p-Bullet" value="8">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">See also:</span> &#160;<a href="Guidelines_for_Running_Subambient_Experiments.htm">Guidelines for Running Subambient Experiments</a>.</p>
+            </li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p class="Bullet" style="text-align: center;"><span style="text-align: center;"><span><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /></span></span>
+        </p>
+        <h3><a name="Using the DMA Wizard"></a>Using the DMA Wizard <img src="GIF/BUTTON_WIZARD_32x32.gif" style="border: none;width: 32;height: 32;" alt="" border="0" />: &#160;</h3>
+        <p>Enter the desired parameters, then select <span style="font-weight: bold;color: #00509f;">Next</span> to proceed.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h3><a name="Using the Experimental View Procedure Page"></a>Using the Experimental View <img src="GIF/Button_Experiment_View_32x32.gif" style="border: none;width: 32;height: 32;" alt="" border="0" /> Procedure Page:</h3>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent">Display the <span style="font-weight: bold;color: #00509f;">Procedure Page</span>. Select the desired experiment from the list of available preprogrammed templates.</p>
+            </li>
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent">Enter the desired parameters. When you have finished setting up this procedure, you can enter more information by selecting the <a href="Experimental_View_PaneNotes_Page.htm">Notes Page</a> and <a href="Experimental_View_PaneSummary.htm">Summary Page</a> for this run.</p>
+            </li>
+            <li class="p-NumberedIndent" value="3">
+                <p class="NumberedIndent">Click the <span style="font-weight: bold;color: #00509f;">Apply</span> button when finished to save these changes or the <span style="font-weight: bold;color: #00509f;">Append</span> button to save the changes to this run and add another run to the end of the sequence.</p>
+            </li>
+        </ol>
+        <p class="Notes">NOTE: &#160;You can use any test template as the basis for a custom test by selecting the desired test template from the list of tests, then click the <span style="font-weight: bold;color: #00509f;">Apply</span> button and change the test to Custom. Then you can click on the <span style="font-weight: bold;color: #00509f;">Procedure Page</span> and then the <span style="font-weight: bold;color: #00509f;">Editor</span> button to make the changes desired.</p>
+        <p style="font-weight: normal;color: #000000;font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p style="font-weight: bold;color: #00509f;"><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Available DMA Test Templates|Available_DMA_Tests.htm||Basic Steps Needed to Run a DMA Experiment|Basic_Steps_Needed_to_Run_a_DMA_Experiment_.htm||Creating a Custom Method in the Strain Rate Mode|Creating_a_Custom_Method_in_the_Strain_Rate_Mode.htm||Creating Custom Methods|Creating_Custom_Methods.htm||Handling Run Sequences|Handling_Run_Sequences.htm||Selecting a DMA Operating Mode|Selecting_a_DMA_Operating_Mode.htm||Setting Up a Strain Rate Displacement Ramp Experiment|Setting_Up_a_Strain_Rate_Displacement_Ramp_Experiment.htm||Specifying a Test Procedure|Specifying_a_Test_Procedure.htm"><img src="SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Link Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

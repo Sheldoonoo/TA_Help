@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Configuring the Software" MadCap:browseSequencePath="Configuring the Software" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="RA_DataAnal.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Relaxation spectrum parameters</title>
+        <meta name="copyright" value="All information copyright © 1998-2003 TA Instruments" />
+        <link rel="StyleSheet" href="..\TAHtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../RAGlossary/ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor50"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Relaxation Spectrum Parameters</h1>
+        <p>&#160;</p>
+        <p><span style="text-decoration: underline;"><a name="kanchor51"></a>Final 
+ number of modes</span><a name="kanchor52"></a>: This parameter defines what is essentially the 
+ maximum number of modes that you wish to use. The program may determine 
+ that a lower number of modes are more appropriate.</p>
+        <p>&#160;</p>
+        <p><span style="text-decoration: underline;">Start 
+ number of modes</span>: This parameter specifies the number of modes that 
+ will be used initially. Although not necessary, it is usually most effective 
+ to start with a number less than the final number of modes.</p>
+        <p>&#160;</p>
+        <p><span style="text-decoration: underline;">Overrun 
+ factor</span>: Given that the program is dynamic, it needs to have the 
+ flexibility of being able to exceed the final number of modes during the 
+ calculation process. This parameter specifies the factor by which the 
+ final number can be exceeded.</p>
+        <p><a name="kanchor53"></a>In order to reduce the calculation time, the program allows for the 
+ gradual improvement from a coarse solution through to a refined solution. 
+ Thus the Merge, Remove and Convergence criteria each have two settings, 
+ the first corresponding to the search for a coarse solution and the second 
+ corresponding to the refined solution. </p>
+        <p>&#160;</p>
+        <p><span style="text-decoration: underline;">Merge 
+ criterion 1, Merge criterion 2</span><a name="kanchor54"></a>: Both the relaxation times and the 
+ moduli are variable although the program is structured to guarantee that 
+ both remain non-negative positive. One of the manifestations of the ill-posedness 
+ of the problem is that two non-trivial modes might approach each other 
+ whereas if they are replaced by a single mode the degree of fit to the 
+ data might be improved. The merge criteria specify how close modes may 
+ get before the program merges them into one. If <span style="font-family: Symbol;">l</span><span style="vertical-align: sub;">1</span> and <span style="font-family: Symbol;">l</span><span style="vertical-align: sub;">2</span> (<span style="font-family: Symbol;">l</span><span style="vertical-align: sub;">1</span>&gt;<span style="font-family: Symbol;">l</span><span style="vertical-align: sub;">2</span>) are two relaxation times, the two 
+ modes will be merged if <span style="font-family: Symbol;">l</span><span style="vertical-align: sub;">1</span>/<span style="font-family: Symbol;">l</span><span style="vertical-align: sub;">2</span> &lt; 
+ (1+Merge criterion). </p>
+        <p>&#160;</p>
+        <p><span style="text-decoration: underline;">Remove 
+ criterion 1, Remove criterion 2</span>: Modes may be removed for one of 
+ two reasons- if the modulus falls below the stress cut-off value (see 
+ below) or if the inclusion of the mode has a small effect on the error 
+ of fit relative to the number of modes. If the criterion is set to 1, 
+ all modes are removed; for a value of zero no modes are removed</p>
+        <p>&#160;</p>
+        <p><span style="text-decoration: underline;">Convergence 
+ criterion 1, Convergence criterion 2</span>: These are standard convergence 
+ criteria.</p>
+        <p>&#160;</p>
+        <p><span style="text-decoration: underline;">Refinement 
+ integer</span>: This parameter specifies the number of steps taken to 
+ progress from the coarse solution to the most refined.</p>
+        <p>&#160;</p>
+        <p><span style="text-decoration: underline;">Initial 
+ time increment</span>, <span style="text-decoration: underline;">Initial 
+ modulus increment</span>, <span style="text-decoration: underline;">Increment 
+ reduction factor:</span> At each level of refinement, iterations are made 
+ on the relaxation times and the moduli. Those iterations are controlled 
+ by these three additional parameters. Although the choice of values can 
+ change the speed of the calculation, there is no real reason not to use 
+ the default values, particularly for the two initial increments. The increment 
+ reduction factor controls how fast these increments are reduced as the 
+ algorithm converges. </p>
+        <p>&#160;</p>
+        <p><span style="text-decoration: underline;">Stress 
+ cut-off factor</span>: This parameter specifies the value of stress that 
+ can be regarded as 'zero'. It may be effectively regarded as the experimental 
+ error in the zero stress. </p>
+        <p>&#160;</p>
+        <p><span style="text-decoration: underline;">Error 
+ limit</span>: This is the limiting error if fit, below which further refinement 
+ is not required. Except when using 'exact' data this parameter can normally 
+ be set to any small number as in practice best fit attainable is more 
+ closely related to the experimental error in the data.</p>
+        <p>&#160;</p>
+        <p><span style="text-decoration: underline;">Time 
+ range</span><a name="kanchor55"></a><a name="kanchor56"></a>: This parameter is subtle. It determines the range of times 
+ that are permissible for the relaxation times, based on the range of frequencies 
+ that are available for the experimental data. 1 = An extended time range, 
+ 2 = 'Normal' time range, i.e. based on inverse max and min frequencies, 
+ 3 = Restricted range based on the Davies-Andersen sampling localisation 
+ theory.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

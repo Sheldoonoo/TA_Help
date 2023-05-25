@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Analyzing Data Files|Humidity Analysis" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Analyze Humidity GAB Analysis</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor43"></a>Analyze Humidity GAB Analysis</h1>
+        <p class="Normal_Indent">Select this item to fit the sorption isotherm data from the Q5000SA to the GAB model.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>To use this function:</p>
+        <ol>
+            <li style="font-family: Arial;font-size: 10pt;margin-top: 8px;" value="1">Collect your data following the guidelines suggested. See <a href="menu_humidity.htm">Humidity Analysis</a>. </li>
+            <li style="font-family: Arial;font-size: 10pt;margin-top: 8px;" value="2">Select <span style="color: teal;font-weight: bold;">File/Open</span>, then locate and open the desired humidity data file.</li>
+            <li style="font-family: Arial;font-size: 10pt;margin-top: 8px;" value="3">Select <span style="color: teal;font-weight: bold;">Analyze/Humidity/Options</span> and set up the desired <a href="menu_analyze_humidity_options.htm">analysis options</a>.</li>
+            <li style="font-family: Arial;font-size: 10pt;margin-top: 8px;" value="4">Plot Weight Change versus Time for the desired Q5000SA data.</li>
+            <li style="font-family: Arial;font-size: 10pt;margin-top: 8px;" value="5">If sample drying was conducted during this experiment, then the dry weight needs to be determined before generating this plot. Use the <span style="color: teal;font-weight: bold;">Analyze/</span><a href="Menu_analyze_reset_size.htm">Reset Size</a> function.</li>
+            <li style="font-family: Arial;font-size: 10pt;margin-top: 8px;" value="6">Select Graph/Data Limits/Time, and select the Start time as the time after the drying step, and end time as the experiment end time.</li>
+            <li style="font-family: Arial;font-size: 10pt;margin-top: 8px;" value="7">Manually mark the adsorption/desorption isotherms, if desired. Select <a href="Menu_analyze_humidity_mark_adsorption_desorption.htm">Analyze/Humidity/Mark Adsorption/Desorption</a> then select the desired position on the curve.</li>
+            <li style="font-family: Arial; font-size: 10pt; margin-top: 8px;" value="8">Select <span style="color: teal;font-weight: bold;">Analyze/Humidity/GAB Analysis.</span> A new window will be displayed with the resultant data, based on the chosen humidity options (see <a href="Win_Humidity_Analysis_Options_GAB_Analysis.htm">Humidity Analysis Options - GAB Analysis</a>. The sorption isothermal data from the selected file is processed using the GAB equation and displayed.</li>
+        </ol>
+        <p>This analysis results in a plot of the adsorption and/or desorption data values. No additional analysis of the data is performed.</p>
+        <p class="footnote_text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>A data table can be obtained for this plot by selecting <a href="Menu_view_data_table_report.htm">View/Data Table</a>.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: blue;">NOTE: If sample drying was conducted during this experiment, then the dry weight needs to be determined before generating this plot. Use the</span><span style="color: blue;font-weight: bold;">Analyze/</span><span style="font-weight: bold;"><a href="Win_Reset_Size.htm">Reset Size</a></span><span style="color: blue;">function.</span>
+        </p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent" style="border-bottom: 1.50pt solid teal;"><span style="color: teal;font-weight: bold;">Background</span>
+        </p>
+        <p>In 1946 Anderson<span style="vertical-align: super;">[1]</span> proposed a modification to the BET model (see Humidity BET Analysis), which was later adapted by Guggenheim<span style="vertical-align: super;">[2]</span> and de Boer<span style="vertical-align: super;">[3]</span>, resulting in a model that came to be called the GAB (Guggenheim, Anderson and de Boer) equation.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Anderson<span style="vertical-align: super;">1</span> mentions in his paper that, "while the simple B.E.T. equation provides an excellent method for estimating surface areas, it usually holds only for relative pressure of 0.05 to 0.40. In almost every case the amount adsorbed at relative pressure higher than 0.40 is less than predicted by the simple B.E.T. equation." He proposed that the BET equation could be used to fit the isotherms data at the relative pressures greater than 0.40, if the relative pressure is multiplied by a constant less than unity. On the basis of this simple assumption, he put forth the following equation (shown below in linear form):</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>
+            <img src="../Resources/Images/HumidityGABequation1.png" />
+        </p>
+        <p><span style="font-style: italic;">W = weight adsorbed</span>
+        </p>
+        <p><span style="font-style: italic;">W</span><span style="font-style: italic;vertical-align: sub;">m</span><span style="font-style: italic;">= weight adsorbed as a monolayer (obtained using non-linear regression analysis)</span>
+        </p>
+        <p><span style="font-style: italic;">P/P</span><span style="font-style: italic;vertical-align: sub;">0</span><span style="font-style: italic;">= relative adsorbate pressure</span>
+        </p>
+        <p><span style="font-style: italic;">C</span><span style="font-style: italic;vertical-align: sub;">G</span><span style="font-style: italic;">, K = GAB constants (obtained using non-linear regression analysis)</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent" style="border-bottom: 1.50pt solid teal;"><span style="color: teal;font-weight: bold;">References</span>
+        </p>
+        <p><span style="vertical-align: super;">[1]</span> Anderson, RB, "Modifications of the Brunauer, Emmett and Teller Equation," <span style="font-style: italic;">J. Amer. Chem. Soc.</span> 68:686-691, 1946.</p>
+        <p><span style="vertical-align: super;">[2]</span> Guggenheim, EA, ed., <span style="font-style: italic;">Applications of Statistical Mechanics</span>, Oxford: Clarendon Press, 1966.</p>
+        <p><span style="vertical-align: super;">[3]</span> de Boer, JH, ed., <span style="font-style: italic;">The Dynamical Character of Adsorption</span>, Oxford: Clarendon Press, 1953.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">See also:</p>
+        <p><a href="Humidity_Basic_Steps.htm">Humidity Basic Steps</a>
+        </p>
+        <p class="Normal_Indent"><a href="Win_Humidity_Analysis_Options_GAB_Analysis.htm">Humidity Analysis Options - GAB Analysis</a>
+        </p>
+        <p class="Normal_Indent"><a href="Menu_analyze_humidity_mark_adsorption_desorption.htm">Humidity Mark Adsorption/Desorption</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

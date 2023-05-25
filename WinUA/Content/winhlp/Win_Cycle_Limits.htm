@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Cycle Limits Window</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Cycle Limits Window</h1>
+        <p>Use this window to limit the data used for analysis to a specific data cycle range. This option is valid if you have any data breaks or markers in your file, these can include the following:</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;Cycle marks (due to Mark Cycle End segments in a procedure)</p>
+        <p class="Normal_Indent">&#160;Data breaks due to gas switch or event mark (selected on the <a href="Win_Main_Options_data_page.htm">Main Options  Data Page</a>)</p>
+        <p class="Normal_Indent">&#160;Other data breaks.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Cycle limits count the number of data breaks or cycle marks found in the data file. For multiplexed (<span style="font-style: italic;">e.g</span>., DMA, DEA, µTA, mass spec, etc.) data, the start and end cycle numbers refer to data breaks or cycle marks supplied by the user, not the cycles associated with frequency, amplitude, m/e number, etc.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>To limit data by the multiplexed value (<span style="font-style: italic;">e.g</span>., frequency, amplitude, m/e number) you must first read in the data over the range of interest using <a href="Win_Data_Limits.htm">Data Limits</a>, and then select the multiplexed values you want to work with using either <a href="Menu_edit_frequency_or_amplitude_list.htm">Edit/Frequency List</a>, for example, or <a href="Menu_edit_cycle_list.htm">Edit/Cycle List</a>. For multiplexed data, the Cycle List will include cycles due to both the multiplexed values and user specified data breaks or cycle marks. In this case, the total number of cycles will equal the number of multiplexed values times the number of user specified data breaks or cycle marks.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Follow these instructions to limit the data:</p>
+        <ol>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Normal_Indent">Enter the cycle at which you want the program to begin retrieving data.</p>
+            </li>
+        </ol>
+        <p class="Normal_Indent">2.&#160;Enter the cycle at which you want the program to stop retrieving data.</p>
+        <p class="Normal_Indent">3.&#160;Check the <span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Checkbox_Reset_Time.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Reset time to zero</a></span> box, if you want to reset the Time signal to zero at the start of the specified data limits region.</p>
+        <p class="Normal_Indent">4.&#160;Click on OK.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The program scans the data file between the points you specify to determine the minimum and maximum values, which are then used to determine the autoscaling factors for the plot. Any data outside these limits is not plotted or analyzed, regardless of the scaling factors you select later.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>To regain the entire data limits for analysis, use the <a href="Menu_graph_data_limits_full_range.htm">Data Limits/Full Range</a> option.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Troubleshooting" MadCap:browseSequencePath="Troubleshooting" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>DFA Troubleshooting Guide</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor408"></a><b><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../QDSC Images/ques_blue.jpg" style="border: none;width: 35px;height: 37px;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span></b><a name="top"></a>DFA Troubleshooting Guide</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor409"></a><a name="kanchor410"></a>When troubleshooting Data File Access (DFA) errors, the root cause almost 
+ always falls into one of the following three categories; improperly configured 
+ User-accounts, improper Share Permissions, and/or improper NTFS Security 
+ settings. The following steps listed below pertain only to DFA errors 
+ generated when saving data files to the local machine. </p>
+        <p style="font-weight: bold;color: #00509f;">Select one of the following 
+ topics to troubleshoot DFA errors:</p>
+        <ul>
+            <li value="1"><a href="#TA%20Controller%20Troubleshooting%20Checklist">TA 
+ Controller Troubleshooting Checklist</a>
+            </li>
+            <li value="2"><a href="#Configuration%20of%20Local%20and%20Domain%20Based%20Accounts">Configuration 
+ of Local and Domain Based Accounts</a>
+            </li>
+            <li value="3"><a href="#Share%20Permissions">Share 
+ Permissions</a>
+            </li>
+            <li value="4"><a href="#NTFS%20File%20Security%20Permissions">NTFS 
+ File Security Permissions</a>
+            </li>
+        </ul>
+        <h3><a name="TA Controller Troubleshooting Checklist"></a>TA Controller 
+ Troubleshooting Checklist</h3>
+        <p>Before you begin in-depth troubleshooting, check the following items 
+ to make sure your system is operating correctly:</p>
+        <ul>
+            <li value="1">Check the system event logs 
+ for anomalies and correct them. </li>
+            <li value="2">Using the <span style="font-weight: bold;color: #00509f;">Add/Remove 
+ Programs</span>, remove the TA Advantage program and then reboot the computer.</li>
+            <li value="3">Re-install Windows® Service Pack 
+ 6a (for NT) or Service Pack 2 or 3 (for W2k).</li>
+            <li value="4">Install Internet Explorer 
+ 6.01 (included on the Advantage CD).</li>
+            <li value="5">Run TA_Wiz.exe from the root 
+ of the Advantage CD and then select the System clean-up option.</li>
+            <li value="6">Re-install the Q Series™ Advantage 
+ package.</li>
+            <li value="7">Verify that all Ethernet 
+ cabling is properly connected.</li>
+            <li value="8">If necessary, update instrument 
+ software to latest version.</li>
+            <li value="9">If new instrument software 
+ has been installed or a 'Reset Parameters' has been performed, it may 
+ be necessary to re-browse the data file destination located on the Summary 
+ tab of the instrument control program.</li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Configuration of Local and Domain Based Accounts"></a>Configuration 
+ of Local and Domain Based Accounts </h3>
+        <h4><a name="kanchor411"></a>TAMA Account</h4>
+        <p>Verify the existence of the "_Tama" (TA Message Agent) account. 
+ This is a "group less" account; therefore it doesn't belong 
+ to any pre-defined group (Administrators, Power-Users, etc.). </p>
+        <ul>
+            <li value="1"><span style="font-style: italic;">For 
+ NT Users</span>, open the User Manager in the Administrative Tools group. 
+ </li>
+            <li value="2"><span style="font-style: italic;">For 
+ Windows 2000 and XP Users</span>, right-click on My Computer and select 
+ Manage, and expand the Local Users &amp; Groups tree. </li>
+        </ul>
+        <p>The "_Tama" account should be listed as a User on the local 
+ machine.(See Figure 1 below.)</p>
+        <p style="text-align: center;" align="center">
+            <img src="../QDSC Images/DFA Figure 1.gif" alt="Figure 1" style="border: none;width: 645px;height: 282px;float: none;border-style: none;" width="645" height="282" border="0" />
+        </p>
+        <p style="text-align: center;" align="center"><span style="font-weight: bold;color: #00509f;">Figure 
+ 1</span>
+        </p>
+        <p>If the account "_Tama" is not listed as a user, this indicates 
+ that the Tama service was not properly installed. Failure to create this 
+ account is almost always due to a lack of full, un-fettered, administrative 
+ level access to the system during installation. An easy way to verify 
+ this is to simply try to manually create a test account. If the operation 
+ is allowed and successful, you indeed have administrator level rights. 
+ If the operation fails, notify your IT personnel and have them provide 
+ this level of access for at least the course of installation and troubleshooting. 
+ </p>
+        <p>Once true administrative level access has been provided perform these 
+ steps: </p>
+        <ol>
+            <li class="NumberedIndent" value="1">Using the 
+ <span style="font-weight: bold;color: #00509f;">Add/Remove Programs </span>function<span style="font-weight: bold;color: #00509f;"> <![CDATA[ ]]></span>remove the TA Advantage 
+ program and then reboot the computer.</li>
+            <li class="NumberedIndent" value="2">Run TA_Wiz.exe 
+ from the root of the Advantage CD and then select the System clean-up 
+ option.</li>
+            <li class="NumberedIndent" value="3">Re-install 
+ the Q Series Advantage package.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h4><a name="kanchor412"></a>Domain Accounts</h4>
+        <p>Another source of account-related problems can be the lack of sufficient 
+ rights on the domain-based workstation. When a user logs into a domain 
+ from a Q Series workstation (as opposed to the local machine only), authentication 
+ to the local power-users or administrators group is required, however 
+ this does not happen automatically. </p>
+        <p>To determine if this is the source of the problem, log into the workstation 
+ as a LOCAL user. At the log-in screen, choose the local machine name in 
+ the <span style="font-weight: bold;color: #00509f;">Log onto</span> field. 
+ If the field is not visible, click the <span style="font-weight: bold;color: #00509f;">Options</span> 
+ button. Assuming you now have administrator level local rights, you can 
+ also ensure that domain users have local administrator rights by adding 
+ them to the Administrators group. </p>
+        <ol>
+            <li class="NumberedIndent" value="1">Right-click 
+ on <span style="font-weight: bold;color: #00509f;">My Computer</span> 
+ and select <span style="font-weight: bold;color: #00509f;">Manage</span>, 
+ and expand the <span style="font-weight: bold;color: #00509f;">Local 
+ Users &amp; Groups </span>tree. </li>
+            <li class="NumberedIndent" value="2">Highlight 
+ the <span style="font-weight: bold;color: #00509f;">Groups</span> item 
+ and double-click on the <span style="font-weight: bold;color: #00509f;">Administrators</span> 
+ item in the right pane. The user(s) allowed to run the Q Series instruments 
+ should appear twice in the list; once as the user name only and again 
+ with the domain name preceding the user's name. </li>
+            <li class="NumberedIndent" value="3">If the domain 
+ name is missing, click the <span style="font-weight: bold;color: #00509f;">Add</span> 
+ button and set the <span style="font-weight: bold;color: #00509f;">Look 
+ in</span> field to be the domain name and scan the list for the user name. 
+ </li>
+            <li class="NumberedIndent" value="4">After selecting 
+ one or more users (hold down the CTRL key while clicking on the name to 
+ select multiple users) click the <span style="font-weight: bold;color: #00509f;">Add</span> 
+ button. </li>
+            <li class="NumberedIndent" value="5">If you wish 
+ to add users from the LOCAL machine's user list, change the <span style="font-weight: bold;color: #00509f;">Look 
+ in</span> field to the local machine's name and click the <span style="font-weight: bold;color: #00509f;">Add</span> 
+ button. When you have finished adding users, you should have a dialog 
+ that looks something like Figure 2 below (partial list of domain users).</li>
+        </ol>
+        <p style="text-align: center;" align="center">&#160;<img src="../QDSC Images/DFA Figure 2.gif" alt="Figure 2" style="border: none;width: 561px;height: 434px;float: none;border-style: none;" width="561" height="434" border="0" /></p>
+        <p style="font-weight: bold;color: #00509f;text-align: center;" align="center">Figure 2</p>
+        <ol start="6" style="list-style: decimal;list-style-type: decimal;">
+            <li class="NumberedIndent" value="6">After you 
+ close this dialog window, the complete list of members of the Administrators 
+ group will now be displayed. (See Figure 3.)</li>
+        </ol>
+        <p style="text-align: center;" align="center">&#160;<img src="../QDSC Images/DFA Figure 3.gif" alt="Figure 3" style="border: none;width: 404px;height: 448px;float: none;border-style: none;" width="404" height="448" border="0" /></p>
+        <p style="font-weight: bold;color: #00509f;text-align: center;" align="center">Figure 3</p>
+        <ol start="7" style="list-style: decimal;list-style-type: decimal;">
+            <li class="NumberedIndent" value="7">Notice the 
+ two listings for the user "dkh." The first listing "dkh" 
+ corresponds to the account on the local machine and the second listing 
+ "NTSERV1\DKH" corresponds to the account on the domain. The 
+ workstation considers these accounts to be two completely separate and 
+ unrelated accounts. </li>
+            <li class="NumberedIndent" value="8">While user 
+ "NTSERV1\DKH" now has administrator rights to this particular 
+ workstation, as far as the domain resources are concerned, his rights 
+ have not changed from their original state.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Share Permissions"></a>Share Permissions</h3>
+        <p>Sometimes DFA errors are caused by the lack of sufficient rights to 
+ write to the desired destination folder. The following topic examines 
+ the share permissions of the C:\TA folder, but remember these concepts 
+ apply to all share permissions. </p>
+        <p>To check a folders rights:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Right click 
+ on the TA folder and select the menu item <span style="font-weight: bold;color: #00509f;">Properties 
+ </span>or<span style="font-weight: bold;color: #00509f;"> Sharing</span> 
+ then click on the tab<span style="font-weight: bold;color: #00509f;"> 
+ Sharing</span>. In the case of the TA folder, the radio button <span style="font-weight: bold;color: #00509f;">Share 
+ this folder</span> should be selected. If it is not, select it. </li>
+            <li class="NumberedIndent" value="2">Click the 
+ <span style="font-weight: bold;color: #00509f;">Permissions</span> button 
+ to view/change the permissions on a user-by-user basis. Figure 4 (shown 
+ below) shows the typical share permissions that are applied to the TA 
+ folder.</li>
+            <li class="NumberedIndent" value="3">Notice that 
+ the "_Tama" account is set to allow "Full Control;" 
+ this should always be the case. Also notice that the only other objects 
+ listed are not specific users, but instead are entire groups. This is 
+ usually a much easier way to control share access instead of specifying 
+ particular users. Although not shown here, the local group "Everyone" 
+ should also be in the list and be given at least change/read rights.</li>
+            <li class="NumberedIndent" value="4">To add additional 
+ groups/users, click the <span style="font-weight: bold;color: #00509f;">Add</span> 
+ button.</li>
+            <li class="NumberedIndent" value="5">Click the 
+ drop down arrow for the <span style="font-weight: bold;color: #00509f;">Look 
+ in</span> field to select the desired list and then add the groups/users.</li>
+            <li class="NumberedIndent" value="6">Select the 
+ appropriate "Allow" boxes to allow data files to be written.</li>
+            <li class="NumberedIndent" value="7">Click the 
+ <span style="font-weight: bold;color: #00509f;">OK</span> button.</li>
+        </ol>
+        <p style="text-align: center;" align="center">&#160;<img src="../QDSC Images/DFA Figure 4.gif" alt="Figure 4" style="border: none;width: 367px;height: 443px;float: none;border-style: none;" width="367" height="443" border="0" /></p>
+        <p style="font-weight: bold;color: #00509f;text-align: center;" align="center">Figure 4</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="NTFS File Security Permissions"></a><a name="kanchor413"></a>NTFS File Security Permissions</h3>
+        <p>The lack of sufficient rights to the various folders controlled by NTFS 
+ (New Technology File System) security settings may also cause DFA errors. 
+ This mechanism is very similar to share permissions, but takes precedence 
+ so that even if proper share permissions are set up, the lack of NTFS 
+ permissions may deny access. To view/change NTFS permissions:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Right click 
+ on the folder and select <span style="font-weight: bold;color: #00509f;">Properties</span>. 
+ Unlike shares, NTFS permissions can be set down to the file level.</li>
+            <li class="NumberedIndent" value="2">Click the 
+ <span style="font-weight: bold;color: #00509f;">Security</span> tab. 
+ Figure 5 (shown below) shows the typical NTFS permissions that are applied 
+ to the TA folder.</li>
+            <li class="NumberedIndent" value="3">Notice that 
+ the "_Tama" account is set to allow "Full Control;" 
+ this should always be the case. Also notice that the only other objects 
+ listed are groups as opposed to users. </li>
+            <li class="NumberedIndent" value="4">If the "_Tama" 
+ account isn’t listed, click the <span style="font-weight: bold;color: #00509f;">Add</span> 
+ button.</li>
+            <li class="NumberedIndent" value="5">Click the 
+ drop down arrow for the <span style="font-weight: bold;color: #00509f;">Look 
+ in</span> field and select the local machine list and add the group.</li>
+            <li class="NumberedIndent" value="6">Select the 
+ appropriate "Allow" boxes to allow data files to be written.</li>
+            <li class="NumberedIndent" value="7">In addition 
+ to the "_Tama" account, the accounts "SYSTEM" and 
+ "Authenticated Users" should also appear in the list with the 
+ appropriate level rights. If they do not appear, add them as directed 
+ above.</li>
+        </ol>
+        <p style="text-align: center;" align="center">
+            <img src="../QDSC Images/DFA Figure 5.gif" alt="Figure 5" style="border: none;width: 367px;height: 443px;float: none;border-style: none;" width="367" height="443" border="0" />
+        </p>
+        <p style="font-weight: bold;color: #00509f;text-align: center;" align="center">Figure 5</p>
+        <ol start="8" style="list-style: decimal;list-style-type: decimal;">
+            <li class="NumberedIndent" value="8">After the 
+ desired objects have been added and assigned the appropriate level rights, 
+ click the <span style="font-weight: bold;color: #00509f;">Advanced</span> 
+ button. </li>
+            <li class="NumberedIndent" value="9">Check the 
+ box labeled <span style="font-weight: bold;color: #00509f;">Reset permissions 
+ on all child objects and enable propagation of inheritable permission</span>.</li>
+            <li class="NumberedIndent" value="10">Click the 
+ <span style="font-weight: bold;color: #00509f;">Apply</span> button to 
+ propagate the permissions that were just set to all subordinate files 
+ and folders. (See Figure 6 below.)</li>
+        </ol>
+        <p style="text-align: center;" align="center">&#160;<img src="../QDSC Images/DFA Figure 6.gif" alt="Figure 6" style="border: none;width: 485px;height: 443px;float: none;border-style: none;" width="485" height="443" border="0" /></p>
+        <p style="font-weight: bold;color: #00509f;text-align: center;" align="center">Figure 6</p>
+        <p class="Bullet" style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

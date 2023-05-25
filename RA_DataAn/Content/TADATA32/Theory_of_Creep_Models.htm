@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Data Analysis Functions|Performing an Analysis|Model Fitting|Creep" MadCap:browseSequencePath="Model Fitting" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="RA_DataAnal.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Theory of Creep Models</title>
+        <meta name="copyright" value="All information copyright © 1998-2003 TA Instruments" />
+        <link rel="StyleSheet" href="..\TAHtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../RAGlossary/ehlpdhtm.js">
+        </script>
+        <h1 style="font-size: 14pt;margin-left: 0px;"><a name="kanchor188"></a><a name="aanchor0"></a>
+            <MadCap:concept term="Models" /><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Theory of the Creep Models</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor189"></a><a name="kanchor190"></a><a name="kanchor191"></a>This topic describes the theory behind creep models used with the TA 
+ Instruments Rheology Advantage Data Analysis program.</p>
+        <p style="font-weight: bold;color: #00509f;">Click on the topic below 
+ for more information:</p>
+        <ul>
+            <li class="Bullet" value="1"><a href="#Creep_Theory_Voigt">Voigt</a>
+            </li>
+            <li class="Bullet" value="2"><a href="#Creep_Theory_Models">Jeffreys</a>
+            </li>
+            <li class="Bullet" value="3"><a href="#Creep_Theory_Kelvin">Kelvin</a>
+            </li>
+            <li class="Bullet" value="4"><a href="#Creep_Theory_Models">Burgers</a>
+            </li>
+        </ul>
+        <p>In a creep experiment a constant shear stress, <span style="font-family: Symbol;">s</span>, 
+ is placed on a sample, and the resulting shear strain, <span style="font-family: Symbol;">g</span><a name="kanchor192"></a>(t), monitored as a function of time. It is usual 
+ to quote the results in the form of the creep compliance, J(t), defined 
+ by: </p>
+        <p>J(t) = <span style="font-family: Symbol;">g</span>(t) / <span style="font-family: Symbol;">s</span>&#160;&#160;&#160;<span style="color: #0000FF;">(1)</span></p>
+        <p><a name="kanchor193"></a><a name="kanchor194"></a>A creep test is performed at a stress which is within the regime of 
+ linear viscoelasticity, in other words where J(t) is independent of the 
+ magnitude of <span style="font-family: Symbol;">s</span>, a condition which usually holds 
+ only for low stresses.</p>
+        <p>&#160;</p>
+        <p>Formally, the stress history, <span style="font-family: Symbol;">s</span>(t), is defined 
+ by:</p>
+        <p><span style="font-family: Symbol;">s</span>(t) = <span style="font-family: Symbol;">s</span><span style="font-size: 9pt;"><span style="vertical-align: sub;">0</span></span> h(t) &#160;&#160;&#160;<span style="color: #0000FF;">(2)</span></p>
+        <p><span style="font-style: italic;">where h(t) represents the unit (Heaviside) 
+ step function with h = 0 for t &lt; 0 and h&#160;= 1 for t &gt; 0 (Figure 
+ 1) [1]</span>
+        </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="text-align: center;" align="center">
+            <img src="../image/ebx_-845436057_336x113.gif" alt="image\ebx_-845436057.gif" style="border-style: none;border-style: none;width: 336;height: 113;" border="0" />&#160;</p>
+        <p style="font-weight: bold;color: #00509f;text-align: center;" align="center">Figure 1:&#160;Stress History for a Creep Test</p>
+        <p>&#160;</p>
+        <p>But J(t) can be considered to be the sum of three separate parts, i.e.:</p>
+        <p>J(t) = J<span style="font-size: 9pt;"><span style="vertical-align: sub;">0</span></span> 
+ + J<span style="font-size: 9pt;"><span style="vertical-align: sub;">d</span></span>(t) 
+ + J<span style="font-size: 9pt;"><span style="vertical-align: sub;">v</span></span>(t)&#160;&#160;<span style="color: #0000FF;">(3)</span></p>
+        <p><span style="font-style: italic;">where J</span><span style="font-size: 9pt;font-style: italic;"><span style="vertical-align: sub;">0</span></span><span style="font-style: italic;"> 
+ is the instantaneous compliance, i.e. J at t = 0, J</span><span style="font-size: 9pt;font-style: italic;"><span style="vertical-align: sub;">d</span></span><span style="font-style: italic;">(t) 
+ is the delayed compliance and J</span><span style="font-size: 9pt;font-style: italic;"><span style="vertical-align: sub;">v</span></span><span style="font-style: italic;"> 
+ is a viscous contribution.</span>
+        </p>
+        <p>These contributions can be explained through the use of the traditional 
+ spring and dashpot models, in which an ideal elastic response is modelled 
+ by a spring of compliance, J, and an ideal viscous response by a dashpot 
+ of viscosity <span style="font-family: Symbol;">h</span>. The response of the spring to 
+ a constant applied stress is to deform instantaneously, with <span style="font-family: Symbol;">g</span> = J<span style="font-family: Symbol;">s</span><a name="kanchor195"></a>, and to recover 
+ its original dimensions when the stress is removed. The response of a 
+ dashpot is to continue to deform at a constant rate, with shear rate <img src="../image/ebx_1471512559_13x21.gif" alt="image\ebx_1471512559.gif" style="border-style: none;border-style: none;width: 13;height: 21;" border="0" />= <span style="font-family: Symbol;">s</span>/<span style="font-family: Symbol;">h</span>.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p><a name="Creep_Theory_Voigt"></a>A spring and dashpot placed in parallel 
+ (Figure 2) is referred to as a <span style="font-weight: bold;">Voigt</span> 
+ unit. It is immediately apparent that the strain is equal in the two elements, 
+ and that the total stress is the sum of the stresses in the two elements, 
+ i.e.:</p>
+        <p><span style="font-family: Symbol;">g</span><span style="vertical-align: sub;">s</span> 
+ = <span style="font-family: Symbol;">g</span><span style="vertical-align: sub;">d</span> 
+ = <span style="font-family: Symbol;">g</span>&#160;&#160;&#160;<span style="color: #0000FF;">(4)</span></p>
+        <p><span style="font-family: Symbol;">s</span><span style="vertical-align: sub;">s</span> 
+ + <span style="font-family: Symbol;">s</span><span style="vertical-align: sub;">d</span> 
+ = <span style="font-family: Symbol;">s</span>&#160;&#160;&#160;&#160;<span style="color: #0000FF;">(5)</span></p>
+        <p style="font-style: italic;">where the subscripts refer to spring and 
+ dashpot. <span style="font-style: italic;">Then from the above:</span></p>
+        <p>
+            <img src="../image/ebx_1400364996_90x45.gif" alt="image\ebx_1400364996.gif" style="border-style: none;border-style: none;width: 90;height: 45;" border="0" />&#160;&#160;&#160;<span style="color: #0000FF;">(6)</span></p>
+        <p>or, from Equation 4:</p>
+        <p>
+            <img src="../image/ebx_496905001_102x45.gif" alt="image\ebx_496905001.gif" style="border-style: none;border-style: none;width: 102;height: 45;" border="0" />&#160;&#160;&#160;<span style="color: #0000FF;">(7)</span></p>
+        <p><a name="kanchor196"></a>Separating the variables and integrating, the delayed compliance can 
+ often be satisfactorily modelled by a single element Voigt model, which 
+ gives:</p>
+        <p>J<span style="font-size: 9pt;"><span style="vertical-align: sub;">d</span></span>(t) 
+ = J [1-exp (-t/<span style="font-family: Symbol;">l</span>)]&#160;&#160;<span style="color: #0000FF;">(8)</span></p>
+        <p><span style="font-style: italic;">where J is a single value compliance, 
+ and </span><span style="font-style: italic;"><span style="font-family: Symbol;">l</span></span><span style="font-style: italic;"> is referred to as the relaxation time. </span>
+        </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p>More usually a number of Voigt elements are required, and:</p>
+        <p>J<span style="font-size: 9pt;"><span style="vertical-align: sub;">d</span></span>(t) 
+ = <img src="../image/ebx_1144450621_25x33.gif" alt="image\ebx_1144450621.gif" style="border-style: none;border-style: none;width: 25;height: 33;" border="0" />J<span style="font-size: 9pt;"><span style="vertical-align: sub;">n</span></span>[1 
+ - exp (-t/<span style="font-family: Symbol;">l</span><span style="font-size: 9pt;"><span style="vertical-align: sub;">n</span></span>)]&#160;<span style="color: #0000FF;">(9)</span></p>
+        <p><a name="Creep_Theory_Kelvin"></a>A Voigt model consisting of a finite 
+ number of elements might alternatively be referred to as a <span style="font-weight: bold;">Kelvin</span> 
+ model, although the terms Voigt and Kelvin are often used interchangeably. 
+ In the infinite limit this becomes the integral:</p>
+        <p>
+            <img src="../image/ebx_292628514_24x48.gif" alt="image\ebx_292628514.gif" style="border-style: none;border-style: none;width: 24;height: 48;" border="0" />L(<span style="font-family: Symbol;">l</span>) [1 - exp (-t/<span style="font-family: Symbol;">l</span>)] d ln<span style="font-family: Symbol;">l</span>&#160;&#160;<span style="color: #0000FF;">(10)</span></p>
+        <p><span style="font-style: italic;">where L(</span><span style="font-style: italic;"><span style="font-family: Symbol;">l</span></span><span style="font-style: italic;">) is known 
+ as the retardation spectrum.</span>
+        </p>
+        <p>The viscous contribution is given by:</p>
+        <p>J<span style="font-size: 9pt;"><span style="vertical-align: sub;">v</span></span>(t) 
+ = t/<span style="font-family: Symbol;">h</span><span style="font-size: 9pt;"><span style="vertical-align: sub;">0</span></span>&#160;&#160;&#160;<span style="color: #0000FF;">(11)</span></p>
+        <p><span style="font-style: italic;">where </span><span style="font-style: italic;"><span style="font-family: Symbol;">h</span></span><span style="font-size: 9pt;font-style: italic;"><span style="vertical-align: sub;">0</span></span><span style="font-style: italic;"> 
+ is defined as the low shear rate limiting viscosity, d</span><span style="font-style: italic;"><span style="font-family: Symbol;">g</span></span><span style="font-style: italic;">/dt, in 
+ the limit as t </span><span style="font-style: italic;"><span style="font-family: Symbol;">®</span></span><span style="font-style: italic;">&#160;</span><span style="font-style: italic;"><span style="font-family: Symbol;">¥</span></span><span style="font-style: italic;">.</span>
+        </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p><a name="Creep_Theory_Models"></a>A summary of the various models used 
+ to fit the data obtained from a creep test is given below.</p>
+        <p class="Topic-Text-Indent" style="margin-left: 15.05pt;margin-bottom: 0.00pt;">
+            <img src="../image/Creep Models Figure.gif" style="border: none;width: 667px;height: 333px;float: none;border-style: none;border-style: none;" width="667" height="333" border="0" />
+        </p>
+        <p><a name="kanchor197"></a>The standard method of measuring viscosity requires that the system 
+ be at steady state. The exponential values in the above models indicate 
+ that for most real materials this condition only strictly applies in the 
+ limit as t <span style="font-family: Symbol;">®</span><span style="font-family: Symbol;">¥</span>. However 
+ for practical purposes steady state can be taken as being achieved when 
+ d<span style="font-family: Symbol;">g</span>/dt falls below the limit of detection of the 
+ instrument. The zero shear viscosity can be obtained from a creep curve.</p>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Creating Your Own Models|Creating_Your_Own_Models.htm||Importing/Exporting User-Defined Models|Importing_Exporting_User_Defined_Models.htm||Introducing Model Fitting|Introducing_Model_Fitting.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

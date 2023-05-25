@@ -1,0 +1,196 @@
+CMCXmlParser._FilePathToXmlStringMap.Add(
+	'Toc',
+	'<?xml version=\"1.0\" encoding=\"utf-8\"?>' +
+	'<CatapultToc Version=\"1\" DescendantCount=\"136\">' +
+	'    <TocEntry Title=\"Welcome to Rheology Instrument Control Help\" Link=\"/Content/TAAR32/Welcome_to_Rheology_Instrument_Control_Help.htm\" Skin=\"Project/Skins/opening.flskn\" ComputedResetPageLayout=\"true\" ComputedFirstTopic=\"true\" DescendantCount=\"0\" />' +
+	'    <TocEntry Title=\"Introducing the Rheometer\" ComputedFirstTopic=\"false\" DescendantCount=\"5\">' +
+	'        <TocEntry Title=\"Introducing the Rheometers\" Link=\"/Content/TAAR32/Introducing_the_Rheometers.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Understanding the Air Bearing\" Link=\"/Content/TAAR32/Understanding_the_Air_Bearing.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Rotational Mapping\" Link=\"/Content/TAAR32/Rotational_Mapping.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Peltier System\" Link=\"/Content/TAAR32/Peltier_system.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Measuring System Overview\" Link=\"/Content/TAAR32/Measuring_System_Overview.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Getting Help\" ComputedFirstTopic=\"false\" DescendantCount=\"1\">' +
+	'        <TocEntry Title=\"Getting Assistance While You Work\" Link=\"/Content/TAAR32/Getting_Assistance_While_You_Work.htm\" Skin=\"Project/Skins/main.flskn\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"CE Compliance and Safety Information\" ComputedFirstTopic=\"false\" DescendantCount=\"4\">' +
+	'        <TocEntry Title=\"CE Compliance Statement\" Link=\"/Content/TAAR32/CE_Compliance_statement.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Maintenance and Repair\" Link=\"/Content/TAAR32/Maintenance_and_Repair.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Information and Warnings\" Link=\"/Content/TAAR32/Information_and_Warnings.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Event Connections\" Link=\"/Content/TAAR32/Event_Connections.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Installing the Rheometer\" ComputedFirstTopic=\"false\" DescendantCount=\"3\">' +
+	'        <TocEntry Title=\"Overview\" Link=\"/Content/TAAR32/Installation_Overview.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Levelling the Rheometer\" Link=\"/Content/TAAR32/Levelling_the_Rheometer.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Checking the Installation\" Link=\"/Content/TAAR32/Checking_the_Installation.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Configuring the Software\" ComputedFirstTopic=\"false\" DescendantCount=\"3\">' +
+	'        <TocEntry Title=\"Customizing the Program\" Link=\"/Content/TAAR32/Customizing_the_Program.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Customizing Tool Bars\" Link=\"/Content/TAAR32/Customizing_Tool_Bars.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"How to Display the Key\" Link=\"/Content/TAAR32/How_to_Display_the_Key.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Calibration\" ComputedFirstTopic=\"false\" DescendantCount=\"8\">' +
+	'        <TocEntry Title=\"Introduction to Calibration\" Link=\"/Content/TAAR32/Calibrating_the_Rheometer.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Calibrating Inertia\" Link=\"/Content/TAAR32/Calibrating_Inertia.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Rotational Mapping\" Link=\"/Content/TAAR32/Rotational_Mapping.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Calibrating the Temperature\" Link=\"/Content/TAAR32/Calibrating_the_Temperature.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Finding the Offset and Span Values\" Link=\"/Content/TAAR32/Finding_the_Offset_and_Span_Values.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Calibrating for Friction\" Link=\"/Content/TAAR32/Calibrating_for_Friction.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"System Verification\" Link=\"/Content/TAAR32/System_verification.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Flow Inertia Correction\" Link=\"/Content/TAAR32/Flow_Inertia_Correction.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Measuring Geometry Information\" ComputedFirstTopic=\"false\" DescendantCount=\"26\">' +
+	'        <TocEntry Title=\"Measuring System Overview\" Link=\"/Content/TAAR32/Measuring_System_Overview.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Choosing the Best Measuring System\" ComputedFirstTopic=\"false\" DescendantCount=\"6\">' +
+	'            <TocEntry Title=\"Material Type - Advantages &amp; Disadvantages\" Link=\"/Content/TAAR32/Material_type_advantages_disadvantages.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Measuring System Selection Guide\" Link=\"/Content/TAAR32/Measuring_system_selection_guide.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Measuring System Selection Assistant\" Link=\"/Content/TAAR32/TAAR32_DO-IT_MS_selection_assistant_1.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Truncation or T Value\" Link=\"/Content/TAAR32/Truncation_or_T_Value.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Measuring System Files\" Link=\"/Content/TAAR32/Measuring_system_files.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Creating a New Geometry File\" Link=\"/Content/TAAR32/Creating_a_New_Geometry_File.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        </TocEntry>' +
+	'        <TocEntry Title=\"Types of Measuring Systems\" ComputedFirstTopic=\"false\" DescendantCount=\"4\">' +
+	'            <TocEntry Title=\"Cone and Plate Measuring Systems\" Link=\"/Content/TAAR32/Cone_and_Plate_Measuring_System.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Cone Angle/Diameter Selection\" Link=\"/Content/TAAR32/Cone_Angle_Diameter_Selection.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Parallel Plate Measuring Systems\" Link=\"/Content/TAAR32/Parallel_Plate_Measuring_System.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Concentric Cylinder Measuring System\" Link=\"/Content/TAAR32/Concentric_Cylinder_Measuring_System.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        </TocEntry>' +
+	'        <TocEntry Title=\"Using Measuring Systems\" ComputedFirstTopic=\"false\" DescendantCount=\"2\">' +
+	'            <TocEntry Title=\"Using Measuring Systems\" Link=\"/Content/TAAR32/Menu_Measuring_Systems.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Attaching/Removing a Measuring Geometry\" Link=\"/Content/TAAR32/Attaching_Removing_a_Measuring_Geometry.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        </TocEntry>' +
+	'        <TocEntry Title=\"Form Factors\" ComputedFirstTopic=\"false\" DescendantCount=\"8\">' +
+	'            <TocEntry Title=\"What Are Form Factors?\" Link=\"/Content/TAAR32/What_are_measurement_system_factors.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Conversion of System Factors from SI to CGS\" Link=\"/Content/TAAR32/Conversion_of_System_Factors.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Form Factor Calculations\" Link=\"/Content/TAAR32/Form_factor_Calculations.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Inertia Factor\" Link=\"/Content/TAAR32/Inertia_factor.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Typical Factors\" ComputedFirstTopic=\"false\" DescendantCount=\"4\">' +
+	'                <TocEntry Title=\"Cone and Plate\" Link=\"/Content/TAAR32/Cone_and_Plate_Factors.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'                <TocEntry Title=\"Cylinders/Vanes Factors\" Link=\"/Content/TAAR32/Cylinders_Vanes_Factors.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'                <TocEntry Title=\"Parallel Plate Factors\" Link=\"/Content/TAAR32/Parallel_Plate_Factors.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'                <TocEntry Title=\"Solid Sample Factors\" Link=\"/Content/TAAR32/Solid_Sample_Factors.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            </TocEntry>' +
+	'        </TocEntry>' +
+	'        <TocEntry Title=\"Hints for Positioning the Geometry\" Link=\"/Content/TAAR32/Hints_for_Positioning_the_Geometry.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Gap Setting and Control\" ComputedFirstTopic=\"false\" DescendantCount=\"4\">' +
+	'            <TocEntry Title=\"Setting the Gap\" Link=\"/Content/TAAR32/Setting_the_Gap.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Adjusting the Rheometer Gap Velocity Values\" Link=\"/Content/TAAR32/Adjusting_the_Rheometer_Gap_Velocity_Values.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Finding the Zero (Datum) Point\" Link=\"/Content/TAAR32/Finding_the_Zero_Datum_Point.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Programmed Gap Closure\" Link=\"/Content/TAAR32/Programmed_Gap_Closure.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        </TocEntry>' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Opening, Creating and Saving Information\" ComputedFirstTopic=\"false\" DescendantCount=\"12\">' +
+	'        <TocEntry Title=\"Overview of Files\" Link=\"/Content/TAAR32/Overview_of_files.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Opening a File\" Link=\"/Content/TAAR32/Opening_a_File.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Creating a New Geometry File\" Link=\"/Content/TAAR32/Creating_a_New_Geometry_File.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Introduction to Procedure Files\" Link=\"/Content/TAAR32/Procedure_files.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"About Notes Files\" Link=\"/Content/TAAR32/About_Notes_Files.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"What is a Results File?\" Link=\"/Content/TAAR32/What_is_a_Results_File.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"What is Recorded in a Session File?\" Link=\"/Content/TAAR32/Session_files.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Graph Settings Files\" Link=\"/Content/TAAR32/Graph_settings_files.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Using File Properties\" Link=\"/Content/TAAR32/Using_File_Properties.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Changing the Graph Layout\" Link=\"/Content/TAAR32/Changing_the_Graph_Layout.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Changing the Graph Variables\" Link=\"/Content/TAAR32/Changing_the_Graph_Variables.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Changing the Background Color of the Graph\" Link=\"/Content/TAAR32/Changing_the_Background_Color_of_the_Graph.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Designing a Test\" ComputedFirstTopic=\"false\" DescendantCount=\"12\">' +
+	'        <TocEntry Title=\"Concepts of Test Design\" Link=\"/Content/TAAR32/Concepts_of_Test_Design.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Introduction to Flow Tests\" Link=\"/Content/RAGlossary/Introduction_to_Flow_Tests.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Available Flow Steps\" Link=\"/Content/TAAR32/Available_Flow_Steps.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Introduction to Creep tests\" Link=\"/Content/RAGlossary/Introduction_to_Creep_Tests.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Creep Test Function\" Link=\"/Content/TAAR32/Creep_Test_Function.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Stress Relaxation Test Function\" Link=\"/Content/TAAR32/Stress_relaxation.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Introducing Multiwave Frequency Testing\" Link=\"/Content/TAAR32/Multiwave_Frequency_Testing.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Introduction to Oscillatory Tests\" Link=\"/Content/RAGlossary/Introduction_to_Oscillatory_Tests.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Oscillation Steps\" ComputedFirstTopic=\"false\" DescendantCount=\"3\">' +
+	'            <TocEntry Title=\"Available Oscillation Steps\" Link=\"/Content/TAAR32/Available_Oscillation_Steps.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Harmonic Analysis\" Link=\"/Content/TAAR32/Harmonic_Analysis.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Setting Up a TTS Test\" Link=\"/Content/TAAR32/Setting_Up_a_TTS_Test.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        </TocEntry>' +
+	'        <TocEntry Title=\"Displaying Raw (Point) Data During a Test\" Link=\"/Content/TAAR32/Display_raw_data.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Operating the Rheometer\" ComputedFirstTopic=\"false\" DescendantCount=\"8\">' +
+	'        <TocEntry Title=\"Required Air Pressure\" Link=\"/Content/TAAR32/Required_air_pressure.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Sample Loading\" Link=\"/Content/TAAR32/Sample_Loading.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Do\'s and Don\'ts\" Link=\"/Content/TAAR32/Dos_and_Donts.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Removing/Replacing the Air Bearing Clamp\" Link=\"/Content/TAAR32/Removing_Replacing_the_Air_Bearing_Clamp.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Attaching/Removing a Measuring Geometry\" Link=\"/Content/TAAR32/Attaching_Removing_a_Measuring_Geometry.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Finding the Zero (Datum) Point\" Link=\"/Content/TAAR32/Finding_the_Zero_Datum_Point.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Shutting Down the Rheometer\" Link=\"/Content/TAAR32/Rheometer_shutdown_procedure.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Manually Operating the Rheometer\" Link=\"/Content/TAAR32/Manually_Operating_the_Rheometer.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Maintenance and Repair\" ComputedFirstTopic=\"false\" DescendantCount=\"5\">' +
+	'        <TocEntry Title=\"Service and Repair\" Link=\"/Content/TAAR32/Maintenance_and_Repair.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Cleaning the Air Filter\" Link=\"/Content/TAAR32/Cleaning_the_Air_Filter.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Do\'s and Don\'ts\" Link=\"/Content/TAAR32/Dos_and_Donts.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"LCD Messages\" Link=\"/Content/TAAR32/LCD_Messages.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"System Verification\" Link=\"/Content/TAAR32/System_verification.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Temperature Control\" ComputedFirstTopic=\"false\" DescendantCount=\"18\">' +
+	'        <TocEntry Title=\"The Importance of Temperature Control\" Link=\"/Content/TAAR32/The_importance_of_temperature_control.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Peltier System\" Link=\"/Content/TAAR32/Peltier_system.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Temperature Control Modules\" Link=\"/Content/TAAR32/Temperature_Control_Modules.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Computer Controlled Fluid Circulator (CCFC)\" Link=\"/Content/TAAR32/Computer_Controlled_Fluid_Circulator_CCFC_.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Environmental Test Chamber (ETC)\" ComputedFirstTopic=\"false\" DescendantCount=\"13\">' +
+	'            <TocEntry Title=\"Introducing the ETC\" Link=\"/Content/ETC/ETC_Introduction.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Testing Solid Samples\" ComputedFirstTopic=\"false\" DescendantCount=\"12\">' +
+	'                <TocEntry Title=\"Guide to Sample Preparation\" Link=\"/Content/ETC/ETC_Sample_Prep.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'                <TocEntry Title=\"Centering Rectangular Samples in Torsion\" Link=\"/Content/ETC/ETC_Centering.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'                <TocEntry Title=\"Selecting Clamp Faces\" Link=\"/Content/ETC/ETC_Selecting_Clamp_Faces.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'                <TocEntry Title=\"Selecting Appropriate Spacers\" Link=\"/Content/ETC/ETC_Selecting_Spacers.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'                <TocEntry Title=\"Setting Up Geometry for Torsion\" Link=\"/Content/ETC/ETC_Setting_Up_Geometry_for_Torsion.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'                <TocEntry Title=\"Loading Torsion Samples\" Link=\"/Content/ETC/ETC_Loading_Torsion_Samples.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'                <TocEntry Title=\"Temperature Ramp Test on Solids in Torsion\" Link=\"/Content/ETC/ETC_TRamp.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'                <TocEntry Title=\"Finding Linear Region for Solid in Torsion\" Link=\"/Content/ETC/ETC_Finding_LVR_for_Solids.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'                <TocEntry Title=\"Analysis of Results\" Link=\"/Content/ETC/ETC_Analysis_of_results.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'                <TocEntry Title=\"Spacer Charts\" ComputedFirstTopic=\"false\" DescendantCount=\"3\">' +
+	'                    <TocEntry Title=\"0.5 to 1.0 mm\" Link=\"/Content/ETC/ETC_spacer_chart_1.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'                    <TocEntry Title=\"1.0 to 3.0 mm\" Link=\"/Content/ETC/ETC_spacer_chart_2.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'                    <TocEntry Title=\"3.0 to 5.0 mm\" Link=\"/Content/ETC/ETC_spacer_chart_3.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'                </TocEntry>' +
+	'            </TocEntry>' +
+	'        </TocEntry>' +
+	'        <TocEntry Title=\"Setting Up the Compensation Mode\" Link=\"/Content/TAAR32/Setting_Up_the_Compensation_Mode.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Tips &amp; Suggestions\" ComputedFirstTopic=\"false\" DescendantCount=\"5\">' +
+	'        <TocEntry Title=\"Run the &quot;Measuring System Selection&quot; Assistant\" Link=\"/Content/TAAR32/TAAR32_DO-IT_MS_selection_assistant_1.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Hints for Positioning the Geometry\" Link=\"/Content/TAAR32/Hints_for_Positioning_the_Geometry.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Setting up a TTS Test\" Link=\"/Content/TAAR32/Setting_Up_a_TTS_Test.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Solids Testing - Poissons Ratio Correction\" Link=\"/Content/TAAR32/Poissons_Ratio_Correction.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Motor Mode\" Link=\"/Content/TAAR32/Motor_mode.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Theory, Equations, and Charts\" ComputedFirstTopic=\"false\" DescendantCount=\"17\">' +
+	'        <TocEntry Title=\"Controlled Strain\" Link=\"/Content/TAAR32/Controlled_Strain.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Controlled Stress\" Link=\"/Content/TAAR32/Controlled_stress.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Creep Test Function\" Link=\"/Content/TAAR32/Creep_Test_Function.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Oscillatory mapping\" Link=\"/Content/TAAR32/Oscillatory_mapping.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Introducing Multiwave Frequency (MWF) Testing\" Link=\"/Content/TAAR32/Multiwave_Frequency_Testing.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Finding the Offset and Span Values\" Link=\"/Content/TAAR32/Finding_the_Offset_and_Span_Values.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Calculations\" Link=\"/Content/TAAR32/Form_factor_Calculations.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Strain Calculations for Samples in Torsion\" Link=\"/Content/TAAR32/Strain_Calculations_for_Samples_in_Torsion.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Flow Inertia Correction\" Link=\"/Content/TAAR32/Flow_Inertia_Correction.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Inertia factor\" Link=\"/Content/TAAR32/Inertia_factor.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Cone and Plate Factors\" Link=\"/Content/TAAR32/Cone_and_Plate_Factors.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Parallel Plate Factors\" Link=\"/Content/TAAR32/Parallel_Plate_Factors.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Cylinders/Vanes Factors\" Link=\"/Content/TAAR32/Cylinders_Vanes_Factors.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Conversion of System Factors from SI to CGS\" Link=\"/Content/TAAR32/Conversion_of_System_Factors.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"0.5 &amp;lt; t &amp;lt;= 1.0 mm\" Link=\"/Content/ETC/ETC_spacer_chart_1.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"1.0 &amp;lt; t &amp;lt;= 3.0 mm\" Link=\"/Content/ETC/ETC_spacer_chart_2.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"3.0 &amp;lt; t &amp;lt;= 5.0 mm\" Link=\"/Content/ETC/ETC_spacer_chart_3.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Advantage Integrity\" ComputedFirstTopic=\"false\" DescendantCount=\"1\">' +
+	'        <TocEntry Title=\"Introducing Advantage Integrity\" Link=\"/Content/TAAR32/Integrity_Introduction.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Video Clips\" ComputedFirstTopic=\"false\" DescendantCount=\"4\">' +
+	'        <TocEntry Title=\"Contents\" Link=\"/Content/TAAR32/Video_clips_List.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Clips\" ComputedFirstTopic=\"false\" DescendantCount=\"3\">' +
+	'            <TocEntry Title=\"Instrument Startup and Shutdown\" Link=\"/Content/TAAR32/Video_clip_1.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Installing a Measuring Geometry\" Link=\"/Content/TAAR32/Video_clip_2.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'            <TocEntry Title=\"Loading and Trimming Samples\" Link=\"/Content/TAAR32/Video_clip_3.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        </TocEntry>' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"TA Instruments Offices\" Link=\"/Content/TAAR32/TA_Instruments_Offices.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    <TocEntry Title=\"Glossary of Terms\" Link=\"/Content/RAGlossary/Glossary.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    <TocEntry Title=\"Variables\" Link=\"/Content/RAGlossary/Variables.htm\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'</CatapultToc>'
+);

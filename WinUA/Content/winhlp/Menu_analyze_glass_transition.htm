@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Analyzing Data Files" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Glass Transition</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Glass Transition</h1>
+        <p>Use the Glass Transition menu item to calculate the onset, end, inflection, and signal change of a glass transition in the curve. For example, this analysis enables you to determine the glass transition by DSC.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p><span style="font-weight: bold;">Onset</span> is the intersection of the first and second tangents.</p>
+            </li>
+            <li style="font-size: 10pt;" value="2">
+                <p><span style="font-weight: bold;">Inflection</span> is the portion of the curve between the first and third tangents with the steepest slope.</p>
+            </li>
+            <li style="font-size: 10pt;" value="3">
+                <p><span style="font-weight: bold;">End</span> is the intersection of the second and third tangents.</p>
+            </li>
+        </ul>
+        <p>
+            <img src="../Resources/Images/Step2tran.png" />
+        </p>
+        <p class="Body_Text">NOTE: The Glass Transition option is not available if the Y-axis scale is log.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The glass transition can be done in either of two ways: automatic mode (which is the default condition) or manual mode (selected on the <a href="Win_Analysis_Options_step_transition_page.htm">Analysis Options  Step/Change Page</a>).</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Normal_Indent">In automatic mode the program draws three tangent lines between the two data limits that you select.</p>
+            </li>
+            <li style="font-size: 10pt;" value="2">
+                <p>In the manual mode, you specify the start and stop limits for each of the three tangent lines. The intersection of the first two lines is the onset, and the intersection of the second two is the end.</p>
+            </li>
+        </ul>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Follow these steps to perform the glass transition analysis:</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">1.&#160;Select Glass Transition from the Analyze menu. Markers will be displayed on the graph.</p>
+        <p class="Normal_Indent">2.&#160;Right click to display the <a href="Menu_analyze_popup.htm">Analyze pop-up menu</a>, then select Point 1 to activate the first marker.</p>
+        <p class="Normal_Indent">3.&#160;Position the vertical bar of the active marker where you want the data for the tangent line to begin.</p>
+        <p class="Normal_Indent">4.&#160;Right click to display the Analyze pop-up menu again, then select Point 2.</p>
+        <p class="Normal_Indent">5.&#160;Position the second marker where you want the tangent line to end. If you are using manual mode, repeat steps 2 and 3 for Points 3 through 6 until all six markers have been placed.</p>
+        <p class="Normal_Indent">6.&#160;Right click to display the Analyze pop-up menu. Select Accept Limits.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The program draws the tangent lines, calculates and displays the onset, midpoint, and end.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Body_Text">NOTE: You can change the parameters of this analysis by setting the options found on the Analysis Options - Step/Change Page.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>See also:</p>
+        <p><a href="Tips_on_Using_Markers.htm">Tips on Using Markers</a>
+        </p>
+        <p><a href="Win_Analysis_Options_step_transition_page.htm">Analysis Options  Step/Change Page</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpCheckList.First Draft,RoboHelpCheckList.Links,RoboHelpCheckList.Index keywords,RoboHelpStatus.In Progress" MadCap:tocPath="Calibrating the SDT|Viewing Calibration Parameters" MadCap:browseSequencePath="Viewing Calibration Parameters" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="QSDT.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Viewing the Cell/Temperature Calibration Parameters</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" type="text/css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;" alt="" width="35" height="37" align="right" border="0" /></a></span><a name="top" id="top"></a>Viewing the Cell/Temperature Calibration Parameters</h1>
+        <p>&#160;</p>
+        <p>Access the <span style="font-weight: bold;color: #00509f;">Cell/Temperature Table</span> from the <span style="font-weight: bold;color: #00509f;">Calibration</span> menu to view the currently loaded calibration constants and temperature calibration points for the cell.</p>
+        <p style="font-weight: bold;color: #00509f;">Select from the following topics for more information:</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet"><a href="#Cell%20Calibration%20Parameters">Cell Calibration Parameters</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet"><a href="#Temperature%20Calibration%20Table">Temperature Calibration Table</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet"><a href="Calibration_Report.htm">Calibration Report</a>
+                </p>
+            </li>
+        </ul>
+        <p style="text-align: center;">
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+        </p>
+        <h3><a name="Cell Calibration Parameters"></a>Cell Calibration Parameters &#160;</h3>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent">Select <span style="font-weight: bold;color: #00509f;">Calibrate/Cell/Temperature Table</span> from the menu, then click on the <span style="font-weight: bold;color: #00509f;">Cell Calibration</span> page to view the calibration constants listed below.</p>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Cell Constant:</span> &#160;Cell Constant is a calibration factor used to adjust the instrument's response. &#160;The default value is 1.00.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet" style="font-weight: bold;color: #00509f;">Baseline Slope: &#160;<span style="font-weight: normal;color: #000000;">This parameter is a calibration constant that accounts for the DTA baseline slope of an empty cell. &#160;The baseline slope is calculated from data gathered as an empty cell is heated through the temperature range expected in subsequent experiments. &#160;The RMS (root mean square) average of the data is calculated to determine the best straight-line fit. &#160;From this line the baseline slope is calculated to account for the difference in output between the reference and sample thermocouples. Default is 0.00.</span></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet" style="font-weight: bold;color: #00509f;">Baseline Offset: &#160;<span style="font-weight: normal;color: #000000;">Baseline Offset is a calibration factor that shifts the curve up or down along the y-axis to balance the heat flow at the sample and reference thermocouple positions. The baseline offset is calculated from data gathered as an empty cell is heated through the temperature range expected in subsequent experiments. &#160;The RMS (root mean square) average of the data is calculated to determine the best straight-line fit. &#160;From this line the DTA baseline offset is calculated to return the curve to the ideal reference (zero).</span></p>
+                    </li>
+                </ul>
+            </li>
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent">If these values are correct, select <span style="font-weight: bold;color: #00509f;">OK</span>.</p>
+            </li>
+            <li class="p-NumberedIndent" value="3">
+                <p class="NumberedIndent">If a change is desired, enter the correct value in the appropriate field and select <span style="font-weight: bold;color: #00509f;">OK</span>.</p>
+            </li>
+        </ol>
+        <p>The baseline calibration parameters are automatically updated in this window after <a href="Calibrating_the_SDT_for_DTA_Baseline.htm">DTA baseline calibration</a> has been performed, accepted, and saved.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Temperature Calibration Table"></a>Temperature Calibration Table</h3>
+        <p>Temperature calibration is useful for experiments in which precise transition temperatures are essential. To temperature calibrate the SDT, you need to analyze a high-purity metal for its melting temperature, and then enter the observed and correct values in the temperature calibration table. The temperature calibration parameters (observed and correct values) are automatically updated in this window after Temperature Calibration has been performed, accepted, and saved. They may also be manually entered.</p>
+        <p>This table shows the temperature calibration table that the instrument applies to the collected data. The observed and correct temperature corresponds to the experimental and theoretical transition temperature (<span style="font-style: italic;">e.g</span>., melting point) of the calibrant respectively. &#160;Select <span style="font-weight: bold;color: #00509f;">Cell/Temperature Table</span> from the <span style="font-weight: bold;color: #00509f;">Calibrate</span> menu, then click the <span style="font-weight: bold;color: #00509f;">Temperature</span> tab to display the <span style="font-weight: bold;color: #00509f;">Temperature Table</span>.</p>
+        <p class="Notes">NOTE: A multiple-point calibration is more accurate than a one-point calibration. A single-point calibration shifts the sample temperature by a constant amount. A two- or more-point calibration shifts the temperature by a constant amount below the first point, uses a smooth curve through the calibration points and maintains a constant temperature shift after the last point.</p>
+        <p>If the values shown on the Temperature Table are correct, select <span style="font-weight: bold;color: #00509f;">OK</span>.</p>
+        <p>To manually edit these values:</p>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent">Select the <span style="font-weight: bold;color: #00509f;">Reset</span> button to remove all previously stored values. &#160;</p>
+            </li>
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent">Enter the <span style="font-weight: bold;color: #00509f;">Observed</span> and <span style="font-weight: bold;color: #00509f;">Correct</span> temperature points in the table.</p>
+            </li>
+            <li class="p-NumberedIndent" value="3">
+                <p class="NumberedIndent">Select <span style="font-weight: bold;color: #00509f;">OK</span> when all points have been entered to save the settings to the instrument.</p>
+            </li>
+        </ol>
+        <p class="Notes">NOTE: When temperature calibration is in effect, Temp in *C appears in the status line. &#160;When it is not in effect, Temp in °C appears in the status line.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Analyzing SDT Calibration Data|Analyzing_SDT_Calibration_Data.htm||Basic Steps Needed to Run an SDT Experiment|Basic_Steps_Needed_to_Run_an_SDT_Experiment_.htm||Calibrating the Mass Flow Controller|Calibrating_the_Mass_Flow_Controller.htm||Calibrating the SDT for DSC Heat Flow|Calibrating_the_SDT_for_DSC_Heat_Flow.htm||Calibrating the SDT for DTA Baseline|Calibrating_the_SDT_for_DTA_Baseline.htm||Calibrating the SDT for TGA Weight|Calibrating_the_SDT_for_TGA_Weight.htm||Calibrating the SDT Temperature|Calibrating_the_SDT_Temperature.htm||Calibration Report|Calibration_Report.htm||Handling Run Sequences|Handling_Run_Sequences.htm"><img src="SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

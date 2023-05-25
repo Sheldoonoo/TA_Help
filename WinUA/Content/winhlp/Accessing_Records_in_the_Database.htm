@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="Login" MadCap:tocPath="Advantage Integrity Help Topics in UA" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Accessing Records in the Database</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Accessing Records in the Database</h1>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>After logging into the Advantage Integrity-licensed Universal Analysis program, you will need to locate the experiment data in the database for analysis.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>You can either browse for data in the <span style="font-weight: bold;">Database Viewer</span> using the tree view functions in the left-hand pane, using the Record ID number, or by using the <span style="font-weight: bold;">Database Search Wizard</span> (which employs SQL). These three methods are briefly explained in the sections that follow.</p>
+        <h2><span style="color: teal;">Browsing for Data in Tree View</span>
+        </h2>
+        <p>The left-hand pane of the <span style="font-weight: bold;">Database Viewer</span> can be used to locate data in tree view. Click on each item to open the items below it until you come to the desired record. The sort order in which these items are displayed can be customized using the Set Sort Order function, <img src="../Resources/Images/ButtonSetOrderTree.png" />. (See: <a href="Setting_the_Sort_Order_for_Tree_View.htm">Setting the Sort Order for Tree View</a> for information on setting the sort order.)</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Bullet" style="margin-left: 24.00pt;"><span style="color: teal;font-weight: bold;">Dates, User, Project, Instrument, Run Number</span>: When you click on one of these icons, the records that apply are displayed in the right-hand pane.</p>
+            </li>
+            <li style="font-size: 10pt;" value="2">
+                <p class="Bullet" style="margin-left: 24.00pt;"><span style="color: teal;font-weight: bold;">Raw Data files, Calibration files, Saved Analysis files, Saved Session files, Text files</span>: When you select the data file record, the data file information is displayed in the right-hand pane. To open the file, click the <img src="../Resources/Images/ButtonGetData.png" /> tool bar button or select <span style="font-weight: bold;">File/Open.</span> (These files can be opened in Universal Analysis.)</p>
+            </li>
+            <li style="font-size: 10pt;" value="3">
+                <p class="Bullet" style="margin-left: 24.00pt;"><span style="color: teal;font-weight: bold;">PDF files</span>: When you select an Acrobat PDF file, the Acrobat Reader program will open and the file will displayed. (This type of file cannot be opened in Universal Analysis.)</p>
+            </li>
+            <li style="font-size: 10pt;" value="4">
+                <p class="Bullet" style="margin-left: 24.00pt;"><span style="color: teal;font-weight: bold;">BMP files</span>: When you select a BMP file, the image is displayed. (This type of file cannot be opened in Universal Analysis.)</p>
+            </li>
+        </ul>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <h2><span style="color: teal;">Browsing the Database by Record</span>
+        </h2>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>To browse around the database by a particular record you can use several different methods:</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Bullet"><span style="font-style: italic;">Using the Record Search Option</span>: At the top of the <span style="font-weight: bold;">Database View</span> window is an entry field called <span style="font-weight: bold;">Record No</span>. Enter the number of the record you wish to locate and click the <span style="font-weight: bold;">Go</span> button.</p>
+            </li>
+            <li style="font-size: 10pt;" value="2">
+                <p class="Bullet"><span style="font-style: italic;">Using the Pop-up Menu</span>: If you wish to search for records that are related, you have several options to choose from as follows:</p>
+            </li>
+        </ul>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;1.&#160;Open the Database Viewer.</p>
+        <p class="Normal_Indent">&#160;2.&#160;Select the desired record.</p>
+        <p class="Normal_Indent">&#160;3.&#160;Right click to display the pop-up menu.</p>
+        <p class="Normal_Indent">&#160;4.&#160;Choose from the following menu items depending on the course of action desired:</p>
+        <p class="Letter_indents" style="margin-left: 54.00pt;">&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Bullet" style="margin-left: 42.00pt;"><span style="color: teal;font-weight: bold;">Copy record ID to the clipboard</span>: Used to copy the current record ID to the clipboard so it can be pasted into the Record No. field at the top of the window.</p>
+            </li>
+            <li style="font-size: 10pt;" value="2">
+                <p class="Bullet" style="margin-left: 42.00pt;"><span style="color: teal;font-weight: bold;">Find data source of the item</span>: Used to find the original data files associated with the current item.</p>
+            </li>
+            <li style="font-size: 10pt;" value="3">
+                <p class="Bullet" style="margin-left: 42.00pt;"><span style="color: teal;font-weight: bold;">Go find audit trail of the item</span>: Use to open the Audit Trail Viewer displaying the audit trail used to create the selected item.</p>
+            </li>
+        </ul>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>See also:</p>
+        <p class="Bullet"><a href="Menu_file_login_logout.htm">Login/Logout</a>
+        </p>
+        <p class="Bullet"><a href="First_Time_Login.htm">Logging in for the first time</a>
+        </p>
+        <p class="Bullet"><a href="Changing_Your_Password.htm">Changing Your Password</a>
+        </p>
+        <p class="Bullet"><a href="Unavailable_or_Restricted_Functions.htm">Unavailable functions</a>
+        </p>
+        <p class="Bullet"><a href="Saving_Records_in_the_Database.htm">Saving Records in the Database</a>
+        </p>
+        <p class="Bullet"><a href="Extracting_Records_from_the_Database.htm">Extracting Records from the Database</a>
+        </p>
+        <p class="Bullet"><a href="Menu_view_audit_trail.htm">Audit Trail</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

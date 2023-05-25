@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Troubleshooting" MadCap:browseSequencePath="Troubleshooting" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Selecting Internet Protocol (IP) Addresses</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor74"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../QDSC Images/ques_blue.jpg" style="border: none;width: 35px;height: 37px;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Selecting Internet Protocol (IP) Addresses</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor75"></a>The Q Series™ 
+ instruments use the operating system VRTX. This operating system has certain 
+ restrictions on IP addressing and non-adherence to these restrictions 
+ will cause the instrument to be non-operational. If this should occur, 
+ the instrument’s IP address can be set back to the default IP address 
+ [172.23.160.31] by pressing [<span style="font-weight: bold;color: #00509f;">STOP</span>] 
+ [<span style="font-weight: bold;color: #00509f;">STOP</span>] [<span style="font-weight: bold;color: #00509f;">START</span>] [<span style="font-weight: bold;color: #00509f;">STOP</span>] 
+ on the instrument’s <a href="Introducing_the_Touch_Screen.htm">touch screen</a><a name="kanchor76"></a><a name="kanchor77"></a>. 
+ Another limitation of the VRTX O/S is that the instruments are incapable 
+ of doing Classless Inter-Domain Routing, which results in the subnet being 
+ enforced by class. Listed below are the ranges of the IP addresses for 
+ each class as specified by the IANA.</p>
+        <h3>Public IP Class Addresses</h3>
+        <ul>
+            <li style="margin-top: 8px;" value="1">Class A addresses: &#160;1.x.x.x 
+ thru 127.x.x.x </li>
+            <li style="margin-top: 8px;" value="2">Class B addresses: 128.x.x.x 
+ thru 191.x.x.x </li>
+            <li style="margin-top: 8px;" value="3">Class C addresses: 192.x.x.x 
+ thru 223.x.x.x </li>
+            <li style="margin-top: 8px;" value="4">Class D &amp; E addresses: 
+ 224.x.x.x and up are special purpose.</li>
+        </ul>
+        <h3>Private IP Class Addresses</h3>
+        <ul>
+            <li style="margin-top: 8px;" value="1">Class A Private addresses: 
+ &#160;10.0.0.0 
+ thru 10.255.255.255 </li>
+            <li style="margin-top: 8px;" value="2">Class B Private addresses: 
+ 172.16.0.0 thru 172.31.255.255 </li>
+            <li style="margin-top: 8px;" value="3">Class C Private addresses: 
+ 192.168.0.0 thru 192.168.255.255</li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p>When configuring multiple IP addresses on the same NIC, or multiple 
+ addresses on multiple NICs, no two different subnets can include the same 
+ host address. For this reason, it is recommended that different classes 
+ be used whenever possible.</p>
+        <ol>
+            <li class="NumberedIndent" value="1">When assigning 
+ controller and instrument IP addresses in the Class A range:</li>
+        </ol>
+        <ol start="1">
+            <li class="LetterIndent" value="1">Use IP = 10.0.0.1 
+ to 10.255.255.254, (Private use range).</li>
+            <li class="LetterIndent" value="2">Subnet must be 
+ = 255.0.0.0.</li>
+            <li class="LetterIndent" value="3">The last octet 
+ of a controller or instrument's IP address cannot be 0 or 255.</li>
+            <li class="LetterIndent" value="4">IP addresses 
+ used on controller and instrument must be within the same subnet.</li>
+        </ol>
+        <ol start="2">
+            <li class="NumberedIndent" value="2">When assigning 
+ controller and instrument IP addresses in the Class B range:</li>
+        </ol>
+        <ol start="1">
+            <li class="LetterIndent" value="1">Use IP = 128.0.0.1 
+ to 191.255.255.254</li>
+            <li class="LetterIndent" value="2">Subnet must be 
+ = 255.255.0.0</li>
+            <li class="LetterIndent" value="3">The last octet 
+ of a controller or instrument's IP address cannot be 0 or 255</li>
+            <li class="LetterIndent" value="4">IP addresses 
+ used on controller and instrument must be within the same subnet</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h4>Exception: </h4>
+        <p>When assigning IP addresses from 172.23.160.1 thru 172.23.191.254 it 
+ is preferable to use a subnet mask of 255.255.224.0</p>
+        <ol start="3" style="list-style: decimal;list-style-type: decimal;">
+            <li class="NumberedIndent" value="3">When assigning 
+ controller and instrument IP addresses in the Class C range:</li>
+        </ol>
+        <ol start="1" style="list-style: decimal;list-style-type: decimal;">
+            <li class="LetterIndent" value="1">Use IP = 192.0.0.1 
+ to 223.255.255.254.</li>
+            <li class="LetterIndent" value="2">Subnet must be 
+ = 255.255.255.0.</li>
+            <li class="LetterIndent" value="3">The last octet 
+ of a controller or instrument's IP address cannot be 0 or 255.</li>
+            <li class="LetterIndent" value="4">Preferred range 
+ is 192.168.0.1 to 192.168.255.254 (Private use range).</li>
+            <li class="LetterIndent" value="5">IP addresses 
+ used on controller and instrument must be within the same subnet.</li>
+        </ol>
+        <ol start="4" style="list-style: decimal;list-style-type: decimal;">
+            <li class="NumberedIndent" value="4">After setting 
+ IP addresses on controllers or instruments, "pinging" the address 
+ (<span style="font-style: italic;">e.g</span>., 'ping 172.23.184.3') instantly 
+ tells you whether or not basic connectivity has been established.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p>&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

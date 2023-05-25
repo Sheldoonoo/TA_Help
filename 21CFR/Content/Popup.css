@@ -1,0 +1,184 @@
+/*<meta />*/
+
+body
+{
+	font-family: Arial;
+	background-color: #00509f;
+	border-left-style: None;
+	border-right-style: None;
+	border-top-style: None;
+	border-bottom-style: None;
+}
+
+h1
+{
+	font-weight: bold;
+	font-size: 24.0pt;
+}
+
+li.mc-H1
+{
+	font-weight: bold;
+	font-size: 24.0pt;
+}
+
+h2
+{
+	font-weight: bold;
+	font-size: 18.0pt;
+}
+
+li.mc-H2
+{
+	font-weight: bold;
+	font-size: 18.0pt;
+}
+
+h3
+{
+	font-weight: bold;
+	font-size: 14.0pt;
+}
+
+li.mc-H3
+{
+	font-weight: bold;
+	font-size: 14.0pt;
+}
+
+h4
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+
+li.mc-H4
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+
+li.mc-H5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+
+h6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+
+li.mc-H6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+
+p
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-size: 8pt;
+}
+
+li
+{
+	font-size: 8pt;
+}
+
+a.expandspot
+{
+	color: #008000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+
+span.expandtext
+{
+	font-style: italic;
+	font-weight: normal;
+	color: #ff0000;
+}
+
+a.dropspot
+{
+	cursor: hand;
+	color: #008000;
+	font-style: italic;
+	text-decoration: none;
+}
+
+a.glossterm
+{
+	color: #800000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+
+span.glosstext
+{
+	font-style: italic;
+	font-weight: normal;
+	color: #0000ff;
+}
+
+ol,
+ul
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+a:link
+{
+	color: #ffff00;
+}
+
+MadCap|expandingHead.expandspot
+{
+	color: #008000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+
+MadCap|dropDownHotSpot.dropspot
+{
+	cursor: hand;
+	color: #008000;
+	font-style: italic;
+	text-decoration: none;
+}
+
+MadCap|expandingBody.expandtext
+{
+	font-style: italic;
+	font-weight: normal;
+	color: #ff0000;
+}
+
+MadCap|glossaryTerm.glossterm
+{
+	color: #800000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+
+MadCap|expandingBody.glossterm
+{
+	font-style: italic;
+	font-weight: normal;
+	color: #0000ff;
+}
+

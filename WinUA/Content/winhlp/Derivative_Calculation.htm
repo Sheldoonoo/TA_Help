@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Analyzing Data Files" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Derivative Calculation</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Derivative Calculation</h1>
+        <p>Although the derivative of a mathematical curve can be determined exactly, the derivative of a curve of data points is always an estimation or average of the slopes of lines between points.</p>
+        <p>In Universal Analysis the derivative of a signal is computed by determining the slope of a fitted line or fitted curve at each point along the data curve. The fit is made using the method of least squares. The region over which the fit is made is a window of data points equal to the width of the signal-smoothing window (See <a href="Menu_tools_smooth.htm">Tools/Smooth</a>).</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>For example, if one data point is taken each second and the derivative smoothing window is 0.2 minutes (12 seconds) then the curve fit window is 12 data points wide. The first derivative for each curve point is computed by fitting the 12 data points of the window to a straight line and then evaluating the slope of the line at the center of the window. The window is then moved along the curve by one data point and the process is repeated until a fit and slope determination has been made at every data point along the curve. For second order derivatives, the data is fit to a quadratic and evaluated at the center of the window. At the ends of the derivative curve, and at any breaks in the data, the slope value will be skewed away from the center of the window.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Universal Analysis permits the user to set/inspect the window for the derivative calculation using the Tools/Smooth function. Reducing the size of the window will increase the noise in the computed derivative signal, but give a more precise result. A minimum window of five data points is always used to compute the derivative at each point, even if the Time/Temperature window is set so small that fewer than five data points would actually fall within the window. In this case the window is automatically expanded during the calculations to include at least five points.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Calibrating the Instrument" MadCap:browseSequencePath="Calibrating the Instrument" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Calibrating Tzero</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a><a name="kanchor182"></a>Calibrating Tzero</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor183"></a>The DSC Tzero* calibration requires two experiments. The first experiment 
+ is done without samples or pans (baseline); the second is performed with 
+ large (approximately 95 mg) sapphire disks (without pans) on both the 
+ sample and reference positions. Both experiments use the same method beginning 
+ with a cell preheat followed by an equilibration at an initial temperature, 
+ holding isothermal for 5 minutes, heating at constant rate to a final 
+ temperature and holding isothermal for 5 minutes. The range of temperatures 
+ should be at least as broad as the desired experimental range. Tzero calibration 
+ should be done at relatively high heating rates such as 20°C/min in order 
+ to obtain the most accurate calibration of the sensor thermal capacitance 
+ and resistance values. Rates of less than 10°C/min are not recommended 
+ for Tzero calibration.</p>
+        <p style="font-weight: bold;">Tzero calibration is only used with the DSC 
+ Q2000/Q1000 and Q200/Q100 for Heat Flow T4 and T4P.</p>
+        <p class="Notes">NOTE: The "heat flow" signal should be selected 
+ and used to measure the heat of fusion or enthalpy of sharp melting transitions 
+ such as obtained with Indium.</p>
+        <p>* Tzero™ describes proprietary technology invented by Robert Danley 
+ of TA Instruments-Waters LLC and patented by TA Instruments-Waters LLC 
+ (U.S. Patent No. 6,431,747).</p>
+        <h4 id="p1">Basic Instructions </h4>
+        <p>Follow these basic instructions for baseline slope and offset calibration. 
+ Click the links to jump to the specific instructions for that item.</p>
+        <ol>
+            <li class="NumberedIndent" value="1"><a href="#Gathering_Tzero_Calibration_Data">Gathering 
+ Tzero Calibration Data</a>, which requires two experiments—one 
+ run without samples or pans and one run with sapphire disks on the reference 
+ and sample positions (without pans). You can do this one of several ways:<ul><li value="1">Automatically using the 
+ <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum™ functions</a>. 
+ (These functions are available for Q2000/Q200 instruments only and are 
+ recommended for first time calibration.)</li></ul><ul><li value="1">Manually using the <a href="#Using_the_Tzero_Calibration_Templates">templates</a>, 
+ or <a href="Creating_Custom_Methods.htm">custom methods</a>. </li><li value="2">Step-by-step using the 
+ <a href="DSC_Calibration_Wizard_Intro.htm">Calibration Wizard</a>.</li></ul></li>
+            <li class="NumberedIndent" value="2"><a href="#Analyzing_Tzero_Calibration_Data">Analyze 
+ the data</a>. You can do this one of several ways:</li>
+            <ul>
+                <li value="1">Automatically using the 
+ <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum functions</a>. 
+ (These functions are available for Q2000/Q200 instruments only and are 
+ recommended for first time calibration.)</li>
+                <li value="2"><a href="#Automatic_Analysis_Using_Post_Run_Actions">Automatically 
+ by defining Post Test Actions</a> (can be applied to templates). (These 
+ functions are available for Q2000/Q200 instruments only and are recommended 
+ for first time calibration.)</li>
+            </ul>
+            <ul>
+                <li value="1"><a href="Analyzing_DSC_Calibration_Data.htm">Manually 
+ by specifying the appropriate file then analyzing the data</a> using <span style="font-weight: bold;color: #00509f;">Calibrate/Analysis</span> (where 
+ you specify the desired analysis limits). </li>
+                <li value="2">Step-by-step using the 
+ <a href="DSC_Calibration_Wizard_Intro.htm">Calibration Wizard</a>.</li>
+            </ul>
+        </ol>
+        <ol MadCap:continue="true">
+            <li class="NumberedIndent" value="3">Choose from 
+ optional <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum 
+ functions</a>:</li>
+            <ul>
+                <li value="1"><a href="Schedule_Page.htm">Scheduling</a> 
+ the calibration sequence (either created through Platinum or your own 
+ custom method).</li>
+                <li value="2">Enabling run and sequence 
+ <a href="Messaging_Page.htm">messaging</a>.</li>
+                <li value="3">Print out the .emf calibration 
+ file for your records. This file is created after automatic calibration 
+ and placed in the same folder used for your data files. It will be named 
+ for the sample name entered: <span style="font-style: italic;">e.g.</span>, 
+ samplename.emf.</li>
+            </ul>
+        </ol>
+        <h3><a name="Gathering_Tzero_Calibration_Data"></a>Gathering Tzero Calibration 
+ Data</h3>
+        <p>Tzero calibration can be performed by setting up the experiments manually 
+ using the <span style="font-weight: bold;color: #00509f;">Experimental 
+ View</span> or automatically using the calibration wizard. The calibration 
+ wizard method is the recommended procedure since it will step you through 
+ all the necessary steps to collect and analyze the data.</p>
+        <p>You can gather data one of two ways:</p>
+        <ul>
+            <li value="1">Automatically using the <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum functions</a>. 
+ (These functions are available for Q2000/Q200 instruments only and are 
+ recommended for first time calibration.)</li>
+            <li value="2">Manually using the <a href="#Using_the_Tzero_Calibration_Templates">templates</a>, 
+ or <a href="Creating_Custom_Methods.htm">custom methods</a>.</li>
+            <li value="3">Step-by-step using the <a href="DSC_Calibration_Wizard_Intro.htm">Calibration Wizard</a>.</li>
+        </ul>
+        <p style="font-size: 8pt;"><span><a href="#top" style="font-size: 8pt;">Back to top</a></span>
+        </p>
+        <h4><a name="Using_the_Tzero_Calibration_Templates"></a>Manually Determining 
+ Tzero Calibration (Using the Template)</h4>
+        <p>This calibration requires two experiments—one 
+ run without samples or pans and one run with sapphire disks on the reference 
+ and sample positions (without pans). A general procedure for Tzero calibration 
+ is given below.</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Remove any 
+ pans from the cell and cover the cell.</li>
+            <li class="NumberedIndent" value="2">Check that 
+ your purge gas is connected and set to the desired flow rate. If you are 
+ using an RCS or LNCS, be sure a <a href="Connecting_Purge_Gas_Lines.htm">Base 
+ purge gas</a> is also used.</li>
+            <li class="NumberedIndent" value="3">Select <span style="font-weight: bold;color: #00509f;">Experiment View</span> and 
+ access the <a href="Experimental_View_Pane_Summary_Page.htm">Summary Page</a>, 
+ then set the instrument to calibration mode using the Mode Selection drop-down 
+ list. </li>
+            <li class="NumberedIndent" value="4">Select either 
+ "Tzero Heat Only Cal" &#160;or 
+ "Tzero Heat/Cool Cal" from the <span style="font-weight: bold;color: #00509f;">Test</span> 
+ list. </li>
+        </ol>
+        <p style="margin-left: 40px;">"Heat only calibration" is used 
+ when you are interested measuring transitions or heat capacity while heating 
+ the sample. </p>
+        <p style="margin-left: 40px;">The "Heat and Cool calibration" 
+ is used when you are interested in both heating and cooling data when 
+ measuring transitions or heat capacity (this option takes longer to calibrate). 
+ </p>
+        <p style="font-size: 8pt;"><span><a href="#top" style="font-size: 8pt;">Back to top</a></span>
+        </p>
+        <ol start="5">
+            <li class="NumberedIndent" value="5">Enter the 
+ requested sample information, including the exact <span style="font-weight: bold;color: #00509f;">Sample 
+ Size</span> (zero)<span style="font-weight: bold;color: #00509f;">  <![CDATA[ ]]></span>and<span style="font-weight: bold;color: #00509f;"> Pan Type </span>(none). </li>
+            <li class="NumberedIndent" value="6"><span style="color: #000000;font-style: italic;">For 
+ &#160;Autosamplers 
+ only:</span><span style="color: #000000;"> Select the</span><span style="font-weight: bold;"> 
+ Pan number </span><span style="color: #000000;">and</span><span style="font-weight: bold;"> 
+ Reference number.</span>
+            </li>
+            <li class="NumberedIndent" value="7">Click on 
+ the <span style="font-weight: bold;color: #00509f;">Procedure</span> 
+ tab. Enter the requested test parameters.</li>
+            <ul>
+                <li value="1"><span style="font-weight: bold;color: #00509f;">Lower 
+ Temperature &amp; Upper Temperature</span>: Calibration must be performed 
+ using the same atmosphere and cooling accessory that will be used in subsequent 
+ experiments. Obviously, the lower and upper temperatures chosen for calibration 
+ must be within the operating range of the cooling accessory selected. 
+ In addition, the temperature range for calibration should be at least 
+ as broad as the range that will be used in subsequent experiments on your 
+ samples. Typical temperature ranges are: -180 to 400 °C for the LNCS, 
+ -90 to 550°C for the RCS90, -40 to 400°C for the RCS40, and 50 to 400 
+ °C for the FACS. See also: <a href="Introducing_the_DSC_Cooling_Accessories.htm">Introducing 
+ the DSC Cooling Accessories</a>. NOTE: The quench cooler cannot be used 
+ for Tzero calibration and experimentation.</li>
+                <li value="2"><span style="font-weight: bold;color: #00509f;">Ramp 
+ Rate</span>: Calibration can be performed for heating only or for heating 
+ and cooling. The minimum ramp rate is 10°C/min in order to obtain reliable 
+ values for sensor thermal capacitance and resistance. Lower ramp rates 
+ provide weaker signals and less accuracy. For heat-only calibration, a 
+ ramp rate of 20°C/min is recommended. For heat and cool calibration, a 
+ rate of 10°C/min may be more practical since it may not be possible to 
+ maintain a higher cooling rate down to the lowest temperature of interest. 
+ Obviously, the type of <a href="Introducing_the_DSC_Cooling_Accessories.htm">cooling 
+ accessory</a> determines the maximum cooling rate and minimum temperature 
+ for calibration.</li>
+            </ul>
+            <li class="NumberedIndent" value="8">Click on 
+ the <a href="Experimental_View_Pane_Notes_Page.htm">Notes</a> tab. Enter/verify 
+ the requested information. If an MFC is installed, set the desired flow 
+ rate. Calibration should be performed using the same purge gas and flow 
+ rate as that which will be used in subsequent experiments on your materials.</li>
+            <li class="NumberedIndent" value="9">Click on 
+ the <span style="font-weight: bold;color: #00509f;">Apply</span> button 
+ to save the experimental and sample parameters entered for this run. </li>
+            <li class="NumberedIndent" value="10">Select <span style="font-weight: bold;color: #00509f;">Append</span>. Enter the weights 
+ of the sample and reference sapphire disks.</li>
+            <li class="NumberedIndent" value="11">If more than 
+ one run is in the sequence list, schedule the first Tzero run. (An arrow 
+ will appear next to the run number in the Sequence Pane for the scheduled 
+ run.) </li>
+            <li class="NumberedIndent" value="12">Select <span style="font-weight: bold;color: #00509f;">Start</span> to begin the calibration 
+ run.</li>
+            <li class="NumberedIndent" value="13"><span style="font-style: italic;">If 
+ your DSC does not have an Autosampler</span>, wait until the run is complete 
+ then set up the next experiment.</li>
+            <li class="NumberedIndent" value="14">Perform the 
+ two experiments: &#160;one 
+ run without samples or pans and one run with sapphire disks on the reference 
+ and sample positions (without pans). Once both runs are complete, analyze 
+ the data. See <a href="#Analyzing_Tzero_Calibration_Data">Analyzing 
+ DSC Tzero Calibration Data</a>.</li>
+            <li class="NumberedIndent" value="15">Save the 
+ calibration results by clicking the <span style="font-weight: bold;color: #00509f;">Accept</span> 
+ button (or by selecting <span style="font-weight: bold;color: #00509f;">Analyze/Accept 
+ results</span> from the <span style="font-weight: bold;color: #00509f;">Calibration</span> 
+ menu). This will update the current temperature parameters with this calibration 
+ data. </li>
+        </ol>
+        <p style="font-size: 8pt;"><span><a href="#top" style="font-size: 8pt;">Back to top</a></span>
+        </p>
+        <h3><a name="Analyzing_Tzero_Calibration_Data"></a>Analyzing Tzero Calibration 
+ Data</h3>
+        <p>Once the calibration run is complete, you can analyze the data using 
+ one of the following techniques:</p>
+        <ul>
+            <li value="1">Automatically using the <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum functions</a>. 
+ (These functions are available for Q2000/Q200 instruments only and are 
+ recommended for first time calibration.)</li>
+            <li value="2"><a href="#Automatic_Analysis_Using_Post_Run_Actions">Automatically 
+ by defining Post Test Actions</a> (can be applied to templates). (These 
+ functions are available for Q2000/Q200 instruments only and are recommended 
+ for first time calibration.)</li>
+            <li value="3"><a href="Analyzing_DSC_Calibration_Data.htm">Manually 
+ by specifying the appropriate file then analyzing the data</a> using <span style="font-weight: bold;color: #00509f;">Calibrate/Analysis</span> (where 
+ you specify the desired analysis limits).</li>
+            <li value="4">Step-by-step using the <a href="DSC_Calibration_Wizard_Intro.htm">Calibration Wizard</a>.</li>
+        </ul>
+        <h4><a name="Automatic_Analysis_Using_Post_Run_Actions"></a>Automatic Analysis 
+ Using Post Run Actions</h4>
+        <p class="Notes">NOTE: &#160;These 
+ functions are available for Q2000/Q200 instruments only.</p>
+        <p>This method utilizes <span style="font-weight: bold;"><a href="Selecting_Post_Test_Actions.htm">Post 
+ Run Actions</a></span> to automatically analyze and send the results to 
+ the instrument. These are defined while setting up the run sequence and 
+ executed at the end of each test.</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Set up the 
+ calibration run sequence manually as described above. </li>
+            <li class="NumberedIndent" value="2">Right click 
+ on the second Tzero calibration run number on the <a href="Understanding_the_Standard_Sequence_Pane.htm">Sequence 
+ Pane</a> to display the pop-up menu. Select <span style="font-weight: bold;color: #00509f;">Post 
+ Run Action</span>.</li>
+            <li class="NumberedIndent" value="3">Select one 
+ of the following: </li>
+            <ul>
+                <li value="1"><span style="font-weight: bold;color: #00509f;">IF 
+ NOT</span> -- Successful <span style="font-weight: bold;color: #00509f;">Tzero 
+ Calibration</span> -- STOP. (This will stop the sequence if the Tzero 
+ calibration fails.)</li>
+                <li value="2"><span style="font-weight: bold;color: #00509f;">DO</span> 
+ -- <span style="font-weight: bold;color: #00509f;">Tzero Calibration</span>. 
+ (This will begin the next run after performing Tzero calibration, with 
+ no dependency on the outcome.)</li>
+                <li value="3"><span style="font-weight: bold;color: #00509f;">IF</span> 
+ -- Successful <span style="font-weight: bold;color: #00509f;">Tzero Calibration 
+ -- GO next sequence</span>. (This will start the standard run sequence 
+ after successful completion of Tzero calibration.)</li>
+            </ul>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="4">Select 
+ <span style="font-weight: bold;color: #00509f;">OK</span> when finished. 
+ </li>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="5">Select 
+ <span style="font-weight: bold;color: #00509f;">Start</span> to begin 
+ the calibration run. <span style="margin-top: 4.5pt;">To view or print 
+ the Tzero calibration results, see the <a href="Calibration_Report.htm">Calibration 
+ report</a>.</span></li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p><span style="font-size: 8pt;"><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Calibrating DSC Heat Capacity|Calibrating_DSC_Heat_Capacity.htm||Calibrating the Autosampler|Calibrating_the_Autosampler.htm||Calibrating the DSC Pressure Cell|Calibrating_the_DSC_Pressure_Cell.htm||Calibrating the DSC|Calibrating_the_DSC.htm||Calibrating the Mass Flow Controller|Calibrating_the_Mass_Flow_Controller.htm||Calibrating the Q1000/Q100 Autosampler|Calibrating_the_Q1000_Q100_Autosampler.htm||Calibrating the Q2000/Q200/Auto Q20 Autosampler|Calibrating_the_Q2000_Q200_Auto_Q20_Autosampler.htm||Calibrating the T1 Baseline|Calibrating_the_T1_Baseline.htm||Calibrating Tzero|Calibrating_Tzero.htm||Calibration Report|Calibration_Report.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a></span>&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

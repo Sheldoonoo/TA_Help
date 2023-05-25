@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using Autoanalysis" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Introduction to Autoanalysis</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../WinUAmac.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Introduction to Autoanalysis</h1>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p style="border-bottom: 1.50pt solid teal;"><span style="color: teal;font-weight: bold;">Definition of Autoanalysis</span>
+        </p>
+        <p>Autoanalysis is an option for the Universal Analysis program that is designed to streamline the data analysis process. Using Autoanalysis you can automatically retrieve the data files from completed experiments and perform a predetermined analysis without operator intervention (this is called Autoqueuing). When used in this fashion, Autoanalysis provides increased productivity, particularly when combined with a DSC or TGA autosampler.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Autoanalysis is based on the use of <span style="color: teal;font-weight: bold;font-style: italic;">macros</span>, which capture and store a series of data analysis steps that are later recalled and replayed upon command. These steps can include specialized features such as message boxes, pauses, branching, and beeps. These features can be valuable in the "semi-automated" mode. In a "semi-automated" mode the number of operator interactions required to perform an analysis is reduced. The interactions can be limited to those where operator judgment is critical (<span style="font-style: italic;">e.g.</span>, determination of peak integration limits), or to increase the ease-of-use (<span style="font-style: italic;">e.g.</span>, quality control using established procedures).</p>
+        <p class="footnote_text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Autoanalyzing is the process where one or more multiple analysis records (containing the data filename, macro filename, and applicable macro) are added to an autoqueue and automatically processed. Analysis records may be added to the autoqueue either from the controller or manually through Universal Analysis (use Macro/Autoqueue menu).</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p style="border-bottom: 1.50pt solid teal;"><span style="color: teal;font-weight: bold;">Description of Macros</span>
+        </p>
+        <p>Macros are created, edited, and managed within the data analysis program. They may be executed two ways: either locally, within the analysis program, or from the controller. You can create up to 30 macros per macro file, each macro can contain up to 800 steps.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The macro functions provide the following features:</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Normal_Indent">You can "capture" almost all of the functions of the data analysis program in a macro for replay. This can include both typing keystrokes and mouse functions, and right-click pop-up menu functions such as Undo, Cut, Copy, Paste, Delete, and Select All.</p>
+            </li>
+        </ul>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p>You can define up to 30 available macros, each with up to 800 steps in a macro file.</p>
+            </li>
+        </ul>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p>Any step within a macro can play another macro. (Therefore, the maximum number of steps available is actually 30 x 800 = 24,000 steps.)</p>
+            </li>
+        </ul>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p>You can edit a macro as you build it or after the macro has been completed, without repeating all of the steps.</p>
+            </li>
+        </ul>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p>You can set up a macro to contain specialized message boxes that ask you to make decisions as the macro runs.</p>
+            </li>
+        </ul>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p>Macro functions can be accessed at any point in the analysis program by using the control keys shown in the menus. For example, you can turn on the capture function by pressing Ctrl+T on any screen.</p>
+            </li>
+        </ul>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Normal_Indent">Macros are stored as files in a macro folder. The default macro folder for Universal Analysis is named \TA\Macros. <span style="color: blue;font-weight: bold;">(NOTE: No spaces can be used in the directory or file names.)</span></p>
+            </li>
+        </ul>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent"><span style="color: blue;">NOTE: For more details on creating, editing, and running macros, see the Universal Analysis online manual (Help/Manual) or use Acrobat Reader to access the Uamanual.pdf file contained on the CDROM.</span>
+        </p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: blue;">NOTE: Universal Analysis is shipped with two demonstration macro files  WinUA.mac and Demo-Vxx.mac. These two files have the same contents. These files are used to demonstrate the macro functions and, in some cases, can be used with your own data files.</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent"><span style="color: blue;">--&#160;If you already have a WinUA.mac file, when you installed the software, it was not replaced by the demo WinUA.mac file, just the Demo-Vxx.mac file was installed. You can review the macros contained in the demo WinUA.mac file by loading this file using Macro/Load and selecting the file. You can then use Macro/Import to import one or more of the demonstration macros into your own macro file.</span>
+        </p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent"><span style="color: blue;">--&#160;If you did not have a WinUA.mac file, both of the demo files will be installed and the macros contained in the WinUA.mac file will automatically be displayed in the macro menu.</span>
+        </p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: blue;">To remove these demonstration macro files, select Macro/Delete All or selectively delect the unwanted macros.</span>
+        </p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">See also:</p>
+        <p class="Normal_Indent"><a href="Uses_for_Macros.htm">Uses for Macros</a>
+        </p>
+        <p class="Normal_Indent"><a href="Macro_Editor_Menu_Macros.htm">Macro Menu</a>
+        </p>
+        <p class="Normal_Indent"><a href="Tips_on_Capturing_Macros.htm">Tips on Capturing Macros</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

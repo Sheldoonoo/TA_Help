@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Getting Started|Using Constructs (Conditional Statements)" MadCap:browseSequencePath="Using Constructs (Conditional Statements)" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="RA_Navigator2.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Using Conditional Statements</title>
+        <link rel="StyleSheet" href="TAHtmlHelp.css" />
+        <style>
+        </style>
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor20"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Using Conditional Statements</h1>
+        <h3>Controlling Program Execution</h3>
+        <p class="Indent"><a name="kanchor21"></a>You can control the flow of your script with conditional 
+ statements and looping statements (constructs). Using conditional statements, 
+ you can write Navigator code that makes decisions and repeats actions. 
+ The following constructs are available in Navigator:</p>
+        <ul>
+            <li class="Bullet" value="1"><a href="If.htm" name="kanchor22">If...Then...Else</a> 
+ Statement — 
+ See <a href="#Making_Decisions_Using_If___Then___Else">Making 
+ Decisions Using If...Then...Else</a></li>
+            <li class="Bullet" value="2"><a href="Select.htm" name="kanchor26">Select 
+ Case</a> Statement — 
+ See <a href="#Making_Decisions_with_Select_Case">Making 
+ Decisions with Select Case</a></li>
+        </ul>
+        <h3><a name="Making_Decisions_Using_If___Then___Else"></a>Making Decisions 
+ Using If...Then...Else</h3>
+        <p class="Indent">The <span style="font-weight: bold;">If...Then...Else</span> 
+ statement is used to evaluate whether a condition is True or False and, 
+ depending on the result, to specify one or more statements to run. Usually 
+ the condition is an expression that uses a comparison operator to compare 
+ one value or variable with another. <span style="font-weight: bold;">If...Then...Else</span> 
+ statements can be nested.</p>
+        <h4>Running Statements, if a Condition is True.</h4>
+        <p class="Indent">To run only one statement when a condition is <span style="font-weight: bold;">True</span>, 
+ use the single-line syntax for the <span style="font-weight: bold;">If...Then...Else</span> 
+ statement. The following example shows the single-line syntax. Notice 
+ that this example omits the <span style="font-weight: bold;">Else</span> 
+ and the <span style="font-weight: bold;">EndIf</span> keyword2.</p>
+        <p class="CodeIndent">v0=PromptYesNo ("Do you wish to run the next line?", 
+ 0)<br />
+If V0 = 1 then DisplayMessage ("This statement is run!")</p>
+        <p class="Indent">To run more than one line of code, you must use the multiple-line 
+ (or block) syntax. This syntax includes the <span style="font-weight: bold;">EndIf</span> 
+ statement, as shown in the following example:</p>
+        <p class="CodeIndent">v0=PromptYesNo ("Do you wish to run the next line?", 
+ 0)<br />
+If V0 = 1 then <br />
+&#160; DisplayMessage ("This statement is run!")<br />
+&#160; S0 = 5<br />
+Endif</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h4>Running Certain Statements, if a Condition is True, and Running Others, 
+ if a Condition is False.</h4>
+        <p class="Indent">You can use an <span style="font-weight: bold;">If...Then...Else</span> 
+ statement to define two blocks of executable statements: one block to 
+ run if the condition is <span style="font-weight: bold;">True</span>, 
+ the other block to run if the condition is <span style="font-weight: bold;">False</span>.</p>
+        <p class="CodeIndent">v0=PromptYesNo ("Do you wish to run the next line?", 
+ 0)<br />
+If V0 = 1 then <br />
+&#160; DisplayMessage ("This statement is run!")<br />
+&#160; V1 = 5<br />
+Else<br />
+ V1 = 0<br />
+ DisplayMessage ("You said NO!")<br />
+Endif</p>
+        <p><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Making_Decisions_with_Select_Case"></a>Making Decisions with 
+ Select Case</h3>
+        <p class="Indent">The <span style="font-weight: bold;">Select Case</span> 
+ structure provides a means of executing one block of statements from among 
+ multiple blocks of statements. A <span style="font-weight: bold;">Select 
+ Case</span> statement provides capability similar to the <span style="font-weight: bold;">If...Then...Else</span> 
+ statement, but it makes code more efficient and readable.</p>
+        <p class="Indent">A <span style="font-weight: bold;">Select Case</span> structure 
+ works with a single test expression that is evaluated once, at the top 
+ of the structure. The result of the expression is then compared with the 
+ values for each <span style="font-weight: bold;">Case</span> in the structure. 
+ If there is a match, the block of statements associated with that <span style="font-weight: bold;">Case</span> is executed:</p>
+        <p class="CodeIndent">PromptVariable (v0, "Please select the test mode 
+ : 0, 1 2 or 3", 1, 0.0, 3.0)<br />
+Select (V0)<br />
+&#160;Case 0<br />
+&#160;.. code for case of V0 =0 ..<br />
+&#160;Case 1<br />
+&#160;.. code for case of V0 =1 ..<br />
+&#160;Case 2<br />
+&#160;.. code for case of V0 =2 ..<br />
+&#160;Case 3<br />
+&#160;.. code for case of V0 =3 ..<br />
+EndSelect</p>
+        <p class="Indent">Notice that the <span style="font-weight: bold;">Select 
+ Case</span> structure evaluates an expression once at the top of the structure. 
+ If none of the following Case statements are matched, no code is executed 
+ in this block. Note also that by the very nature of the case checking, 
+ only one block of statements will be executed.</p>
+        <p class="Indent" style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="margin-bottom: 0;">&#160; </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the File Menu" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Save Analysis Menu</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Save Analysis Menu</h1>
+        <p>Use the Save Analysis option to save either just the current analysis (Analysis Only) or the analysis and the data file (Analysis and Data) for future recall. When you select this option, the standard <a href="Win_Open_Save_File.htm">Save As window</a> is displayed, allowing you to select a filename and location.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Once an analysis has been saved in a data file, the analysis results can be retrieved by checking the "Restore saved analysis" box on the <a href="Win_Data_File_Info.htm">Data File Information window</a>.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The difference between "Save Analysis Only" and "Save Analysis and Data" is whether the original raw data is included to the saved analysis output file.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Bullet">The "Analysis and Data" option outputs a complete copy of the original data file with an extra data block appended to the end of the file. This extra data block contains the saved analysis information that is read by UA when an analysis is restored. If you do not check the "Restore" checkbox on the <a href="Win_Data_File_Info.htm">Data File Information</a> dialog, then the data file is read as if there were no saved analysis block present; <span style="font-style: italic;">i.e</span>., the original raw data is read, not the analyzed data.</p>
+            </li>
+            <li style="font-size: 10pt;" value="2">
+                <p class="Bullet">When you save analysis using the "Analysis Only" option, the data file is copied without the original raw data points. The saved analysis block is then appended to this abbreviated file. If you restore the analysis from this file then everything will look just the same as it does from a file that includes raw data, except that you will not be able to reread (New Data Limits, Signals, Units, etc.) the raw data from this saved analysis file. In this case, Universal Analysis will have to locate the original data file and read the data from that file.</p>
+            </li>
+        </ul>
+        <p class="Bullet" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Bullet">The file name at the top of a plot of the data shows the name of the original data file when an "Analysis Only" file is restored, but shows the name of the saved analysis file when an "Analysis and Data" file is restored. If the program cannot locate the original data file associated with an "Analysis Only" file, then Universal Analysis will prompt you to locate the original file.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: blue;">NOTE: Attempting to open a "Save Analysis Only" saved analysis file with the "Restore" checkbox unchecked will result in the "</span><a href="../WinUAerr/msg_less_than_two_points_file.htm">Less than two points in file</a><span style="color: blue;">" error message because there is no raw data stored in the file.</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: blue;">NOTE: Saved analyses that have been performed using the DOS version of Universal Analysis are restorable using this program. However, if you overwrite the DOS analyses with this program, the original record of analyses can no longer be used for the DOS Universal Analysis program.</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: blue;">NOTE: You can also use the</span><a href="Win_Export_Data_File.htm">Export Data File window</a><span style="color: blue;">to save a modified file.</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

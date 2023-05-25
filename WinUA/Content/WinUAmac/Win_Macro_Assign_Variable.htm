@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Macro Assign Window</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../WinUAmac.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor280"></a>Macro Assign Window</h1>
+        <p>The <span style="color: black;">Assign Variable</span> macro step is used to store a numeric value into a macro variable. The numeric value to be assigned may come from a numeric constant, a number already stored in another macro variable, or a number loaded from the clipboard. The assign step can also be used to add, subtract, multiply, or divide the value of a variable by another value, or to apply a function (such as square root) to the value of a variable.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">1.&#160;Select (highlight) the desired position (step number) for the macro step insertion.</p>
+        <p class="Normal_Indent">2.&#160;Select Insert/<a href="Macro_Editor_Insert_menu_assign_variable.htm">Assign Variable</a> from the Macro Editor menu. The Macro Assign window is displayed.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>To use this window:</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">3.&#160;Enter a <span style="color: teal;font-weight: bold;">Variable</span> name. A macro variable name may consist of up to 30 characters. The first character must be alphabetic. The remaining characters may be alphabetic, digits, or the underline (underbar) character. Imbedded spaces are not permitted in macro variable names. A macro variable array element is specified by following the variable name with an array index enclosed in square brackets ("[&lt;index&gt;]"). The array index may be an integer constant or a simple variable name (no index).</p>
+        <p class="Normal_Indent">4.&#160;Click on the <span style="color: teal;font-weight: bold;">Operation</span> drop-down list and select the function that will be applied to the value of the variable.</p>
+        <p class="Normal_Indent">5.&#160;Enter the <span style="color: teal;font-weight: bold;">Value</span> assigned to the variable. <span style="color: blue;">NOTE: If the operation is "Assign Clipboard (value)," then the value specifies the nth number found on the clipboard. If the operation is "Assign Clipboard (variable, value)" then the value specifies the nth number found on the clipboard</span><span style="color: blue;text-decoration: underline;">after</span><span style="color: blue;">the first occurrence of the variable name on the clipboard.</span></p>
+        <p class="Normal_Indent">6.&#160;Click OK when finished. The step will be inserted at the selected position.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: teal;font-weight: bold;">Operations:</span>
+        </p>
+        <p>Most of the operations listed in the drop-down list are straight-forward mathematical functions. The operation Clipboard (variable, value) or Clipboard (value) is used to copy a specific number from a list copied to the clipboard and ignore the remaining numbers. For example, you can first copy the parameter block from the Report Editor to the clipboard. The first dimension of the sample size parameter can then be obtained from the clipboard by assigning a variable named "size," selecting Clipboard (variable, value), and entering "1" as the value. <a href="Figure_Example_Macro.htm">Click here to see an example macro that contains this step (see step #22 in the first example) and shows you the other steps needed to make this occur.</a></p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>See also:</p>
+        <p><a href="What_is_a_Macro_Variable_.htm">What is a Macro Variable?</a>
+        </p>
+        <p><a href="Program_Variables.htm">Predefined Program Variables</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

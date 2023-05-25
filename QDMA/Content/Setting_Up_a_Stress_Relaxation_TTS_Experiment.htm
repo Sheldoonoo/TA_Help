@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:id="Setting Up a Stress Relaxation TTS Test" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpCheckList.First Draft,RoboHelpCheckList.Links,RoboHelpCheckList.Index keywords,RoboHelpStatus.In Progress" MadCap:tocPath="Using the Procedure Templates" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Setting Up a Stress Relaxation TTS Experiment</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" type="text/css" />
+        <script src="SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor423"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="GIF/ques_blue.jpg" style="border: none;" alt="" width="35" height="37" align="right" border="0" /></a></span><a name="top" id="top"></a>Setting Up a Stress Relaxation TTS Experiment</h1>
+        <p>&#160;</p>
+        <p>Stress relaxation experiments apply an instantaneous strain to the sample and measure the force required to maintain the strain as a function of time. The primary result is stress relaxation modulus during the strain step.</p>
+        <p>Time-temperature superposition (TTS) experiments can be performed using stress relaxation tests that were run at different isothermal temperatures, but using the same strain. This allows you to evaluate long-term properties (stress-relaxation modulus) in an experimentally feasible time.</p>
+        <p>If you want to set up a DMA Stress Relaxation Time-Temperature Superposition (TTS) procedure, you can choose one of two techniques—the <a href="#Using%20the%20DMA%20Wizard" class="selected">DMA Wizard</a> or the <a href="#Using%20the%20Experimental%20View%20Procedure%20Page" class="selected">Experimental View - Procedure Page</a>. See the instructions below for each technique.</p>
+        <p>When you perform a DMA Stress Relaxation TTS experiment, the following parameters need to be chosen:</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Preload Force:</span> &#160;This is the force applied to the sample prior to initiating the experiment. A preliminary preload force is available for stress relaxation measurements using the tension (film) and tension (fiber) clamps. &#160;This preload force ensures that the sample material is fully elongated (has no slack). &#160;A preliminary preload force is also available when using the compression and 3-point bend clamps for stress relaxation measurements. &#160;In those clamps the preload force ensures that the movable portion of the clamp is in contact with the material prior to the start of the experiment. &#160;In all cases, the preload force should be limited to the minimum force required to achieve the desired starting condition. &#160;Otherwise, it may affect the stress relaxation results. &#160;0.001N is the lowest force which can be applied. &#160;</p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Strain:</span> &#160;The % strain applied during stress relaxation measurements can be selected to simulate real-life end-use conditions or can be a nominal value (usually 0.1 - 1%).</p>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Start/Final Temperature: &#160;&#160;</span>The DMA temperature range is -145 to 600°C. &#160;Attaining the subambient portion of this range depends on the presence of a Gas Cooling Accessory (GCA).</p>
+            </li>
+            <li class="p-Bullet" value="4">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Temperature Increment: &#160;&#160;</span>The temperature increment should be small enough to provide good resolution of events. Usually a 5°C increment is sufficient if each stress relaxation segment is about ten minutes long.</p>
+            </li>
+            <li class="p-Bullet" value="5">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Isothermal Soak Time:</span> &#160;Because of the mass of the DMA furnace and clamps, as well as the large size of most DMA samples, a "soak time" (<span style="font-style: italic;">i.e</span>., time to equilibrate at temperature) is recommended.</p>
+            </li>
+            <li class="p-Bullet" value="6">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Relaxation Time:</span> &#160;The relaxation time is the time that the material is strained. Ten minutes is a good initial value to use.</p>
+            </li>
+            <li class="p-Bullet" value="7">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Additional Conditions:</span> &#160;There are additional experimental conditions that can be changed to optimize specific situations. &#160;These are accessed using <a href="Advanced_Parameters_Window.htm">Advanced Parameters</a> and <a href="Post_Test_Window.htm">Post-Test Conditions</a>. &#160;For most experiments, the system default values shown are recommended.</p>
+            </li>
+            <li class="p-Bullet" value="8">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">See also:</span> &#160;<a href="Guidelines_for_Running_Subambient_Experiments.htm">Guidelines for Running Subambient Experiments</a>.</p>
+            </li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p class="Bullet" style="text-align: center;"><span style="text-align: center;"><span><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /></span></span>
+        </p>
+        <h3><a name="Using the DMA Wizard"></a>Using the DMA Wizard <img src="GIF/BUTTON_WIZARD_32x32.gif" style="border: none;width: 32;height: 32;" alt="" border="0" />: &#160;</h3>
+        <p>Enter the desired parameters, then select <span style="font-weight: bold;color: #00509f;">Next</span> to proceed.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h3><a name="Using the Experimental View Procedure Page"></a>Using the Experimental View <img src="GIF/Button_Experiment_View_32x32.gif" style="border: none;width: 32;height: 32;" alt="" border="0" /> Procedure Page:</h3>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent">Display the <span style="font-weight: bold;color: #00509f;">Procedure Page</span>. Select the desired experiment from the list of available preprogrammed templates.</p>
+            </li>
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent">Enter the desired parameters. When you have finished setting up this procedure, you can enter more information by selecting the <a href="Experimental_View_PaneNotes_Page.htm">Notes Page</a> and <a href="Experimental_View_PaneSummary.htm">Summary Page</a> for this run.</p>
+            </li>
+            <li class="p-NumberedIndent" value="3">
+                <p class="NumberedIndent">Click the <span style="font-weight: bold;color: #00509f;">Apply</span> button when finished to save these changes or the <span style="font-weight: bold;color: #00509f;">Append</span> button to save the changes to this run and add another run to the end of the sequence.</p>
+            </li>
+        </ol>
+        <p class="Notes">NOTE: &#160;You can use any test template as the basis for a custom test by selecting the desired test template from the list of tests, then click the <span style="font-weight: bold;color: #00509f;">Apply</span> button and change the test to Custom. Then you can click on the <span style="font-weight: bold;color: #00509f;">Procedure Page</span> and then the <span style="font-weight: bold;color: #00509f;">Editor</span> button to make the changes desired.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Available DMA Clamps|Available_DMA_Clamps.htm||Available DMA Test Templates|Available_DMA_Tests.htm||Basic Steps Needed to Run a DMA Experiment|Basic_Steps_Needed_to_Run_a_DMA_Experiment_.htm||Creating a Custom Method in the Isostrain or Stress Relaxation Mode|Creating_a_Custom_Method_in_the_Isostrain_or_Stress_Relaxation_Mode.htm||Handling Run Sequences|Handling_Run_Sequences.htm||Selecting a DMA Operating Mode|Selecting_a_DMA_Operating_Mode.htm"><img src="SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Link Icon" />Related Topics</a>
+        </p>
+        <p class="Bullet">&#160;</p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

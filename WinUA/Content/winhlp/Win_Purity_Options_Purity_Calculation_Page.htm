@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Purity Analysis Options - Purity Calculation</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor219"></a>Purity Analysis Options - Purity Calculation</h1>
+        <p>Use this page to set up the default parameters for the program to use when you perform the DSC Purity analysis.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">Follow the steps below to set up these options:</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">1.&#160;Enter the desired <span style="color: teal;font-weight: bold;">Penalty factor</span> (larger value forces smaller area correction). The penalty factor is used to bias the results towards a smaller area correction. A penalty factor of one means that the fit is determined entirely by the squared deviation between the data and the modified vant Hoff equation. A penalty factor greater than one results in a deviation multiplied by a function that tends to make smaller area corrections fit better. The default value is 1.0.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">This function is:</p>
+        <p class="Normal_Indent">
+            <img src="../Resources/Images/PurityEqPenaltyFactor.png" />
+        </p>
+        <p class="Normal_Indent">Where:</p>
+        <p class="Normal_Indent">P = penalty</p>
+        <p class="Normal_Indent">Pf = penalty factor</p>
+        <p class="Normal_Indent">g = area correction factor (gamma) as a fraction (0.0 &lt; gamma &lt; 1.0). Gamma is reported as "correction %"/100.0 on the report.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">This equation is a quadratic function centered on a 5 percent correction, with a penalty equal to the penalty factor at a 10 percent correction.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">2.&#160;Check the <span style="color: teal;font-weight: bold;">Adjust delta H of fusion according to area correction factor</span> box, if this option is desired.</p>
+        <p class="Normal_Indent">3.&#160;Check the <span style="color: teal;font-weight: bold;">Use the known pure heat of fusion</span> box, if desired. If this option is checked, enter the value in kJ/mol.</p>
+        <p class="Normal_Indent">4.&#160;Check the <span style="color: teal;font-weight: bold;">Use the known pure melting temperature</span> box, if desired. If this option is checked, enter the value in °C.</p>
+        <p class="Normal_Indent">5.&#160;Check the box for <span style="color: teal;font-weight: bold;">Use known molecular weight</span> to perform the purity calculations on your data using the known molecular weight of the sample material. If you check this box, you will need to enter the value in g/mol. If you do not check this box, the <a href="Win_Molecular_Weight.htm">Molecular Weight window</a> is displayed when you perform the Purity analysis.</p>
+        <p class="Normal_Indent">6.&#160;Click Save to save these options to the initialization file or click OK to use these parameters for this session only.</p>
+        <p class="-indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p style="margin-bottom: 0.00pt;"><span style="color: blue;">NOTE: To use the factory default options, click the Default button.</span>
+        </p>
+        <p style="margin-bottom: 0.00pt;">&#160;</p>
+        <p style="margin-bottom: 0.00pt;"><span style="color: blue;">NOTE: If you make a change to these parameters after analyzing the data, you will need to repeat the analysis again.</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>See also:</p>
+        <p><a href="Collecting_DSC_Purity_Data.htm">Collecting DSC Purity Data</a>
+        </p>
+        <p><a href="Purity_Basic_Steps.htm">Purity Basic Steps</a>
+        </p>
+        <p><a href="Menu_analyze_purity.htm">Analyze Purity</a>
+        </p>
+        <p><a href="Win_Purity_Options_Partial_Area_Page.htm">Purity Analysis Options - Partial Area</a>
+        </p>
+        <p><a href="Win_Purity_Options_Results_Plot_Page.htm">Purity Analysis Options - Results Plot</a>
+        </p>
+        <p><a href="Win_Purity_Options_Results_Label_Page.htm">Purity Analysis Options - Results Label</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

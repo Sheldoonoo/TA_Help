@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Data Analysis Functions|Performing an Analysis|Model Fitting" MadCap:browseSequencePath="Model Fitting" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="RA_DataAnal.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Introducing Model Fitting</title>
+        <meta name="copyright" value="All information copyright © 1998-2003 TA Instruments" />
+        <link rel="StyleSheet" href="..\TAHtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../RAGlossary/ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor172"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Introducing Model Fitting</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor173"></a><a name="kanchor174"></a><a name="kanchor175"></a><a name="kanchor176"></a><a name="kanchor177"></a><a name="kanchor178"></a><a name="kanchor179"></a><a name="kanchor180"></a>In order to perform a quantitative comparison of materials, it is generally 
+ required that you fit the experimental data to some form of best -fit 
+ mathematical equation or 'model'. These models range from the basic prediction 
+ of viscosity as a function of shear stress or shear rate, to rigorous 
+ constitutive equations that attempt to deal with all rheological properties 
+ over a wide range of conditions. In the majority of cases, there is no 
+ need to obtain a constitutive equation, since an existing model will give 
+ useful results. In addition to those built in to the program, Rheology 
+ Advantage also allows you to define your own models.</p>
+        <p>Models can be fitted to part of a curve by use of the limits function.</p>
+        <p style="font-weight: bold;color: #00509f;">Click on the topics below 
+ for more information:</p>
+        <ul>
+            <li class="Bullet" value="1"><a href="Model_List.htm">Model 
+ List</a>
+            </li>
+            <li class="Bullet" value="2"><a href="Creating_Your_Own_Models.htm">Creating 
+ Your Own Models</a>
+            </li>
+            <li class="Bullet" value="3"><a href="Importing_Exporting_User_Defined_Models.htm">Importing/Exporting 
+ User-Defined Models</a>
+            </li>
+            <li class="Bullet" value="4"><a href="#Selecting_an_Analysis_Range" name="kanchor181">Selecting 
+ an Analysis Range</a>
+            </li>
+            <li class="Bullet" value="5"><a href="#Adjusting_an_Analysis">Adjusting 
+ an Analysis</a>
+            </li>
+            <li class="Bullet" value="6"><a href="#Calculating_a_Point" name="kanchor182">Calculating 
+ a Point</a>
+            </li>
+            <li class="Bullet" value="7"><a href="Theory_of_Creep_Models.htm">Theory 
+ of Creep Models</a>
+            </li>
+            <li class="Bullet" value="8"><a href="Introduction_to_QC_and_Statistics.htm">Introduction 
+ to QC and Statistics</a>
+            </li>
+            <li class="Bullet" value="9"><a href="Analyzing_Data.htm">Analyzing 
+ Data</a>
+            </li>
+        </ul>
+        <h3 style="text-align: center;" align="center">
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+        </h3>
+        <h3><a name="Selecting_an_Analysis_Range"></a>Selecting an Analysis Range</h3>
+        <p>Normally, a model fit or analysis uses all of the data points in the 
+ results file. In some cases, you may wish to limit the range of values 
+ used. Select <span style="font-weight: bold;color: #00509f;">Analysis</span> 
+ from the menu and then click on <span style="font-weight: bold;color: #00509f;">Cursors</span> 
+ or click the <img src="../image/Cursors.gif" alt="image\Cursors.gif" style="width: 20px;height: 19px;border-style: none;border-style: none;" width="20" height="19" border="0" /><a name="kanchor183"></a> button. You can then select the upper and 
+ lower limits to use by dragging the cursors on the graph or clicking on 
+ the limits button <img src="../image/Limits.gif" alt="image\Limits.gif" style="width: 20px;height: 19px;border-style: none;border-style: none;" width="20" height="19" border="0" /></p>
+        <p class="Notes"><a name="kanchor184"></a>NOTE: &#160;If 
+ you have one or more bad points, you may wish to delete them or apply 
+ a <a href="Smoothing_data.htm">smoothing</a> to the curve. You can not 
+ exclude an individual point in the limit range. You must delete it instead.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Adjusting_an_Analysis"></a>Adjusting an Analysis</h3>
+        <p>When you have fitted a model to a data set, you may wish to "fine 
+ tune" the results obtained by the software. </p>
+        <ol>
+            <li class="NumberedIndent" value="1">After you 
+ have fitted a model to the data, ensure the model fit is selected and 
+ then right mouse click in the <a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t1"><img style="border: none;margin-right: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Collapsed" MadCap:alt2="Expanded" class="MCTogglerIcon" />Analysis Results</a> 
+ window.<div MadCap:targetName="t1" style="display: none;"><p style="border-left-style: Solid;border-left-color: #808080;border-top-style: Solid;border-top-color: #808080;border-right-style: Solid;border-right-color: #808080;border-bottom-style: Solid;border-bottom-color: #808080;border-left-width: 2px;border-top-width: 2px;border-right-width: 2px;border-bottom-width: 2px;padding-left: 3px;padding-right: 3px;padding-top: 3px;padding-bottom: 3px;"><span style="font-weight: bold;color: #00509f;">Analysis 
+ Results Window: &#160;</span>To 
+ display this window, select <span style="font-weight: bold;color: #00509f;">Options</span> 
+ from the menu bar, then <span style="font-weight: bold;color: #00509f;">Settings</span>. 
+ Click on the <span style="font-weight: bold;color: #00509f;">View</span> 
+ tab and ensure that <span style="font-style: italic;">Analysis results</span> 
+ is highlighted in the tool bars listing.</p></div></li>
+            <li class="NumberedIndent" value="2">Select the 
+ <span style="font-weight: bold;color: #00509f;">Adjust all</span> option 
+ from the pop up menu.</li>
+            <li class="NumberedIndent" value="3">Click on 
+ the term you are interested in altering and then move the slide control 
+ to adjust the term. You should be able to see the graph being adjusted 
+ in real time.</li>
+        </ol>
+        <p class="Notes" style="font-weight: normal;">NOTE: If you wish to reset the model to 
+ the value obtained by the software, simply delete the model fit and then 
+ re-apply the model to the data.</p>
+        <p><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Calculating_a_Point"></a>Calculating a Point</h3>
+        <p class="Topic-Text-Numbered" style="margin-bottom: 0.00pt;">&#160;</p>
+        <p>Once you have used a model fit on a result file, you can then use it 
+ to calculate point values. For example, if you wish to determine the viscosity 
+ at a particular shear rate, but there is no data point at this shear rate.</p>
+        <p class="Topic-Text-Numbered" style="margin-bottom: 0.00pt;">&#160;</p>
+        <ol>
+            <li class="NumberedIndent" value="1">
+                <img src="../image/Point_1.gif" style="border: none;width: 445px;height: 162px;border-style: none;float: right;border-style: none;float: right;" width="445" height="162" align="right" border="0" />Load the required results file.</li>
+            <li class="NumberedIndent" value="2">Apply the 
+ required model to the curve.</li>
+            <li class="NumberedIndent" value="3">Right click 
+ in the <span style="font-weight: bold;color: #00509f;">Analysis Results</span> 
+ Window.</li>
+            <li class="NumberedIndent" value="4">Select point 
+ calculation from the drop down menu shown to the right.</li>
+            <li class="NumberedIndent" value="5">Click on 
+ the <span style="font-weight: bold;color: #00509f;">Insert</span> button 
+ to add a value.</li>
+            <li class="NumberedIndent" value="6"><a name="kanchor185"></a>Double click 
+ on the new value to edit it.</li>
+        </ol>
+        <p>Type in the independent value and the software will calculate the dependant 
+ using the model. The new value will be added to the values shown in the 
+ <span style="font-weight: bold;color: #00509f;">Analysis Results</span> 
+ window.<span style="margin-bottom: 0;">  <![CDATA[ ]]></span></p>
+        <p style="margin-bottom: 0;"><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Analyzing Data|Analyzing_Data.htm||Arrhenius|MODEL_Arrhenius.htm||Bingham equation|MODEL_Bingham.htm||Carreau|MODEL_Carreau.htm||Casson Equation|MODEL_Casson.htm||Cross|MODEL_Cross.htm||Discrete Relaxation Spectra|MODEL_Discrete_relaxation_spectra.htm||Ellis|MODEL_Ellis.htm||Example of a User Defined Model|Example_of_a_user_defined_model.htm||Herschel-Bulkley|MODEL_Herschel_Bulkley.htm||Newtonian (Oscillation)|MODEL_NewtonianOsc.htm||Newtonian Equation|MODEL_Newtonian.htm||Oldroyd|MODEL_Oldroyd.htm||Polynomial|MODEL_Polynomial.htm||Power law (Oscillation)|MODEL_Power_lawOsc.htm||Power Law Equation|MODEL_Power_law.htm||Sisko equation|MODEL_Sisko.htm||Spriggs|MODEL_Spriggs.htm||Straight Line|MODEL_Straight_line.htm||Theory of Creep Models|Theory_of_Creep_Models.htm||Williamson|MODEL_Williamson.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <p style="margin-bottom: 0;font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back 
+ to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

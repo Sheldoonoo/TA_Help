@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:id="Setting Up a Creep TTS Experiment" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpCheckList.First Draft,RoboHelpCheckList.Links,RoboHelpCheckList.Index keywords,RoboHelpStatus.In Progress" MadCap:tocPath="Using the Procedure Templates" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Setting Up a Creep TTS Experiment</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" type="text/css" />
+        <script src="SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="GIF/ques_blue.jpg" style="border: none;" alt="" width="35" height="37" align="right" border="0" /></a></span><a name="top" id="top"></a><a name="kanchor414"></a>Setting Up a Creep TTS Experiment</h1>
+        <p>&#160;</p>
+        <p>In a creep experiment, a constant force (stress) is instantaneously applied to the material and the resulting deformation (strain) is measured as a function of time. &#160;Creep compliance is calculated by dividing the time-dependent strain by the applied stress. &#160;After creep has occurred for a specified period of time, the stress is removed and sample recovery is measured.</p>
+        <p>Time-temperature superposition (TTS) experiments can be performed using creep tests that were run at different isothermal temperatures, but using the same creep stress. This allows you to evaluate long-term mechanical properties (compliance) in an experimentally-feasible time. For more information about creep TTS and its applications, refer to "Time-Temperature Superposition Using DMA Creep Data," in the TA Instruments Technical Literature. Contact your TA representative to obtain this document.</p>
+        <p>If you want to set up a DMA Creep TTS procedure, you can choose one of two techniques—the <a href="#Using%20the%20DMA%20Wizard" class="selected">DMA Wizard</a> or the <a href="#Using%20the%20Experimental%20View%20Procedure%20Page" class="selected">Experimental View - Procedure Page</a>. See the instructions below for each technique.</p>
+        <p class="Bullet"><a name="kanchor415"></a><a name="kanchor416"></a><a name="kanchor417"></a>When you perform a DMA Creep Time-Temperature Superposition (TTS) experiment, the following parameters need to be chosen:</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Preload force:</span> This is the force applied to the sample prior to initiating the experiment. &#160;</p>
+            </li>
+            <li style="list-style: none;display: inline;">
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">A preliminary preload force is available for creep measurements using the tension (film) and tension (fiber) clamps. &#160;This preload force ensures that the sample material is fully elongated (has no slack). &#160;A preliminary preload force is also available when using the compression and 3-point bend clamps for creep measurements. &#160;In those clamps the preload force ensures that the movable part of the clamp is in contact with the material prior to starting the experiment. &#160;In all cases, the preload force should be limited to the minimum force required to achieve the desired starting condition. &#160;Otherwise, it may affect the creep results. &#160;(NOTE: &#160;Preload force will also affect the creep recovery results. &#160;Since creep recovery assumes “zero force,” the impact of improper preload force is greater during that portion of the experiment.) &#160;0.001N is the lowest force which can be applied. &#160;</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">Preload force is not used when you select a nontensioning clamp (<span style="font-style: italic;">i.e.</span>, single/dual cantilever, shear sandwich). &#160;</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet" style="font-weight: bold;color: #00509f;">Stress: &#160;<span style="font-weight: normal;color: #000000;">The stress applied during creep measurements can be selected to simulate real-life end-use conditions or can be a nominal value sufficiently large to ensure good deformation.</span> &#160;</p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet" style="font-weight: bold;color: #00509f;">Start/Final Temperature: &#160;&#160;<span style="font-weight: normal;color: #000000;">The DMA temperature range is -145 to 600°C. &#160;Attaining the subambient portion of this range depends on the presence of a Gas Cooling Accessory (GCA).</span></p>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet" style="font-weight: bold;color: #00509f;">Temperature Increment: &#160;&#160;<span style="font-weight: normal;color: #000000;">The temperature increment should be small enough to provide good resolution of events.</span> &#160;</p>
+            </li>
+            <li class="p-Bullet" value="4">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Isothermal Soak Time:</span> &#160;Because of the mass of the DMA furnace and clamps, as well as the large size of most DMA samples, a "soak time" (<span style="font-style: italic;">i.e</span>., time to equilibrate at temperature) is recommended.</p>
+            </li>
+            <li class="p-Bullet" value="5">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Creep Time:</span> &#160;The creep time is the time that the stress is applied to the material. Ten minutes is a good initial value to try for a TTS experiment.</p>
+            </li>
+            <li class="p-Bullet" value="6">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Additional Conditions:</span> &#160;There are additional experimental conditions that can be changed to optimize specific situations. &#160;These are accessed using <a href="Advanced_Parameters_Window.htm">Advanced Parameters</a> and <a href="Post_Test_Window.htm">Post-Test Conditions</a>. &#160;For most experiments, the system default values shown are recommended.</p>
+            </li>
+            <li class="p-Bullet" value="7">
+                <p class="Bullet"><span style="font-weight: bold;color: #00509f;">See also:</span> &#160;<a href="Guidelines_for_Running_Subambient_Experiments.htm">Guidelines for Running Subambient Experiments</a>.</p>
+            </li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p class="Bullet" style="text-align: center;"><span style="text-align: center;"><span><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /></span></span>
+        </p>
+        <h3><a name="Using the DMA Wizard"></a>Using the DMA Wizard <img src="GIF/BUTTON_WIZARD_32x32.gif" style="border: none;width: 32;height: 32;" alt="" border="0" />: &#160;</h3>
+        <p>Enter the desired parameters, then select <span style="font-weight: bold;color: #00509f;">Next</span> to proceed.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h3><a name="Using the Experimental View Procedure Page"></a>Using the Experimental View <img src="GIF/Button_Experiment_View_32x32.gif" style="border: none;width: 32;height: 32;" alt="" border="0" /> Procedure Page:</h3>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent">Display the <span style="font-weight: bold;color: #00509f;">Procedure Page</span>. Select the desired experiment from the list of available preprogrammed templates.</p>
+            </li>
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent">Enter the desired parameters. When you have finished setting up this procedure, you can enter more information by selecting the <a href="Experimental_View_PaneNotes_Page.htm">Notes Page</a> and <a href="Experimental_View_PaneSummary.htm">Summary Page</a> for this run.</p>
+            </li>
+            <li class="p-NumberedIndent" value="3">
+                <p class="NumberedIndent">Click the <span style="font-weight: bold;color: #00509f;">Apply</span> button when finished to save these changes or the <span style="font-weight: bold;color: #00509f;">Append</span> button to save the changes to this run and add another run to the end of the sequence.</p>
+            </li>
+        </ol>
+        <p class="Notes">NOTE: &#160;You can use any test template as the basis for a custom test by selecting the desired test template from the list of tests, then click the <span style="font-weight: bold;color: #00509f;">Apply</span> button and change the test to Custom. Then you can click on the <span style="font-weight: bold;color: #00509f;">Procedure Page</span> and then the <span style="font-weight: bold;color: #00509f;">Editor</span> button to make the changes desired.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Available DMA Clamps|Available_DMA_Clamps.htm||Available DMA Test Templates|Available_DMA_Tests.htm||Basic Steps Needed to Run a DMA Experiment|Basic_Steps_Needed_to_Run_a_DMA_Experiment_.htm||Creating a Custom Method in the Creep Mode|Creating_a_Custom_Method_in_the_Creep_Mode.htm||Selecting a DMA Operating Mode|Selecting_a_DMA_Operating_Mode.htm"><img src="SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Link Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

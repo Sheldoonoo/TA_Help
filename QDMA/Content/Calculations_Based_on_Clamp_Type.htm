@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:id="Calculations Based on Clamp Type" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpCheckList.First Draft,RoboHelpCheckList.Added To TOC,RoboHelpCheckList.Links,RoboHelpCheckList.Index keywords,RoboHelpStatus.In Progress" MadCap:tocPath="Introducing the DMA|Introducing the Clamps" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Calculations Based on Clamp Type</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" type="text/css" />
+        <script src="SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor40"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="GIF/ques_blue.jpg" style="border: none;" alt="" width="35" height="37" align="right" border="0" /></a></span><a name="top" id="top"></a>Calculations Based on Clamp Type</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor41"></a><a name="kanchor42"></a><a name="kanchor43"></a><a name="kanchor44"></a><a name="kanchor45"></a><a name="kanchor46"></a>Since a material’s modulus is independent of its geometry, equations relating the sample stiffness to the modulus depend on the type of clamps used, the sample shape, and the mode of deformation. &#160;This help topic contains stiffness calculations for the different clamp types along with comments on appropriate correction factors. Also included are stress and strain equations, which can be used as a general guideline for calculations made from the force and amplitude of deformation. The equations for stress and strain assume linear viscoelastic behavior. Modulus calculations based on the equations may not agree with values computed by the DMA program, especially if the sample stretches or shrinks significantly during an experiment. &#160;</p>
+        <p>The DMA determines the modulus (stiffness) of a material differently depending upon the clamp type installed on the instrument and selected using the instrument control software. &#160;This section provides the equations used for calculations, based on the type of clamp. <span style="font-weight: bold;color: #00509f;">See also: &#160;</span><a href="Sample_Stiffness_and_Modulus_Calculations.htm">Sample Stiffness and Modulus Calculations</a>.</p>
+        <p style="font-weight: bold;color: #00509f;">Click on the list below to go to the equations used for each clamp:</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet"><a href="#Dual%20cantilever%20equations" class="selected">Dual Cantilever Clamp Equations</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet"><a href="#Single%20Cantilever%20Equations" class="selected">Single Cantilever Clamp Equations</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet"><a href="#3-Point%20Bending%20Equations" class="selected">3-Point Bending Clamp Equations</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="4">
+                <p class="Bullet"><a href="#Shear%20Sandwich%20Equations" class="selected">Shear Sandwich Clamp Equations</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="5">
+                <p class="Bullet"><a href="#Compression%20Equations" class="selected">Compression Clamp Equations</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="6">
+                <p class="Bullet"><a href="#Film/Fiber%20Tension%20Equations" class="selected">Film/Fiber Tension Clamp Equations</a>
+                </p>
+            </li>
+        </ul>
+        <p style="text-align: center;">
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+            <img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" />
+        </p>
+        <h3><a name="Dual cantilever equations"></a>Dual Cantilever Equations</h3>
+        <p>When running experiments using the dual cantilever clamp, the equations found in this section are applied to obtain your results.</p>
+        <h4>Modulus Equation</h4>
+        <p>The stiffness model equation for a rectangular cross section sample, analyzed on the dual cantilever clamp, is as follows. &#160;(Similar calculations were performed for cylindrical samples but are not detailed here.)</p>
+        <p>
+            <img src="GIF/ModulusEqDualCant.gif" alt="Modulus Equation for Dual Cantilever Clamps" title="Modulus Equation for Dual Cantilever Clamps" style="border: none;" width="171" height="60" border="0" />
+        </p>
+        <p>Where:</p>
+        <p>K &#160;= stiffness or spring constant</p>
+        <p>E &#160;= elastic modulus</p>
+        <p>L &#160;= sample length (one side)</p>
+        <p>t &#160;= sample thickness</p>
+        <p>I &#160;= sample moment of inertia</p>
+        <p><span style="font-family: Symbol, serif;">n</span> = Poison’s ratio</p>
+        <p>The sample moment of inertia is</p>
+        <p>
+            <img src="GIF/MomentInertiaDC.gif" alt="Moment of Inertia" title="Moment of Inertia" style="border: none;" width="38" height="41" border="0" />
+        </p>
+        <p>Where:</p>
+        <p>t &#160;= sample thickness</p>
+        <p>I &#160;= sample moment of inertia</p>
+        <p>w = sample width</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p>The stiffness model equation assumes that the ends of the sample are fixed, or that there is no deformation of the sample beyond where the sample enters the clamps. &#160;This is never achieved in practice, to do so would require a discontinuity in the strains within the sample at the clamp face. &#160;To account for this error, a sample stiffness correction factor can be defined as:</p>
+        <p>
+            <img src="GIF/StiffnessCorrFactorDC.gif" alt="Stiffness Correction Factor" title="Stiffness Correction Factor" style="border: none;" width="52" height="37" border="0" />
+        </p>
+        <p>Where:</p>
+        <p>K &#160;&#160;= stiffness or spring constant</p>
+        <p>K<span style="vertical-align: Sub;">s</span> = measured stiffness</p>
+        <p>F<span style="vertical-align: Sub;">c</span> = clamping correction factor</p>
+        <p>Substituting for K in the model equation and solving for the modulus:</p>
+        <p>
+            <img src="GIF/ModelEquationsDC.gif" alt="Dual Cantilever Equations" title="Dual Cantilever Equations" style="border: none;" width="346" height="127" border="0" />
+        </p>
+        <p>Where:</p>
+        <p>E &#160;= elastic modulus</p>
+        <p>L &#160;= sample length (one side)</p>
+        <p>ln &#160;= natural log</p>
+        <p>K<span style="vertical-align: Sub;">s</span> = measured stiffness</p>
+        <p>t &#160;&#160;= sample thickness</p>
+        <p>I &#160;&#160;= sample moment of inertia</p>
+        <p><span style="font-family: Symbol, serif;">n &#160;&#160;</span>= Poison’s ratio</p>
+        <p>F<span style="vertical-align: Sub;">c</span> = clamping correction factor</p>
+        <p>The clamping correction factor, F<span style="vertical-align: Sub;">c</span>, was determined by finding the sample stiffness using <span style="font-style: italic;">Finite Element Analysis</span> of the sample deformation and calculating F<span style="vertical-align: Sub;">c</span> using the sample stiffness equation and the FEA stiffness. This was done by studying many cases including a variety of materials and geometries with corresponding fit applied to the result.</p>
+        <p class="Notes">NOTE: &#160;Poisson’s ratio accounts for the shear deformation taking place in flexure, when using &#160;samples of relatively small length-to-thickness ratios. &#160;It is introduced in the equation using the standard equation relating E and G: E = 2 ( 1 + <span style="font-family: Symbol, serif;">n</span> ) G</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h4>Stress and Strain</h4>
+        <p>When using the dual cantilever clamp, stress and strain are not constant throughout the sample thickness. The maximum level of strain occurs at the sample surface, while the center experiences no strain at all. &#160;This also means that both stress and strain can have positive or negative sense, depending on whether it is on the top or bottom surface of the sample. &#160;The following equation expresses the maximum stress and strain levels and does not include any contribution from the clamp:</p>
+        <p>&#160;<img src="GIF/Stress&amp;StrainEqDC.gif" alt="Stress and Strain Equations" title="Stress and Strain Equations" style="border: none;" width="298" height="178" border="0" /></p>
+        <p>Where:</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, serif;">s</span><span style="vertical-align: Sub;">x</span> = stress</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, serif;">e</span><span style="vertical-align: Sub;">x</span> = strain</p>
+        <p>P &#160;= 1/2 applied force</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, serif;">d &#160;</span>= amplitude of deformation</p>
+        <p>L &#160;= sample length (one side)</p>
+        <p>t &#160;&#160;= sample thickness</p>
+        <p>w &#160;= sample width</p>
+        <p>F<span style="vertical-align: Sub;">c</span> = clamping correction factor</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, serif;">n</span> = Poison’s ratio</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h3><a name="Single Cantilever Equations"></a>Single Cantilever Equations</h3>
+        <p>When running experiments using the single cantilever clamp, the equations found in this section are applied to obtain your results.</p>
+        <h4>Modulus Equation</h4>
+        <p>The stiffness model equation for a rectangular cross section sample, analyzed on the single cantilever clamp, is as follows. &#160;(Similar calculations were performed for cylindrical samples but are not detailed here.)</p>
+        <p>
+            <img src="GIF/ModulusEqSingleCant.gif" alt="Modulus Equation for Single Cantilever Clamps" title="Modulus Equation for Single Cantilever Clamps" style="border: none;" width="307" height="154" border="0" />
+        </p>
+        <p>Where:</p>
+        <p>E &#160;= elastic modulus</p>
+        <p>L &#160;= sample length</p>
+        <p>t &#160;= sample thickness</p>
+        <p>I &#160;= sample moment of inertia</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, serif;">n</span> &#160;= Poison’s ratio</p>
+        <p>K<span style="vertical-align: Sub;">s</span> = measured stiffness</p>
+        <p>F<span style="vertical-align: Sub;">c</span> = clamping correction factor</p>
+        <h4>Stress and Strain</h4>
+        <p>When using the single cantilever clamp, the equations for stress and strain are the same as for the <a href="#Dual%20cantilever%20equations" class="selected">dual cantilever clamp</a>, except that P in the stress equation is the full applied force.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h3><a name="3-Point Bending Equations"></a>3-Point Bending Equations</h3>
+        <p>When running experiments using the 3-point bending clamp, the equations found in this section are applied to obtain your results.</p>
+        <h4>Modulus Equation</h4>
+        <p>The stiffness model equation for a rectangular cross section sample, analyzed on the 3-point bending clamp, is as follows. &#160;(Similar calculations were performed for cylindrical samples but are not detailed here.)</p>
+        <p>
+            <img src="GIF/ModulusEq3ptBend.gif" alt="Modulus Equation for 3-Point Bending Clamp" title="Modulus Equation for 3-Point Bending Clamp" style="border: none;" width="217" height="60" border="0" />
+        </p>
+        <p>Where:</p>
+        <p>E &#160;&#160;= elastic modulus</p>
+        <p>L &#160;&#160;= sample length (one side)</p>
+        <p>t &#160;&#160;= sample thickness</p>
+        <p>I &#160;&#160;= sample moment of inertia</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, serif;">n &#160;&#160;</span>= Poison’s ratio</p>
+        <p>K<span style="vertical-align: Sub;">s</span> = measured stiffness</p>
+        <p>This equation assumes that local deformation of the sample in the region of the supports are negligible.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h4>Stress and Strain</h4>
+        <p>When using the 3-point bending clamp, the maximum stress and strain occur at the midspan of the sample where the drive applies the load, so both stress and strain can have positive or negative sense depending on wether it is on the top or the bottom surface of the sample.</p>
+        <p>
+            <img src="GIF/Stress&amp;StrainEq3ptBend.gif" alt="Stress and Strain Equation for 3-Point Bending Clamp" title="Stress and Strain Equation for 3-Point Bending Clamp" style="border: none;" width="236" height="179" border="0" />
+        </p>
+        <p>Where:</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, serif;">s</span><span style="vertical-align: Sub;">x</span> = stress</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, serif;">e</span><span style="vertical-align: Sub;">x</span> = strain</p>
+        <p>P &#160;= applied force</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, serif;">d &#160;</span>= amplitude of deformation</p>
+        <p>L &#160;= 1/2 sample length (span)</p>
+        <p>t &#160;= sample thickness</p>
+        <p>w &#160;= sample width</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, serif;">n</span> &#160;= Poison’s ratio</p>
+        <p>I &#160;= moment of inertia</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h3><a name="Shear Sandwich Equations"></a>Shear Sandwich Equations</h3>
+        <p>When running experiments using the shear sandwich clamp, the equations found in this section are applied to obtain your results.</p>
+        <h4>Modulus Equation</h4>
+        <p>The stiffness model equation for a rectangular cross section sample, analyzed on the shear sandwich clamp, is as follows. &#160;(Similar calculations were performed for cylindrical samples but are not detailed here.)</p>
+        <p>
+            <img src="GIF/ModulusEqShearSand.gif" alt="Modulus Equation for the Shear Sandwich Clamp" title="Modulus Equation for the Shear Sandwich Clamp" style="border: none;" width="93" height="58" border="0" />
+        </p>
+        <p>Where:</p>
+        <p>K &#160;= stiffness or spring constant</p>
+        <p>G &#160;= shear modulus</p>
+        <p>w &#160;= sample width, <span style="font-style: italic;">i.e</span>. horizontal dimension</p>
+        <p>h &#160;= sample height, <span style="font-style: italic;">i.e.</span> vertical dimension</p>
+        <p>t &#160;= sample thickness, between clamp faces</p>
+        <p>Dilatation of the sample due to compression when the screws are tightened, causes the measured stiffness to differ from the model equation. &#160;The amount of dilatation is dependent upon the degree of compression of the sample which cannot be quantified so, a correction factor for this effect is ignored. The equation for the shear modulus is:</p>
+        <p>
+            <img src="GIF/ShearModulusEqSS.gif" alt="Shear Modulus Equation" title="Shear Modulus Equation" style="border: none;" width="90" height="58" border="0" />
+        </p>
+        <p>Where:</p>
+        <p>G &#160;&#160;= shear modulus</p>
+        <p>w &#160;&#160;= sample width, i.e. horizontal dimension</p>
+        <p>h &#160;&#160;= sample height, i.e. vertical dimension</p>
+        <p>t &#160;&#160;= sample thickness, between clamp faces</p>
+        <p>K<span style="vertical-align: Sub;">s</span> = measured stiffness</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h4>Stress and Strain</h4>
+        <p>
+            <img src="GIF/Stress&amp;StrainEqShearS_80x139.gif" alt="Stress and Strain Equation for Shear Sandwich" title="Stress and Strain Equation for Shear Sandwich" style="border: none;width: 80;height: 139;" border="0" />
+        </p>
+        <p>Where:</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, fantasy;">s</span><span style="vertical-align: Sub;">0</span> = stress</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, fantasy;">g</span><span style="vertical-align: Sub;">0</span> = strain</p>
+        <p>P &#160;= applied force</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, fantasy;">d</span> &#160;= amplitude of deformation</p>
+        <p>A &#160;= sample cross-sectional area</p>
+        <p>T &#160;= separation of clamp surfaces</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h3><a name="Compression Equations"></a>Compression Clamp Equations</h3>
+        <p>When running experiments using the compression clamp, the equations found in this section are applied to obtain your results.</p>
+        <h4>Modulus Equation</h4>
+        <p>The stiffness model equation for a sample, analyzed on the compression clamp, is as follows. &#160;</p>
+        <p>
+            <img src="GIF/ModulusEq3ptComp.gif" alt="Modulus Equation for Compression Clamp" title="Modulus Equation for Compression Clamp" style="border: none;" width="58" height="53" border="0" />
+        </p>
+        <p>Where:</p>
+        <p>K &#160;= stiffness or spring constant</p>
+        <p>E &#160;= elastic modulus</p>
+        <p>A &#160;= sample cross-sectional area</p>
+        <p>t &#160;&#160;= sample thickness</p>
+        <p>The model equation assumes that transverse strains are negligible. &#160;In fact, due to dilatation effects, transverse strains in the sample are significant, therefore, the measured stiffness will be lower than the sample stiffness. &#160;A stiffness correction factor can be defined as:</p>
+        <p>
+            <img src="image1.gif" style="border: none;" alt="" width="56" height="39" border="0" />
+        </p>
+        <p>Where:</p>
+        <p>K &#160;&#160;= stiffness or spring constant</p>
+        <p>K<span style="vertical-align: Sub;">s</span> = measured stiffness</p>
+        <p>F<span style="vertical-align: Sub;">e</span> = correction factor. <span style="margin-left: 0px;">Click the link below to open the “Clamping Factors” Abode Acrobat document (pdf file) to determine the value of Fe. <img src="OCEAN_ARROW_SM.GIF" style="border: none;" alt="" width="7" height="13" border="0" /> <a href="DMAClampingFactors.pdf" target="_blank">Clamping Factors</a></span></p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p>Substituting for K in the model equation and solving for the modulus,</p>
+        <p>
+            <img src="image2.gif" style="border: none;" alt="" width="69" height="50" border="0" />
+        </p>
+        <p>Where:</p>
+        <p>E &#160;&#160;= elastic modulus</p>
+        <p>t &#160;&#160;= sample thickness</p>
+        <p>K<span style="vertical-align: Sub;">s</span> = measured stiffness</p>
+        <p>A = sample cross-sectional area</p>
+        <p>F<span style="vertical-align: Sub;">e</span> = correction factor. <span style="margin-left: 0px;">Click the link below to open the “Clamping Factors” Abode Acrobat document (pdf file) to determine the value of F</span><span style="margin-left: 0px;vertical-align: Sub;">e</span><span style="margin-left: 0px;">.</span> <img src="OCEAN_ARROW_SM.GIF" style="border: none;" alt="" width="7" height="13" border="0" /> <a href="DMAClampingFactors.pdf" target="_blank">Clamping Factors</a></p>
+        <p>The clamping correction factor, F<span style="vertical-align: Sub;">e</span> , was determined by finding the sample stiffness using <span style="font-style: italic;">Finite Element Analysis</span> of the sample deformation. F<span style="vertical-align: Sub;">e</span> &#160;was calculated using the sample stiffness equation and the FEA stiffness. &#160;This was done by studying many cases, including a variety of materials and geometries with corresponding fit, applied to the result.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h4>Stress and Strain</h4>
+        <p>
+            <img src="image3.gif" style="border: none;" alt="" width="80" height="107" border="0" />
+        </p>
+        <p>Where:</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, fantasy;">s</span><span style="vertical-align: Sub;">0</span> = stress</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, fantasy;">g</span><span style="vertical-align: Sub;">0</span> = strain</p>
+        <p>P &#160;= applied force</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, fantasy;">d</span> &#160;= amplitude of deformation</p>
+        <p>A &#160;= sample cross-sectional area</p>
+        <p>T &#160;= separation of clamp surfaces</p>
+        <p>F<span style="vertical-align: Sub;">e</span> = correction factor that accounts for sample dilatation effects. <span style="margin-left: 0px;">Click the button below to open the “Clamping Factors” Abode Acrobat document (pdf file) to determine the value of F</span><span style="margin-left: 0px;vertical-align: Sub;">e</span><span style="margin-left: 0px;">.</span></p>
+        <p style="text-align: center;">
+            <MadCap:shortcut path="DMAClampingFactors.pdf" parameters="" class="shortcut_1">
+            </MadCap:shortcut>
+        </p>
+        <p>The DMA uses the nominal or engineering stress and strain, which are based on the assumption that the cross-sectional area of the sample maintains the initial value for the duration of the experiment.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h3><a name="Film/Fiber Tension Equations"></a>Film/Fiber Tension Clamp Equations</h3>
+        <p>When you are running experiments using the film or fiber tension clamps, the equations found in this section are applied to obtain your results.</p>
+        <h4>Modulus Equation</h4>
+        <p>The stiffness model equation for a sample, analyzed on the film or fiber tension clamp, is as follows.</p>
+        <p>
+            <img src="image4.gif" style="border: none;" alt="" width="49" height="42" border="0" />
+        </p>
+        <p>Where:</p>
+        <p>K = stiffness or spring constant</p>
+        <p>E = elastic modulus</p>
+        <p>A = sample cross-sectional area</p>
+        <p>L = sample length</p>
+        <p>Because the sample will have a very small area as compared to it’s length, no end-effects correction is needed, the modulus equation is,</p>
+        <p>
+            <img src="image5.gif" style="border: none;" alt="" width="59" height="41" border="0" />
+        </p>
+        <p>Where:</p>
+        <p>E &#160;= elastic modulus</p>
+        <p>A &#160;= sample cross-sectional area</p>
+        <p>L &#160;= sample length</p>
+        <p>K<span style="vertical-align: Sub;">s</span> = measured stiffness</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h4>Stress and Strain</h4>
+        <p>Where:</p>
+        <p>
+            <img src="image6.gif" style="border: none;" alt="" width="52" height="91" border="0" />
+        </p>
+        <p><span style="font-size: 11pt;font-family: Symbol, fantasy;">s</span><span style="vertical-align: Sub;">0</span> = stress</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, fantasy;">g</span><span style="vertical-align: Sub;">0</span> = strain</p>
+        <p>P &#160;= applied force</p>
+        <p><span style="font-size: 11pt;font-family: Symbol, fantasy;">D</span>L = cumulative change in sample length</p>
+        <p>L<span style="vertical-align: Sub;">0</span> = initial sample length</p>
+        <p>A<span style="vertical-align: Sub;">0</span> = initial sample cross-sectional area</p>
+        <p>The DMA uses the nominal or engineering stress and strain, which are based on the assumption that the change in sample length is small for the duration of the experiment.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h4>Geometry Factors:</h4>
+        <p>The parameter block contains three normalizing factors related to sample size and geometry. &#160;The factors allow easy conversion between sample properties and material properties. &#160;They appear in this order in the parameter block:</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet">Geometry Factor – Multiplying stiffness by the geometry factor converts from stiffness to modulus.</p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet">Strain Factor – Multiplying amplitude by the strain factor converts from amplitude to strain.</p>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet">Stress Factor – Multiplying force by the stress factor converts from force to stress.</p>
+            </li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Sample Stiffness and Modulus Calculations|Sample_Stiffness_and_Modulus_Calculations.htm"><img src="SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Link Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

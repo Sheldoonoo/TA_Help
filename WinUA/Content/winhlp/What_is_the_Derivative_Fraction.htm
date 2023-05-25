@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Analyzing Data Files" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>What is the Derivative Fraction?</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor35"></a>What is the Derivative Fraction?</h1>
+        <p>Derivation fraction is a percentage of the derivative curve.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>It is used when performing a TGA Weight Change or Signal Change analysis as follows: The program will first determine the highest derivative peak in the current data file. Then the program will go down the highest peak until it determines where the desired fraction of that derivative peak is reached. Then it will find the middle of the area between the two derivative peaks at that fraction point and use that as the analysis point. For example, if you use the default derivative fraction of 0.05, the program scans down the highest derivative peak until it comes to the 5 percent point of that peak. Then the middle of the area between the highest peak and the one next to it is determined and used at the analysis limit (either Point 1 or Point 2, or both).</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: blue;">NOTE: If the program does not locate an adjacent peak to use for the midpoint determination, it will use the end of the data curve.</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>When doing a succession of weight change or signal change analyses on the same curve, the derivative fraction used for the Point 2 of the first step should be the same as the fraction used for Point 1 of the next step.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Body_Text"><span style="color: #000fff;">NOTE: The default derivative fraction of 0.05 (5 percent) is recommended for both Point 1 and Point 2. If you do not use the default value, it is recommended that you use the same derivative fraction for both points.</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

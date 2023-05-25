@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Modifying Running Experiments" MadCap:browseSequencePath="Using the Instrument" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Selecting Post Test Actions</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor264"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../QDSC Images/ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span>Selecting 
+ Post Test Actions</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor265"></a><a name="kanchor266"></a>While an experiment is in progress you can change the process that occurs 
+ after the end of a test run.</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Right click 
+ on the run number in the Sequence Pane to display the run sequence pop-up 
+ menu.</li>
+            <li class="NumberedIndent" value="2">Select <span style="font-weight: bold;color: #00509f;">Post Run Action</span> from 
+ the pop-up menu to display the <span style="font-weight: bold;color: #00509f;">Post 
+ Test Action</span> window. </li>
+            <li class="NumberedIndent" value="3">Choose the 
+ desired action to be performed after the selected run has completed from 
+ the drop-down lists:<ul><li value="1"><span style="font-weight: bold;color: #00509f;">NONE</span>: 
+ No action will be performed</li></ul></li>
+        </ol>
+        <ol>
+            <ul>
+                <li value="1"><span style="font-weight: bold;color: #00509f;">IF, 
+ IF NOT, </span>and<span style="font-weight: bold;color: #00509f;"> DO</span>: 
+ These options enable you to perform the specified analysis at the end 
+ of the experiment without operator intervention and decide the next action 
+ based on whether the results are successful (<span style="font-weight: bold;color: #00509f;">IF</span>) 
+ or unsuccessful (<span style="font-weight: bold;color: #00509f;">IF NOT</span>). 
+ Pass/Fail results are determined by user-defined verification criteria 
+ and calibration analysis results. The <span style="font-weight: bold;color: #00509f;">DO</span> 
+ option is performed irregardless of any pass/fail results.</li>
+            </ul>
+        </ol>
+        <p style="margin-left: 80px;"><span style="font-style: italic;text-decoration: underline;">Available 
+ Analyses</span>: </p>
+        <p style="margin-left: 120px;">Choose from <span style="font-weight: bold;color: #00509f;">NONE</span>, 
+ <span style="font-weight: bold;color: #00509f;">Tzero Calibration</span>, 
+ <span style="font-weight: bold;color: #00509f;">T1 Baseline</span>, or 
+ <span style="font-weight: bold;color: #00509f;">Indium Calibration</span> 
+ (performs both cell constant and temperature calibration using indium), 
+ <span style="font-weight: bold;color: #00509f;">Indium Verification</span>, 
+ or <span style="font-weight: bold;color: #00509f;">Temperature Calibration</span> 
+ as applicable to your instrument.</p>
+        <p style="margin-left: 80px;"><span style="font-style: italic;text-decoration: underline;">Available 
+ Actions</span>: These will be initiated after the chosen criteria (for 
+ <span style="font-weight: bold;color: #00509f;">IF</span> or <span style="font-weight: bold;color: #00509f;">IF 
+ NOT</span>) is met.</p>
+        <p style="margin-left: 120px;"><span style="font-weight: bold;color: #00509f;">GOTO</span> 
+ -- goes to the specified run number and continues the sequence</p>
+        <p style="margin-left: 120px;"><span style="font-weight: bold;color: #00509f;">NEXT</span> 
+ -- proceeds to the next run in the sequence</p>
+        <p style="margin-left: 120px;"><span style="font-weight: bold;color: #00509f;">STOP</span> 
+ -- stops the sequence</p>
+        <p style="margin-left: 120px;"><span style="font-weight: bold;color: #00509f;">GO 
+ Next Sequence</span> -- executes the next sequence (e.g., If calibration 
+ sequence is completed, goes to an experiment sequence and vice versa.)</p>
+        <blockquote>
+            <ul>
+                <li value="1"><span style="font-weight: bold;color: #00509f;">JUMP 
+ TO</span>: &#160;When 
+ you choose JUMP TO, another list is displayed to allow you to choose which 
+ <span style="font-weight: bold;color: #00509f;">Run</span> number the 
+ sequence will activate after completion of the selected run number.</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li value="1"><span style="font-weight: bold;color: #00509f;">STOP</span>: 
+ Stops the experiment.</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li value="1">Select the desired <span style="font-weight: bold;color: #00509f;">Calibration Set.</span> The 
+ application of the set depends on the analysis chosen as follows: &#160;</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <ul>
+                    <li value="1">When you choose <span style="font-weight: bold;color: #00509f;">Indium Calibration</span>, 
+ <span style="font-weight: bold;color: #00509f;">T1 Baseline</span>, or 
+ <span style="font-weight: bold;color: #00509f;">Temperature Calibration</span>, 
+ the selected set is used to specify where to save the calibration data, 
+ or you can use the Browse button (...) to configure a new calibration 
+ set. (This does not apply to the Tzero Calibration because it is a global 
+ calibration setting.) </li>
+                </ul>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <blockquote>
+                <ul>
+                    <li value="1">When you choose <span style="font-weight: bold;color: #00509f;">Indium Verification</span>, 
+ the selected calibration set will be applied to the verification run. 
+ Click on the Browse button (...) to display the available calibration 
+ sets and their parameters.</li>
+                </ul>
+            </blockquote>
+        </blockquote>
+        <ol>
+            <ul>
+                <ul>
+                    <li value="1">See <a href="Configuring_and_Using_Multiple_Calibration_Sets.htm">Configuring 
+ and Using Multiple Calibration Sets</a> for more information.</li>
+                </ul>
+            </ul>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="2">Select 
+ <span style="font-weight: bold;color: #00509f;">Remove</span>, if you 
+ want to delete that item. </li>
+            <li class="NumberedIndent" value="3">Select <span style="font-weight: bold;color: #00509f;">OK</span> when finished.</li>
+        </ol>
+        <p>You can also <span style="font-weight: bold;color: #00509f;">SKIP</span> 
+ a run in a sequence by selecting this option in the run sequence pop-up 
+ menu for the desired run number.</p>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Available DSC Test Templates|Available_DSC_Test_Templates.htm||Basic Steps Needed to Run an Experiment|Basic_Steps_Needed_to_Run_an_Experiment.htm||Entering Sample Information Using the Wizard|Entering_Sample_Information_Using_the_Wizard._Info1.htm||Setting Up the Notes Page|Experimental_View_Pane_Notes_Page.htm||Using the Summary Page|Experimental_View_Pane_Summary_Page.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

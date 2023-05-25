@@ -1,0 +1,275 @@
+/*<meta />*/
+
+p
+{
+	margin-top: 0.00pt;
+	margin-bottom: 0.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 10pt;
+}
+
+h1
+{
+	margin-top: 4.00pt;
+	margin-bottom: 4.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 12pt;
+	color: black;
+	font-weight: bold;
+}
+
+h2
+{
+	margin-top: 6.00pt;
+	margin-bottom: 2.40pt;
+	text-align: left;
+	font-family: 'Bodoni BE Regular';
+	font-size: 12pt;
+	color: blue;
+	font-weight: bold;
+}
+
+h3
+{
+	margin-top: 12.00pt;
+	margin-bottom: 3.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+h4
+{
+	margin-left: 18.00pt;
+	margin-right: 6.50pt;
+	margin-top: 0.00pt;
+	margin-bottom: 2.40pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 12pt;
+}
+
+h5
+{
+	margin-left: 5.75pt;
+	margin-right: 6.50pt;
+	margin-top: 12.00pt;
+	margin-bottom: 3.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 11pt;
+}
+
+h6
+{
+	margin-left: 5.75pt;
+	margin-right: 6.50pt;
+	margin-top: 12.00pt;
+	margin-bottom: 3.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 11pt;
+	font-style: italic;
+}
+
+h6.Heading7
+{
+	margin-left: 5.75pt;
+	margin-right: 6.50pt;
+	margin-top: 12.00pt;
+	margin-bottom: 3.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 8pt;
+}
+
+h6.Heading8
+{
+	margin-left: 5.75pt;
+	margin-right: 6.50pt;
+	margin-top: 12.00pt;
+	margin-bottom: 3.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 8pt;
+	font-style: italic;
+}
+
+h6.Heading9
+{
+	margin-left: 5.75pt;
+	margin-right: 6.50pt;
+	margin-top: 12.00pt;
+	margin-bottom: 3.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 9pt;
+	font-style: italic;
+}
+
+p.Normal_Indent
+{
+	margin-left: 18.00pt;
+	margin-top: 0.00pt;
+	margin-bottom: 2.00pt;
+	text-indent: -18.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 10pt;
+}
+
+p.Tip_Note_Heading
+{
+	margin-top: 4.00pt;
+	margin-bottom: 4.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 12pt;
+	color: black;
+	font-weight: bold;
+}
+
+p.Tip_Note_Text
+{
+	margin-left: 15.10pt;
+	margin-top: 0.00pt;
+	margin-bottom: 0.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 10pt;
+}
+
+p.Tip_Note_Text_Bulleted
+{
+	margin-left: 15.10pt;
+	margin-top: 0.00pt;
+	margin-bottom: 0.00pt;
+	text-indent: -9.35pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 10pt;
+}
+
+p.Topic_Text_Bulleted
+{
+	margin-left: 15.10pt;
+	margin-top: 0.00pt;
+	margin-bottom: 0.00pt;
+	text-indent: -9.35pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 10pt;
+}
+
+p.Topic_Text_Indent
+{
+	margin-left: 15.10pt;
+	margin-top: 0.00pt;
+	margin-bottom: 0.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 10pt;
+}
+
+p.Topic_Text_Numbered
+{
+	margin-left: 15.10pt;
+	margin-top: 0.00pt;
+	margin-bottom: 0.00pt;
+	text-indent: -9.35pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 10pt;
+}
+
+p.footnote_text
+{
+	margin-top: 0.00pt;
+	margin-bottom: 0.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 10pt;
+}
+
+p.Double_Indent
+{
+	margin-left: 36.00pt;
+	margin-top: 0.00pt;
+	margin-bottom: 2.00pt;
+	text-indent: -18.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 10pt;
+}
+
+p.caption
+{
+	margin-top: 0.00pt;
+	margin-bottom: 6.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 12pt;
+}
+
+p.Body_Text
+{
+	margin-top: 0.00pt;
+	margin-bottom: 0.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 11pt;
+}
+
+p.Error_message
+{
+	margin-left: 180.00pt;
+	margin-top: 0.00pt;
+	margin-bottom: 0.00pt;
+	text-indent: -54.00pt;
+	text-align: left;
+	font-size: 11pt;
+}
+
+p.error_indented_level
+{
+	margin-left: 198.00pt;
+	margin-top: 0.00pt;
+	margin-bottom: 0.00pt;
+	text-indent: -72.00pt;
+	text-align: left;
+	font-size: 11pt;
+}
+
+p.Body_text
+{
+	margin-left: 126.00pt;
+	margin-top: 0.00pt;
+	margin-bottom: 0.00pt;
+	text-align: left;
+	font-size: 11pt;
+	color: black;
+}
+
+p.Notes
+{
+	margin-left: 126.00pt;
+	margin-top: 0.00pt;
+	margin-bottom: 0.00pt;
+	text-align: left;
+	font-family: 'Eurostile';
+	font-size: 11pt;
+}
+
+p.Body_Text_2
+{
+	margin-top: 0.00pt;
+	margin-bottom: 0.00pt;
+	text-align: left;
+	font-family: 'Arial';
+	font-size: 10pt;
+	color: blue;
+}
+

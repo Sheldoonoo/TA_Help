@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Calibrating the Instrument" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Configuring and Using Multiple Calibration Sets</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor174"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../QDSC Images/ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Configuring and Using Multiple Calibration Sets</h1>
+        <p>&#160;</p>
+        <h3>Introduction</h3>
+        <p>This TA Instruments Platinum for DSC option gives you the ability to 
+ configure specific calibration sets that can be applied later to match 
+ specific experimental conditions. This is particularly useful when running 
+ experiments using the DSC Autosampler. &#160;For 
+ example, calibration sets can be configured using a specific combination 
+ of heating rate, purge gas, and pan type. Subsequently, when you run an 
+ experiment, the calibration set closest to the current experimental conditions 
+ can be chosen and applied. Up to ten calibration sets can be created and 
+ saved. &#160;This 
+ feature, combined with Platinum’s autocalibration options, further enhances 
+ the DSC Q2000/Q200/Q20 software flexibility.</p>
+        <p class="Notes">NOTE: &#160;The 
+ Multiple Calibration Set feature explained in this help topic is only 
+ available for the Q2000/Q200/Q20/Q20A with Advantage software V4.8 or 
+ higher.</p>
+        <p class="Notes"><span style="font-style: italic;">For Q1000/Q100/Q10 DSC 
+ or Advantage V4.7 or lower</span>, see: <a href="DSC_Cell_Calibration.htm">Viewing 
+ DSC Cell Calibration Parameters</a> or <a href="DSC_Temperature_Table.htm">Viewing 
+ the Temperature Calibration Parameters</a> for Cell/Temperature Table 
+ information.</p>
+        <p style="margin-left: 0px;">The following calibration parameters are based 
+ on the calibration set select and are applied to each individual experiment:</p>
+        <p><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t8"><img style="border: none;margin-right: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Collapsed" MadCap:alt2="Expanded" class="MCTogglerIcon" />Cell Constant</a>
+        </p>
+        <p> 
+ (Enthalpy)</p>
+        <div MadCap:targetName="t8" style="display: none;">
+            <p>This calibration is based on a run in which a standard metal (<span style="font-style: italic;">e.g</span>., indium) is heated through its 
+ melting transition. &#160;The 
+ calculated heat of fusion is compared to the theoretical value. &#160;The 
+ cell constant is the ratio between these two values. &#160;</p>
+            <p>The cell constant is applicable to all Q Series™ 
+ DSC's, in the standard and modulated modes. &#160;In 
+ the calibration mode, however, this calibration constant is not applied. 
+ &#160;</p>
+            <ul>
+                <li value="1">When changing the heat flow 
+ selection on the DSC, it is necessary to calibrate for heat flow (cell 
+ constant calibration) and temperature.</li>
+                <li value="2">Cell Constant calibration 
+ must be performed after completion of a Tzero cell capacitance and resistance 
+ calibration to obtain accurate, calibrated data.</li>
+            </ul>
+        </div>
+        <p><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t7"><img style="border: none;margin-right: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Collapsed" MadCap:alt2="Expanded" class="MCTogglerIcon" />Onset Slope</a>
+        </p>
+        <div MadCap:targetName="t7" style="display: none;">
+            <p>This parameter is the slope of the onset of the melting curve for a 
+ standard. &#160;The 
+ onset slope, or thermal resistance, is a measure of the temperature drop 
+ that occurs in a melting sample in relation to the thermocouple. &#160;Theoretically, 
+ a standard sample should melt at a constant temperature. &#160;As 
+ it melts and draws more heat, a temperature difference develops between 
+ the sample and the sample thermocouple. &#160;The 
+ thermal resistance between these two points is calculated as the onset 
+ slope of the heat flow versus temperature curve on the front side of the 
+ melting peak. This is always a negative term. &#160;Default 
+ is 0.00 mW/°C.</p>
+            <p>The onset slope constant is applicable to all Q Series DSC's, in the 
+ standard and modulated modes. &#160;In 
+ the calibration mode, however, this calibration constant is not applied. 
+ &#160;Changes 
+ to the DSC heat flow selection require that you recalibrate cell constant 
+ and temperature.</p>
+            <p><span style="font-weight: bold;color: #00509f;">See also</span>: &#160;<a href="Calibrating_the_DSC_Enthalpy_(Cell_Constant)_and_Temperature.htm">Calibrating 
+ the DSC Enthalpy (Cell Constant) and Temperature</a></p>
+        </div>
+        <p><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t6"><img style="border: none;margin-right: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Collapsed" MadCap:alt2="Expanded" class="MCTogglerIcon" />T1 Baseline Slope</a>
+        </p>
+        <div MadCap:targetName="t6" style="display: none;">
+            <p>Calibration constant for the DSC Q20/Q10 or, when the selected Heat 
+ Flow is Heat Flow T1, for the other &#160;DSC 
+ instruments. In the calibration mode this calibration constant is not 
+ applied.</p>
+        </div>
+        <p><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t5"><img style="border: none;margin-right: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Collapsed" MadCap:alt2="Expanded" class="MCTogglerIcon" />T1 Baseline Offset</a>
+        </p>
+        <div MadCap:targetName="t5" style="display: none;">
+            <p>Calibration constant for the DSC Q20/Q10 or, when the selected Heat 
+ Flow is Heat Flow T1, for the other DSC instruments. In the calibration 
+ mode this calibration constant is not applied.</p>
+            <p class="Notes">NOTE: &#160;Changes 
+ to the DSC heat flow selection require that you recalibrate cell constant 
+ and temperature.</p>
+        </div>
+        <p class="Bullet"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t4"><img style="border: none;margin-right: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Collapsed" MadCap:alt2="Expanded" class="MCTogglerIcon" />Temperature Table</a>
+            <div MadCap:targetName="t4" style="display: none;">
+                <p>This window shows the temperature calibration table that the instrument 
+ applies to the collected data. One to five temperature calibration points 
+ (pairs of observed and correct temperature points) may be used. Temperature 
+ calibration is based on a run that heats a high purity temperature standard, 
+ such as indium, through its melting point. The observed and correct temperatures 
+ correspond to the experimental and theoretical transition temperature 
+ (<span style="font-style: italic;">e.g</span>., melting point) of the 
+ calibrant respectively.</p>
+                <p>These calibration points are automatically updated in this window after 
+ temperature calibration has been performed, accepted, and saved. Temperature 
+ calibration experiments are conducted with the instrument in the calibration 
+ mode, which ignores previous calibration factors. </p>
+                <p class="Notes">NOTE: A multiple-point calibration is more accurate than 
+ a one-point calibration. A single-point calibration shifts the sample 
+ temperature by a constant amount. A two- or more-point calibration shifts 
+ the temperature by a constant amount below the first point, uses a smooth 
+ curve through the calibration points and maintains a constant temperature 
+ shift after the last point</p>
+            </div>
+        </p>
+        <p style="margin-left: 0px;">The following calibration parameters are globally 
+ applied to all applicable experiments:</p>
+        <p><a href="Calibrating_Tzero.htm">Tzero 
+ Calibration</a> (not shown on this dialog)</p>
+        <p><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t3"><img style="border: none;margin-right: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Collapsed" MadCap:alt2="Expanded" class="MCTogglerIcon" />Standard Cp (Heat 
+ Capacity) Constant (Direct)</a>
+        </p>
+        <div MadCap:targetName="t3" style="display: none;">
+            <p style="margin-bottom: 0;">Heat capacity can be directly measured on 
+ the DSC Q2000/Q1000 in standard mode. &#160;The 
+ heat capacity calibration is required if it is desirable to measure the 
+ absolute value of the sample's heat capacity. &#160;The 
+ calibration uses a standard material (such as sapphire) with a known heat 
+ capacity at a specific temperature of interest. &#160;Before 
+ performing the calibration experiment, the previously used calibration 
+ values need to be manually set to the default value of 1.0. &#160;Calibration 
+ is typically done at a heating of 10 to 20 °C/min. </p>
+            <p class="Notes">NOTE: &#160;This 
+ calibration is performed in the <span style="text-decoration: underline;">standard</span> 
+ mode.</p>
+            <p style="margin-bottom: 0;">At the end of the experiment the heat capacity 
+ calibration constant is calculated by dividing the theoretical value of 
+ heat capacity, at the desired temperature, by the measured value. &#160;The 
+ calculated <span style="font-weight: bold;color: #00509f;">Cp Constant 
+ (Direct)</span> is then manually entered into the instrument control software 
+ on the <span style="font-weight: bold;color: #00509f;">Cell/Temperature 
+ Table</span> accessed from the <span style="font-weight: bold;color: #00509f;">Calibrate</span> 
+ menu, where it is automatically applied to future experiments.</p>
+        </div>
+        <p><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t2"><img style="border: none;margin-right: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Collapsed" MadCap:alt2="Expanded" class="MCTogglerIcon" />MDSC Cp (Heat Capacity) 
+ Constant (Direct)</a>
+        </p>
+        <div MadCap:targetName="t2" style="display: none;">
+            <p style="margin-bottom: 0;">MDSC heat capacity calibration is only required 
+ if it is desirable to measure the absolute value of the sample's heat 
+ capacity. &#160;The 
+ calibration, which is performed in Modulated mode, uses a standard material 
+ (such as sapphire) with a known heat capacity at a specific temperature 
+ of interest. &#160;Before 
+ performing the calibration experiment, previously used calibration values 
+ need to be manually set for both Heat Capacity and Reversing Heat Capacity 
+ to the default values of 1.0. &#160;Except 
+ for heating rate, the calibration experiment should be run under similar 
+ conditions (pan type, modulation amplitude, and period) as will be used 
+ for subsequent samples. &#160;The 
+ heating rate can be set to a nominal value of 5 °C/min or the calibration 
+ experiment can be performed isothermally, if only calibrating the Reversing 
+ Cp signal..</p>
+            <p style="margin-bottom: 0;">At the end of the experiment the calibration 
+ constants for the Total and Reversing Heat Capacity signals are calculated 
+ by dividing the theoretical value of heat capacity, at the desired temperature, 
+ by the measured value. &#160;The 
+ constants, <span style="font-weight: bold;color: #00509f;">MDSC Cp Constant 
+ (Total)</span> and <span style="font-weight: bold;color: #00509f;">MDSC 
+ Cp Constant (Reversing)</span>, are then manually entered into the instrument 
+ control software on the <span style="font-weight: bold;color: #00509f;">Cell/Temperature 
+ Table</span> accessed from the <span style="font-weight: bold;color: #00509f;">Calibrate</span> 
+ menu, where they are automatically applied to future experiments. &#160;</p>
+            <p class="Notes">NOTE: &#160;This 
+ calibration is performed in the <span style="text-decoration: underline;">standard</span> 
+ mode.</p>
+        </div>
+        <p class="Bullet"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t1"><img style="border: none;margin-right: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Collapsed" MadCap:alt2="Expanded" class="MCTogglerIcon" />MDSC Cp (Heat Capacity) 
+ Constant (Total or Reversing)</a>
+            <div MadCap:targetName="t1" style="display: none;">
+                <p style="margin-bottom: 0;">MDSC heat capacity calibration is only required 
+ if it is desirable to measure the absolute value of the sample's heat 
+ capacity. &#160;The 
+ calibration, which is performed in Modulated mode, uses a standard material 
+ (such as sapphire) with a known heat capacity at a specific temperature 
+ of interest. &#160;Before 
+ performing the calibration experiment, previously used calibration values 
+ need to be manually set for both Heat Capacity and Reversing Heat Capacity 
+ to the default values of 1.0. &#160;Except 
+ for heating rate, the calibration experiment should be run under similar 
+ conditions (pan type, modulation amplitude, and period) as will be used 
+ for subsequent samples. &#160;The 
+ heating rate can be set to a nominal value of 5 °C/min or the calibration 
+ experiment can be performed isothermally, if only calibrating the Reversing 
+ Cp signal..</p>
+                <p style="margin-bottom: 0;">At the end of the experiment the calibration 
+ constants for the Total and Reversing Heat Capacity signals are calculated 
+ by dividing the theoretical value of heat capacity, at the desired temperature, 
+ by the measured value. &#160;The 
+ constants, <span style="font-weight: bold;color: #00509f;">MDSC Cp Constant 
+ (Total)</span> and <span style="font-weight: bold;color: #00509f;">MDSC 
+ Cp Constant (Reversing)</span>, are then manually entered into the instrument 
+ control software on the <span style="font-weight: bold;color: #00509f;">Cell/Temperature 
+ Table</span> accessed from the <span style="font-weight: bold;color: #00509f;">Calibrate</span> 
+ menu, where they are automatically applied to future experiments. &#160;</p>
+                <p class="Notes">NOTE: &#160;This 
+ calibration is performed in the <span style="text-decoration: underline;">standard</span> 
+ mode.</p>
+            </div>
+        </p>
+        <h3><a name="Configuring_Multiple_Calibration_Sets"></a>Configuring Multiple 
+ Calibration Sets</h3>
+        <p>Follow the instructions below to configure multiple calibration sets:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Check the 
+ <span style="font-weight: bold;color: #00509f;">Enable Multiple Calibration 
+ Sets</span> box on the <a href="Selecting_the_Instrument_Preferences.htm">Instrument 
+ Preferences/DSC page</a>. This enables the options related to this function 
+ to be available for use throughout the DSC instrument control program.</li>
+        </ol>
+        <p class="Notes">NOTE: &#160;If 
+ you do not enable multiple calibration sets on the <a href="Selecting_the_Instrument_Preferences.htm#Setting%20Up%20DSC%20Options">Instrument 
+ Preferences/DSC page</a>, the calibration parameters will be global parameters 
+ that will be applied to all experiments. (The default calibration set 
+ (0) is used.)</p>
+        <ol start="2" style="list-style: decimal;list-style-type: decimal;">
+            <li class="NumberedIndent" value="2">Select <span style="font-weight: bold;color: #00509f;">Calibrate/Cell/Temperature 
+ Table</span> from the menu to open the <span style="font-weight: bold;color: #00509f;">Multi-Calibration 
+ Set </span>&#160;page, 
+ if needed. (The dialog is also displayed automatically when, using the 
+ <span style="font-weight: bold;color: #00509f;">Calibrate/Analysis</span> 
+ functions, you have finished analyzing temperature or baseline calibration 
+ data and then selected the <span style="font-weight: bold;color: #00509f;">Accept</span> 
+ function.)</li>
+        </ol>
+        <p class="Notes">NOTE: &#160;The 
+ information on the <span style="font-weight: bold;color: #00509f;">Multi-Calibration 
+ Set </span>page will vary based on the model of DSC, current mode, calibration 
+ performed, and/or selected heat flow. &#160;</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <ol start="3" style="list-style: decimal;list-style-type: decimal;">
+            <li class="NumberedIndent" value="3">Select a 
+ calibration set from the list (<span style="font-style: italic;">e.g</span>., 
+ set zero)</li>
+            <li style="font-weight: normal; color: #000000;" value="4">Double 
+ click within the field and enter a descriptive name for the calibration 
+ set chosen. (<span style="font-style: italic;">e.g.</span>, Nitrogen @20°C/min 
+ with Tzero pans)</li>
+            <li style="font-weight: normal; color: #000000;" value="5">Repeat 
+ steps 3 and 4 for each calibration set you wish to configure. Up to 10 
+ calibration sets may be configured. &#160;Once 
+ you have the calibration set names configured, collect the necessary calibration 
+ data for each set. &#160;</li>
+        </ol>
+        <p style="margin-left: 40px;">Create a calibration set by performing the 
+ necessary calibration experiments using the parameters that are similar 
+ to the type of experiments you will be running. (See <a href="Calibrating_the_DSC.htm">Calibrating 
+ the DSC</a> for more information.)</p>
+        <ol start="6" style="list-style: decimal;list-style-type: decimal;">
+            <li style="font-weight: normal; color: #000000;" value="6"><span style="margin-top: 4.5pt;">Click </span><span style="margin-top: 4.5pt;font-weight: bold;color: #00509f;">OK</span><span style="margin-top: 4.5pt;"> when finished. The configured data set is 
+ ready to be used. See the next section for instructions.</span>
+            </li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Using_the_Calibration_Sets"></a>Using the Calibration Sets</h3>
+        <p>When you enable the <span style="font-weight: bold;color: #00509f;">Multiple 
+ Calibration Sets</span> feature on the <a href="Selecting_the_Instrument_Preferences.htm">Instrument 
+ Preferences/DSC page</a>, you can specify a calibration set (configured 
+ as directed above) for each standard or modulated mode experiment. </p>
+        <p class="Notes">When the instrument is in the calibration mode, this parameter 
+ is not shown. </p>
+        <p>To use the calibration sets, select the desired calibration set from 
+ the list when it is displayed on the <a href="Experimental_View_Pane_Notes_Page.htm">Notes 
+ Page</a> or when using the <a href="Entering_Notes_and_Gas_Settings_in_Wizard_Info2.htm">Experimental 
+ Wizard</a>. For a detailed overview of the available calibration sets 
+ and their parameters, click on the Browse (…) button to display the calibration 
+ parameters. &#160;</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

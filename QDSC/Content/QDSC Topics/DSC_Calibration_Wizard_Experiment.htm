@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="prc;FACS;sinusoidally;MFC;HiResolution;Inc;HiRes;PDF;Ctrl;uncheck;AutoLid;Tzero;collet;CAL;XT;RT;OPTC;Uncheck;Cal;PDSC;Y;X-Y;min;www.astm.org;seq;GPIB;IP;Q;CHROMEL;C;cal;spline;Premelt;Ethernet;Platinel;Englehard;E-curve;NBS;ALUMEL;T-axis;Hoskins;Dq;CHROMEL-constantan;SFI;alodined;¼-turn;preforming;subambient;NTFS;field(s;System--RCS;TMA;DSCs;DPC;Ctrl+X;Ctrl+E;Ctrl+C;Ctrl+V;mth;DFA;Tools\Data;number};cooler};time}" MadCap:conditions="Primary.QDSC" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>DSC Calibration Wizard Experiment</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor599"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../ques_blue.jpg" style="border: none;width: 35px;height: 37px;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>DSC Calibration Wizard Experiment</h1>
+        <h3><a name="kanchor600"></a>Experiment in Progress</h3>
+        <p>This window displays the progress of the active calibration experiment 
+ in real time. <span style="font-weight: bold;color: #00509f;">Start Experiment</span> 
+ initiates the experimental run. Once the experiment is started, the Start 
+ Experiment key changes to <span style="font-weight: bold;color: #00509f;">Stop 
+ Experiment</span>, allowing you to stop the experiment if a problem occurs. 
+ <span style="font-weight: bold;color: #00509f;">Cancel</span> aborts 
+ the wizard. When the experiment is complete, click the <span style="font-weight: bold;color: #00509f;">Next</span> 
+ button to advance to the next step in the calibration process.</p>
+        <p>This window is displayed several different times during the use of the 
+ Calibration Wizard. For information see the topics below.</p>
+        <h3>Cell Resistance and Capacitance Calibration Results</h3>
+        <p>This window is displayed <span style="text-decoration: underline;">after</span> 
+ the Baseline Run and Sapphire Run are complete. The software will automatically 
+ calculate and display the sample and reference resistance and capacitance 
+ values over the calibration temperature range and send this result to 
+ the instrument. A typical result should be two sets of parallel, closed 
+ spaced curves. The resistance curves should have a negative slope (<span style="font-style: italic;">i.e</span>., resistance decreases with increasing 
+ temperature). The capacitance curves should have a positive slope (<span style="font-style: italic;">i.e</span>., capacitance increases with increasing 
+ temperature). A copy of the calibration results file is saved in a subfolder 
+ "calibration" within the original data file location. The filename 
+ structure of these files is {cell number} {cooler} {date/time}. Once you 
+ have reviewed these results, press <span style="font-weight: bold;color: #00509f;">Next 
+ </span>to continue with the next phase of calibration. The Calibration 
+ Wizard goes on to <a href="DSC_Calibration_Wizard_Step_3.htm">DSC Calibration 
+ Wizard Constant &amp; Temperature</a>. <span style="font-weight: bold;color: #00509f;">See 
+ also</span>: <a href="File_Utility.htm">Using the File Utility</a>.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Cell constant analysis"></a>Cell Constant &amp; Temperature 
+ Results</h3>
+        <p>An analyzed plot of the melting peak for the metal standard appears 
+ at the end of the experiment. If you are satisfied with the analysis, 
+ press <span style="font-weight: bold;color: #00509f;">Next</span> to 
+ save the cell constant and temperature calibration results to the instrument. 
+ Otherwise, select the <span style="font-weight: bold;color: #00509f;">Analyze</span> 
+ button to display the analysis markers. Reposition these markers at the 
+ desired location and select <span style="font-weight: bold;color: #00509f;">Limits 
+ OK</span>. You can also select these options using the pop-up menu.</p>
+        <p>If you click the <span style="font-weight: bold;color: #00509f;">Cancel</span> 
+ button, the Calibration Wizard is terminated and the cell constant is 
+ reset to a value of 1.0.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="font-size: 8pt;"><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Calibrating the Autosampler|Calibrating_the_Autosampler.htm||Calibrating the DSC Pressure Cell|Calibrating_the_DSC_Pressure_Cell.htm||Calibrating the DSC|Calibrating_the_DSC.htm||Calibrating the Mass Flow Controller|Calibrating_the_Mass_Flow_Controller.htm||Calibrating the Q1000/Q100 Autosampler|Calibrating_the_Q1000_Q100_Autosampler.htm||Calibrating the Q2000/Q200/Auto Q20 Autosampler|Calibrating_the_Q2000_Q200_Auto_Q20_Autosampler.htm||Calibrating the T1 Baseline|Calibrating_the_T1_Baseline.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

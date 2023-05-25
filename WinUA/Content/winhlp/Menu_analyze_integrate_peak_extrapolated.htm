@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Extrapolated</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Extrapolated</h1>
+        <p>Use the Extrapolated option to perform a peak integration using an extrapolated baseline.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>To calculate an extrapolated baseline, four points are selected (in any order). The program automatically sorts the points. Tangent lines will be drawn between two of the points so that the extrapolated baseline intersects the range of data bracketed by the other two points (intersection range). The program automatically determines whether the first two points (as seen in <span style="font-weight: bold;">Figure 1</span>) or the last two points (as seen in <span style="font-weight: bold;">Figure 2</span>) specify the tangent line. This is accomplished by the program as it tries both potential tangent lines and then uses the tangent line that will intersect the data between the other points.</p>
+        <p>
+            <img src="../Resources/Images/Extrap1.png" /> <img src="../Resources/Images/Extrap2.png" /></p>
+        <p> <span style="color: teal;font-weight: bold;">Figure 1 (left)</span> &#160; <span style="color: teal;font-weight: bold;">Figure 2 (right)</span></p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>For example, in <span style="font-weight: bold;">Figure 1</span>, a tangent line drawn between Point 1 and Point 2 will not intersect the data found between Points 3 and 4. This arrangement is discarded as incorrect. The program will then draw a tangent line between Points 3 and 4. This tangent line does intersect the data found between Points 1 and 2, so this becomes the final extrapolated baseline.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>If two of the four points are placed on top of each other, the baseline is extrapolated to be a horizontal baseline from these two points to intersect the data between the other two points, as seen in <span style="font-weight: bold;">Figure 3</span>.</p>
+        <p>
+            <img src="../Resources/Images/Extrap3.png" />
+        </p>
+        <p>&#160; <span style="color: teal;font-weight: bold;">Figure 3</span></p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: teal;font-weight: bold;">Tip:</span>
+        </p>
+        <p>You can use this option to integrate a peak where one end of the integration baseline does not intersect the curve as follows:</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">1.&#160;Select Analyze/Integrate Peak/Extrapolated. Four markers will be displayed.</p>
+        <p class="Normal_Indent">2.&#160;Place three markers directly on top of each other at the point of baseline start on the curve. (If you use the <a href="Win_Manual_Limits.htm">Manual Limits Window</a> to enter the limit points, be sure to <span style="font-weight: bold;">specifically enter</span> or <span style="font-weight: bold;">tab through</span> all four entries for the limit points to ensure that the program picks up the exact limit values.)</p>
+        <p class="Normal_Indent">3.&#160;Place the fourth marker anywhere further out past the peak maximum.</p>
+        <p class="Normal_Indent">4.&#160;Right click and select Accept Limits from the pop-up menu. The program will draw a horizontal baseline from the start point to a point that intersects a vertical line at the fourth marker position.</p>
+        <p><span style="color: blue;">NOTE: This will also work in reverse where the extrapolation is made backwards (</span><span style="color: blue;font-style: italic;">i.e</span><span style="color: blue;">., the point in space occurs at a lower x-axis value than the baseline start point.)</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>See also:</p>
+        <p><a href="Tips_on_Using_Markers.htm">Tips on Using Markers</a>
+        </p>
+        <p><a href="Win_Analysis_Options_onset_peak_integration.htm">Analysis Options  Onset/Peak Integration Page</a>
+        </p>
+        <p><a href="Win_Analysis_Options_special_area.htm">Analysis Options  Special Area Page</a>
+        </p>
+        <p><a href="Menu_analyze_integrate_peak_linear.htm">Linear</a>
+        </p>
+        <p><a href="Menu_analyze_integrate_peak_sig_horizontal.htm">Sigmoidal Horizontal</a>
+        </p>
+        <p><a href="Menu_analyze_integrate_peak_sig_tangent.htm">Sigmoidal Tangent</a>
+        </p>
+        <p><a href="Peak_Area_Calculation.htm">Peak Area Calculation</a>
+        </p>
+        <p><a href="Obtaining_a_Peak_Endset.htm">Obtaining a Peak Endset</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

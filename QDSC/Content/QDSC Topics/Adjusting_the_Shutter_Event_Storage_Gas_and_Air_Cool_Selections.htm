@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="prc;FACS;sinusoidally;MFC" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Setting Up Experimental Parameters" MadCap:browseSequencePath="Setting Up Experimental Parameters" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Adjusting the Shutter, Event, Storage, Gas, and Air Cool Selections</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor282"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Adjusting the Shutter, Event, Storage, Gas, and Air Cool, 
+ Selections</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor283"></a>During an active experiment the data storage, event, gas, and air cool 
+ states are controlled by the method parameters and/or method segments. 
+ However, you may manually change the state of these selections using the 
+ <span style="font-weight: bold;color: #00509f;">Control</span> menu.</p>
+        <p>To display the status of these items, select <span style="font-weight: bold;color: #00509f;">Tools/User 
+ Preferences/Status Page</span> and select the desired items to display 
+ on the status line. This will allow you to monitor the changes in these 
+ items.</p>
+        <p style="font-weight: bold;color: #00509f;">Click the topic below for 
+ more information:</p>
+        <ul>
+            <li value="1"><a href="#Changing_the_Shutter_State" name="kanchor284">Changing 
+ the Shutter State</a>
+            </li>
+            <li value="2"><a href="#Changing%20the%20event%20state" name="kanchor285">Changing 
+ the Event State</a>
+            </li>
+            <li value="3"><a href="#Changing%20the%20data%20storage%20state">Changing 
+ the Data Storage State</a>
+            </li>
+            <li value="4"><a href="#Changing%20between%20gases">Changing 
+ Between Gas #1 and Gas #2</a>
+            </li>
+            <li value="5"><a href="#Changing%20the%20air%20cool%20state">Changing 
+ the Air Cool State</a>
+            </li>
+        </ul>
+        <h3><a name="Changing_the_Shutter_State"></a>Changing the Shutter State</h3>
+        <p>Use <span style="font-weight: bold;color: #00509f;">Shutter</span> 
+ on the <span style="font-weight: bold;color: #00509f;">Control</span> 
+ menu to open or close the PCA UV shutter through the COM1 port on the 
+ back of the instrument. The action is made immediately upon selection 
+ from the menu (or upon encountering the <a href="Segment_List.htm">Shutter 
+ segment</a> in a method).</p>
+        <h3><a name="Changing the event state"></a>Changing the Event State</h3>
+        <p>Use <span style="font-weight: bold;color: #00509f;">Event </span>on 
+ the <span style="font-weight: bold;color: #00509f;">Control </span>menu 
+ to activate (on) or deactivate (off) an external device connected to the 
+ instrument with the event cable (<span style="font-style: italic;">e.g</span>., 
+ RCS set to Auto mode). This control overrides the Event segment in the 
+ method.</p>
+        <p style="margin-bottom: 0;">If the selected Event state is currently active, 
+ no action will be seen. </p>
+        <p style="margin-bottom: 0;font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back 
+ to top</a>
+        </p>
+        <h3><a name="Changing the data storage state"></a>Changing the Data Storage 
+ State</h3>
+        <p>Data storage is typically controlled by the method segments; however, 
+ you can use <span style="font-weight: bold;color: #00509f;">Control/Store</span> 
+ to manually turn data storage on and off during a running method. This 
+ control overrides the Data Storage segment in the method.</p>
+        <p>If the selected Data Storage option is currently active, no action will 
+ be seen.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Changing between gases"></a>Changing Between Gas #1 and Gas 
+ #2 (MFC Only)</h3>
+        <p>Use<span style="font-weight: bold;color: #00509f;"> Control/Gas/Gas 
+ #1/#2</span> to switch between the primary and secondary purge gases used 
+ during an experiment. A purge gas is a gas, often inert (<span style="font-style: italic;">e.g.,</span> 
+ nitrogen), that flows through the cell during the experiment. For example, 
+ oxidative stability experiments use nitrogen for the primary gas and oxygen 
+ for the secondary gas.</p>
+        <p class="Notes">NOTE: Please make sure that you run your experiments with 
+ the same gas that you used to calibrate the system. For example, if you 
+ calibrate using nitrogen, make your runs with nitrogen.</p>
+        <ul>
+            <li value="1"><span style="font-weight: bold;color: #00509f;">Gas 
+ #1</span><span style="color: #00509f;"> </span>refers to the primary purge 
+ gas connected to the instrument. Gas #1 is controlled by the Mass Flow 
+ Controller or plumbed directly to the Gas 1 connection.</li>
+            <li value="2"><span style="font-weight: bold;color: #00509f;">Gas 
+ #2 </span>refers to any secondary purge gas connected to the instrument. 
+ Gas #2 is controlled by the Mass Flow Controller or plumbed directly to 
+ the Gas 2 connection.</li>
+            <li value="3"><span style="font-weight: bold;color: #00509f;">With 
+ Mass Flow Controllers</span><a name="kanchor286"></a> a gas may also be switched during an experiment 
+ using the Gas Selection method segment.</li>
+        </ul>
+        <p style="margin-bottom: 0;font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back 
+ to top</a>
+        </p>
+        <p style="margin-bottom: 0;">If the selected Gas state is currently active, 
+ no action will be seen. </p>
+        <p class="Notes">NOTE: If you are using laboratory purge gas, rather than 
+ bottle purge gas, you will need to install an external drier.</p>
+        <p class="Cautions">CAUTION: Use of corrosive gases will shorten the life 
+ of the instrument. NEVER use a corrosive gas in the instrument. The MFC 
+ is not designed to work with corrosive gases.</p>
+        <p class="Warnings" style="margin-bottom: 0;">WARNING: Use of an explosive gas as a purge 
+ gas is dangerous and is not recommended for this instrument. </p>
+        <p>Click here for more information on the DSC purge gases. <img src="../QDSC Images/ocean_arrow_sm.gif" style="border: none;width: 7px;height: 13px;float: none;border-style: none;border-style: none;" width="7" height="13" border="0" /><a href="Purge_Gases_and_Flow_Rates.htm"> more</a></p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Changing the air cool state"></a>Changing the Air Cool State</h3>
+        <p>Use <span style="font-weight: bold;color: #00509f;">Air Cool</span> 
+ on the <span style="font-weight: bold;color: #00509f;">Control</span> 
+ menu to open (on) or close (off) the internal solenoid valve connected 
+ to the Air Cool connector on the exterior of the instrument. </p>
+        <p><a name="kanchor287"></a>It is not recommended that you turn off Air Cool while running an experiment 
+ with a Finned Air Cooling System.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Connecting Purge Gas Lines|Connecting_Purge_Gas_Lines.htm||Connecting the Cooling Gas Line|Connecting_the_Cooling_Gas_Line.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

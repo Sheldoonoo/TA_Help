@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Designing a Test" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="RA_InstCon.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Introduction to Oscillatory Tests</title>
+        <meta name="copyright" value="All information copyright © 1999  TA Instruments" />
+        <link rel="StyleSheet" href="HtmlHelp.css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="ehlpdhtm.js">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor750"></a><a name="top"></a>Introduction to Oscillatory Tests</h1>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><a name="kanchor751"></a><a name="kanchor752"></a>We learn at an early age that materials may be gases, liquids or solids. 
+ But this is an oversimplification. Many industrial materials show behaviour 
+ which is neither completely liquid nor completely solid, but is somewhere 
+ between the two. Such materials are termed viscoelastic. Typical examples 
+ are polymer solutions and melts, and particulate dispersions such as paints, 
+ inks, drilling fluids, creams and lotions, and many types of foodstuffs.</p>
+        <p>&#160;</p>
+        <p><a name="kanchor753"></a><a name="kanchor754"></a><a name="kanchor755"></a>It is viscoelasticity which is responsible, at least in part, for the 
+ handling properties of these materials, and it is important that they 
+ should exhibit it in the correct degree. For example if a printing ink 
+ is too elastic (solid) it will fail to enter the nip, whereas if it is 
+ too liquid it will show poor dot definition. There are several ways of 
+ examining the viscoelastic properties of materials, but the commonest, 
+ and most versatile, is to use oscillatory rheology. </p>
+        <p>&#160;</p>
+        <p><a name="kanchor756"></a>If a sinusoidal stress, <span style="font-family: Symbol;">s</span> (force acting over 
+ an area), is placed on a <span style="font-style: italic;">solid</span><a name="kanchor757"></a><a name="kanchor758"></a> 
+ sample, a sinusoidal displacement (strain, <span style="font-family: Symbol;">g</span><a name="kanchor759"></a>) 
+ will result which is in phase with the applied stress. The modulus, or 
+ stiffness, of the material can be obtained by dividing the amplitude of 
+ the stress, <span style="font-family: Symbol;">s</span><span style="vertical-align: sub;">0</span>, 
+ by the amplitude of the strain, <span style="font-family: Symbol;">g</span><span style="vertical-align: sub;">0</span> 
+ (Figure 1):</p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text" style="text-align: center;" align="center">
+            <img src="BMP00005.gif" alt="image\BMP00005.gif" style="width: 358px;height: 89px;border-style: none;border-style: none;" width="358" height="89" border="0" />
+        </p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p style="text-align: center;" align="center">Figure 1. Strain Response to a Sinusoidally-Applied Stress 
+ for a Solid Material</p>
+        <p>&#160;</p>
+        <p>If a sinusoidal stress is applied to a <span style="font-style: italic;">liquid</span> 
+ sample, the stress is in phase with the rate of change of strain, and 
+ a phase lag of 90° is therefore introduced between the stress and the 
+ strain (Figure 2):</p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text" style="text-align: center;" align="center">
+            <img src="BMP00006.gif" alt="image\BMP00006.gif" style="width: 247px;height: 170px;border-style: none;border-style: none;" width="247" height="170" border="0" />
+        </p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p style="text-align: center;" align="center">Figure 2: Strain Response to a Sinusoidally-Applied Stress 
+ for a Liquid Material</p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><a name="kanchor760"></a>For viscoelastic materials, the phase angle, <span style="font-family: Symbol;">d</span>, 
+ will be somewhere between 0° and 90°. The ratio of the stress to the strain 
+ amplitude therefore gives the stiffness of the material, and the phase 
+ angle describes its viscoelastic nature. </p>
+        <p>&#160;</p>
+        <p><a name="kanchor761"></a><a name="kanchor762"></a><a name="kanchor763"></a>The degree to which a material behaves as a solid or liquid depends 
+ on the timescale of the observation. Water is usually described as a liquid, 
+ of course, but if examined over timescales of less than about a nanosecond, 
+ would appear to be a solid. Ice behaves as a liquid under very high stresses, 
+ over periods of years, hence glacier flow. It happens that the materials 
+ which are listed above as being viscoelastic show a transition from liquid 
+ to solid behaviour over typical laboratory timescales. To examine more 
+ precisely the transition time, the frequency, <span style="font-family: Symbol;">w</span>, 
+ of the applied stress can be varied. </p>
+        <p>&#160;</p>
+        <p>The usual method of performing an oscillation experiment is to apply 
+ a sinusoidal stress to a sample, over a range of frequencies, and to monitor 
+ the strain and phase angle. The stress is kept low so that it can be assumed 
+ that the unperturbed properties of the sample are determined. Rather than 
+ reporting <span style="font-family: Symbol;">s</span><span style="vertical-align: sub;">0</span> 
+ / <span style="font-family: Symbol;">g</span><span style="vertical-align: sub;">0</span><a name="kanchor764"></a><a name="kanchor765"></a> 
+ and phase angle directly, it is more usual to report the storage modulus, 
+ G<span style="font-family: Symbol;">¢</span><a name="kanchor766"></a><a name="kanchor767"></a>, and loss modulus, G<span style="font-family: Symbol;">²</span>. 
+ These are defined as G<span style="font-family: Symbol;">¢</span> = <span style="font-family: Symbol;">s</span><span style="vertical-align: sub;">0</span> cos <span style="font-family: Symbol;">d</span>/ <span style="font-family: Symbol;">g</span><span style="vertical-align: sub;">0</span> and 
+ G<span style="font-family: Symbol;">²</span> = <span style="font-family: Symbol;">s</span><span style="vertical-align: sub;">0</span> 
+ sin <span style="font-family: Symbol;">d</span>/ <span style="font-family: Symbol;">g</span><span style="vertical-align: sub;">0</span>. 
+ The advantage of this is that G<span style="font-family: Symbol;">¢</span> represents 
+ the “solid” component of the material, and G<span style="font-family: Symbol;">²</span><a name="kanchor768"></a> 
+ the “liquid” component. The viscosity of a liquid with no solid component 
+ would actually be G<span style="font-family: Symbol;">²</span> / <span style="font-family: Symbol;">w</span>. 
+ </p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text" style="text-align: center;" align="center">
+            <img src="BMP00007.gif" alt="image\BMP00007.gif" style="width: 433px;height: 314px;border-style: none;border-style: none;" width="433" height="314" border="0" />
+        </p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text" style="text-align: center;" align="center">Figure 3: Frequency Sweep on Silly Putty at 20°C</p>
+        <p class="Tip-Note-Text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><a name="kanchor769"></a><a name="kanchor770"></a>Just as polymers show broad transitions in melting point, sometimes 
+ over many decades of temperature, so they show transitions over broad 
+ frequency ranges. In general, the higher the molecular weight, the broader 
+ the range. A material like children’s silly putty shows a range centred 
+ on a frequency of about 10 rads sec<span style="vertical-align: super;">-1</span>, 
+ equivalent to a time of 0.1 sec. (Figure 3). If examined over shorter 
+ timescales, for example by bouncing, it appears to be a solid. Over longer 
+ timescales it flows like a liquid. A deflocculated dispersion shows solid 
+ properties at frequencies which depend on the system, but are typically 
+ above about 10 rads sec<span style="vertical-align: super;">-1</span>. 
+ Flocculated dispersions show transitions at much lower frequencies, which 
+ is why emulsion paints in the can appear as soft solids, but traditional 
+ oil paints as stiff liquids. Similarly jam is wobbly and solid-like (low 
+ frequency transition), honey is liquid-like (high frequency transition), 
+ although they are of similar “stiffness.”</p>
+        <p><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

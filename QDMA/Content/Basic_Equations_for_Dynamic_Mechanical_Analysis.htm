@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:id="Basic Equations for Dynamic Mechanical Analysis" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpStatus.In Progress" MadCap:tocPath="Introducing the DMA" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Basic Equations for Dynamic Mechanical Analysis</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" type="text/css" />
+        <script src="SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor150"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="GIF/ques_blue.jpg" style="border: none;" alt="" width="35" height="37" align="right" border="0" /></a></span><a name="top" id="top"></a>Basic Equations for Dynamic Mechanical Analysis</h1>
+        <p>&#160;</p>
+        <p>For DMA Modulus Equations click the following link to open an Acrobat Reader pdf file.</p>
+        <p>
+            <img src="OCEAN_ARROW_SM.GIF" style="border: none;" alt="" width="7" height="13" border="0" /> <a href="DMAModulusEquations.pdf">DMA Modulus Equations Document</a></p>
+        <p><a name="kanchor151"></a><a name="kanchor152"></a>During dynamic testing, an oscillatory (sinusoidal) strain (or stress) is applied to the material and the resulting stress (or strain) developed in the material is measured. &#160;For an ideal solid material, which obeys Hooke’s law, the resulting stress will be proportional to the amplitude of the applied strain. &#160;The strain will be in phase with the stress, <span style="font-style: italic;">i.e</span>., the phase shift (phase angle <span style="font-family: Symbol, fantasy;">d</span>) between stress and strain will be 0° (see A in the figure below). &#160;For an ideal fluid, which obeys Newton’s law, the stress will be proportional to the strain rate. &#160;The stress signal will lead the strain signal by 90° (see the figure below).</p>
+        <p style="text-align: center;">
+            <img src="GIF/DMAStess&amp;Strain.gif" alt="Ideal Solid and Fluid DMA Stress and Strain" title="Ideal Solid and Fluid DMA Stress and Strain" style="border: none;" width="458" height="290" border="0" />
+        </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p>Most real-world materials exhibit mechanical responses that are a mixture of viscous and elastic behavior. &#160;Thus, they are <span style="font-weight: bold;color: #00509f;">Viscoelastic</span>. &#160;For a viscoelastic material, the phase angle will lie somewhere between 0° and 90° (as seen in the figure below).</p>
+        <p style="text-align: center;">&#160;<img src="GIF/DMAStess&amp;Strain2.gif" alt="Viscoelastic Materials DMA Stress and Strain" title="Viscoelastic Materials DMA Stress and Strain" style="border: none;" width="345" height="235" border="0" /></p>
+        <p>As the <span style="font-style: italic;">modulus</span> is defined as the ratio of stress to strain (stress/strain), the resultant stress generated in a viscoelastic material—also referred to as the <span style="font-style: italic;">complex stress</span> (<span style="font-size: 11pt;font-family: Symbol, fantasy;">s</span>* or <span style="font-size: 11pt;font-family: Symbol, fantasy;">t</span>*)—can be used to calculate the <span style="font-style: italic;">complex modulus</span> E* or G*. &#160;The complex modulus is a measure of the material's resistance to deformation. &#160;It encompasses both elastic and viscous responses. The power of dynamic testing is that, by using the measured phase angle, the stress can be deconvoluted into two parts:</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet">An elastic stress (<span style="font-size: 11pt;font-family: Symbol, fantasy;">s</span>’ or <span style="font-size: 11pt;font-family: Symbol, fantasy;">t</span>’), that is in phase with the strain, and</p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet">A viscous stress (<span style="font-size: 11pt;font-family: Symbol, fantasy;">s</span>” or <span style="font-size: 11pt;font-family: Symbol, fantasy;">t</span>”), that is in phase with the strain rate (90° out of phase with the strain).</p>
+            </li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p>The elastic modulus, or <span style="font-style: italic;">storage modulus</span> (E’ or G’) and the viscous modulus, or <span style="font-style: italic;">loss modulus</span> (E” or G”), can then be calculated directly from the elastic and viscous stress respectively. &#160;A summary of the calculations are as follows:</p>
+        <p style="font-weight: bold;">Complex Modulus:</p>
+        <p>E* = <span style="font-size: 11pt;font-family: Symbol, fantasy;">s</span>*/<span style="font-size: 11pt;font-family: Symbol, fantasy;">e</span></p>
+        <p>or</p>
+        <p>E* = E’ + iE”</p>
+        <p>(Tension, Compression or Bending Clamps)</p>
+        <p>&#160;</p>
+        <p>G* = <span style="font-size: 11pt;font-family: Symbol, fantasy;">t</span>*/<span style="font-size: 11pt;font-family: Symbol, fantasy;">g</span></p>
+        <p>or</p>
+        <p>G* = G’+ iG”</p>
+        <p>(Shear)</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p><span style="font-weight: bold;">Storage Modulus:</span>
+        </p>
+        <p>E’ = <span style="font-size: 11pt;font-family: Symbol, fantasy;">s</span>’/<span style="font-size: 11pt;font-family: Symbol, fantasy;">e</span></p>
+        <p>or</p>
+        <p>E’ = E* cos <span style="font-size: 11pt;font-family: Symbol, fantasy;">d</span></p>
+        <p>(Tension, Compression or Bending)</p>
+        <p>&#160;</p>
+        <p>G’ = <span style="font-size: 11pt;font-family: Symbol, fantasy;">t</span>’/<span style="font-size: 11pt;font-family: Symbol, fantasy;">g</span></p>
+        <p>or</p>
+        <p>G’ = G* cos <span style="font-family: Symbol, fantasy;font-size: 11pt;">d</span></p>
+        <p>(Shear)</p>
+        <p><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p style="font-weight: bold;">Loss Modulus:</p>
+        <p>E” = <span style="font-size: 11pt;font-family: Symbol, fantasy;">s</span>”/<span style="font-size: 11pt;font-family: Symbol, fantasy;">e</span></p>
+        <p>or</p>
+        <p>E’ = E* sin <span style="font-family: Symbol, fantasy;font-size: 11pt;">d</span></p>
+        <p>(Tension, Compression or Bending)</p>
+        <p>&#160;</p>
+        <p>G” = <span style="font-size: 11pt;font-family: Symbol, fantasy;">t</span>”/<span style="font-size: 11pt;font-family: Symbol, fantasy;">g</span></p>
+        <p>or</p>
+        <p>G” = G* sin <span style="font-family: Symbol, fantasy;font-size: 11pt;">d</span></p>
+        <p>(Shear)</p>
+        <p>The figure below shows a vector depiction of these calculations. &#160;It can be seen from this figure that the tangent of the phase angle is the ratio of the loss modulus to storage modulus (tan <span style="font-size: 11pt;font-family: Symbol, fantasy;">d</span> = E”/E’ or tan <span style="font-size: 11pt;font-family: Symbol, fantasy;">d</span> = G”/G’). &#160;This ratio is a measure of the damping ability of a material.</p>
+        <p style="text-align: center;">
+            <img src="GIF/DMAStess&amp;Strain2.gif" alt="Viscoelastic Materials DMA Stress and Strain" title="Viscoelastic Materials DMA Stress and Strain" style="border: none;" width="345" height="235" border="0" />
+        </p>
+        <p>&#160;<a href="#top" style="font-size: 8pt;" class="selected">Back to top</a></p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

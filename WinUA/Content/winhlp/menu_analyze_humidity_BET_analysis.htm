@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Analyzing Data Files|Humidity Analysis" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Analyze Humidity BET Analysis</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor42"></a>Analyze Humidity BET Analysis</h1>
+        <p class="Normal_Indent">Select this item to fit the sorption isotherm data from the Q5000 SA to the BET model.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>To use this function:</p>
+        <ol style="font-family: Arial;font-size: 10pt;">
+            <li style="margin-top: 8px;" value="1">Collect your data following the guidelines suggested. See <a href="menu_humidity.htm">Humidity Analysis</a>.</li>
+            <li style="margin-top: 8px;" value="2">Select <span style="color: teal;font-weight: bold;">File/Open</span>, then locate and open the desired humidity data file.</li>
+            <li style="margin-top: 8px;" value="3">Select <span style="color: teal;font-weight: bold;">Analyze/Humidity/Options</span> and set up the desired <a href="menu_analyze_humidity_options.htm">analysis options</a>.</li>
+            <li style="margin-top: 8px;" value="4">Plot Weight Change versus Time for the desired Q5000 SA data.</li>
+            <li style="margin-top: 8px;" value="5">If sample drying was conducted during this experiment, then the dry weight needs to be determined before generating this plot. Use the <span style="color: teal;font-weight: bold;">Analyze/</span><a href="Menu_analyze_reset_size.htm">Reset Size</a> function.</li>
+            <li style="margin-top: 8px;" value="6">Select Graph/Data Limits/Time, and select the Start time as the time after the drying step, and end time as the experiment end time.</li>
+            <li style="margin-top: 8px;" value="7">Manually mark the adsorption/desorption isotherms, if desired. Select <a href="Menu_analyze_humidity_mark_adsorption_desorption.htm">Analyze/Humidity/Mark Adsorption/Desorption</a> then select the desired position on the curve. </li>
+            <li style="margin-top: 8px;" value="8">Select <span style="color: teal;font-weight: bold;">Analyze/Humidity/BET Analysis.</span> A new window will be displayed with the resultant data, based on the chosen humidity options (see <a href="#">Humidity Analysis Options - BET Analysis</a>. The sorption isothermal data from the selected file is processed using the BET equation and displayed.</li>
+        </ol>
+        <p>This analysis results in a plot of the adsorption and/or desorption data values.</p>
+        <p class="footnote_text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>A data table can be obtained for this plot by selecting <a href="Menu_view_data_table_report.htm">View/Data Table</a>.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent" style="border-bottom: 1.50pt solid teal;"><span style="color: teal;font-weight: bold;">Background</span>
+        </p>
+        <p>In 1938 Brunauer, Emmett and Teller demonstrated that, with the help of a few simplifying assumptions, it was possible to carry out an isotherm deviation for multimolecular adsorption layers. The equation, shown below, not only represented the general shape of isotherms (BET Type II and Type IV), but also yielded reasonable values for the average heat of sorption and the amount of gas adsorbed in the monolayer.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>
+            <img src="../Resources/Images/HumidityBETEquation.png" />
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="font-style: italic;">W = weight adsorbed</span>
+        </p>
+        <p><span style="font-style: italic;">W</span><span style="font-style: italic;vertical-align: sub;">m</span><span style="font-style: italic;">= weight adsorbed as a monolayer</span>
+        </p>
+        <p><span style="font-style: italic;">P/P</span><span style="font-style: italic;vertical-align: sub;">0</span><span style="font-style: italic;">= relative adsorbate pressure = activity</span>
+        </p>
+        <p><span style="font-style: italic;">C = BET constant (dependent upon the heat of adsorption)</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The BET equation is used to calculate monolayer values as well as estimate the surface area. The reason for its widespread use includes the simplicity of application and its approval by the International Union of Pure and Applied Chemistray (IUPAC)<span style="vertical-align: super;">[1]</span>. A 1985 report of the Commission on Colloid and Surface Chemistry<span style="vertical-align: super;">[2]</span> recommends the BET plot for a standard evaluation of monolayer values of adsorbate activity between 0.05 and 0.30.</p>
+        <p class="footnote_text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent" style="border-bottom: 1.50pt solid teal;"><span style="color: teal;font-weight: bold;">References</span>
+        </p>
+        <p class="Normal_Indent"><span style="vertical-align: super;">[1]</span>Timmerman, EO, "Multilayer sorption parameters: BET or GAB values?" <span style="font-style: italic;">Colloids and Surfaces A</span>. 220:235-260, 2003.</p>
+        <p class="Normal_Indent"><span style="vertical-align: super;">[2]</span>IUPAC, "Commission on Colloid and Surface Chemistry of the International Union of Pure and Applied Chemistry," <span style="font-style: italic;">Pure Appl. Chem.</span> 57:603, 1985</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">See also:</p>
+        <p><a href="Humidity_Basic_Steps.htm">Humidity Basic Steps</a>
+        </p>
+        <p class="Normal_Indent"><a href="Win_Humidity_Analysis_Options_BET_Analysis.htm">Humidity Analysis Options - BET Analysis</a>
+        </p>
+        <p class="Normal_Indent"><a href="Menu_analyze_humidity_mark_adsorption_desorption.htm">Humidity Mark Adsorption/Desorption</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

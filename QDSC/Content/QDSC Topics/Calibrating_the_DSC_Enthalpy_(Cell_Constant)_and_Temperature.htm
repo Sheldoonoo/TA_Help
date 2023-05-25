@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Calibrating the Instrument" MadCap:browseSequencePath="Calibrating the Instrument" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Calibrating the DSC Enthalpy (Cell Constant) and Temperature</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../QDSC Images/ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a><a name="kanchor188"></a>Calibrating the DSC Enthalpy (Cell Constant) and Temperature</h1>
+        <h3><a name="Calibrating_Enthalpy__Cell_Constant_"></a>Calibrating Enthalpy 
+ (Cell Constant)</h3>
+        <p><a name="kanchor189"></a>This calibration is based on a run in which a standard metal (<span style="font-style: italic;">e.g</span>., indium) is heated through its 
+ melting transition. The calculated heat of fusion is compared to the theoretical 
+ value. The cell constant is the ratio between these two values. The onset 
+ slope, or thermal resistance, is a measure of the suppression of temperature 
+ rise that occurs in a melting sample in relation to the thermocouple. 
+ Theoretically, a standard sample should melt at a constant heating rate. 
+ As it melts and draws more heat, a temperature difference develops between 
+ the sample and the sample thermocouple. The thermal resistance between 
+ these two points is calculated as the onset slope of the heat flow versus 
+ temperature curve on the front of the melting peak. The onset value is 
+ used for kinetic and purity calculations to correct for this thermal resistance.</p>
+        <p>The <a href="#Calibrating_Temperature">temperature 
+ calibration</a><a name="kanchor190"></a> data from this experiment is automatically stored when 
+ the cell constant calibration results are saved.</p>
+        <p>DSC Q2000, Q1000, Q200, and Q100 enthalpy calibration must be performed 
+ again after a Tzero calibration and any time the heat flow selection is 
+ changed.</p>
+        <h3><a name="Calibrating_Temperature"></a>Calibrating Temperature</h3>
+        <p><a name="kanchor191"></a>Temperature calibration is based on a run in which a temperature standard 
+ (<span style="font-style: italic;">e.g</span>., indium) is heated through 
+ its melting transition using the same conditions to be used in subsequent 
+ measures (<span style="font-style: italic;">e.g</span>., heating rate 
+ and purge gas). The recorded melting point of this standard is compared 
+ to the known melting point and the difference is calculated for temperature 
+ calibration. Up to five standards may be used for temperature calibration. 
+ A single-point calibration shifts the sample temperature by a constant 
+ amount. A two- or more-point calibration shifts the temperature by a constant 
+ amount below the first point, uses a smooth curve through the calibration 
+ points and shifts by a constant amount after the last point.</p>
+        <p>During <a href="#Calibrating_Enthalpy__Cell_Constant_">cell 
+ constant calibration</a>, the temperature calibration data from the cell 
+ constant calibration experiment is automatically stored when the cell 
+ constant calibration results are saved.</p>
+        <p class="Notes" style="text-align: left;" align="left">NOTE: A multiple-point calibration is more accurate than 
+ a one-point calibration. A single-point calibration shifts the sample 
+ temperature by a constant amount. A two- or more-point calibration shifts 
+ the temperature by a constant amount below the first point, uses a smooth 
+ curve through the calibration points and maintains a constant temperature 
+ shift after the last point. </p>
+        <h3><a name="Basic_Instructions"></a>Basic Instructions </h3>
+        <p>Follow these basic instructions for Enthalpy/Temperature calibration 
+ or verification. Click the links to jump to the specific instructions 
+ for that item or scroll down to read the entire procedure.</p>
+        <ol>
+            <li class="NumberedIndent" value="1"><a href="#Perform_the_Enthalpy_Temperature_Experiment">Perform 
+ the experiment(s)</a>, which involves choosing one or more standards and 
+ running the experiments. You can do this one of several ways:</li>
+            <ul>
+                <li value="1">Automatically using the 
+ <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum™ functions</a> 
+ (recommended for first time calibration and for those using just one standard). 
+ (These functions are available for Q2000/Q200/Q20 instruments only and 
+ are recommended for first time calibration.)</li>
+                <li value="2">Manually using the <a href="#Manually_Performing_Enthalpy__Cell_Constant__and_Temperature__Using_the_Templates_">templates</a> 
+ or <a href="Creating_Custom_Methods.htm">custom methods</a> (recommended 
+ for anyone using multiple standards).</li>
+                <li value="3">Step-by-step using the 
+ <a href="DSC_Calibration_Wizard_Intro.htm">Calibration Wizard</a>.</li>
+            </ul>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="2"><a href="#Analyze_the_Data">Analyze 
+ the data</a>. You can do this one of several ways:<ul><li style="margin-top: 4.5pt;" value="1">Automatically as part 
+ of the <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum 
+ functions</a>. (These functions are available for Q2000/Q200/Q20 instruments 
+ only and are recommended for first time calibration.)</li></ul><ul><li value="1"><a href="#Automatic_Analysis_Using_Post_Run_Actions">Automatically 
+ by defining Post Test Actions</a> (can be applied to templates). (These 
+ functions are available for Q2000/Q200 instruments only and are recommended 
+ for first time calibration.)</li></ul><ul><li value="1"><a href="#Manual_Analysis">Manually 
+ by specifying the appropriate file then analyzing the data</a> using <span style="font-weight: bold;color: #00509f;">Calibrate/Analysis</span> (where 
+ you specify the desired analysis limits).</li></ul></li>
+            <ul>
+                <li value="1">Step-by-step using the 
+ <a href="DSC_Calibration_Wizard_Intro.htm">Calibration Wizard</a>.</li>
+            </ul>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="3">Choose 
+ from optional <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum 
+ functions</a>:<ul><li style="margin-top: 4.5pt;" value="1"><a href="Schedule_Page.htm">Scheduling</a> 
+ the calibration sequence (either created through Platinum or your own 
+ custom method).</li></ul></li>
+        </ol>
+        <p>Enabling run and sequence 
+ <a href="Messaging_Page.htm">messaging</a>.</p>
+        <ul>
+            <li value="1">Print out the .emf calibration 
+ file for your records. This file is created after either manual or automatic 
+ calibration and placed in the same folder used for your data files. It 
+ will be named for the sample name entered: <span style="font-style: italic;">e.g</span>., 
+ <span style="font-style: italic;">samplename</span>.emf.</li>
+        </ul>
+        <ul>
+            <li value="1">Use the <a href="Indium_Tracking.htm">Indium 
+ Tracking</a> feature to plot your results.</li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Perform_the_Enthalpy_Temperature_Experiment"></a>(1) &#160;Perform 
+ the Enthalpy/Temperature Experiment</h3>
+        <p>Perform the experiment(s), which involves choosing one or more standards 
+ and running the experiments. You can do this one of two ways:</p>
+        <ul>
+            <li value="1">Automatically using <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum 
+ functions</a> (recommended for first time calibration and for those using 
+ just one standard). (These functions are available for Q2000/Q200/Q20 
+ instruments only and are recommended for first time calibration.)</li>
+            <li value="2">Manually using the <a href="#Manually_Performing_Enthalpy__Cell_Constant__and_Temperature__Using_the_Templates_">templates</a> 
+ or <a href="Creating_Custom_Methods.htm">custom methods</a> (recommended 
+ for anyone using multiple standards).</li>
+            <li value="3">Step-by-step using the <a href="DSC_Calibration_Wizard_Intro.htm">Calibration Wizard</a>.</li>
+        </ul>
+        <p style="font-size: 8pt;"><span><a href="#top" style="font-size: 8pt;">Back to top</a></span>
+        </p>
+        <h4><a name="Manually_Performing_Enthalpy__Cell_Constant__and_Temperature__Using_the_Templates_"></a>Manually 
+ Performing Enthalpy (Cell Constant) and Temperature Experiment(s) (Using 
+ the Templates)</h4>
+        <p>You can perform the calibration experiments manually by following the 
+ directions below for either the enthalpy calibration or temperature calibration.</p>
+        <p style="font-weight: bold;color: #00509f;">Click on the following topics 
+ for more information:</p>
+        <p style="color: #00509f;font-weight: normal;"><a href="#Enthalpy__Cell_Constant__Experiments" style="font-weight: normal;">Enthalpy Cell Constant Experiments</a>
+        </p>
+        <p style="color: #00509f;font-weight: normal;"><a href="#Temperature_Calibration_Experiments">Temperature 
+ Calibration Experiments</a>
+        </p>
+        <p style="font-weight: bold;color: #00509f;"><a name="Enthalpy__Cell_Constant__Experiments"></a>Enthalpy 
+ (Cell Constant) Experiments</p>
+        <p><a name="kanchor192"></a>A general procedure for enthalpy constant calibration is given below:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Choose an 
+ appropriate calibration material with a known heat (<span style="font-style: italic;">e.g</span>., 
+ indium). &#160;</li>
+            <li class="NumberedIndent" value="2">Prepare approximately 
+ 1 to 5 mg of the calibration material in a sample pan. Crimp the pan, 
+ then position it on the sample platform. &#160;</li>
+            <li class="NumberedIndent" value="3">Prepare a 
+ reference pan using the same pan type used for the sample. Crimp the pan, 
+ then position it on the reference platform. &#160;</li>
+            <li class="NumberedIndent" value="4">Cover the 
+ cell.</li>
+            <li class="NumberedIndent" value="5">Check that 
+ your purge gas is connected and set to the desired flow rate. If you are 
+ using an RCS or LNCS, be sure a <a href="Connecting_Purge_Gas_Lines.htm#Base%20purge%20lines">Base 
+ purge gas</a> is also used.</li>
+            <li class="NumberedIndent" value="6">Select <span style="font-weight: bold;color: #00509f;">Experiment View</span> and 
+ access the <a href="Experimental_View_Pane_Summary_Page.htm">Summary Page</a>, 
+ then set the instrument to calibration mode using the <span style="font-weight: bold;color: #00509f;">Mode 
+ Selection</span> drop-down list. </li>
+            <li class="NumberedIndent" value="7">Choose the 
+ "Calibration" <span style="font-weight: bold;color: #00509f;">Mode</span>. 
+ </li>
+            <li class="NumberedIndent" value="8">Select the 
+ "Cell Constant" test from the <span style="font-weight: bold;color: #00509f;">Test</span> 
+ list. &#160;&#160;&#160;</li>
+            <li class="NumberedIndent" value="9">Select the 
+ calibration material from the <span style="font-weight: bold;color: #00509f;">Sample 
+ Name</span> list. Click on the <span style="font-weight: bold;color: #ff0000;"><img src="../QDSC Images/ButtonDSCCalStdSettings.gif" style="border: none;width: 27px;height: 28px;float: none;border-style: none;border-style: none;" width="27" height="28" border="0" /></span>button<span style="font-weight: bold;color: #ff0000;"> </span>and verify the calibration information for this standard. </li>
+            <li class="NumberedIndent" value="10">Enter the 
+ requested sample information, including the exact <span style="font-weight: bold;color: #00509f;">Sample 
+ Size </span>and<span style="font-weight: bold;color: #00509f;"> Pan Type</span>. 
+ </li>
+            <li class="NumberedIndent" value="11"><span style="font-style: italic;">For 
+ &#160;Autosamplers 
+ only</span>: Select the <span style="font-weight: bold;color: #00509f;">Pan 
+ number</span> and <span style="font-weight: bold;color: #00509f;">Reference 
+ number</span>.</li>
+            <li class="NumberedIndent" value="12">Click on 
+ the <a href="Procedure_Page.htm">Procedure tab</a>. Enter the requested 
+ test parameters that will program the DSC to: &#160;</li>
+        </ol>
+        <ol start="1">
+            <li class="LetterIndent" value="1">Equilibrate to 
+ a temperature below the onset of the literature melting temperature of 
+ the material. Use the following equation to determine that temperature:</li>
+        </ol>
+        <p style="text-align: center;" align="center">5 min. X Heating Rate (°C/min) = Temperature (°C)</p>
+        <p style="text-align: center;font-style: italic;" align="center">Typical example: 5 min X 20°C/min = 100°C (below the onset 
+ of the literature melting temperature)</p>
+        <ol start="2">
+            <li class="LetterIndent" value="2">Heat the material, 
+ at the same heating rate that you will use in your subsequent experiments, 
+ to 50°C above the literature melting temperature. </li>
+            <li class="LetterIndent" value="3">If you are using 
+ this standard for the first time, check the <span style="font-weight: bold;color: #00509f;">Premelt</span> 
+ option to melt the sample before starting the experiment.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top">Back 
+ to top</a>
+        </p>
+        <ol start="13">
+            <li class="NumberedIndent" value="13">Click on 
+ the <a href="Experimental_View_Pane_Notes_Page.htm">Notes</a> tab. Enter/verify 
+ the requested information. Set the desired flow rate. <span style="font-style: italic;">For 
+ Q2000/Q200/Q20/Q20A:</span> Select the desired <span style="font-weight: bold;color: #00509f;">Calibration 
+ Set</span> from the list. Click the Browse button (...) to view the available 
+ calibration sets or to configure a new one. For more information, see 
+ <a href="Configuring_and_Using_Multiple_Calibration_Sets.htm">Configuring 
+ and Using Multiple Calibration Sets</a>.</li>
+            <li class="NumberedIndent" value="14">Click on 
+ the <span style="font-weight: bold;color: #00509f;">Apply</span> button 
+ to save the experimental and sample parameters entered for this run.</li>
+            <li class="NumberedIndent" value="15">If you wish 
+ to run multiple standards, select <span style="font-weight: bold;color: #00509f;">Append</span> 
+ or click <img src="../QDSC Images/Button_Copy_Run_AppendtoEnd.gif" style="border: none;width: 24px;height: 28px;float: none;border-style: none;border-style: none;" width="24" height="28" border="0" /> to add another run to the sequence.</li>
+            <li class="NumberedIndent" value="16">Repeat steps 
+ 1 through 12 for each calibration standard.</li>
+        </ol>
+        <p class="Notes">NOTE: If you want to have the analysis of the data performed 
+ automatically using <span style="font-weight: bold;color: #00509f;">Post 
+ Run Actions</span>, skip to <a href="#Automatic_Analysis_Using_Post_Run_Actions">Automatic 
+ Analysis Using Post Run Actions</a> now. Otherwise, continue with the 
+ next step.</p>
+        <ol start="15" MadCap:continue="true">
+            <li class="NumberedIndent" value="17">If more than 
+ one run is in the sequence list, schedule the first run in the sequence. 
+ (An arrow will appear next to the run number in the <a href="Understanding_the_Standard_Sequence_Pane.htm">Sequence 
+ Pane</a> for the scheduled run.) See <a href="Starting_a_Run_and_or_Sequence.htm">Starting 
+ a Run and/or Sequence</a> for more information.</li>
+            <li class="NumberedIndent" value="18">Select <span style="font-weight: bold;color: #00509f;">Start</span> to begin the calibration 
+ run. </li>
+            <li class="NumberedIndent" value="19"><a href="#Analyze_the_Data">Analyze 
+ the data</a> as directed in the next section.</li>
+            <li class="NumberedIndent" value="20">Save the 
+ calibration sequence for future recall, if desired. Click on the <span style="color: #00509f;font-weight: bold;">Save</span> button, <img src="../QDSC Images/Button_Save_Sequence.gif" style="border: none;width: 26px;height: 27px;float: none;border-style: none;border-style: none;" width="26" height="27" border="0" />, at the top of the sequence pane.</li>
+            <li class="NumberedIndent" value="21">Verify this 
+ result by viewing the <span style="font-weight: bold;color: #00509f;">Cell/Temperature 
+ Table</span> window (selected from the <span style="font-weight: bold;color: #00509f;">Calibrate</span> 
+ menu).</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="font-weight: bold;color: #00509f;"><a name="Temperature_Calibration_Experiments"></a>Temperature 
+ Calibration Experiments</p>
+        <p>A general procedure for temperature calibration is given below:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Choose an 
+ appropriate calibration material with a known melting point. &#160;</li>
+            <li class="NumberedIndent" value="2">Prepare approximately 
+ 1 to 5 mg of the calibration material in a sample pan. Crimp the pan, 
+ then position it on the sample platform. &#160;</li>
+            <li class="NumberedIndent" value="3">Prepare a 
+ reference pan using the same pan type used for the sample. Crimp the pan, 
+ then position it on the reference platform. &#160;</li>
+            <li class="NumberedIndent" value="4">Cover the 
+ cell.</li>
+            <li class="NumberedIndent" value="5">Check that 
+ your purge gas is connected and set to the desired flow rate. If you are 
+ using an RCS or LNCS, be sure a <a href="Connecting_Purge_Gas_Lines.htm#Base%20purge%20lines">Base 
+ purge gas</a> is also used.</li>
+            <li class="NumberedIndent" value="6">Select <span style="font-weight: bold;color: #00509f;">Experiment View</span> and 
+ access the <a href="Experimental_View_Pane_Summary_Page.htm">Summary Page</a>, 
+ then set the instrument to calibration mode using the <span style="font-weight: bold;color: #00509f;">Mode 
+ Selection</span> drop-down list. </li>
+            <li class="NumberedIndent" value="7">Choose the 
+ "Calibration" <span style="font-weight: bold;color: #00509f;">Mode</span>. 
+ </li>
+            <li class="NumberedIndent" value="8">Select the 
+ "Temperature" test from the <span style="font-weight: bold;color: #00509f;">Test</span> 
+ list. &#160;</li>
+            <li class="NumberedIndent" value="9">Select the 
+ calibration material from the <span style="font-weight: bold;color: #00509f;">Sample 
+ Name</span> list. Click on the <img src="../QDSC Images/ButtonDSCCalStdSettings.gif" style="border: none;width: 27px;height: 28px;float: none;border-style: none;border-style: none;" width="27" height="28" border="0" /> button and verify the calibration 
+ information for this standard. </li>
+            <li class="NumberedIndent" value="10">Enter the 
+ requested sample information, including the exact <span style="font-weight: bold;color: #00509f;">Sample 
+ Size </span>and<span style="font-weight: bold;color: #00509f;"> Pan Type</span>. 
+ </li>
+            <li class="NumberedIndent" value="11"><span style="font-style: italic;">For 
+ &#160;Autosamplers 
+ only</span>: Select the <span style="font-weight: bold;color: #00509f;">Pan 
+ number</span> and <span style="font-weight: bold;color: #00509f;">Reference 
+ number</span>.</li>
+            <li class="NumberedIndent" value="12">Click on 
+ the <a href="Procedure_Page.htm">Procedure tab</a>. Enter the requested 
+ test parameters that will program the DSC to: &#160;</li>
+        </ol>
+        <ol start="1">
+            <li class="LetterIndent" value="1">Equilibrate to 
+ a temperature below the onset of the literature melting temperature of 
+ the material. Use the following equation to determine that temperature:</li>
+        </ol>
+        <p style="text-align: center;" align="center">5 min. X Heating Rate (°C/min) = Temperature (°C)</p>
+        <p style="text-align: center;font-style: italic;" align="center">Typical example: 5 min X 20°C/min = 100°C (below the onset 
+ of the literature melting temperature)</p>
+        <ol start="2">
+            <li class="LetterIndent" value="2">Heat the material, 
+ at the same heating rate that you will use in your subsequent experiments, 
+ to 50°C above the literature melting temperature.</li>
+            <li class="LetterIndent" value="3">If you are using 
+ this standard for the first time, check the <span style="font-weight: bold;color: #00509f;">Premelt</span> 
+ option to melt the sample before starting the experiment.</li>
+        </ol>
+        <ol start="13">
+            <li class="NumberedIndent" value="13">Click on 
+ the <a href="Experimental_View_Pane_Notes_Page.htm">Notes</a> tab. Enter/verify 
+ the requested information. Set the desired flow rate.</li>
+            <li class="NumberedIndent" value="14">Click on 
+ the <span style="font-weight: bold;color: #00509f;">Apply</span> button 
+ to save the experimental and sample parameters entered for this run.</li>
+            <li class="NumberedIndent" value="15">If you wish 
+ to run multiple standards, select <span style="font-weight: bold;color: #00509f;">Append</span> 
+ or click <img src="../QDSC Images/Button_Copy_Run_AppendtoEnd.gif" style="border: none;width: 24px;height: 28px;float: none;border-style: none;border-style: none;" width="24" height="28" border="0" /> to add another run to the sequence.</li>
+            <li class="NumberedIndent" value="16">Repeat steps 
+ 1 through 12 for each temperature calibration standard. Up to five temperature 
+ calibration standards may be used.</li>
+        </ol>
+        <p class="Notes">NOTE: If you want to have the analysis of the data performed 
+ automatically using <span style="font-weight: bold;color: #00509f;">Post 
+ Run Actions</span>, skip to <a href="#Automatic_Analysis_Using_Post_Run_Actions">Automatic 
+ Analysis Using Post Run Actions</a> now. Otherwise, continue with the 
+ next step.</p>
+        <ol start="15" MadCap:continue="true">
+            <li class="NumberedIndent" value="17">If more than 
+ one run is in the sequence list, schedule the first run in the sequence. 
+ (An arrow will appear next to the run number in the <a href="Understanding_the_Standard_Sequence_Pane.htm">Sequence 
+ Pane</a> for the scheduled run.) See <a href="Starting_a_Run_and_or_Sequence.htm">Starting 
+ a Run and/or Sequence</a> for more information.</li>
+            <li class="NumberedIndent" value="18">Select <span style="font-weight: bold;color: #00509f;">Start</span> to begin the calibration 
+ run.</li>
+            <li class="NumberedIndent" value="19"><a href="#Analyze_the_Data">Analyze 
+ the data</a> as directed in the next section.</li>
+            <li class="NumberedIndent" value="20">Save the 
+ calibration sequence for future recall, if desired. Click on the <span style="color: #00509f;font-weight: bold;">Save</span> button, <img src="../QDSC Images/Button_Save_Sequence.gif" style="border: none;width: 26px;height: 27px;float: none;border-style: none;border-style: none;" width="26" height="27" border="0" />, at the top of the sequence pane.</li>
+            <li class="NumberedIndent" value="21">Verify this 
+ result by viewing the <span style="font-weight: bold;color: #00509f;">Cell/Temperature 
+ Table</span> window (selected from the <span style="font-weight: bold;color: #00509f;">Calibrate</span> 
+ menu).</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Analyze_the_Data"></a>(2) Analyze the Data</h3>
+        <p>Once the calibration run is complete, you can analyze the data using 
+ one of the following techniques:</p>
+        <ul>
+            <li value="1">Automatically as part of 
+ the <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum functions</a>. 
+ (These functions are available for Q2000/Q200/Q20 instruments only and 
+ are recommended for first time calibration.)</li>
+            <li value="2"><a href="#Automatic_Analysis_Using_Post_Run_Actions">Automatically 
+ by defining Post Test Actions</a> (can be applied to templates). (These 
+ functions are available for Q2000/Q200/Q20 instruments only and are recommended 
+ for first time calibration.)</li>
+            <li value="3"><a href="#Manual_Analysis">Manually 
+ by specifying the appropriate file then analyzing the data</a> using <span style="font-weight: bold;color: #00509f;">Calibrate/Analysis</span> (where 
+ you specify the desired analysis limits).</li>
+            <li value="4">Step-by-step using the <a href="DSC_Calibration_Wizard_Intro.htm">Calibration Wizard</a>.</li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h4><a name="Manual_Analysis"></a>Manual Analysis</h4>
+        <ol>
+            <li class="NumberedIndent" value="1">Select <span style="font-weight: bold;color: #00509f;">Calibrate/Analysis</span> from 
+ the main menu. (See <a href="Analyzing_DSC_Calibration_Data.htm">Analyzing 
+ DSC Calibration Data</a> for more detailed information.)</li>
+            <li class="NumberedIndent" value="2">Choose the 
+ standard that was used for your experiments. Make sure that you verify 
+ the theoretical temperature used for each standard. Edit the data if necessary. 
+ (Click here for more information on choosing/editing standards <img src="../QDSC Images/ocean_arrow_sm.gif" style="border: none;width: 7px;height: 13px;float: none;border-style: none;border-style: none;" width="7" height="13" border="0" /> <a href="Setting_Up_Calibration_Standards.htm">Setting Up 
+ Calibration Standards</a>.)</li>
+            <li class="NumberedIndent" value="3">Select the 
+ calibration file obtained above.</li>
+            <li class="NumberedIndent" value="4">Once the 
+ plot is displayed, click on the <span style="color: #00509f;font-weight: bold;">Analyze</span> 
+ button (or choose <span style="font-weight: bold;color: #00509f;">Analyze</span> 
+ from the pop-up menu). </li>
+            <li class="NumberedIndent" value="5">Position 
+ the cursors to bracket the melting transition.</li>
+            <li class="NumberedIndent" value="6">Save the 
+ analysis. Right click on the curve and select the <span style="font-weight: bold;color: #00509f;">Accept 
+ Results</span> function. <span style="font-style: italic;">For Q2000/Q200/Q20/Q20A:</span> 
+ If you have Multiple Calibration Sets enabled on the <a href="Selecting_the_Instrument_Preferences.htm#Setting%20Up%20DSC%20Options">Tools/Instrument 
+ Preferences/DSC Page</a>, the <span style="font-weight: bold;color: #00509f;">Multi-Calibration 
+ Set</span> window will be displayed. Select the desired calibration set 
+ that will be used to save the results and click OK. For more information, 
+ see <a href="Configuring_and_Using_Multiple_Calibration_Sets.htm">Configuring 
+ and Using Multiple Calibration Sets</a>. </li>
+            <li class="NumberedIndent" value="7">The values 
+ will be automatically entered in the Calibration table when the analysis 
+ has been saved. To view or print the calibration results, see the <a href="Calibration_Report.htm">Calibration 
+ report</a>.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h4><a name="Automatic_Analysis_Using_Post_Run_Actions"></a>Automatic Analysis 
+ Using Post Run Actions</h4>
+        <p class="Notes">NOTE: &#160;These 
+ functions are available for Q2000/Q200/Q20 instruments only.</p>
+        <p>This method utilizes <span style="font-weight: bold;"><a href="Selecting_Post_Test_Actions.htm">Post 
+ Run Actions</a></span> to automatically analyze and send the results to 
+ the instrument. These are defined while setting up the run sequence and 
+ executed at the end of each test.</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Set up the 
+ calibration run sequence manually as described above. </li>
+            <li class="NumberedIndent" value="2">Right click 
+ on the temperature calibration run number on the <a href="Understanding_the_Standard_Sequence_Pane.htm">Sequence 
+ Pane</a> to display the pop-up menu. Select <span style="font-weight: bold;color: #00509f;">Post 
+ Run Action</span>.</li>
+            <li class="NumberedIndent" value="3">Select one 
+ of the following: </li>
+            <ul>
+                <li value="1"><span style="font-weight: bold;color: #00509f;">IF 
+ NOT</span> -- Successful <span style="font-weight: bold;color: #00509f;">Indium 
+ Calibration</span> -- STOP. (This will stop the sequence if the calibration 
+ fails.)</li>
+                <li value="2"><span style="font-weight: bold;color: #00509f;">DO</span> 
+ -- <span style="font-weight: bold;color: #00509f;">Indium Calibration</span>. 
+ (This will begin the next run after performing calibration, with no dependency 
+ on the outcome of the verification criteria result.)</li>
+                <li value="3"><span style="font-weight: bold;color: #00509f;">IF</span> 
+ -- Successful <span style="font-weight: bold;color: #00509f;">Indium 
+ Calibration -- GO next sequence</span>. (This will start the standard 
+ run sequence after successful completion of calibration.)</li>
+            </ul>
+            <li style="margin-top: 4.5pt; font-style: italic;" class="NumberedIndent" value="4">For 
+ Q2000/Q200/Q20/Q20A: <span style="font-style: normal;">Select the desired 
+ </span><span style="font-style: normal;font-weight: bold;color: #00509f;">Calibration Set</span><span style="font-style: normal;"> 
+ that will be used to save the data. Click the Browse button (...) to view 
+ the available calibration sets and their parameters or configure a new 
+ set. For more information, see <a href="Configuring_and_Using_Multiple_Calibration_Sets.htm" style="font-style: normal;">Configuring 
+ and Using Multiple Calibration Sets</a>.</span></li>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="5">Select 
+ <span style="font-weight: bold;color: #00509f;">OK</span> when finished.</li>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="6">Repeat 
+ steps 1 through 3 for each temperature calibration standard used.</li>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="7">Select 
+ <span style="font-weight: bold;color: #00509f;">Start</span> to begin 
+ the calibration run. &#160;To 
+ view or print the baseline calibration results, see the <a href="Calibration_Report.htm">Calibration 
+ report</a>.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Entering_Temperature_Calibration_Data"></a>Entering Temperature 
+ Calibration Data</h3>
+        <p>Select <span style="color: #00509f;font-weight: bold;">Calibrate/Cell/Temperature 
+ Table</span> to access the Temperature Calibration Table, which is used 
+ to input or reset temperature calibration data.</p>
+        <p>This window shows the temperature calibration table that the instrument 
+ applies to the collected data. Use this window to enter from one to five 
+ temperature calibration points (pairs of observed and correct temperature 
+ points). The observed and correct temperature corresponds to the experimental 
+ and theoretical transition temperature (<span style="font-style: italic;">e.g</span>., 
+ melting point) of the calibrant respectively.</p>
+        <p>Data is automatically entered into this table when you select <span style="font-weight: bold;color: #00509f;">Accept Results</span> through 
+ the <a href="#Analyze_the_Data">Calibration 
+ Analysis function</a> (described above), using the <a href="#Automatic_Analysis_Using_Post_Run_Actions">Post 
+ Run Actions</a>, or when using the Platinum Setup for Enthalpy/Temperature 
+ Calibration.</p>
+        <p class="Notes">NOTE: A multiple-point temperature calibration is more accurate 
+ than a one-point calibration. A single-point calibration shifts the sample 
+ temperature by a constant amount. A two- or more-point calibration shifts 
+ the temperature by a constant amount below the first point, uses a smooth 
+ curve through the calibration points and maintains a constant temperature 
+ shift after the last point.</p>
+        <ul>
+            <li value="1"><span style="font-style: italic;">For 
+ Q2000/Q200/Q20/Q20A:</span> If you have Multiple Calibration Sets enabled 
+ on the <a href="Selecting_the_Instrument_Preferences.htm#Setting%20Up%20DSC%20Options">Tools/Instrument 
+ Preferences/DSC Page</a>, you can configure up to ten calibration sets. 
+ Select the desired <span style="font-weight: bold;color: #00509f;">Calibration 
+ Set</span> from the list to see the corresponding temperature table for 
+ the chosen set. For more information, see <a href="Configuring_and_Using_Multiple_Calibration_Sets.htm">Configuring 
+ and Using Multiple Calibration Sets</a>.</li>
+            <li value="2">If these values are correct, 
+ select OK.</li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="font-size: 8pt;"><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Calibrating DSC Heat Capacity|Calibrating_DSC_Heat_Capacity.htm||Calibrating the Autosampler|Calibrating_the_Autosampler.htm||Calibrating the DSC Pressure Cell|Calibrating_the_DSC_Pressure_Cell.htm||Calibrating the DSC|Calibrating_the_DSC.htm||Calibrating the Mass Flow Controller|Calibrating_the_Mass_Flow_Controller.htm||Calibrating the Q1000/Q100 Autosampler|Calibrating_the_Q1000_Q100_Autosampler.htm||Calibrating the Q2000/Q200/Auto Q20 Autosampler|Calibrating_the_Q2000_Q200_Auto_Q20_Autosampler.htm||Calibrating the T1 Baseline|Calibrating_the_T1_Baseline.htm||Calibrating Tzero|Calibrating_Tzero.htm||Calibration Report|Calibration_Report.htm||Indium Tracking|Indium_Tracking.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

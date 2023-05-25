@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Calibrating the Instrument" MadCap:browseSequencePath="Calibrating the Instrument" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Calibrating the T1 Baseline</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a><a name="kanchor184"></a>Calibrating the T1 Baseline (T1 Heat Flow)</h1>
+        <p>&#160;</p>
+        <p>The baseline slope and offset calibration involves heating an empty 
+ cell through the entire temperature range expected in subsequent experiments. 
+ &#160;The calibration 
+ program is used to calculate the slope and offset values needed to flatten 
+ the baseline and zero the heat flow signal. &#160;<span style="font-weight: bold;">This calibration 
+ is used in the DSC Q20 and Q10, and when the selected heat flow is T1 
+ for the DSC Q2000, Q1000, Q200, or Q100.</span></p>
+        <ul>
+            <li value="1"><span style="color: #00509f;font-weight: bold;">Baseline 
+ Slope</span> is a calibration constant that accounts for the baseline 
+ slope of an empty cell. &#160;The 
+ baseline slope is calculated from data gathered as an empty cell is heated 
+ through the temperature range expected in subsequent experiments. Default 
+ is 0.00.</li>
+            <li value="2"><span style="color: #00509f;font-weight: bold;">Baseline 
+ Offset</span> is a calibration factor that shifts the curve up or down 
+ along the Y-axis to balance the heat flow at the sample and reference 
+ thermocouple positions. The baseline offset is calculated from data gathered 
+ as an empty cell is heated through the temperature range expected in subsequent 
+ experiments. </li>
+        </ul>
+        <h3 id="p1">Basic Instructions </h3>
+        <p>Follow these basic instructions for baseline slope and offset calibration. 
+ Click the links to jump to the specific instructions for that item.</p>
+        <ol>
+            <li class="NumberedIndent" value="1"><a href="#Gathering%20baseline%20cal%20data" name="kanchor185">Gather 
+ baseline calibration data</a>, which involves heating an empty cell through 
+ the entire temperature range expected in subsequent experiments. You can 
+ do this one of two ways:<ul><li value="1">Automatically using the 
+ <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum™ functions</a>. 
+ (This function is available for Q2000, Q200, and Q20 instruments only 
+ and is recommended for first time calibration.)</li></ul><ul><li value="1">Manually using the <a href="#Manually_Setting_Up_Baseline_Calibration">templates</a>, 
+ or <a href="Creating_Custom_Methods.htm">custom methods</a>. </li><li value="2">Step-by-step using the 
+ <a href="DSC_Calibration_Wizard_Intro.htm">Calibration Wizard</a>.</li></ul></li>
+            <li class="NumberedIndent" value="2"><a href="#Analyze_the_Data">Analyze 
+ the data</a>. You can do this one of several ways:<ul><li value="1">Automatically as part 
+ of the <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum 
+ functions</a>. (This function is available for Q2000, Q200, and Q20 instruments 
+ only and is recommended for first time calibration.)</li></ul><ul><li value="1"><a href="#Automatic_Analysis_Using_Post_Run_Actions">Automatically 
+ by defining Post Test Actions</a> (can be applied to templates). (This 
+ function is available for Q2000, Q200, and Q20 instruments only and is 
+ recommended for first time calibration.) </li><li value="2"><a href="#Manual_Analysis">Manually 
+ by specifying the appropriate file then analyzing the data</a> using <span style="font-weight: bold;color: #00509f;">Calibrate/Analysis</span> (where 
+ you specify the desired analysis limits). </li><li value="3">Step-by-step using the 
+ <a href="DSC_Calibration_Wizard_Intro.htm">Calibration Wizard</a>.</li></ul></li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li class="NumberedIndent" value="3"><a href="DSC_Cell_Calibration.htm">View 
+ the Cell Calibration Parameters</a>
+            </li>
+            <li class="NumberedIndent" value="4">Choose from 
+ optional <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum 
+ functions</a>:</li>
+            <ul>
+                <li value="1"><a href="Schedule_Page.htm">Scheduling</a> 
+ the calibration sequence (either created through Platinum or your own 
+ custom method).</li>
+                <li value="2">Enabling run and sequence 
+ <a href="Messaging_Page.htm">messaging</a>.</li>
+                <li value="3">Print out the .emf calibration 
+ file for your records. This file is created after automatic calibration 
+ and placed in the same folder used for your data files. It will be named 
+ for the sample name entered: <span style="font-style: italic;">e.g.</span>, 
+ samplename.emf.</li>
+            </ul>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top">Back 
+ to top</a>
+        </p>
+        <h3 id="P2"><a name="Gathering baseline cal data"></a>(1) Gathering Baseline 
+ Calibration Data</h3>
+        <p>Baseline calibration involves heating an empty cell through the entire 
+ temperature range expected in subsequent experiments. &#160;The 
+ calibration program is used to calculate the slope and offset values needed 
+ to flatten the baseline and zero the heat flow signal.</p>
+        <p>You can gather data one of two ways:</p>
+        <ul>
+            <li value="1">Automatically using the <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum functions</a>. 
+ (This function is available for Q2000, Q200, and Q20 instruments only 
+ and is recommended for first time calibration.)</li>
+            <li value="2">Manually using the <a href="#Manually_Setting_Up_Baseline_Calibration">templates</a>, 
+ or <a href="Creating_Custom_Methods.htm">custom methods</a>.</li>
+            <li value="3">Step-by-step using the <a href="DSC_Calibration_Wizard_Intro.htm">Calibration Wizard</a>.</li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top">Back 
+ to top</a>
+        </p>
+        <h4><a name="Manually_Setting_Up_Baseline_Calibration"></a>Manually Setting 
+ Up Baseline Calibration (Using the DSC Calibration Baseline Template)</h4>
+        <p>A general procedure for baseline calibration is given below:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Remove any 
+ pans from the cell and cover the cell.</li>
+            <li class="NumberedIndent" value="2">Check that 
+ your purge gas is connected and set to the desired flow rate. If you are 
+ using an RCS or LNCS, be sure a <a href="Connecting_Purge_Gas_Lines.htm#Base%20purge%20lines">Base 
+ purge gas</a> is also used.</li>
+            <li class="NumberedIndent" value="3">Select <span style="font-weight: bold;color: #00509f;">Experiment View</span> and 
+ access the <a href="Experimental_View_Pane_Summary_Page.htm">Summary Page</a>, 
+ then set the instrument to "Calibration mode" using the <span style="font-weight: bold;color: #00509f;">Mode </span>drop-down list. 
+ </li>
+            <li class="NumberedIndent" value="4">Select the 
+ "Baseline" test from the <span style="font-weight: bold;color: #00509f;">Test</span> 
+ list. </li>
+            <li class="NumberedIndent" value="5">Select "Baseline" 
+ from the <span style="font-weight: bold;color: #00509f;">Sample Name</span> 
+ list. </li>
+            <li class="NumberedIndent" value="6">Enter the 
+ requested sample information, including the exact <span style="font-weight: bold;color: #00509f;">Sample 
+ Size</span> (zero)<span style="font-weight: bold;color: #00509f;"> <![CDATA[ ]]></span>and<span style="font-weight: bold;color: #00509f;"> Pan Type </span>(none). </li>
+            <li class="NumberedIndent" value="7">Click on 
+ the <span style="font-weight: bold;color: #00509f;">Procedure</span> 
+ tab. Enter the requested test parameters that will heat the DSC cell over 
+ the same temperature range, at the same heating rate that will be used 
+ for subsequent experiments.</li>
+            <li class="NumberedIndent" value="8">Click on 
+ the <a href="Experimental_View_Pane_Notes_Page.htm">Notes</a> tab. Enter/verify 
+ the requested information. If an MFC is installed, set the desired flow 
+ rate.</li>
+            <li class="NumberedIndent" value="9">Click on 
+ the <span style="font-weight: bold;color: #00509f;">Apply</span> button 
+ to save the experimental and sample parameters entered for this run. &#160;</li>
+            <li class="NumberedIndent" value="10">If more than 
+ one run is in the sequence list, schedule this run. (An arrow will appear 
+ next to the run number in the <a href="Understanding_the_Standard_Sequence_Pane.htm">Sequence 
+ Pane</a> for the scheduled run.) </li>
+            <li class="NumberedIndent" value="11">Select <span style="font-weight: bold;color: #00509f;">Start</span> to begin the calibration 
+ run.</li>
+            <li class="NumberedIndent" value="12">&#160;Wait 
+ until the run is complete, then access the calibration program using <span style="font-weight: bold;color: #00509f;">Calibrate/Analysis</span> on 
+ the DSC menu. </li>
+            <li class="NumberedIndent" value="13">Analyze the 
+ data. &#160;See 
+ <a href="Analyzing_DSC_Calibration_Data.htm">Analyzing DSC Calibration 
+ Data</a>.</li>
+            <li class="NumberedIndent" value="14">Save the 
+ calibration results by clicking the <span style="font-weight: bold;color: #00509f;">Accept 
+ </span>button (or by selecting <span style="font-weight: bold;color: #00509f;">Analyze/Accept 
+ results</span> from the <span style="font-weight: bold;color: #00509f;">Calibration</span> 
+ menu). This will update the current temperature parameters with this calibration 
+ data. &#160;</li>
+        </ol>
+        <p>You can verify this result by viewing the <span style="color: #00509f;"><a href="DSC_Cell_Calibration.htm" style="font-weight: normal;">Cell Calibration Table</a></span> (selected 
+ from the <span style="font-weight: bold;color: #00509f;">Calibrate</span> 
+ menu).</p>
+        <p>For basic calibration information see: &#160;<a href="Calibrating_the_DSC.htm">Calibrating 
+ the DSC</a>. </p>
+        <p style="font-size: 8pt;"><a href="#top">Back 
+ to top</a>
+        </p>
+        <h3 class="Bullet"><a name="Analyze_the_Data"></a>(2) Analyze the Data</h3>
+        <p>Once the calibration run is complete, you can analyze the data using 
+ one of the following techniques:</p>
+        <ul>
+            <li value="1">Automatically as part of 
+ the <a href="Calibrating_Using_the_Platinum_Functions.htm">Platinum functions</a>. 
+ (This function is available for Q2000, Q200, and Q20 instruments only 
+ and is recommended for first time calibration.)</li>
+            <li value="2"><a href="#Automatic_Analysis_Using_Post_Run_Actions">Automatically 
+ by defining Post Test Actions</a> (can be applied to templates). (This 
+ function is available for Q2000, Q200, and Q20 instruments only and is 
+ recommended for first time calibration.)</li>
+            <li value="3"><a href="#Manual_Analysis">Manually 
+ by specifying the appropriate file then analyzing the data</a> using <span style="font-weight: bold;color: #00509f;">Calibrate/Analysis</span> (where 
+ you specify the desired analysis limits).</li>
+            <li value="4">Step-by-step using the <a href="DSC_Calibration_Wizard_Intro.htm">Calibration Wizard</a>.</li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top">Back 
+ to top</a>
+        </p>
+        <h4><a name="Manual_Analysis"></a>Manual Analysis</h4>
+        <ol>
+            <li class="NumberedIndent" value="1">Select <span style="font-weight: bold;color: #00509f;">Calibrate/Analysis</span> from 
+ the main menu. (See <a href="Analyzing_DSC_Calibration_Data.htm">Analyzing 
+ DSC Calibration Data</a> for more detailed information.)</li>
+            <li class="NumberedIndent" value="2">Select "Baseline 
+ Calibration."</li>
+            <li class="NumberedIndent" value="3">Select the 
+ calibration file obtained above.</li>
+            <li class="NumberedIndent" value="4">Once the 
+ plot is displayed, click on the <span style="color: #00509f;font-weight: bold;">Analyze</span> 
+ button (or choose <span style="font-weight: bold;color: #00509f;">Analyze</span> 
+ from the pop-up menu). </li>
+            <li class="NumberedIndent" value="5">Position 
+ the cursors as desired.</li>
+            <li class="NumberedIndent" value="6">Save the 
+ analysis. Right click on the curve and select the <span style="font-weight: bold;color: #00509f;">Accept 
+ Results</span> function. <span style="font-style: italic;">For Q2000/Q200/Q20/Q20A:</span> 
+ If you have Multiple Calibration Sets enabled on the <a href="Selecting_the_Instrument_Preferences.htm#Setting%20Up%20DSC%20Options">Tools/Instrument 
+ Preferences/DSC Page</a>, the <span style="font-weight: bold;color: #00509f;">Multi-Calibration 
+ Set</span> window will be displayed. Select the desired calibration set 
+ that will be used to save the results and click OK. For more information, 
+ see <a href="Configuring_and_Using_Multiple_Calibration_Sets.htm">Configuring 
+ and Using Multiple Calibration Sets</a>. </li>
+            <li class="NumberedIndent" value="7">The values 
+ will be automatically entered in the Calibration table when the analysis 
+ has been saved. To view or print the calibration results, see the <a href="Calibration_Report.htm">Calibration 
+ report</a>.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top">Back 
+ to top</a>
+        </p>
+        <h4><a name="Automatic_Analysis_Using_Post_Run_Actions"></a>Automatic Analysis 
+ Using Post Run Actions</h4>
+        <p class="Notes">NOTE: &#160;These 
+ functions are available for Q2000/Q200/Q20 instruments only.</p>
+        <p>This method utilizes <span style="font-weight: bold;"><a href="Selecting_Post_Test_Actions.htm">Post 
+ Run Actions</a></span> to automatically analyze and send the results to 
+ the instrument. These are defined while setting up the run sequence and 
+ executed at the end of each test.</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Set up the 
+ calibration run sequence manually as described above. </li>
+            <li class="NumberedIndent" value="2">Right click 
+ on the second Tzero calibration run number on the <a href="Understanding_the_Standard_Sequence_Pane.htm">Sequence 
+ Pane</a> to display the pop-up menu. Select <span style="font-weight: bold;color: #00509f;">Post 
+ Run Action</span>.</li>
+            <li class="NumberedIndent" value="3">Select one 
+ of the following: </li>
+            <ul>
+                <li value="1"><span style="font-weight: bold;color: #00509f;">IF 
+ NOT</span> -- Successful <span style="font-weight: bold;color: #00509f;">T1 
+ Baseline Calibration</span> -- STOP. (This will stop the sequence if the 
+ baseline calibration fails.)</li>
+                <li value="2"><span style="font-weight: bold;color: #00509f;">DO</span> 
+ -- <span style="font-weight: bold;color: #00509f;"><a name="kanchor186"></a><a name="kanchor187"></a>T1 Baseline Calibration</span>. 
+ (This will begin the next run after performing baseline calibration, with 
+ no dependency on the outcome of the verification criteria result.)</li>
+                <li value="3"><span style="font-weight: bold;color: #00509f;">IF</span> 
+ -- Successful <span style="font-weight: bold;color: #00509f;">T1 Baseline 
+ Calibration -- GO next sequence</span>. (This will start the standard 
+ run sequence after successful completion of baseline calibration.)</li>
+            </ul>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="4"><span style="font-style: italic;">For Q2000/Q200/Q20/Q20A: </span>Select the 
+ desired <span style="font-weight: bold;color: #00509f;">Calibration Set</span> 
+ that will be used to save the data. Click the Browse button (...) to view 
+ the available calibration sets and their parameters or configure a new 
+ set. For more information, see <a href="Configuring_and_Using_Multiple_Calibration_Sets.htm" style="font-style: normal;">Configuring 
+ and Using Multiple Calibration Sets</a>.</li>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="5">Select 
+ <span style="font-weight: bold;color: #00509f;">OK</span> when finished.</li>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="6">Select 
+ <span style="font-weight: bold;color: #00509f;">Start</span> to begin 
+ the calibration run. &#160;To 
+ view or print the baseline calibration results, see the <a href="Calibration_Report.htm">Calibration 
+ report</a>.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top">Back 
+ to top</a>
+        </p>
+        <p style="font-size: 8pt;"><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Calibrating DSC Heat Capacity|Calibrating_DSC_Heat_Capacity.htm||Calibrating the Autosampler|Calibrating_the_Autosampler.htm||Calibrating the DSC Pressure Cell|Calibrating_the_DSC_Pressure_Cell.htm||Calibrating the DSC|Calibrating_the_DSC.htm||Calibrating the Mass Flow Controller|Calibrating_the_Mass_Flow_Controller.htm||Calibrating the Q1000/Q100 Autosampler|Calibrating_the_Q1000_Q100_Autosampler.htm||Calibrating the Q2000/Q200/Auto Q20 Autosampler|Calibrating_the_Q2000_Q200_Auto_Q20_Autosampler.htm||Calibrating the T1 Baseline|Calibrating_the_T1_Baseline.htm||Calibrating Tzero|Calibrating_Tzero.htm||Calibration Report|Calibration_Report.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

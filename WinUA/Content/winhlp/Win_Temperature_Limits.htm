@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Temperature Limits Window</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Temperature Limits Window</h1>
+        <p>Use this window to limit the data used for analysis to a specific temperature range.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ol style="font-family: Arial;font-size: 10pt;">
+            <li value="1">Enter the temperature at which you want to program to begin retrieving data. An entry of 0.00 stands for zero degrees unless you also enter 0.00 as the stop temperature. If you enter 0.00 as both the start and stop temperatures, the entire data file is read.<br /><br /></li>
+            <li value="2">Enter the temperature at which you want to program to stop retrieving data. An entry of 0.00 stands for zero degrees unless you also enter 0.00 as the start temperature (see step 1).<br /><br /></li>
+            <li value="3">Enter the time, in the displayed units, at which you want the program to begin searching for the specified temperature range. For experiments in which the designated temperature range is cycled, the delay time option enables you to skip over earlier cycles and select data from later cycles in the experiment. For example, a delay time of 5.00 minutes tells the program to skip all data generated before the fifth minute of the experiment, even if the first five minutes contain the temperature range specified in steps 1 and 2.<br /><br /></li>
+            <li value="4">Check the <a href="Checkbox_All_Cycles.htm">Include all cycles after delay time</a> box, if you want to include data from all cycles after the delay time that has the specified temperature limits.<br /><br /></li>
+            <li value="5">Check the <a href="Checkbox_Reset_Time.htm">Reset time to zero</a> box, if you want to reset the Time signal to zero at the start of the specified data limits region.<br /><br /></li>
+            <li value="6">Click on OK.</li>
+        </ol>
+        <p>The program scans the data file between the points you specify to determine the minimum and maximum values, which are then used to determine the autoscaling factors for the plot. Any data outside these limits is not plotted or analyzed, regardless of the scaling factors you select later.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>To regain the entire data limits for analysis, use the <span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu_graph_data_limits_full_range.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Data Limits/Full Range</a></span> option.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>See also:</p>
+        <p><a href="Menu_graph_data_limits_time.htm">Time (Data Limits)</a>
+        </p>
+        <p><a href="Menu_analyze_oxidation_time_temp.htm">Oxidation Time/Temp</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

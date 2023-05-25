@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="Logout" MadCap:tocPath="Advantage Integrity Help Topics in UA" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Using an Integrity-Licensed Universal Analysis</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Using an Integrity-Licensed Universal Analysis</h1>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Universal Analysis can access and analyze data stored in the Integrity database system, as well as data stored in traditional data files (historical data), but not both at the same time. When logged into the Integrity system, only database records can be accessed. A secure <a href="Menu_view_audit_trail.htm">Audit Trail</a> is generated for all actions performed while logged into the database, including the logging in/logging out process. There is no Audit Trail while viewing historical (disk based) data.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Most of the functions available in the Integrity-licensed Universal Analysis program are the same as those provided in its non-Integrity (standard) counterpart.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The differences between the programs are noted below:</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Bullet"><span style="font-weight: bold;">Logging In:</span> Before accessing records in the Integrity database you must log into the database using a valid user name and password. Any traditional data files that are open must be closed before logging in. See also: <a href="Menu_file_login_logout.htm">Login/Logout</a>.</p>
+            </li>
+        </ul>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Bullet"><span style="font-weight: bold;">Opening Files:</span> After logging into the database you will need to locate the data from your experiment. Select <a href="Menu_file_open.htm">File/Open</a>. The Database Viewer will be displayed. (See the Integrity online help for more information on the Database Viewer.) Use the searching and sorting functions of the Database Viewer to locate and highlight the desired record. The only records displayed in the viewer will be those assigned to projects to which you have access rights. To open the file, click the <img src="../Resources/Images/ButtonGetData_26x26.png" style="width: 26;height: 26;" /> button or select File/Open<span style="font-weight: bold;">,</span> and the data file will be opened in Universal Analysis.</p>
+            </li>
+        </ul>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Bullet"><span style="font-weight: bold;">Restricted or Unavailable Functions:</span> The system administrator can use the TA System Manager program to define privileges (allowed functions) within each module of the Integrity system. For Universal Analysis, this list of controllable functions includes most of the menu items in the program. The functions that are available to you depend on your assigned access group(s). Some functions available in standard mode are <span style="font-style: italic;">never</span> available when logged into the Integrity database. See: <a href="Unavailable_or_Restricted_Functions.htm">Unavailable or Restricted Functions</a>.</p>
+            </li>
+        </ul>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Bullet"><span style="font-weight: bold;">Analysis Log:</span> Each action performed within Universal Analysis is recorded in an analysis log for the currently open data record. When an analysis or report is saved in the database (<span style="font-style: italic;">e.g</span>., using the Save Analysis or Export PDF File functions), the associated analysis log is stored in the database along with the new record.</p>
+            </li>
+        </ul>
+        <h2 style="margin-left: 18.00pt;"><a name="Integrity_Viewing_the_Saved_Analysis_Log" id="Integrity_Viewing_the_Saved_Analysis_Log"></a><span style="color: teal;">Viewing the Saved Analysis Log</span>
+        </h2>
+        <p style="margin-left: 18.00pt;">To view the analysis log for a <span style="font-style: italic;">saved analysis</span> open the saved analysis record in Universal Analysis and select <a href="Menu_view_analysis_log.htm">View/Analysis Log</a>. The window shown to the right is displayed in the Report Editor.</p>
+        <h2 style="margin-left: 18.00pt;"><a name="Integirty_Viewing_the_Analysis_Log_for_Reports" id="Integirty_Viewing_the_Analysis_Log_for_Reports"></a><span style="color: teal;">Viewing the Analysis Log for Reports</span>
+        </h2>
+        <p class="Bullet">The analysis log for <span style="font-style: italic;">reports</span> is viewed directly through the Database Viewer (File/Open). Select the desired record in the viewer and click on the More Information button on the tool bar. If available, the analysis log will be displayed in the right pane of the Database Viewer.</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Bullet"><span style="font-weight: bold;">Saving Results:</span> To save the analysis performed on an original (raw) data file, you can select the File/Save Analysis and/or File/Export PDF File functions.<br /><br /></p>
+                <ul style="font-family: Arial;">
+                    <li value="1"><a href="Menu_file_save_analysis.htm">Save Analysis Only</a> saves the analysis results generated thus far for the current data record.</li>
+                    <li value="2"><a href="Menu_file_save_analysis.htm">Save Analysis and Data</a> saves the analysis results plus a complete copy of the original raw data.</li>
+                    <li value="3"><a href="Menu_file_export_PDF_File.htm">Export PDF File</a> saves a copy of the analyzed graph in Portable Document Format.</li>
+                </ul>
+            </li>
+        </ul>
+        <p class="Bullet">In each case a new database record is created. Records generated from the raw (original) data are saved in the database under the date of the original data record. An analysis log, detailing the functions performed, is stored with the saved record. Integrity database records are protected from modification or deletion.</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Bullet"><span style="font-weight: bold;">Macro (mac), Initialization (ini), and Custom Report Template (uat) Files:</span> These files are not saved in the database. Changes to these files are not audited by the system. The files are saved at the file location specified by the operator. However, file open and file save functions for these files are recorded in the audit trail, and in the analysis log for the currently open database record.</p>
+            </li>
+        </ul>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Data Analysis Functions|Transformations" MadCap:browseSequencePath="Transformations" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="RA_DataAnal.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Principle of the Cox-Merz Rule</title>
+        <meta name="copyright" value="All information copyright © 1998-2003 TA Instruments" />
+        <link rel="StyleSheet" href="..\TAHtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../RAGlossary/ehlpdhtm.js">
+        </script>
+        <h1 style="margin-left: 5.65pt;"><a name="kanchor295"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Principle of the Cox-Merz Rule</h1>
+        <ul>
+            <li class="Bullet" value="1"><a href="#Introducing_the_Cox_Merz_Rule">Introducing 
+ the Cox-Merz Rule</a>
+            </li>
+            <li class="Bullet" value="2"><a href="#CM_Use">Use 
+ of the rule</a>
+            </li>
+            <li class="Bullet" value="3"><a href="#CM_Appl">Applicability 
+ of the rule</a>
+            </li>
+            <li class="Bullet" value="4"><a href="#CM_Theoretical">Theoretical 
+ basis</a>
+            </li>
+            <li class="Bullet" value="5"><a href="#CM_Rule" name="kanchor296">The 
+ rule of Al-Hadithi, Barnes and Walters</a>
+            </li>
+        </ul>
+        <h3 style="text-align: center;" align="center">
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+            <img src="../image/OCEAN_BULLET_SM.GIF" style="border: none;width: 11px;height: 11px;float: none;border-style: none;border-style: none;" width="11" height="11" border="0" />
+        </h3>
+        <h3><a name="Introducing_the_Cox_Merz_Rule"></a>Introducing the Cox-Merz 
+ Rule</h3>
+        <p>The so-called Cox-Merz "rule" is an empirical relationship 
+ that has been found to be of great use in rheology. It was observed by 
+ <span class="MCExpanding"><a href="javascript:void(0);" class="MCExpandingHead_expandspot_0" onclick="FMCExpand( this ); return false;">Cox and Merz<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Collapsed" MadCap:alt2="Expanded" class="MCExpandingIcon" /></a><span class="MCExpandingBody_expandtext_0" style="display: none;">
+
+[ W.P. Cox and E.H. Merz, <span style="font-style: italic;">Journal of Polymer Scienc</span>e, 28, 619 
+ (1958).]
+
+</span></span><a name="kanchor299"></a> 
+ that for many polymeric systems, correspondence occurred between the steady 
+ state shear viscosity (plotted against shear rate), and the magnitude 
+ of the complex viscosity (plotted against angular frequency). The complex 
+ viscosity is defined by:</p>
+        <p>
+            <img src="../image/ebx_-1235303115_125x32.gif" alt="image\ebx_-1235303115.gif" style="border-style: none;float: none;width: 125;height: 32;" border="0" />&#160;where G* is the complex modulus. So |<span style="font-family: Symbol;">h</span>*| = |G*| / <span style="font-family: Symbol;">w</span></p>
+        <p>&#160;</p>
+        <p><a name="kanchor300"></a>The following graph shows the procedure for a poly (vinyl alcohol) solution:</p>
+        <p>
+            <img src="../image/CoxMerz_1.gif" alt="image\CoxMerz_1.gif" style="width: 374px;height: 258px;border-style: none;border-style: none;" width="374" height="258" border="0" />
+        </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="CM_Use"></a>Use of the Rule</h3>
+        <p>It is important in the application of the rule to ensure that the appropriate 
+ values for viscosity, shear rate and |<span style="font-family: Symbol;">h</span>*(<span style="font-family: Symbol;">w</span>)| are used. For example, in both cases it is the 
+ "steady state" values that are required, i.e. any transient 
+ effects due to flow or oscillation start-up, inertia, or thixotropy must 
+ have fully decayed. Also important is that geometries are used for which 
+ the viscosity calculation is exact. This normally means cone and plate.</p>
+        <p>If applied correctly, the Cox-Merz rule can be of great value in polymer 
+ rheology, and there are several circumstances in which it might be used.</p>
+        <ol>
+            <li class="NumberedIndent" value="1">The principle 
+ use is probably to predict <span style="font-family: Symbol;">h</span> (<img src="../image/GammaDot.gif" alt="image\GammaDot.gif" style="width: 7px;height: 13px;border-style: none;border-style: none;" width="7" height="13" border="0" /><a name="kanchor301"></a><a name="kanchor302"></a>) from oscillatory measurements. For many polymeric systems 
+ the steady state viscosity is difficult to measure at high shear rates, 
+ because of sample fracture, secondary flows and so forth. Data obtained 
+ from oscillatory experiments are usually more reliable.</li>
+            <li class="NumberedIndent" value="2">The rule 
+ can also be used to predict |<span style="font-family: Symbol;">h</span>*(<span style="font-family: Symbol;">w</span>)| from steady state viscosity data, for example 
+ in circumstances in which the oscillatory operating mode is not available.</li>
+            <li class="NumberedIndent" value="3">The rule 
+ can also be used in an analytical sense. A good deal can be learned about 
+ the microstructure of materials from the degree to which they adhere to 
+ the rule.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="CM_Appl"></a>Applicability of the Rule</h3>
+        <p>The applicability of the Cox-Merz rule has been <span class="MCExpanding"><a href="javascript:void(0);" class="MCExpandingHead_expandspot_0" onclick="FMCExpand( this ); return false;">reviewed 
+ in detail<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Collapsed" MadCap:alt2="Expanded" class="MCExpandingIcon" /></a><span class="MCExpandingBody_expandtext_0" style="display: none;">
+
+[T.S.R Al-Hadithi, H.A. Barnes 
+ and K.Walters, <span style="font-style: italic;">Colloid and Polymer Scienc</span>e, 
+ 270, 40 (1992).]
+
+</span></span>. 
+ It has been found to hold for almost all polymer melts, and concentrated 
+ and semi-dilute solutions. Deviations from the rule occur at high frequencies, 
+ and the oscillatory data can either over- or under estimate the steady 
+ state data. Instances of polymeric systems for which it has been found 
+ not to apply are Boger fluids and certain other dilute solutions, and 
+ cross-linked or gelled systems. The rule also fails for most particulate 
+ dispersions.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="CM_Theoretical"></a>Theoretical Basis</h3>
+        <p>Until very recently it could confidently be stated that no sound theoretical 
+ basis for the Cox-Merz rule had yet been provided, and indeed some workers 
+ felt that the correspondence was merely fortuitous. Recently, however, 
+ several, admittedly partial, <span class="MCExpanding"><a href="javascript:void(0);" class="MCExpandingHead_expandspot_0" onclick="FMCExpand( this ); return false;">justifications have been offered<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Collapsed" MadCap:alt2="Expanded" class="MCExpandingIcon" /></a><span class="MCExpandingBody_expandtext_0" style="display: none;">
+
+[(1) S. Milner, Journal of Rheology, 40, 303 (1996).] &#160;[(2) 
+ G. Marrucci and G. Ianniruberto, Proceedings of the Royal Society - Unilever 
+ - Indo/UK Forum on the Dynamics of Complex Fluids, Cambridge, UK, June 
+ 1996.]
+
+</span></span>.</p>
+        <p><a name="kanchor303"></a>A starting point is a requirement of continuum mechanics that the dynamic 
+ viscosity and the steady state viscosity are related in the low frequency 
+ and shear rate limits, <span style="font-style: italic;">i.e</span>.:</p>
+        <p>
+            <img src="../image/CoxMerz_2.gif" alt="image\CoxMerz_2.gif" style="width: 204px;height: 35px;border-style: none;border-style: none;" width="204" height="35" border="0" />
+        </p>
+        <p>where <span style="font-family: Symbol;">h</span>’(<span style="font-family: Symbol;">w</span>) = G"(<span style="font-family: Symbol;">w</span>) / <span style="font-family: Symbol;">w</span>. In the limit 
+ the two experimental modes are effectively identical. This equality can 
+ be used as a check on the reliability of oscillatory and steady state 
+ data.</p>
+        <p>The elastic contribution to <span style="font-family: Symbol;">h</span><span style="font-family: Symbol;">¢</span>(<span style="font-family: Symbol;">w</span>) disappears in the 
+ low frequency limit, and the above equation can be rewritten as:</p>
+        <p>
+            <img src="../image/CoxMerz_4.gif" alt="image\CoxMerz_4.gif" style="width: 209px;height: 40px;border-style: none;border-style: none;" width="209" height="40" border="0" />
+        </p>
+        <p>This sets a limiting condition for the rule. <span class="MCExpanding"><a href="javascript:void(0);" class="MCExpandingHead_expandspot_0" onclick="FMCExpand( this ); return false;">Milner<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Collapsed" MadCap:alt2="Expanded" class="MCExpandingIcon" /></a><span class="MCExpandingBody_expandtext_0" style="display: none;">
+
+[S. Milner, Journal of Rheology, 40, 303 (1996).]
+
+</span></span><a name="kanchor304"></a><a name="kanchor305"></a> 
+ has used the Doi-Edwards reptation model to provide a theoretical basis 
+ for the rule, but his analysis is partly heuristic, and applies only to 
+ polymers with a broad distribution of molecular weights.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="CM_Rule"></a>The Rule of Al-Hadithi, Barnes and Walters</h3>
+        <p>The usefulness of the Cox-Merz rule has led <span class="MCExpanding"><a href="javascript:void(0);" class="MCExpandingHead_expandspot_0" onclick="FMCExpand( this ); return false;">other authors<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Collapsed" MadCap:alt2="Expanded" class="MCExpandingIcon" /></a><span class="MCExpandingBody_expandtext_0" style="display: none;">
+
+[(1) T.S.R Al-Hadithi, H.A. Barnes and K.Walters, Colloid and Polymer 
+ Science, 270, 40 (1992).] &#160;[(2) 
+ H.M. Laun, Journal of Rheology, 30, 459 (1986).]
+
+</span></span> 
+ to seek similar correspondences between other rheological functions. These 
+ include the relationship proposed by Al-Hadithi, Barnes and Walters, who 
+ were concerned with the prediction of the first normal stress difference, 
+ N<span style="vertical-align: Sub;">1</span>, from oscillatory data. A 
+ second requirement of continuum mechanics is given by:</p>
+        <p>
+            <img src="../image/CoxMerz_6.gif" alt="image\CoxMerz_6.gif" style="width: 255px;height: 98px;border-style: none;border-style: none;" width="255" height="98" border="0" />
+        </p>
+        <p><span style="color: #000000;"><a name="kanchor306"></a>Taking this and the previous equations as starting 
+ points, and after what they described as much trial and error, the authors 
+ arrived at</span><span style="color: #000000;">  <![CDATA[ ]]></span><span style="color: #000000;">the expression:</span>
+        </p>
+        <p>
+            <img src="../image/CoxMerz_7.gif" alt="image\CoxMerz_7.gif" style="width: 253px;height: 92px;border-style: none;border-style: none;" width="253" height="92" border="0" />
+        </p>
+        <p>where <span style="font-family: Symbol;">h</span><span style="font-size: 6pt;"><span style="font-family: Symbol;">0</span></span><span style="font-size: 6pt;">  <![CDATA[ ]]></span>is 
+ the low shear rate limiting viscosity. It is proposed that a plot of <span style="font-size: 11pt;">G</span><span style="vertical-align: Sub;">c</span><span style="font-size: 6pt;">  <![CDATA[ ]]></span>against <span style="font-family: Symbol;">w</span> will 
+ coincide with that of N<span style="vertical-align: Sub;">1</span><span style="font-size: 6pt;">  <![CDATA[ ]]></span>/ 2<span style="font-size: 6pt;">  <![CDATA[ ]]></span>against 
+ <img src="../image/GammaDot.gif" alt="image\GammaDot.gif" style="width: 7px;height: 13px;border-style: none;border-style: none;" width="7" height="13" border="0" /> when plotted on the same axes. Equally <span style="font-size: 11pt;">G</span><span style="vertical-align: Sub;">c</span><span style="font-size: 6pt;">  <![CDATA[ ]]></span>against 
+ <span style="font-family: Symbol;"><span style="font-size: 11pt;">w</span></span><span style="vertical-align: Super;">2</span><span style="font-size: 6pt;">  <![CDATA[ ]]></span>should coincide with N<span style="vertical-align: Sub;">1</span><span style="font-size: 6pt;">  <![CDATA[ ]]></span>/2 plotted against <img src="../image/GammaDot.gif" alt="image\GammaDot.gif" style="width: 7px;height: 13px;border-style: none;border-style: none;" width="7" height="13" border="0" /> The following 
+ graph shows the procedure for the poly (dimethyl siloxane) solution.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p class="Topic-Text-Indent" style="margin-left: 36.00pt;">
+            <img src="../image/CoxMerz_5.gif" alt="image\CoxMerz_5.gif" style="width: 400px;height: 254px;border-style: none;border-style: none;" width="400" height="254" border="0" />
+        </p>
+        <p>The authors suggest that their expression should be applicable to at 
+ least those systems for which the Cox-Merz rule holds, and provide example 
+ of polymeric systems for which this is the case. It is an acknowledged 
+ weakness that a value for <span style="font-size: 11pt;font-family: Symbol;">h<span style="vertical-align: Sub;font-size: 10pt;">0</span></span><span style="font-size: 6pt;">&#160;</span>has 
+ to be inserted, or at least determined parametrically. In the case above, 
+ this was arrived at by fitting a <a href="MODEL_Williamson.htm">Williamson 
+ model</a> to the oscillatory data shown in the first graph.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="margin-left: 5.65pt;margin-right: 31.20pt;">&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

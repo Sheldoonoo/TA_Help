@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="HiResolution;Inc;HiRes;PDF;Ctrl;Tzero;Uncheck;Cal;PDSC;Y;X-Y;min;www.astm.org;MFC;seq;GPIB;IP;Q;CHROMEL;C;Platinel;Englehard;E-curve;NBS;ALUMEL;T-axis;Hoskins;Dq;CHROMEL-constantan;SFI;alodined;¼-turn;preforming;subambient;NTFS;field(s;FACS;uncheck;System--RCS;TMA;DSCs;DPC;Autofill;Calibration*;RT;DFA;prc;tzr;remapped;psi*;none**;RelatedTopicsButton;Isotrack;kPa;atm;Alodined;mode(s" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Using the Procedure Templates" MadCap:browseSequencePath="Using the Procedure Templates" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Setting Up a DSC Isothermal Procedure</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../ques_blue.jpg" style="border: none;width: 35px;height: 37px;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a><a name="kanchor342"></a>Setting Up a DSC Isothermal Procedure</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor343"></a>DSC isothermal experiments provide an indication of a material's stability 
+ at an elevated temperature. &#160;The 
+ purge gas, which surrounds the material, remains constant or is switched 
+ at the elevated temperature to generate a sample-atmosphere interaction 
+ (<span style="font-style: italic;">e.g</span>., oxidative stability).</p>
+        <p>If you want to set up a DSC isothermal &#160;procedure, 
+ you can choose one of two techniques—the <a href="#Using%20The%20DSC%20Wizard">DSC 
+ Wizard</a> or the <a href="#Using%20the%20experiment%20view%20procedure%20page">Experimental 
+ View - Procedure Page</a>. See the instructions below for each technique.</p>
+        <ul>
+            <li value="1"><span style="color: #00509f;font-weight: bold;">Isothermal 
+ (Start) Temperature:</span> &#160;The 
+ acceptable range for the equilibration temperature in an isothermal experiment 
+ is cooler dependent. Hypothetically only isothermal temperatures within 
+ the operating range of the selected cooler can be used (<span style="font-style: italic;">e.g</span>., 
+ –90 
+ to 550°C for the RCS). However, prolonged experiments near the upper temperature 
+ limit for a specific cooler could affect the lifetime of the unit. Therefore, 
+ use of the Finned Air Cooling System (FACS) is recommended for isothermal 
+ work above 350°C. In addition, isothermal evaluations above 600°C should 
+ be performed with an inert purge gas. Standard test methods exist where 
+ the equilibration temperature is specified. &#160;For 
+ example, polyolefin oxidative stability analysis studies are specified 
+ at 200°C based on ASTM Method D3895-80.</li>
+        </ul>
+        <p class="Cautions">CAUTION: &#160;We 
+ recommend that you do not use the RCS when running isothermal experiments 
+ above 400°C. &#160;Damage 
+ to the unit can occur if used at high temperatures for extended periods.</p>
+        <ul>
+            <li value="1"><span style="color: #00509f;font-weight: bold;">Switch 
+ to Gas 2 (requires a Mass Flow Controller):</span> &#160;The 
+ option of switching gas after achieving the equilibration temperature 
+ provides the ability to measure material characteristics that are based 
+ on not only temperature, but also on the atmosphere around the material 
+ (<span style="font-style: italic;">e.g</span>., stability in oxygen [resistance 
+ to oxidative degradation]).<br /><br /></li>
+            <li value="2"><span style="color: #00509f;font-weight: bold;">Isothermal 
+ Time: </span>&#160;The 
+ isothermal time should be set to a value that is greater than required 
+ to measure the event of interest. &#160;If 
+ the time required is unknown, a large value should be entered. &#160;<br /><br /></li>
+            <li value="3"><span style="color: #00509f;font-weight: bold;">End 
+ Experiment When:</span> &#160;No 
+ analysis time will be wasted provided a proper "End Experiment" 
+ condition is set. DSC isothermal experiments are usually stopped based 
+ on detecting heat flows (mW/minute) greater than a "threshold" 
+ value. &#160;This 
+ threshold should be large enough to ensure that a real event is occurring 
+ and that the extrapolated onset can be determined. &#160;0.5 
+ mW/minute is a good initial choice. Check the End Experiment When box 
+ and select the desired setting to use this option.<br /><br /></li>
+            <li value="4"><span style="color: #00509f;font-weight: bold;">Additional 
+ Conditions:</span> There are additional experimental conditions that can 
+ be changed to optimize specific situations. These are accessed using <a href="Advanced_Parameters_Window.htm">Advanced Parameters</a> and <a href="Post_Test_Window.htm">Post-Test 
+ Conditions</a>. For most experiments, the system default values shown 
+ are recommended. </li>
+        </ul>
+        <h3><a name="Using The DSC Wizard"></a>Using the DSC Wizard <img src="../QDSC Images/Button_Wizard_32x32.gif" style="border: none;float: none;border-style: none;width: 32;height: 32;" border="0" />:</h3>
+        <p>Enter the desired parameters, then select <span style="color: #00509f;font-weight: bold;">Next</span> 
+ to proceed.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Using the experiment view procedure page"></a>Using the Experimental 
+ View <img src="../QDSC Images/Button_Experiment_View_32x32.gif" style="border: none;float: none;border-style: none;width: 32;height: 32;" border="0" /> Procedure Page:</h3>
+        <ol>
+            <li class="NumberedIndent" value="1">Display the 
+ <span style="font-weight: bold;color: #00509f;">Procedure Page</span>. 
+ Select the desired experiment from the list of available preprogrammed 
+ templates.</li>
+            <li class="NumberedIndent" value="2">Enter the 
+ desired parameters. When you have finished setting up this procedure, 
+ you can enter more information by selecting the <a href="Experimental_View_Pane_Notes_Page.htm">Notes 
+ Page</a> and <a href="Experimental_View_Pane_Summary_Page.htm">Summary Page</a> 
+ for this run.</li>
+            <li class="NumberedIndent" value="3">Click the 
+ <span style="font-weight: bold;color: #00509f;">Apply</span> button when 
+ finished to save these changes or the <span style="font-weight: bold;color: #00509f;">Append</span> 
+ &#160;button 
+ to save the changes to this run and add another run to the end of the 
+ sequence.</li>
+        </ol>
+        <p class="Notes">NOTE: You can use any test template as the basis for a custom 
+ test by selecting the desired test template from the list of tests, then 
+ click the <span style="font-weight: bold;color: #00509f;">Apply</span> 
+ button and change the test to Custom. Then you can click on the<span style="font-weight: bold;color: #00509f;"> 
+ Procedure Page</span> and then the <span style="font-weight: bold;color: #00509f;">Editor</span> 
+ button to make the changes desired.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="About Modulated DSC|About_Modulated_DSC.htm||Available DSC Test Templates|Available_DSC_Test_Templates.htm||Creating Custom Methods|Creating_Custom_Methods.htm||File Naming|File_Naming.htm||Loading/Unloading a Sample|Loading_Unloading_a_Sample.htm||Preparing DSC Samples|Preparing_DSC_Samples.htm||Specifying a Test Procedure|Specifying_a_Test_Procedure.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

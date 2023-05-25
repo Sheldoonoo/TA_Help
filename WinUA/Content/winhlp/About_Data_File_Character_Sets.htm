@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Graph Options" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>About Data File Character Sets</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>About Data File Character Sets</h1>
+        <p>A character set is a group of symbols and printing controls that are represented by numeric codes. This is distinguished from a font, which is the graphic rendering of the symbols in a character set.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Universal Analysis can handle the OEM (PC-8) character set, the Windows (ANSI) character set, and the Unicode (UTF-16) character set in data files. The OEM (PC-8) character set originated with the Disk Operating System (DOS) and the first personal computers. The OEM character set contains the original 128 ASCII characters plus an additional 128 special symbols (including the degrees symbol, the micro symbol, etc). The Windows character set was developed by Microsoft® for use with their Windows operating system. The Windows character set also contains the original 128 ASCII characters, but a different set of 128 special symbols is used. The Unicode character set was originally developed by Xerox® and Apple Computer®, and finalized by the Unicode Consortium, a group of leading manufacturers in the computer industry. The Unicode character set uses 16-bit characters, providing more than 65,000 characters that encompase all of the worlds significant written languages. The first 256 characters of the Unicode character set are the same as the characters in the Windows character set.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>A one-to-one mapping between each of these character sets is not possible because some of the characters appear in one set, but not in the other. Many of the special symbols that are used in data files appear in all three character sets, but are represented by different character codes in each set. Universal Analysis recognizes the character set used in each data file so that proper character translation can be accomplished.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The determination of the character set that is used in a particular data file is controlled by the "Version" parameter in the parameter block of the data file, and by the presence or absence of the Unicode little-endian signature character (FEFF hex) at the beginning of the data file. A file version number less than 1.0 indicates that the data file contains OEM characters. Data files with version 1.0 to 1.9 contain Windows characters. Data files with version 2.0 or greater contain Unicode characters.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The OEM character set is used in all TA Instruments data files created by the RMX and OS/2 operating systems, and in all data files created by the Windows operating system prior to the Q-Series controllers. Very early versions of the Q-Series software generate OEM character set data files, but later versions generate either Windows or Unicode character set files, permitting the full set of Windows or Unicode characters to be entered and displayed.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Universal Analysis does not support multibyte characters sets.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <h2 style="border-bottom: 1.50pt solid teal;"><span style="color: teal;">Changing Character Sets</span>
+        </h2>
+        <p>The <a href="Menu_file_edit_param_block.htm">Edit Param Block</a> function and the <a href="Menu_file_export_data_file.htm">Export Data File</a> function can both be used to change the character set of a data file. When using the Edit Param Block function, the file Version parameter should be edited to a value of "0.4" for OEM files, "1.0" for Windows files, and "2.0" for Unicode files. When using the Export Data File function, the character set type is selected explicitly in the Export Data File dialog. In either case, Universal Analysis will output the correct character set and version number in the parameter block of the new file.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

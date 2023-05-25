@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Theory, Equations, and Charts" MadCap:browseSequencePath="Theory, Equations, and Charts" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="RA_InstCon.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Flow Inertia Correction</title>
+        <meta name="copyright" value="All information copyright © 1998-2003 TA Instruments" />
+        <link rel="StyleSheet" href="TAHtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../RAGlossary/ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor286"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../QUES_BLUE.JPG" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Flow Inertia Correction</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor287"></a><a name="kanchor288"></a>When a stress is applied to a sample it will move and continue to move 
+ while that stress is applied. If the stress is subsequently removed, the 
+ sample will stop moving, but not instantaneously. It requires a finite 
+ time to respond to this change in stress. This lag time is due to inertial 
+ effects and its magnitude is entirely sample dependent. </p>
+        <p><a name="kanchor289"></a><a name="kanchor290"></a><a name="kanchor291"></a>In flow experiments, the affect of inertia is more pronounced when you 
+ use low viscosity fluids. Inertial effects in flow experiments appear 
+ as apparent thixotropic loops when a standard UP and DOWN flow curve is 
+ carried out. Consider the graph shown below.</p>
+        <p>
+            <img src="../image/FlowCurve2.gif" alt="Flow Curve" style="border-left-style: Solid;border-left-width: 2px;border-right-style: Solid;border-right-width: 2px;border-top-style: Solid;border-top-width: 2px;border-bottom-style: Solid;border-bottom-width: 2px;border-left-color: #808080;border-right-color: #808080;border-top-color: #808080;border-bottom-color: #808080;width: 242px;height: 164px;float: none;" width="242" height="164" border="2" />
+        </p>
+        <p style="font-weight: bold;">Flow Curve without Inertia Correction</p>
+        <p><a name="kanchor292"></a>This graph could be interpreted as a flow curve on a thixotropic sample, 
+ highlighted by the presence of the hysteresis loop. However the fact that 
+ the UP curve (A) is parallel to the DOWN curve (B) alerts us to the fact 
+ that this apparent thixotropy is actually an inertial artefact. The inertia 
+ correction available in the software eradicates such artefacts.</p>
+        <p><a name="kanchor293"></a>The same sample as above but measured with the inertia correction ON 
+ would yield the results shown below. </p>
+        <p>
+            <img src="../image/inert.gif" alt="image\inert.gif" style="width: 260px;height: 170px;border-left-style: Solid;border-left-width: 2px;border-right-style: Solid;border-right-width: 2px;border-top-style: Solid;border-top-width: 2px;border-bottom-style: Solid;border-bottom-width: 2px;border-left-color: #808080;border-right-color: #808080;border-top-color: #808080;border-bottom-color: #808080;float: none;" width="260" height="170" border="2" />
+        </p>
+        <p><a name="kanchor294"></a>This now shows a Newtonian response which is as expected. This inertia 
+ correction only needs to be active when low viscosity materials are being 
+ measured.</p>
+        <h3><a name="Performing_the_Inertia_Correction"></a>Performing the Inertia 
+ Correction</h3>
+        <p><a name="kanchor295"></a>The inertia correction is used automatically when carrying out oscillation 
+ tests. To use inertia correction in Flow mode:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Select <span style="font-weight: bold;color: #00509f;"><a name="kanchor296"></a>Options</span><a name="kanchor297"></a> from the menu.</li>
+            <li class="NumberedIndent" value="2">Click on 
+ <span style="font-weight: bold;color: #00509f;">Experiment</span>.</li>
+            <li class="NumberedIndent" value="3">Select the 
+ <span style="font-weight: bold;color: #00509f;">Flow</span><span style="font-weight: bold;"> </span>tab.</li>
+            <li style="font-style: italic;" class="NumberedIndent" value="4"><span style="font-style: italic;"><a name="kanchor298"></a><a name="kanchor299"></a>Ensure 
+ that both the Instrument and Geometry inertia have been calibrated.</span>
+            </li>
+            <li class="NumberedIndent" value="5">Ensure that 
+ the <span style="font-weight: bold;color: #00509f;">Inertia Correction</span><span style="font-weight: bold;"> </span>option is selected.</li>
+            <li class="NumberedIndent" value="6">Press the 
+ <span style="font-weight: bold;color: #00509f;">OK</span> button.</li>
+        </ol>
+        <p style="color: #00509f;font-weight: bold;"><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Calibrating Inertia|Calibrating_Inertia.htm||Inertia factor|Inertia_factor.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p class="Tip-Note-Text">&#160;</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Tip-Note-Text" style="margin-left: 15.05pt;margin-top: 6.00pt;">&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

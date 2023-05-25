@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="General Instrument Messages" MadCap:browseSequencePath="General Instrument Messages" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="QInstErr.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Message 66</title>
+        <link rel="StyleSheet" href="HtmlHelpSWErr.css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor18"></a>Message 66 </h1>
+        <h4><a name="kanchor19"></a>Instrument temperature limits exceeded. Run terminated. </h4>
+        <p style="font-weight: bold;">Problem: </p>
+        <p>One of the thermocouples in the instrument is indicating a temperature 
+ that is outside the instrument's operating limit. </p>
+        <p>The following signals are checked for each instrument:</p>
+        <ul>
+            <li class="Bullet" value="1">DSC: &#160;Tzero 
+ temperature °C, heater temperature °C, flange temperature °C, heater temperature 
+ mV, Tzero mV</li>
+            <li class="Bullet" value="2">DMA: &#160;Sample 
+ temperature °C</li>
+            <li class="Bullet" value="3">SDT: &#160;Sample 
+ and heater temperature °C</li>
+            <li class="Bullet" value="4">TGA: &#160;Sample 
+ and heater temperature °C</li>
+            <li class="Bullet" value="5">TMA: &#160;Sample 
+ and heater temperature. °C</li>
+        </ul>
+        <p style="font-weight: bold;">Solution: </p>
+        <p style="font-weight: bold;"><span style="font-weight: normal;">Try one 
+ or more of the following:</span>
+        </p>
+        <ol>
+            <li class="NumberedIndent" value="1">Try running 
+ the sample in an inert atmosphere and/or to a lower temperature. If the 
+ sample starts to burn during an experiment, it can raise the temperature 
+ beyond the limit.</li>
+            <li class="NumberedIndent" value="2"><span style="font-style: italic;">DSC</span>: 
+ Turn the RCS or LNCS on at least 20 minutes prior to starting the run.</li>
+            <li class="NumberedIndent" value="3">Check the 
+ thermocouples to make sure they are clean and that they are showing reasonable 
+ values on the RealTime Signal Display screen.</li>
+            <li class="NumberedIndent" value="4">Reset the 
+ saved instrument parameters.</li>
+        </ol>
+        <p>Call TA Instruments for service, if the problem persists. </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

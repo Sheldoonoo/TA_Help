@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Macro Assign Clipboard Window</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../WinUAmac.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor279"></a>Macro Assign Clipboard Window</h1>
+        <p>The Assign Clipboard window is used to insert a macro step that will copy the current value of a macro variable and/or a text string to the clipboard. This is useful for building custom annotations and tables that are placed on a plot or added to a report.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ol style="font-family: Arial;font-size: 10pt;">
+            <li style="margin-top: 8px;" value="1">Select (highlight) the desired position (step number) for the macro step insertion.</li>
+            <li style="margin-top: 8px;" value="2">Select Insert/<a href="Macro_Editor_Insert_menu_assign_clipboard.htm">Assign Clipboard</a> from the Macro Editor menu. The Assign Clipboard window is displayed.</li>
+        </ol>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>To use this window:</p>
+        <ol MadCap:continue="true" style="font-family: Arial;font-size: 10pt;">
+            <li style="margin-top: 8px;" value="3">Enter a <span style="color: teal;font-weight: bold;">Variable</span> name, if desired. A macro variable name may consist of up to 30 characters. The first character must be alphabetic. The remaining characters may be alphabetic, digits, or the underline (underbar) character. Imbedded spaces are not permitted in macro variable names. A macro variable array element is specified by following the variable name with an array index enclosed in square brackets ("[&lt;index&gt;]"). The array index may be an integer constant or a simple variable name (no index).</li>
+            <li style="margin-top: 8px;" value="4">Enter the number of <span style="color: teal;font-weight: bold;">Significant figures</span> for the copied value.</li>
+            <li style="margin-top: 8px;" value="5">Check the <span style="color: teal;font-weight: bold;">Round to integer</span> box, if you want to round the value to the nearest integer. </li>
+            <li style="margin-top: 8px;" value="6">Enter a <span style="color: teal;font-weight: bold;">Text</span> string of up to 30 characters, which will be appended to the end of the value when it is copied. If no variable name is specified, then only the text string is copied.</li>
+        </ol>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Body_Text" style="color: #0000ff;">NOTE: Special characters such as trailing spaces can be included in the text portion of a macro step, if the entire text string is enclosed in single quotes (apostrophes). Two sequential apostrophes in a quoted string denote a single character, namely an apostrophe.</p>
+        <p class="Body_Text" style="color: #0000ff;"><span style="text-decoration: underline;">For example</span>:</p>
+        <p style="margin-bottom: 0.00pt;text-indent: 36.00pt;"><span style="font-family: 'Helvetica';font-size: 12pt;">'</span><span style="color: blue;">Quoted text string.</span><span style="font-family: 'Helvetica';font-size: 12pt;">'&#160;</span><span style="color: blue;">{"Quoted text string."}</span>
+        </p>
+        <p style="margin-bottom: 0.00pt;text-indent: 36.00pt;"><span style="font-family: 'Helvetica';font-size: 12pt;">'</span><span style="color: blue;">A variable</span><span style="font-family: 'Helvetica';font-size: 12pt;color: black;">''</span><span style="color: blue;">s units.</span><span style="font-family: 'Helvetica';font-size: 12pt;">'</span><span style="color: blue;">&#160;{"A variable</span><span style="font-family: 'Helvetica';font-size: 12pt;color: black;">'</span><span style="color: blue;">s units."}</span>
+        </p>
+        <p style="margin-bottom: 0.00pt;text-indent: 36.00pt;"><span style="font-family: 'Helvetica';font-size: 12pt;">''''</span><span style="color: blue;">&#160;&#160;&#160;{single apostrophe}</span>
+        </p>
+        <p style="text-indent: 36.00pt;"><span style="font-family: 'Helvetica';font-size: 12pt;">''</span><span style="color: blue;">&#160;&#160;&#160;{null string}</span>
+        </p>
+        <p style="text-indent: 36.00pt;"><span style="font-family: 'Helvetica';font-size: 12pt;">'</span><span style="font-family: 'Helvetica';font-size: 12pt;">'</span><span style="color: blue;">&#160;&#160;&#160;{single space}</span>
+        </p>
+        <p style="text-indent: 36.00pt;"><span style="font-family: 'Helvetica';font-size: 12pt;">'</span><span style="color: blue;">Text</span><span style="font-family: 'Helvetica';font-size: 12pt;">'</span><span style="color: blue;">&#160;&#160;{"Text" followed by 4 spaces}</span>
+        </p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ol MadCap:continue="true" style="font-family: Arial;font-size: 10pt;">
+            <li style="margin-top: 8px;" value="7">Check the <span style="color: teal;font-weight: bold;">Line terminator</span> box, if you want to append an optional carriage return and line feed (&lt;crlf&gt;) line terminator to the copied text.</li>
+            <li style="margin-top: 8px;" value="8">Select <span style="color: teal;font-weight: bold;">Clear clipboard before assigning value</span> to replace any text currently on the clipboard with the entered text. Select <span style="color: teal;font-weight: bold;">Append value to existing clipboard text</span> to append the entered text to any text already on the clipboard.</li>
+            <li style="margin-top: 8px;" value="9">Click OK when finished. The step will be inserted at the selected position. <a href="Figure_Example_Macro.htm">Click here to see example macros that have an Assign Clipboard step inserted.</a></li>
+        </ol>
+        <p class="footnote_text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>See also:</p>
+        <p><a href="What_is_a_Macro_Variable_.htm">What is a Macro Variable?</a>
+        </p>
+        <p class="Normal_Indent"><a href="Win_Macro_Edit_Clipboard.htm">Macro Edit Clipboard Window</a>
+        </p>
+        <p><a href="Program_Variables.htm">Predefined Program Variables</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

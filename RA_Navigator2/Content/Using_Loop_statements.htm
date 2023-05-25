@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Getting Started|Using Constructs (Conditional Statements)" MadCap:browseSequencePath="Using Constructs (Conditional Statements)" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="RA_Navigator2.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Using Loop Statements</title>
+        <link rel="StyleSheet" href="TAHtmlHelp.css" />
+        <style>
+        </style>
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="ehlpdhtm.js">
+        </script>
+        <h1><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a><a name="kanchor28"></a>Using Loop Statements</h1>
+        <h3>Using Loops to Repeat Code</h3>
+        <p class="Indent">Looping allows you to run a group of statements repeatedly. 
+ Loops either repeat statements until a certain condition is met or repeat 
+ statements a specific number of times. The following looping statements 
+ are available in Navigator:</p>
+        <ul>
+            <li class="Bullet" value="1"><a href="Loop.htm" name="kanchor29">Loop...EndLoop</a> 
+ — See 
+ <a href="#Using_Loop___EndLoop">Using Loop...EndLoop</a></li>
+            <li class="Bullet" value="2"><a href="Do.htm" name="kanchor30">Do...While</a> 
+ — See 
+ <a href="#Repeating_Statements_While_a_Condition_is_True" name="kanchor32">Repeating 
+ Statements While a Condition is True</a></li>
+        </ul>
+        <h3><a name="Using_Loop___EndLoop"></a>Using Loop...EndLoop</h3>
+        <p class="Indent">You can use <span style="font-weight: bold;">Loop...EndLoop</span> 
+ statements to run a block of statements a specific number of times. This 
+ type of loops uses a counter whose value is incremented by one with each 
+ repetition of the loop.</p>
+        <p class="Indent">For example, the following script causes the rheometer 
+ to apply a sequence of shear stresses, starting at of 5 Pa and incrementing 
+ in steps of 3Pa, with a wait of 30 seconds on each step.</p>
+        <p class="CodeIndent">V0 =0<br />
+Loop 5<br />
+&#160; V0 = V0 + 3<br />
+&#160; SetStress (V0)<br />
+&#160; PauseFor (0:00:30)<br />
+EndLoop</p>
+        <p class="Indent">The Loop value can also be taken for a numeric variable 
+ and hence set at run time. The following code shows a modified version 
+ of the above script, that prompts the user for a value.</p>
+        <p class="CodeIndent">PromptVariable (V1, "How many steps?", 1, 
+ 1.0, 10.0)<br />
+V0 =0<br />
+Loop V1<br />
+&#160;V0 = V0 + 3<br />
+&#160; SetStress (V0)<br />
+&#160; PauseFor (0:00:30)<br />
+EndLoop</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p class="Indent">You can exit any <span style="font-weight: bold;">Loop...EndLoop</span> 
+ statement before the counter reaches its end value by using the <span style="font-weight: bold;"><a name="kanchor33"></a>Goto</span> statement. Because you usually 
+ want to exit only in certain situations, such as when an error occurs, 
+ you should use the <span style="font-weight: bold;">Goto</span> statement 
+ in the <span style="font-weight: bold;">True</span> statement block of 
+ an <span style="font-weight: bold;">If...Then...Else</span> statement. 
+ If the condition is <span style="font-weight: bold;">False</span>, the 
+ loop runs as usual. Taking our previous example, we can modify it such 
+ that the loop exits if the required stress value becomes larger than allowed.</p>
+        <p class="CodeIndent">PromptVariable (V1, "How many steps?", 1, 
+ 1.0, 10.0)<br />
+'Set V2 to the maximum shear stress allowed<br />
+v2=GetInstrumentMaximum (1)<br />
+V0 =0<br />
+Loop V1<br />
+&#160; V0 = V0 + 3<br />
+&#160; If V0 &gt; V2 then Goto EndIt<br />
+&#160; SetStress (V0)<br />
+&#160; PauseFor (0:00:30)<br />
+EndLoop<br />
+:EndIt<br />
+'Rest of code ...</p>
+        <p style="font-size: 8pt;"><span style="color: #000080;"><a href="#top" style="font-size: 8pt;">B</a></span><span style="font-size: 8pt;">ack to top</span>
+        </p>
+        <h3><a name="Repeating_Statements_While_a_Condition_is_True"></a>Repeating 
+ Statements While a Condition is True</h3>
+        <p class="Indent">Use the <span style="font-weight: bold;">While</span> keyword 
+ to check a condition in a <span style="font-weight: bold;">Do...While</span> 
+ statement. Navigator checks the condition after the loop has run at least 
+ once. </p>
+        <p class="CodeIndent">PromptVariable (V1, "How many steps?", 1, 
+ 1.0, 10.0)<span><span style="color: #000080;"><br />
+'Set V2 to the maximum shear stress allowed</span></span><br />
+v2=GetInstrumentMaximum (1)<br />
+V0 = 0<br />
+V3 =0<br />
+Do<br />
+&#160;SetStress (V0)<br />
+&#160;PauseFor (0:00:30)<br />
+&#160;V0 = V0 + 3<br />
+&#160;V3 = V3 + 1<br />
+While ((V0 &lt; V2) OR (V3 &lt; V1))<span><span style="color: #000080;"><br />
+'Rest of code...</span></span></p>
+        <h4>Exiting a Do...While Statement from Inside the Loop</h4>
+        <p class="Indent">You can exit a <span style="font-weight: bold;">Do...While</span> 
+ block by using the Goto statement as explained above.</p>
+        <p class="Indent" style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="margin-bottom: 0;">&#160; </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

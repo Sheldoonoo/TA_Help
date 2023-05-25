@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="Datafile;DFA;IP;Reselect" MadCap:tocPath="General Instrument Messages" MadCap:browseSequencePath="General Instrument Messages" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="QInstErr.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Message 679</title>
+        <link rel="StyleSheet" href="HtmlHelpSWErr.css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor57"></a>Message 679</h1>
+        <h4><a name="kanchor58"></a>Datafile acceptor not closing file.</h4>
+        <p style="font-weight: bold;"><span style="font-weight: bold;">Problem:</span>
+        </p>
+        <p>This error is generated because the Datafile Acceptor (DFA) is not communicating 
+ to send the data from the instrument to the controller. The data file 
+ was transferred to the destination, but it was unable to confirm the file 
+ disposition.</p>
+        <p style="font-weight: bold;">Solution:</p>
+        <p>DO NOT continue any other runs before transferring the current data 
+ or the run data will be lost. Try one or more of the following solutions 
+ to establish communications between the instrument and controller again. 
+ </p>
+        <ul>
+            <li class="Bullet" value="1">Check the cable connections.</li>
+            <li class="Bullet" value="2">Verify the IP address of 
+ the instrument to make sure it was not changed.</li>
+            <li class="Bullet" value="3">Reselect the filename using 
+ the browse button on <span style="font-weight: bold;color: #00509f;">Experimental 
+ View/Summary</span> page.</li>
+            <li class="Bullet" value="4">Verify that the destination 
+ drive is not full.</li>
+        </ul>
+        <p>After communication is established. Use the <span style="font-weight: bold;color: #00509f;">Tools/Data 
+ Transfer</span> function to transfer the data from the instrument to the 
+ controller.</p>
+        <p>If you cannot establish communication again, contact TA Instruments 
+ for help.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

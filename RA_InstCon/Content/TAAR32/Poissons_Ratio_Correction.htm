@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Tips &amp; Suggestions" MadCap:browseSequencePath="Tips &amp;&amp; Suggestions" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="RA_InstCon.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Poissons Ratio Correction</title>
+        <meta name="copyright" value="All information copyright © 1998-2003 TA Instruments" />
+        <link rel="StyleSheet" href="TAHtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../RAGlossary/ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor943"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../QUES_BLUE.JPG" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Poissons Ratio Correction</h1>
+        <p class="Block-Text"><a name="kanchor944"></a><a name="kanchor945"></a>The correction is implemented for samples up to 3 mm 
+ thick. The software interpolates for thicker samples.</p>
+        <p>To activate the correction, click on the <span style="font-weight: bold;color: #00509f;">Poissons 
+ Ratio</span><a name="kanchor946"></a> button. This will present you will a window with a check 
+ mark to enable the correction, and a series of materials with known values. 
+ You can also make additions to the list. </p>
+        <p>
+            <img src="../image/IMG00002.gif" alt="image\IMG00002.gif" style="width: 262px;height: 178px;border-style: none;border-style: none;" width="262" height="178" border="0" />
+        </p>
+        <p><a name="kanchor947"></a><a name="kanchor948"></a><a name="kanchor949"></a><a name="kanchor950"></a><a name="kanchor951"></a><a name="kanchor952"></a><a name="kanchor953"></a><a name="kanchor954"></a>The default condition is no correction (i.e., as per Rheology Advantage 
+ version 1.) It is possible to apply the correction after the event and 
+ to version 1 files. To do this load the files into the Data Analysis package, 
+ table the data, and then modify the geometry template.</p>
+        <p><a name="kanchor955"></a>The correction has the effect of making the modulus independent of length. 
+ Without the correction, it is recommended that the samples be 40 to 50 
+ mm in length. In the ABS example below you can see that the modulus without 
+ correction is sensitive to sample lengths below 40 mm. Applying the correction 
+ removes this dependence.</p>
+        <table style="width: 433px;margin-left: 34.50pt;border-spacing: 0px;border-left-style: Solid;border-left-width: 2px;border-right-style: Solid;border-right-width: 2px;border-top-style: Solid;border-top-width: 2px;border-bottom-style: Solid;border-bottom-width: 2px;border-left-color: #808080;border-right-color: #808080;border-top-color: #808080;border-bottom-color: #808080;border-spacing: 0px;" cellspacing="0" width="433">
+            <tr valign="top">
+                <td style="width: 102px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;border-left-color: #808080;border-left-width: 1px;border-left-style: Solid;border-top-color: #808080;border-top-width: 1px;border-top-style: Solid;" width="102px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center"><span style="font-weight: bold;"><a name="kanchor956"></a>Gap</span>
+                    </p>
+                </td>
+                <td style="width: 132px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;border-top-color: #808080;border-top-width: 1px;border-top-style: Solid;" width="132px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center"><span style="font-weight: bold;">No Correction</span>
+                    </p>
+                </td>
+                <td style="width: 198px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-top-color: #808080;border-top-width: 1px;border-top-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;" width="198px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center"><span style="font-weight: bold;">0.44 PR</span>
+                    </p>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td style="width: 102px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;border-left-color: #808080;border-left-width: 1px;border-left-style: Solid;" width="102px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">64835</p>
+                </td>
+                <td style="width: 132px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;" width="132px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">0.8056</p>
+                </td>
+                <td style="width: 198px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;" width="198px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">1.055</p>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td style="width: 102px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;border-left-color: #808080;border-left-width: 1px;border-left-style: Solid;" width="102px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">54577</p>
+                </td>
+                <td style="width: 132px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;" width="132px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">0.8153</p>
+                </td>
+                <td style="width: 198px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;" width="198px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">1.043</p>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td style="width: 102px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;border-left-color: #808080;border-left-width: 1px;border-left-style: Solid;" width="102px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">46626</p>
+                </td>
+                <td style="width: 132px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;" width="132px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">0.8201</p>
+                </td>
+                <td style="width: 198px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;" width="198px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">1.031</p>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td style="width: 102px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;border-left-color: #808080;border-left-width: 1px;border-left-style: Solid;" width="102px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">40067</p>
+                </td>
+                <td style="width: 132px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;" width="132px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">0.8531</p>
+                </td>
+                <td style="width: 198px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;" width="198px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">1.055</p>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td style="width: 102px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;border-left-color: #808080;border-left-width: 1px;border-left-style: Solid;" width="102px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">32578</p>
+                </td>
+                <td style="width: 132px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;" width="132px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">0.8723</p>
+                </td>
+                <td style="width: 198px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;" width="198px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">1.052</p>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td style="width: 102px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;border-left-color: #808080;border-left-width: 1px;border-left-style: Solid;" width="102px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">25453</p>
+                </td>
+                <td style="width: 132px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;" width="132px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">0.8919</p>
+                </td>
+                <td style="width: 198px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;" width="198px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">1.039</p>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td style="width: 102px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;border-left-color: #808080;border-left-width: 1px;border-left-style: Solid;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;" width="102px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">18410</p>
+                </td>
+                <td style="width: 132px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;" width="132px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">0.9765</p>
+                </td>
+                <td style="width: 198px;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Solid;border-right-color: #808080;border-right-width: 1px;border-right-style: Solid;" width="198px">
+                    <p style="margin-bottom: 0.00pt;text-align: center;" align="center">1.089</p>
+                </td>
+            </tr>
+        </table>
+        <p class="header">
+            <img src="../image/IMG00001.gif" alt="image\IMG00001.gif" style="width: 548px;height: 400px;border-style: none;border-style: none;" width="548" height="400" border="0" />
+        </p>
+        <p><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

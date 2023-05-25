@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Advantage Integrity Help Topics in UA" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Audit Trail</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Audit Trail</h1>
+        <p>The TA Instruments Integrity system provides secure, computer-generated, time-stamped audit trails to independently record events. Each record identifies the person, time/date, and a description of the event. Comments may be added, if desired, by the user.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The Audit Trail can be viewed from either the Advantage Instrument Control program or Universal Analysis program by selecting View/Audit Trail from the menu. This window can be used to view audit trail events and add comments to an audit trail. The events shown in this window can be sorted to enhance locating records using the <a href="Setting_the_Sort_Order_for_Tree_View.htm">Set Sort Order</a>, <img src="../Resources/Images/ButtonSetOrderTree.png" />, functions.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The recorded events for the Instrument Control program include:</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p style="margin-left: 6.00pt;">Logging in/logging out of the programs (including automatic logouts)</p>
+            </li>
+            <li style="font-size: 10pt;" value="2">
+                <p style="margin-left: 6.00pt;">All instrument messages</p>
+            </li>
+            <li style="font-size: 10pt;" value="3">
+                <p style="margin-left: 6.00pt;">Calibration changes</p>
+            </li>
+            <li style="font-size: 10pt;" value="4">
+                <p style="margin-left: 6.00pt;">Run start and completion events</p>
+            </li>
+            <li style="font-size: 10pt;" value="5">
+                <p style="margin-left: 6.00pt;">Autosampler pan load/unloads</p>
+            </li>
+            <li style="font-size: 10pt;" value="6">
+                <p style="margin-left: 6.00pt;">Modifications to the running experiment (<span style="font-style: italic;">e.g</span>., method or gas changes)</p>
+            </li>
+            <li style="font-size: 10pt;" value="7">
+                <p style="margin-left: 6.00pt;">Procedure, method or sequence file open and save</p>
+            </li>
+            <li style="font-size: 10pt;" value="8">
+                <p style="margin-left: 6.00pt;">Software version changes</p>
+            </li>
+        </ul>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Details of the experimental conditions (<span style="font-style: italic;">e.g</span>., method, calibration, and instrument parameters) are recorded in the parameter block of the saved data record. This information can be viewed in the Universal Analysis program by selecting <a href="Menu_view_parameter_block.htm">View/Parameter Block</a>.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The recorded events for the Universal Analysis program include:</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p style="margin-left: 6.00pt;">Logging in/logging out of the programs (including automatic logouts)</p>
+            </li>
+        </ul>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p style="margin-left: 6.00pt;">Data record open and exports (<span style="font-style: italic;">e.g</span>., printing, PDF generation)</p>
+            </li>
+            <li style="font-size: 10pt;" value="2">
+                <p style="margin-left: 6.00pt;">Saved analysis open and save</p>
+            </li>
+            <li style="font-size: 10pt;" value="3">
+                <p style="margin-left: 6.00pt;">Results and data report open and save</p>
+            </li>
+            <li style="font-size: 10pt;" value="4">
+                <p style="margin-left: 6.00pt;">PDF open and save</p>
+            </li>
+            <li style="font-size: 10pt;" value="5">
+                <p style="margin-left: 6.00pt;">Software version changes</p>
+            </li>
+        </ul>
+        <p style="margin-left: 18.00pt;">&#160;</p>
+        <p>Details of the analyses are recorded in the analysis log within the saved analysis, PDF, or BMP image generated from Universal Analysis. After opening a data record in Universal Analysis, all actions are recorded within the analysis log. Once your analysis is complete, you can save this record, along with the associated analysis log, back to the database by selecting <a href="Menu_file_save_analysis.htm">File/Save Analysis</a> and/or <a href="Menu_file_export_PDF_File.htm">File/Export PDF File</a>. If the data is not saved, the analysis log is not recorded. Saved analysis logs can be viewed through the Database Viewer window.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The recorded events for the TA System Manager program include:</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p style="margin-left: 6.00pt;">Log-ins/logouts to the programs (including automatic logouts)</p>
+            </li>
+            <li style="font-size: 10pt;" value="2">
+                <p style="margin-left: 6.00pt;">Creation and modification to User Accounts, Projects, System Objects, and Groups</p>
+            </li>
+            <li style="font-size: 10pt;" value="3">
+                <p style="margin-left: 6.00pt;">Modifications to system settings</p>
+            </li>
+            <li style="font-size: 10pt;" value="4">
+                <p style="margin-left: 6.00pt;">Archiving</p>
+            </li>
+        </ul>
+        <p />
+        <p>The audit trail for the TA System Manager is only accessed through the TA SystemManager by selecting System Settings, then selecting the System Log page. See the Advantage Integrity online help for further information.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>The analysis log for a saved analysis record can be viewed through Universal Analysis using the <a href="Menu_view_analysis_log.htm">View/Analysis Log</a> option after opening the saved record.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>See also:</p>
+        <p><a href="Menu_edit_audit_trail_comment.htm">Edit/Audit Trail Comment</a>
+        </p>
+        <p><a href="Menu_view_analysis_log.htm">Viewing the Analysis Log</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="prc;FACS;sinusoidally;MFC;HiResolution;Inc;HiRes;PDF;Ctrl;uncheck;AutoLid;Tzero;collet;CAL;XT;RT;OPTC;Uncheck;Cal;PDSC;Y;X-Y;min;www.astm.org;seq;GPIB;IP;Q;CHROMEL;C;cal;spline;Premelt;Ethernet;Platinel;Englehard;E-curve;NBS;ALUMEL;T-axis;Hoskins;Dq;CHROMEL-constantan;SFI;alodined;¼-turn;preforming;subambient;NTFS;field(s;System--RCS;TMA;DSCs;DPC;Ctrl+X;Ctrl+E;Ctrl+C;Ctrl+V;mth;DFA;Tools\Data;number};cooler};time};Rs;Rr;Cr;tzr;cooler}{date}{time}.tzr.;DH;premelt;Cp;Tools\User;Preferences\Status;Slo;Blo;pkg;o-ring;name}\Program;UNC;Autofill;Calibration*;PID;W" MadCap:conditions="Primary.QDSC" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Heater PID Method Segment</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h2><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" alt="Click" title="Click"><img src="../ques_blue.jpg" style="border: none;width: 35px;height: 37px;float: right;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a><a name="kanchor617"></a>Heater PID Method Segment</h2>
+        <p>The <span style="font-weight: bold;color: #00509f;">Heater PID</span> 
+ method segment is used to change the performance of the instrument furnace 
+ during the execution of a thermal method. PID stands for Proportional, 
+ Integral, and Derivative, the three modes of traditional temperature control. 
+ The Heater PID segment specifies the control coefficients for each mode 
+ of temperature control. </p>
+        <p>The instrument furnace is run by a control system that uses factory 
+ default PID coefficients. The default coefficients are automatically set 
+ and adjusted to give excellent furnace performance under various operating 
+ conditions. However, sometimes it may be useful to further optimize furnace 
+ performance for all or part of a specific method.</p>
+        <p>The Heater PID method segment provides the ability to change control 
+ coefficients while a thermal method is running. &#160;Every 
+ time the instrument is reset or a method ends, the three PID coefficients 
+ are reset to their factory default settings. When a Heater PID segment 
+ is encountered in a running method, the current PID furnace control coefficients 
+ are immediately replaced with new coefficients from the Heater PID method 
+ segment. The new coefficients are used to control the furnace for the 
+ remainder of the method, or until another Heater PID method segment is 
+ encountered.</p>
+        <p>Determining what PID coefficients to use requires some trial and error 
+ experimentation on the part of the user. A general description of each 
+ control mode and advice for determining useful parameters is provided 
+ below.</p>
+        <p style="font-weight: bold;color: #00509f;">Click on the desired topic 
+ for detailed information:</p>
+        <ul>
+            <li value="1"><a href="#Proportional%20control">Proportional 
+ Control</a>
+            </li>
+            <li value="2"><a href="#Integral%20control">Integral 
+ Control</a>
+            </li>
+            <li value="3"><a href="#Derivative%20control">Derivative 
+ Control</a>
+            </li>
+            <li value="4"><a href="#Determining%20PID%20Coefficients">Determining 
+ PID Coefficients</a>
+            </li>
+            <li value="5"><a href="#Adjusting%20the%20proportional%20coefficient">Adjusting 
+ the Proportional Coefficient</a>
+            </li>
+            <li value="6"><a href="#Adjusting%20the%20integral%20coefficient">Adjusting 
+ the Integral Coefficient</a>
+            </li>
+            <li value="7"><a href="#Adjusting%20the%20derivative%20coefficient">Adjusting 
+ the Derivative Coefficient</a>
+            </li>
+            <li value="8"><a href="#Final%20coefficient%20adjustment">Final 
+ Coefficient Adjustment</a>
+            </li>
+        </ul>
+        <h3><a name="Proportional control"></a>Proportional Control</h3>
+        <p>Proportional control mode provides furnace power in direct proportion 
+ to the difference (error) between the measured furnace temperature and 
+ the desired furnace temperature. When the error is zero the applied power 
+ is zero. As the error increases the applied power to the furnace is increased 
+ in proportion to the error until a maximum permitted power is reached. 
+ Beyond this maximum power point, and at zero power, the furnace is said 
+ to be “out of control.” The temperature error range between the application 
+ of zero power and maximum power is called the proportional band or “prop 
+ band.”</p>
+        <p>The PID Proportional coefficient (W/°C) determines the width of the 
+ proportional band. &#160;A 
+ coefficient of 1.0 delivers one watt of power for every °C of temperature 
+ error. The maximum power available varies depending on the furnace type 
+ in use.</p>
+        <p>Since some furnace power is required to maintain a furnace at an elevated 
+ temperature (unless there is no heat loss to the surroundings), there 
+ will always be a small temperature error that cannot be removed using 
+ only the proportional mode of control. This error is called “droop” or 
+ “offset.” The integral control mode is used to remove this type of error.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Integral control"></a>Integral Control</h3>
+        <p>Integral control mode provides extra furnace power to compensate for 
+ any long-term difference between measured furnace temperature and desired 
+ furnace temperature. The amount of temperature error is measured (integrated) 
+ over time to determine the average error. A power correction based on 
+ this average error is then applied to the furnace. &#160;This 
+ type of correction is also called “reset.”</p>
+        <p>The PID Integral coefficient (W/°C-sec) determines how rapidly the offset 
+ error is corrected. A coefficient of 1.0 delivers one watt of additional 
+ furnace power for every °C-sec of integrated temperature error.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Derivative control"></a>Derivative Control</h3>
+        <p>Derivative control mode is an anticipatory control function that measures 
+ the rate of change of the furnace temperature and reduces the furnace 
+ power to avoid temperature overshoot. A negative power correction is applied 
+ to the furnace based on the rate of change (°C/sec) of the measured temperature. 
+ This type of correction is also called “rate”.</p>
+        <p>The PID Derivative coefficient (W/°C/sec) determines how much breaking 
+ action to apply. A coefficient of 1.0 delivers minus one watt of power 
+ for every °C/sec of measured heating rate. </p>
+        <p><span style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a></span>
+        </p>
+        <h3><a name="Determining PID Coefficients"></a>Determining PID Coefficients</h3>
+        <p>No one set of PID coefficients will produce optimal results under all 
+ conditions. &#160;A 
+ certain amount of experimentation is required to determine the best coefficients 
+ for a particular set of conditions. &#160;Tradeoffs 
+ must be made between different aspects of furnace performance (e.g., rapid 
+ furnace response time versus larger temperature overshoot).</p>
+        <p>The conventional PID coefficient tuning process involves making individual 
+ runs using empty sample containers. &#160;Each 
+ run performs the method of interest, or just the critical portion of the 
+ method of interest, such as a temperature ramp to isothermal hold, or 
+ an equilibration at elevated temperature. &#160;A 
+ Heater PID method segment is inserted as the first step of the test method, 
+ or at the critical point in the test method, so that experimental PID 
+ coefficients can be tried and the effect on furnace performance noted.</p>
+        <p>The first step in the complete PID tuning process involves making a 
+ quick estimate of a set of stable PID coefficients. &#160;This 
+ is accomplished by adjusting each coefficient in turn and observing the 
+ result of the adjustment on temperature and heating rate. &#160;Then 
+ further refinement of each coefficient is made to increase or decrease 
+ the characteristic effect of that coefficient on the furnace control.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Adjusting the proportional coefficient"></a>Adjusting the 
+ Proportional Coefficient</h3>
+        <p>The Proportional coefficient is adjusted first. &#160;The 
+ Integral and Derivative coefficients are set to zero during this test. 
+ &#160;The Proportional 
+ coefficient is first set to any nominal value (one tenth of the maximum 
+ furnace power is suggested). &#160;The 
+ test method is run with the Heater PID method segment inserted. &#160;Sample 
+ temperature and heating rate are plotted versus time.</p>
+        <p>If the result of the test is stable (no sustained oscillations in temperature) 
+ then increase the Proportional coefficient and repeat the test until a 
+ value of the Proportional coefficient is found that is just large enough 
+ to produce sustained oscillations in temperature around the temperature 
+ set point. &#160;Select 
+ one half of this value for the Proportional coefficient. &#160;</p>
+        <p>Alternately, the Proportional coefficient can be determined by increasing/decreasing 
+ the coefficient until the peak height of each temperature oscillation 
+ is approximately one quarter that of the peak height of the previous oscillation. 
+ &#160;Select 
+ this value for the Proportional coefficient.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Adjusting the integral coefficient"></a>Adjusting the Integral 
+ Coefficient</h3>
+        <p>The Integral coefficient is adjusted next. The Proportional coefficient 
+ is set to the value determined by the previous testing. The Integral coefficient 
+ is set to any nominal value (twice the Proportional coefficient is suggested 
+ as a start). &#160;The 
+ Derivative coefficient is set to zero. The same series of test runs are 
+ made as when adjusting the Proportional coefficient. The temperature and 
+ heating rate are observed. Increase the Integral coefficient until a sustained 
+ oscillation is achieved as in the proportional testing. Select one third 
+ of this value for the Integral coefficient.</p>
+        <p>Alternately, the Integral coefficient can be determined by increasing/decreasing 
+ the Integral coefficient until the amount of observed temperature offset 
+ is acceptable. Select this value for the Integral coefficient.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Adjusting the derivative coefficient"></a>Adjusting the Derivative 
+ Coefficient</h3>
+        <p>The Derivative coefficient is adjusted last. &#160;The 
+ Proportional and Integral coefficients are set to the values previously 
+ determined. The derivative coefficient is set to any nominal value (two 
+ percent of the Proportional coefficient is suggested as a start). The 
+ same series of test runs are made as when adjusting the Proportional and 
+ Integral coefficients. The temperature and heating rate are observed. 
+ Increase the Derivative coefficient until the temperature overshoot is 
+ acceptable without unduly compromising the maximum heating rate required. 
+ Select this value for the Integral coefficient.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Final coefficient adjustment"></a>Final Coefficient Adjustment</h3>
+        <p>If desired, the PID coefficients can be further adjusted to improve 
+ furnace control by adjusting one coefficient at a time and observing the 
+ effect on furnace control. The following guidelines can be used to help 
+ with this adjustment:</p>
+        <p>It is usually best to make final adjustments to the Derivative coefficient 
+ first, then the Proportional coefficient, and finally the Integral coefficient. 
+ </p>
+        <p>The Proportional coefficient controls the amount of power applied for 
+ each degree of temperature error, and the Integral coefficient controls 
+ the amount of power applied to correct for temperature offset. Larger 
+ values for each of these coefficients will increase the temperature overshoot 
+ and the amount of temperature oscillation, but will reduce the time needed 
+ to reach a set point temperature and the amount of temperature offset. 
+ &#160;Smaller 
+ values will have the opposite effect.</p>
+        <p>The Derivative coefficient controls the amount of temperature overshoot 
+ and the maximum heating rate obtainable when approaching a temperature 
+ set point. Larger values of the coefficient will reduce the temperature 
+ overshoot and reduce the maximum heating rate. Smaller values will have 
+ the opposite effect.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

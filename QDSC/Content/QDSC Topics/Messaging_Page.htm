@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Introducing Instrument Control|Using the Program's Components" MadCap:browseSequencePath="Using the Program's Components" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Using the Messaging Page</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a><a name="kanchor249"></a>Using the Messaging Page</h1>
+        <h4>(A Platinum™ 
+ Feature)</h4>
+        <p>&#160;</p>
+        <p><a name="kanchor250"></a><a name="kanchor251"></a>Email and Windows® Messaging are built-in Platinum features of the Advantage 
+ software. This feature provides a mechanism for the controller software 
+ to communicate with the operator based on subscribed events. </p>
+        <p style="font-weight: bold;color: #00509f;">Select from the following 
+ topics for more information:</p>
+        <ul>
+            <li value="1"><a href="#Configuring___Testing_Platinum_Mail___Messaging">Configuring 
+ &amp; Testing Platinum Mail &amp; Messaging</a>
+            </li>
+            <li value="2"><a href="#Accessing_Task_Specific_Messaging_Pages">Accessing 
+ Task-Specific Messaging Pages</a>
+            </li>
+            <ul>
+                <li value="1"><a href="#Run_Messaging">Individual 
+ Run Messaging</a>
+                </li>
+                <li value="2"><a href="#Experimental_and_Calibration_Sequence_Messaging">Experimental 
+ and Calibration Sequence Messaging</a>
+                </li>
+                <li value="3"><a href="#Auto_Diagnostics_Messaging">Auto 
+ Diagnostics Messaging</a>
+                </li>
+            </ul>
+            <li value="3"><a href="#Accessing_the_Central_Messaging_Page">Accessing 
+ the Central Messaging Page</a>
+            </li>
+            <li value="4"><a href="#Setting_Up_Messaging_Options">Setting 
+ Up the Messaging Options</a>
+            </li>
+        </ul>
+        <h3><a name="Configuring___Testing_Platinum_Mail___Messaging"></a>Configuring 
+ &amp; Testing Platinum Mail &amp; Messaging</h3>
+        <p>Proper installation and setup are required for these functions to work 
+ properly. To configure and test the Platinum mail and messaging features 
+ you will need to perform the following steps in the order shown:</p>
+        <p style="margin-left: 40px;">(1) Establishing a Database Connection for 
+ Mail Messaging</p>
+        <p style="margin-left: 40px;">(2) Configuring Windows® for Mail and Messaging</p>
+        <p style="margin-left: 40px;">(3) Configuring Platinum Mail and Messaging 
+ Functions</p>
+        <p style="margin-left: 40px;">(4) Testing Platinum Mail and Messaging Functions 
+ </p>
+        <p>To find out how to perform steps 1 through 4, you can open the appropriate 
+ <span style="font-weight: bold;color: #ff0000;">Acrobat Reader PDF</span> 
+ file by clicking here <img src="../QDSC Images/ocean_arrow_sm.gif" style="border: none;width: 7px;height: 13px;float: none;border-style: none;border-style: none;" width="7" height="13" border="0" /> <a title="Opens pdf file" href="../PDF files/ConfiguringPlatinum.pdf">Configuring 
+ Platinum Mail &amp; Messaging</a>.</p>
+        <p>Once the Platinum Messaging has been properly installed and setup, you 
+ can begin to use this feature to send emails and notification messages 
+ directly from the instrument control program. Messaging is available for 
+ the following tasks: &#160;individual 
+ runs, sequences (experimental and calibration), auto diagnostics, auto 
+ weight calibration.</p>
+        <p style="font-size: 8pt;"><span><a href="#top" style="font-size: 8pt;">Back to top</a></span>
+        </p>
+        <h3><a name="Setting_Up_Email_and_Profile_Settings"></a>Setting Up Email 
+ and Profile Settings</h3>
+        <p>When you install the Advantage software (V4.3 or higher) you will have 
+ the option of installing the Platinum Mail &amp; Messaging Database option. 
+ &#160;This component 
+ creates a localized database on your system to manage all messaging requests. 
+ Follow the instructions below to verify the email program and profiles 
+ that will be used with the messaging feature: </p>
+        <ol>
+            <li class="NumberedIndent" value="1">Open the 
+ instrument control program for instrument that will have this feature. 
+ See <a href="TA_Instrument_Explorer_Window.htm">Using the TA Instrument 
+ Explorer</a> for instructions. </li>
+            <li class="NumberedIndent" value="2">Select the 
+ <span style="font-weight: bold;color: #00509f;">Platinum</span> button 
+ at the bottom left-hand side of the main instrument control window. </li>
+            <li class="NumberedIndent" value="3">Click <span style="font-weight: bold;color: #00509f;">E-mail Notification</span> 
+ under the Messaging group to display the window.</li>
+            <li class="NumberedIndent" value="4">Check the 
+ <span style="font-weight: bold;color: #00509f;">Enable TA Messaging Service 
+ for the Connected Instrument</span> to have the instrument that you are 
+ currently running use this service.</li>
+            <li class="NumberedIndent" value="5">Verify the 
+ following TA Messenger Settings on the Primary TAMA DB computer: </li>
+            <ul>
+                <li value="1"><span style="font-weight: bold;color: #00509f;">Primary 
+ TAMA (TA Message Agent) DB (Database)</span> – Displays name of computer 
+ containing TAMA DB for this function. To change or set up a database, 
+ see <a href="#Configuring___Testing_Platinum_Mail___Messaging">Configuring 
+ &amp; Testing Platinum Mail &amp; Messaging</a>.</li>
+                <li value="2"><span style="font-weight: bold;color: #00509f;">Mail 
+ Service Provider</span> – Displays the default Mail Service Provider on 
+ the Primary TAMA DB computer. (Outlook or Outlook Express is required. 
+ See also: <a href="Configuring_Outlook_Express.htm">Configuring Outlook 
+ Express</a>) </li>
+                <li value="3"><span style="font-weight: bold;color: #00509f;">Default 
+ Profile</span> – Displays the default profile that will be used on the 
+ Primary TAMA DB computer.</li>
+            </ul>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="6">Verify 
+ the following TA Messenger Settings on the Local Computer (if different). 
+ &#160;The Mail 
+ Service Provider and Profile should match.</li>
+            <ul>
+                <li value="1"><span style="font-weight: bold;color: #00509f;">MS 
+ Messenger</span><a name="kanchor252"></a> - Displays the status of this service. The service must 
+ be running to use the Windows Messaging features within Advantage Platinum. 
+ &#160;To set 
+ up this service, see <a href="#Configuring___Testing_Platinum_Mail___Messaging">Configuring 
+ &amp; Testing Platinum Mail &amp; Messaging</a>.</li>
+                <li value="2"><span style="font-weight: bold;color: #00509f;">Mail 
+ Service Provider</span> – Displays the default Mail Service Provider on 
+ this computer. (Outlook or Outlook Express is required. See also: <a href="Configuring_Outlook_Express.htm">Configuring 
+ Outlook Express</a>) To change these settings you will need to change 
+ them on your computer.</li>
+            </ul>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="7">Click 
+ the <span style="font-weight: bold;color: #00509f;">Profile</span> button 
+ to change the <span style="font-weight: bold;color: #00509f;">Default 
+ Profile</span> name. See <a href="Choosing_a_Mail_Profile.htm">Choosing 
+ a Mail Profile</a>.</li>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="8">Click 
+ the <span style="font-weight: bold;color: #00509f;">Address Book</span> 
+ button to specify a default address when using this option. Alternatively, 
+ you can enter the name. Click the <span style="font-weight: bold;color: #00509f;">Test</span> 
+ button to verify this entry.</li>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="9">Click 
+ the <span style="font-weight: bold;color: #00509f;">Net Hosts</span> 
+ button to specify a default computer host name when using the Windows 
+ Messaging option. Alternatively, you can enter the computer name. Click 
+ the <span style="font-weight: bold;color: #00509f;">Test</span> button 
+ to verify entry.</li>
+            <li class="NumberedIndent" style="margin-top: 4.5pt;" value="10">Click 
+ <span style="font-weight: bold;color: #00509f;">Apply</span> to save 
+ and use these settings or <span style="font-weight: bold;color: #00509f;">Cancel</span> 
+ to exit without saving the settings.</li>
+        </ol>
+        <p style="font-size: 8pt;"><span><a href="#top" style="font-size: 8pt;">Back to top</a></span>
+        </p>
+        <h3><a name="Accessing_Task_Specific_Messaging_Pages"></a>Accessing Task-Specific 
+ Messaging Pages</h3>
+        <p>Follow the instructions listed for each type of task to gain access 
+ to the messaging function.</p>
+        <ul>
+            <li value="1"><a name="Run_Messaging"></a><span style="font-weight: bold;color: #00509f;">Run Messaging:</span> &#160;Click 
+ on the desired run number from the run sequence list. Then select the 
+ <a href="#Setting_Up_Messaging_Options">Messaging</a> 
+ page.</li>
+            <li value="2"><a name="Experimental_and_Calibration_Sequence_Messaging"></a><span style="font-weight: bold;color: #00509f;">Sequence (Experimental and 
+ Calibration) Messaging*</span>: &#160;Click 
+ the <span style="font-weight: bold;color: #00509f;">Experiment</span> 
+ or <span style="font-weight: bold;color: #00509f;">Calibration</span> 
+ button at the bottom left of the instrument control window. &#160;Then 
+ click on <span style="font-weight: bold;color: #00509f;">Sequence No. 
+ #</span> at the top of the run sequence list to open the <a href="Schedule_Page.htm">Scheduling</a>, 
+ <a href="Experimental_View_Pane_Summary_Page.htm">Summary</a>, and <a href="#Setting_Up_Messaging_Options">Messaging</a> pages.</li>
+            <li value="3"><a name="Auto_Diagnostics_Messaging"></a><span style="font-weight: bold;color: #00509f;">Auto Diagnostics Messaging*</span>: 
+ &#160;Click the 
+ <span style="font-weight: bold;color: #00509f;">Platinum</span> button 
+ at the bottom left of the instrument control window. &#160;Then 
+ click on <span style="font-weight: bold;color: #00509f;">Auto Diagnostics</span> 
+ from the Automatic Tasks list to open <a href="Auto_Diagnostics_Page.htm">Auto 
+ Diagnostics</a>, <a href="Introducing_the_Auto_Diagnostics_Report.htm">Report</a>, 
+ &#160;<a href="Schedule_Page.htm">Scheduling</a>, 
+ and <a href="#Setting_Up_Messaging_Options">Messaging</a> 
+ pages.</li>
+        </ul>
+        <p style="font-size: 8pt;"><span><a href="#top" style="font-size: 8pt;">Back to top</a></span>
+        </p>
+        <h3><a name="Accessing_the_Central_Messaging_Page"></a>*Accessing the Central 
+ Messaging Page</h3>
+        <p>You can also access the messaging options for the specific tasks (marked 
+ with an asterisk [*] above) at a central location. To access these options:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Click the 
+ <span style="font-weight: bold;color: #00509f;">Platinum</span> button 
+ at the bottom left of the instrument control window. </li>
+            <li class="NumberedIndent" value="2">Select <span style="font-weight: bold;color: #00509f;">Settings</span> from the Scheduling 
+ option on the left-hand side.</li>
+            <li class="NumberedIndent" value="3">Select the 
+ <span style="font-weight: bold;color: #00509f;">Messaging</span> page. 
+ (If the Messaging tab is not displayed then this option has not been enabled 
+ or setup completely. Consult the installation and setup topics.)</li>
+            <li class="NumberedIndent" value="4">Select the 
+ desired task from the list. Then set up or verify the messaging options 
+ as directed below.</li>
+        </ol>
+        <p style="font-size: 8pt;"><span><a href="#top" style="font-size: 8pt;">Back to top</a></span>
+        </p>
+        <h3><a name="Setting_Up_Messaging_Options"></a>Setting Up Messaging Options</h3>
+        <p>To use the <span style="font-weight: bold;color: #00509f;">Messaging</span> 
+ Page, follow these directions: </p>
+        <p>(If the Messaging tab is not displayed then this option has not been 
+ enabled or setup completely. &#160;Consult 
+ the installation and setup topics.)</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Select the 
+ <span style="font-weight: bold;color: #00509f;">Subscribed Events</span> 
+ that you wish to received notification (list will vary based on task selected):</li>
+            <ul>
+                <li value="1"><span style="font-weight: bold;">Data 
+ file receiving complete</span>: &#160;This 
+ event will send notification when the experiment has been completed.</li>
+                <li value="2"><span style="font-weight: bold;">Run 
+ has been rejected</span>: This event will send notification if a run has 
+ been rejected.</li>
+                <li value="3"><span style="font-weight: bold;">Data 
+ File Acceptor error occurred</span>: This event will send notification 
+ if the software encounters a data file error condition during the course 
+ of the experiment sequence. </li>
+                <li value="4"><span style="font-weight: bold;">Task 
+ Started</span>: &#160;This 
+ event will send notification when the task (sequence, diagnostics, &amp;/or 
+ weight calibration sequence) has been started.</li>
+                <li value="5"><span style="font-weight: bold;">Task 
+ Stopped/Rejected</span>: This event will send notification if the task 
+ (sequence, diagnostics, &amp;/or weight calibration sequence) is stopped 
+ or rejected.</li>
+                <li value="6"><span style="font-weight: bold;">Task 
+ Complete</span>: This event will send notification when the task (sequence, 
+ diagnostics, &amp;/or weight calibration sequence) has completed.</li>
+            </ul>
+        </ol>
+        <p class="Notes">NOTE: The following messaging options (<span style="font-style: italic;">e.g</span>., 
+ comments, email to, attachments, message to) are unique for each subscribed 
+ events, unless <span style="font-weight: bold;color: #00509f;">Apply 
+ settings to all checked events</span> is selected.</p>
+        <ol start="2" style="list-style: decimal;list-style-type: decimal;">
+            <li class="NumberedIndent" value="2">Enter any 
+ <span style="font-weight: bold;color: #00509f;">Additional Comments</span> 
+ to be included in the message. &#160;</li>
+            <li class="NumberedIndent" value="3">Click on 
+ the <span style="font-weight: bold;color: #00509f;">E-mail To</span> 
+ button to select the desired addresses for this option, if email notification 
+ is desired. &#160;Alternatively, 
+ you can enter these addresses (separate each address by a semi colon).</li>
+            <li class="NumberedIndent" value="4">Click on 
+ the <span style="font-weight: bold;color: #00509f;">Attachments</span> 
+ button to specify any items, which you wish to include in the email message. 
+ &#160;Options 
+ will vary based on selected task. </li>
+            <li class="NumberedIndent" value="5">Click on 
+ the <span style="font-weight: bold;color: #00509f;">Message To</span> 
+ button to select the desired computer for this option, if Windows Messaging 
+ notification is desired. Alternatively, you can enter a computer name(s).</li>
+            <li class="NumberedIndent" value="6">Check the 
+ <span style="font-weight: bold;color: #00509f;">Apply settings to all 
+ checked events</span> box, if you wish to apply all of these settings 
+ for all the subscribed events selected.</li>
+            <li class="NumberedIndent" value="7">Check the 
+ <span style="font-weight: bold;color: #00509f;">Apply settings to all 
+ runs</span> box, if you wish to apply these messaging settings to all 
+ the runs in the sequence.</li>
+            <li class="NumberedIndent" value="8">Click <span style="font-weight: bold;color: #00509f;">Apply</span> when finished.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Introducing Platinum|Introducing_Platinum.htm||Using Auto Diagnostics|Auto_Diagnostics_Page.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

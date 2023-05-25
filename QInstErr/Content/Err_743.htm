@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="General Instrument Messages" MadCap:browseSequencePath="General Instrument Messages" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="QInstErr.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Message 743</title>
+        <link rel="StyleSheet" href="HtmlHelpSWErr.css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor133"></a>Message 743</h1>
+        <h4>The instrument audit log is approximately 80% full. &#160;Please 
+ ensure that the controller is connected and receiving audit log data.</h4>
+        <p style="font-weight: bold;">Problem:</p>
+        <p>The audit log buffer in the instrument is almost full. &#160;The 
+ controller has stopped transferring messages to the database.</p>
+        <p style="font-weight: bold;">Solution:</p>
+        <ul>
+            <li class="Bullet" value="1">If the error occurred while 
+ the instrument was off line from a controller, and it has been awhile 
+ since the controller was last connected, try connecting the controller 
+ to an instrument. This may transfer the contents of the log buffer and 
+ resolve the issue. &#160;</li>
+            <li class="Bullet" value="2">This could also be an indication 
+ that the controller has lost it's connection to the Integrity database 
+ server. &#160;Ensure 
+ the connection and that the server is in working order. &#160;</li>
+            <li class="Bullet" value="3">If these suggestions fail 
+ to fix the problem, and you have not already done so, try closing down 
+ and reopening the controller software. &#160;</li>
+            <li class="Bullet" value="4">If the problem persists after 
+ trying the steps above, contact TA Instruments for service. </li>
+        </ul>
+        <p>&#160;</p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

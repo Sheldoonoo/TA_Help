@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Advantage Integrity Help Topics in Instrument Control" MadCap:browseSequencePath="Advantage Integrity Help Topics in Instrument C" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Using an Integrity-Licensed Instrument Control</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../QDSC Images/ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a><a name="kanchor420"></a>Using an Integrity-Licensed Instrument Control</h1>
+        <p>&#160;</p>
+        <p>Once an instrument has been set up with an Advantage Integrity license, 
+ it will become part of the Advantage Integrity system. &#160;Access 
+ will be controlled, data will be stored in the Oracle database, and an 
+ audit trail will record events. Once you are logged in to the instrument, 
+ the basic operation of an Integrity instrument is the same as its non-Integrity 
+ (standard) counterpart for calibrating, setting up experiments, and starting 
+ runs. &#160;</p>
+        <p>The few differences are noted here. &#160;</p>
+        <ul>
+            <li value="1"><span style="font-weight: bold;color: #00509f;">SUID#</span>: 
+ &#160;&#160;Instead 
+ of defining the data storage path, the database will automatically assign 
+ a SUID# to the original, raw data record. &#160;This 
+ number can be seen on the <a href="Experimental_View_Pane_Summary_Page.htm">Summary 
+ Page</a> of the Experimental View.</li>
+        </ul>
+        <p class="Notes">NOTE: &#160;Each 
+ saved data record within the database will also be assigned a Record ID 
+ #, which is displayed on any saved images that are created. </p>
+        <ul>
+            <li value="1"><span style="font-weight: bold;color: #00509f;">Project 
+ Name</span>: &#160;Each 
+ experiment is assigned to a Project. &#160;Project 
+ assignment provides a means to category the data in the database, and 
+ then later uses that assignment to sort the records in the database for 
+ easier retrieval. &#160;The 
+ available projects are those assigned to you by the TA System Manager. 
+ &#160;The TA 
+ System Manager is also responsible for defining the projects available 
+ in this system. &#160;</li>
+        </ul>
+        <p style="margin-left: 40px;">To assign a project to a run follow these 
+ steps:</p>
+        <ul>
+            <ol>
+                <li class="NumberedIndent" value="1">Click 
+ on the <img src="../QDSC Images/ButtonICSelectProject.gif" style="border: none;width: 27px;height: 28px;float: none;border-style: none;border-style: none;" width="27" height="28" border="0" /> button to the right of the <span style="font-weight: bold;color: #00509f;">Project 
+ Name</span> field.</li>
+                <li class="NumberedIndent" value="2">Select 
+ a project from those displayed and click OK.</li>
+            </ol>
+            <li style="margin-top: 8px;" value="2"><span style="font-weight: bold;color: #00509f;">Operator</span>: 
+ &#160;The Operator 
+ field on the <a href="Experimental_View_Pane_Notes_Page.htm">Notes Page</a> 
+ will automatically display the User ID of the person creating the run 
+ and can not be changed. &#160;See 
+ the section "<a href="#Handling%20Multiple%20Users%20for%20a%20Single%20Instrument">Handling 
+ Multiple Users for a Single Instrument</a>" for rules that apply 
+ when there is more then one user.</li>
+            <li style="margin-top: 8px;" value="3"><span style="font-weight: bold;color: #00509f;"><a name="Restricted or Unavailable Functions"></a>Restricted or Unavailable 
+ Functions</span>: &#160;Within 
+ the Advantage Integrity system the TA System Manager can define privileges 
+ (<span style="font-style: italic;">e.g</span>., restrict actions) within 
+ each module of the system. &#160;</li>
+        </ul>
+        <p style="margin-left: 40px;">Within the Q Series™ 
+ instrument control program this list of controllable privileges includes 
+ items such as access to calibration parameters and analysis, modifying 
+ a running method, etc. &#160;Therefore, 
+ typical functions may not be available depending on the access groups(s) 
+ assigned to you. &#160;Consult 
+ with your TA System Manager to learn about your privilege list for instrument 
+ control. &#160;</p>
+        <p style="margin-left: 40px;">In addition, a set of functions that are 
+ available in the standard version of instrument control, are not available 
+ when logged into the Integrity system. &#160;These 
+ functions include: </p>
+        <ul>
+            <ul>
+                <li value="1">Run Reject</li>
+                <li value="2">Network Drive </li>
+                <li value="3">Autoanalysis.<br /><br /></li>
+            </ul>
+            <li style="margin-top: 8px;" value="2"><span style="font-weight: bold;color: #00509f;">Method, 
+ Procedures and Sequence Files</span>: &#160;These 
+ files are not saved in the database, nor are the changes audited for these 
+ files in this system. &#160;They 
+ continue to be saved at the designated file location specified by the 
+ operator. &#160;However, 
+ file open and save for these file types are recorded in the audit trail. 
+ &#160;Moreover, 
+ the saved data record contains the details of the experimental conditions 
+ (<span style="font-style: italic;">e.g</span>., method, calibration, and 
+ instrument parameters) within the parameter block of the saved data record. 
+ &#160;This information 
+ can be viewed in the Universal Analysis program by selecting View/Parameter 
+ Block. </li>
+            <li style="margin-top: 8px;" value="3"><span style="font-weight: bold;color: #00509f;">Active 
+ Experiment</span>s: &#160;An 
+ experiment which is currently in progress may be viewed in Universal Analysis, 
+ but until the experiment is complete you can not save any results (<span style="font-style: italic;">e.g</span>, saved analyses, pdf generation).</li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Handling Multiple Users for a Single Instrument"></a>Handling 
+ Multiple Users for a Single Instrument</h3>
+        <p>When there is more than one user accessing a single instrument, the 
+ following rules apply:</p>
+        <ul>
+            <li style="margin-top: 8px;" value="1">You can alter another user's 
+ run only when assigned access rights to the project associated with that 
+ run. &#160;You 
+ will receive a message asking if you wish to "take ownership" 
+ of that run. &#160;Select 
+ Yes to take ownership. Your name will now be assigned as the Operator 
+ on the <a href="Experimental_View_Pane_Notes_Page.htm">Notes Page</a>. 
+ &#160;Select 
+ No to deny ownership of that run, then you can click the <span style="font-weight: bold;color: #00509f;">Append</span> 
+ button to create a new run.</li>
+            <li style="margin-top: 8px;" value="2">You can still start another 
+ user's run, even if you do not have access rights to the project assigned 
+ to that run. &#160;In 
+ this case, your User ID will be recorded as the Run Operator in the data 
+ record's parameter block, which can be viewed through the Universal Analysis 
+ program's View/Parameter Block function. &#160;The 
+ operator name will remain as the User ID of the original owner.</li>
+            <li style="margin-top: 8px;" value="3">You may delete any runs regardless 
+ of their assigned projects.</li>
+            <li style="margin-top: 8px;" value="4">If you do not have access 
+ rights to the assigned run's project, you will get an Access Not Allowed 
+ message. In this case, you will need to select the <span style="font-weight: bold;color: #00509f;">Append</span> 
+ button to create a new run.</li>
+            <li style="margin-top: 8px;" value="5">When you load a saved sequence, 
+ the user currently performing this action is assigned as the operator 
+ for all runs. &#160;If 
+ any run in the saved sequence specifies a project that the current user 
+ does not have the right to access, then that run's project is marked Unassigned. 
+ &#160;Unassigned 
+ projects must be changed to a valid project before the start of that run.</li>
+        </ul>
+        <p style="color: #000000;font-weight: normal;"><span style="color: #000000;font-weight: normal;"><span style="color: #000000;font-weight: normal;">See the <span style="font-style: italic;">Advantage 
+ Integrity Getting Started Guide</span> or the online help for additional 
+ information.</span></span>
+        </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Accessing the Integrity System|Accessing_the_Integrity_System.htm||Adding Comments to the Audit Trail|Adding_Comments_to_the_Audit_Trail.htm||Changing Your Password|Changing_Your_Password.htm||Extracting Records from the Database|Extracting_Records_from_the_Database.htm||First Time Login|First_Time_Login.htm||Saving Records to the Database|Saving_Records_to_the_Database.htm||Sorting the Data in Tree View|Sorting_the_Data_in_Tree_View.htm||Using an Integrity-Licensed Instrument Control|Using_an_Integrity-Licensed_Instrument_Control.htm||Viewing the Audit Trail|Viewing_the_Audit_Trail.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

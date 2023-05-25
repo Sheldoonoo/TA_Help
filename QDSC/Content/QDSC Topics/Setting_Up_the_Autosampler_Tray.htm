@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Using the DSC Autosampler" MadCap:browseSequencePath="Using the DSC Autosampler" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Setting Up the Autosampler Tray</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor366"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../ques_blue.jpg" style="border: none;width: 35px;height: 37px;float: right;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Setting Up the Autosampler Tray</h1>
+        <p>
+            <img src="../QDSC Images/ASwplasticcover_200x150.jpg" alt="Autosampler tray" style="border: none;margin-left: 0px;margin-right: 0px;margin-top: 10px;margin-bottom: 0px;float: right;float: right;width: 200;height: 150;" align="right" border="0" />
+        </p>
+        <p>When you use the Autosampler to automate sample loading and unloading, 
+ you must create a sequence of runs for each tray of samples. </p>
+        <p>There are several things to consider when you set up the sample tray. 
+ </p>
+        <p class="Bullet" id="P2"><span style="font-weight: bold;color: #00509f;">Select from 
+ the following topics for more information:</span>
+        </p>
+        <ul>
+            <li style="margin-top: 8px;" value="1"><a href="#Maximum%20number%20of%20runs">What 
+ is the maximum number of runs per tray?</a>
+            </li>
+            <li style="margin-top: 8px;" value="2"><a href="#Reuse%20of%20Pans">Can 
+ a pan be reused?</a>
+            </li>
+            <li style="margin-top: 8px;" value="3"><a href="#Order%20of%20Runs">In 
+ what order should the samples be placed in the tray?</a>
+            </li>
+            <li style="margin-top: 8px;" value="4"><a href="Calibrating_the_Autosampler.htm">Calibrating 
+ the Autosampler</a>
+            </li>
+            <li style="margin-top: 8px;" value="5"><a href="Running_an_AS_as_a_Non-AS.htm">Running 
+ an Autosampler as a Non-Autosampler</a>
+            </li>
+        </ul>
+        <h3><a name="Maximum number of runs"></a>Maximum Number of Runs</h3>
+        <p>&#160;When 
+ you set up your tray, you must consider the maximum number of runs that 
+ can be set up in a run sequence. The number of runs is dependent upon 
+ several factors.</p>
+        <ul>
+            <li style="margin-top: 8px;" value="1">The maximum number of sample 
+ positions in the sample tray is 50, along with 5 reference positions.</li>
+            <li style="margin-top: 8px;" value="2">If you use the LNCS for cooling 
+ experiments, the number of cooling runs that can be performed in a run 
+ sequence is limited by the amount of liquid nitrogen in the tank. The 
+ rate at which liquid nitrogen is used up depends, of course, on your procedure: 
+ &#160;the temperature 
+ you use, how long you hold the cell at a particular temperature, the rate 
+ of change in temperature, and so on. In general you can expect to get 
+ approximately 10 to 15 cooling runs with one full LNCS tank of liquid 
+ nitrogen when your procedure cools to the lower limits of -150°C.</li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Reuse of Pans"></a>Reuse of Pans</h3>
+        <p>Because thermal analysis experiments can sometimes deform the pans or 
+ cause the sample material to boil out, we do not recommend that you reload 
+ pans in the Autosampler once they have been unloaded from the cell. If 
+ you want to run a sample through more than one thermal procedure during 
+ your run sequence, do one of the following:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Run several 
+ methods consecutively on one sample pan. The Autosampler does not unload 
+ a pan at the completion of a run if the next run calls for the same pan.</li>
+            <li class="NumberedIndent" value="2">If you prefer 
+ not to run consecutive methods on one sample, prepare several pans containing 
+ the same material.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Order of Runs"></a>Order of Runs</h3>
+        <p>To avoid mistakes, we suggest that you place the pans in the sample 
+ tray in the order in which you intend to run them. The following paragraphs 
+ suggest some guidelines for determining the order of your runs.</p>
+        <h4>Perform cooling methods before heating methods.</h4>
+        <p>Unlike the electricity that supplies the cell heater, the LNCS's supply 
+ of liquid nitrogen is limited. Therefore, it is a good idea to keep the 
+ amount of liquid nitrogen needed to do a cooling procedure at a minimum 
+ by putting all cooling-only runs at the beginning of an Autosampler run 
+ sequence. If you plan to run combination cooling/heating procedures, these 
+ experiments should come next, followed finally by any heating-only procedures.</p>
+        <h4>Keep runs of a similar procedure together.</h4>
+        <p>For example, if you plan to run some of your samples through a cooling 
+ procedure and some through a heating procedure, you should run all of 
+ the cooled samples consecutively to prevent unnecessary waste of your 
+ liquid nitrogen supply. If you alternate heating and cooling runs, the 
+ heater will have to work harder to bring the cell up to temperature and 
+ the cooling accessory will have to work harder to bring the temperature 
+ down again.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Autosampler Touch Screens|Autosampler_Touch_Screens.htm||DSC Applications and Sample Types|DSC_Applications_and_Sample_Types.htm||Encapsulating a DSC Sample (Blue or Beige Press)|Encapsulating_a_DSC_Sample_Blue_or_Beige_Press.htm||Introducing the DSC Autosampler|Introducing_the_DSC_Autosampler.htm||Introducing the DSC Q Series|Introducing_the_DSC_QSeries.htm||Selecting a Sample Pan|Selecting_a_Sample_Pan.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

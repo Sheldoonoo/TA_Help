@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:id="Handling_Run_Sequences.htm" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpStatus.In Progress" MadCap:tocPath="Using the SDT|Handling Run Sequences" MadCap:browseSequencePath="Handling Run Sequences" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="QSDT.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Handling Run Sequences</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" type="text/css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;" alt="" width="35" height="37" align="right" border="0" /></a></span><a name="top" id="top"></a>Handling Run Sequences</h1>
+        <p>When running experiments on your instrument, you will be either creating new run sequences using your own custom procedures or preprogrammed procedures or restoring a saved run sequence.</p>
+        <p id="P2"><span style="font-weight: bold;color: #00509f;">Select from the following topics for more information:</span>
+        </p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet"><a href="Understanding_the_Standard_Sequence_Pane.htm#What_is_a_run_sequence">What is a Run Sequence?</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet"><a href="#What%20is%20a%20Sequence%20File">What is a Sequence File?</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet"><a href="#How%20Do%20I%20Create%20a%20Run%20Sequence">Creating a Run Sequence</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="4">
+                <p class="Bullet"><a href="Understanding_the_Standard_Sequence_Pane.htm#Reordering%20Runs%20in%20a%20Sequence">Reordering the Runs in a Sequence</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="5">
+                <p class="Bullet"><a href="#How%20Do%20I%20Save%20a%20Run%20Sequence">Saving a Run Sequence</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="6">
+                <p class="Bullet"><a href="#How%20Do%20I%20Restore%20an%20Exisiting%20Run%20Sequence">Restoring an Existing Run Sequence</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="7">
+                <p class="Bullet"><a href="Understanding_the_Standard_Sequence_Pane.htm">Using the Sequence Pane</a>
+                </p>
+            </li>
+            <li class="p-Bullet" value="8">
+                <p class="Bullet"><a href="File_Utility.htm">Viewing Stored Sequence Files</a>
+                </p>
+            </li>
+        </ul>
+        <h4 style="text-align: center;"><span><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Message_Box_Errors/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /></span>
+        </h4>
+        <h4><a name="What is a Sequence File?"></a>What is a Sequence File?</h4>
+        <p>A sequence file (default extension is .seq) is made up of one or more run records (maximum of ten runs for non-Autosampler instruments and 65 runs for Autosamplers). Each run record is instrument mode based and contains the sample and procedure information. A sequence file may be saved for future recall and execution.</p>
+        <p class="Notes">NOTE: Only Thermal Advantage for Q Series files are compatible with this software.</p>
+        <h4><a name="How Do I Create a Run Sequence?"></a>How Do I Create a Run Sequence?</h4>
+        <p>From the Sequence Pane, select the <span style="color: #005912;"><img src="GIF/Button_New_Squence_QNX.gif" style="border: none;" alt="" width="26" height="28" border="0" /></span> tool bar button or right click and select <span style="font-weight: bold;color: #00509f;">New Sequence</span> from the pop-up menu or <span style="font-weight: bold;color: #00509f;">Experimental/Sequence File/New</span> from the menu to create a new sequence. When you choose this menu item you are prompted to save the current sequence file (if this confirmation option has been selected on the <span style="font-weight: bold;color: #00509f;">User Preferences/Confirmation Page</span>). After saving the current sequence file, the old runs are erased and a single run record remains in the sequence. This run is actually a copy of the scheduled run.</p>
+        <p>At this point you can elect to edit the run using the tool bar buttons or menu. When you have completed editing the contents of the run, you can add more runs to the sequence by clicking the <span style="color: #00509f;font-weight: bold;">Append Run</span> button on the Summary Pane or by using the Sequence Pane's tool bar or pop-up menu (<a href="Understanding_the_Standard_Sequence_Pane.htm#Using_the_Sequence_Buttons_or_Pop_Up_Menu">click here for more information</a>). You can drag-and-drop runs to reorder the runs in a sequence.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h4><a name="How Do I Save a Run Sequence?"></a>How Do I Save a Run Sequence?</h4>
+        <p>After you have created, edited, and arranged the runs as desired, you can save the sequence file one of three ways:</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet">Click the <img src="GIF/Button_Save_Sequence.gif" style="border: none;" alt="" width="26" height="27" border="0" /> button on the Sequence Pane</p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet">Use <span style="font-weight: bold;color: #00509f;">Save Sequence</span> on the pop-up menu to save the sequence (.seq) file</p>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet">Select <span style="font-weight: bold;color: #00509f;">Experimental/Sequence File/Save</span> from the main menu.</p>
+            </li>
+        </ul>
+        <p>The <span style="font-weight: bold;color: #00509f;">Save Current Sequence to File</span> window will be displayed. Enter or locate the folder where you wish to store this sequence. Enter a sequence file name. Once all of the sequence run information is collected, press the <span style="font-weight: bold;color: #00509f;">Save</span> button.</p>
+        <p>If you do not want to save the entire sequence, you can manually choose the runs to save. Highlight the desired runs to save on the <a href="Understanding_the_Standard_Sequence_Pane.htm">Sequence Pane</a>. (Hold down the CTRL button while selecting to allow multiple runs to be selected.) Right click to display the <a href="Understanding_the_Standard_Sequence_Pane.htm#Using_the_Sequence_Buttons_or_Pop_Up_Menu">Sequence pop-up menu</a>. Select <span style="font-weight: bold;color: #00509f;">Save Selected Runs Only</span>.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h4><a name="How Do I Restore an Exisiting Run Sequence?"></a>How Do I Restore an Existing Run Sequence?</h4>
+        <p>To restore an existing run sequence so that you can run it again, simply click the <span style="color: #800000;"><img src="GIF/Button_Open_Import_Sequence.gif" style="border: none;" alt="" width="26" height="28" border="0" /></span> button on the Sequence Pane or use <span style="font-weight: bold;color: #00509f;">Open Sequence</span> on the pop-up menu to open a sequence (.seq) file. Then locate and open the desired sequence file. If there are any duplicate data filenames, they will be automatically changed so that no file conflicts occur. The <span style="font-weight: bold;color: #00509f;">Open a Sequence File</span> window will be displayed. Verify that the sequence file (*.seq) is the selected file type. Select the desired file. A summary of the file is shown in the preview pane to the right.</p>
+        <p>When you open a sequence file it will replace the current sequence unless you use the <span style="font-weight: bold;color: #00509f;">New name scheme</span> option. This allows you to open an existing sequence file that can be used as a "template" for a new sequence. Enter a new data file naming convention. This will be applied to all of the runs contained in the "template," creating a new sequence.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h4><a name="How Can I View a Sequence File"></a>How Can I View a Sequence File?</h4>
+        <p>If you want to view the contents of a sequence file, follow these directions:</p>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent">Select <span style="font-weight: bold;color: #00509f;">Tools/File/Utility</span> from the main menu.</p>
+            </li>
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent">Enter or locate the folder used to store your sequence files. Double click on a folder to open it.</p>
+            </li>
+            <li class="p-NumberedIndent" value="3">
+                <p class="NumberedIndent">Select sequence (*.seq) files as the file type.</p>
+            </li>
+            <li class="p-NumberedIndent" value="4">
+                <p class="NumberedIndent">Click on the desired sequence file to view. A summary of the sequence file is displayed containing each procedure and the sample information for each run in the sequence.</p>
+            </li>
+        </ol>
+        <p class="NumberedIndent" style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Basic Steps Needed to Run an SDT Experiment|Basic_Steps_Needed_to_Run_an_SDT_Experiment_.htm||Creating Custom Methods|Creating_Custom_Methods.htm||Saving, Restoring, and Viewing Procedures|Saving_Restoring_and_Viewing_Procedures.htm||Using the File Utility|File_Utility.htm"><img src="SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

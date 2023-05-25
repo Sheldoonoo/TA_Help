@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" MadCap:tocPath="Using the Procedure Templates" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" xmlns="" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="date" content="01 22, 2002 2:53:23 PM" />
+        <meta name="topic-status" content="In Progress" />
+        <meta name="topic-check-list" content="First Draft,Links,Index keywords" />
+        <meta name="topic-priority" content="0" />
+        <meta name="topic-time-estimate" content="0" />
+        <meta name="topic-comment" content="" />
+        <meta name="topic-id" content="Setting Up a Stress Sweep Experiment" />
+        <meta name="generator" content="Adobe RoboHelp 11" /><title>Setting Up a Stress Sweep Experiment</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" type="text/css" />
+        <script src="SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <?rh-script_start ?>
+        <script src="ehlpdhtm.js" type="text/javascript" language="JavaScript1.2">
+        </script>
+        <?rh-script_end ?>
+        <h1><a href="javascript:BSSCPopup('Menu.htm');" title="Click" id="a1"><img src="GIF/ques_blue.jpg" style="border: none;" alt="" width="35" height="37" align="right" border="0" /></a><a name="top" id="top"></a>Setting Up a Stress Sweep Experiment</h1>
+        <p>&#160;</p>
+        <p>Multistress (Stress Sweep) experiments are performed over a range of stress or force at a constant frequency at isothermal temperature. These experiments provide information on the effect of stress on material properties and can be used to look at sample resilience and identify the linear viscoelastic region (LVR).</p>
+        <p>If you want to set up a DMA Stress Sweep procedure, you can choose one of two techniques—the <a href="#Using%20the%20DMA%20Wizard" class="selected">DMA Wizard</a> or the <a href="#Using%20the%20Experimental%20View%20Procedure%20Page" class="selected">Experimental View - Procedure Page</a>. See the instructions below for each technique.</p>
+        <p>When you perform a DMA Stress Sweep experiment, the following parameters need to be chosen:</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet"><span style="font-weight: bold; font-style: italic;">For Tensioning Type Clamps Only:</span> &#160;Enter the <?rh-dropspot_start class="dropspot" dataid="POPUP258554865" href="javascript:TextPopup(this)" 
+         id="a4" ?>Preload Force<?rh-dropspot_end ?>. Then, choose one of two methods (a or b) to maintain a positive force on the sample: &#160;</p>
+                <?rh-droptext_start class="droptext" id="POPUP258554865" style="display: none;" ?>
+                <p><span style="font-weight: bold; color: #00509f;">Preload Force</span> is the force applied to the sample prior to initiating the experiment. &#160;</p>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">Preload force is not available when you select a nontensioning clamp (<span style="font-style: italic;">i.e</span>., single/dual cantilever, shear sandwich). &#160;</p>
+                    </li>
+                    <li class="p-Bullet" value="2">
+                        <p class="Bullet">Preload force is required with the tensioning clamps (<span style="font-style: italic;">i.e</span>., 3-point bending, compression, and tension film/fiber) when running multifrequency and multistrain experiments in order to sustain oscillation (ensure that force is applied to the sample throughout the complete oscillation). &#160;Typical preload forces for those experiments are 0.01 to 0.5 N.</p>
+                    </li>
+                </ul>
+                <p>&#160;</p>
+                <?rh-droptext_end ?>
+            </li>
+        </ul>
+        <ol>
+            <li class="p-LetterIndent" value="1">
+                <p class="LetterIndent">Check the <span style="font-weight: bold; color: #00509f;"><?rh-dropspot_start class="dropspot" 
+         dataid="POPUP258609435" href="javascript:TextPopup(this)" id="a3" ?>Force Track<?rh-dropspot_end ?></span> box and enter the desired ratio of static and dynamic forces, if you want the total force that is applied to the sample to be automatically adjusted during the experiment.</p>
+                <?rh-droptext_start class="droptext" id="POPUP258609435" style="display: none;" ?>
+                <p>Selecting <span style="font-weight: bold; color: #00509f;">Force Track</span> will cause the instrument to automatically adjust the force as the sample changes modulus, in order to minimize permanent sample deformation. This parameter is used for 3-point bending, compression, penetration, and film/fiber tension clamps. These clamps allow sample deformation in one direction only.</p>
+                <p>Force track automatically adjusts the total force (preload and dynamic) applied to the sample during multifrequency and multistrain experiments. &#160;</p>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">Force track is only used when one of the tensioning clamps (<span style="font-style: italic;">i.e</span>., 3-point bend, compression, tension film and tension fiber) is selected. It is not needed for nontensioning clamps (<span style="font-style: italic;">i.e</span>., single/dual cantilever, shear sandwich).</p>
+                    </li>
+                    <li class="p-Bullet" value="2">
+                        <p class="Bullet">Force track essentially determines the dynamic force required to oscillate at the desired amplitude and frequency; it applies an additional static force that is a constant multiple of that dynamic force. This is necessary to avoid sample buckling in tension clamps and loss of contact with the sample for compression and 3-point bending clamps.</p>
+                    </li>
+                    <li class="p-Bullet" value="3">
+                        <p class="Bullet">Recommended force track values are 120% for thin films and low denier fibers (tension film and tension fiber clamps), 150% for thermoplastics (3-point bending clamps), and 125% for general applications.</p>
+                    </li>
+                    <li class="p-Bullet" value="4">
+                        <p class="Bullet" style="color: #000000;">As the temperature increases, the modulus of the material drops (provided that there is no cross-linking reaction). Since the static force is adjusted in proportion to the dynamic force, the sample does not creep or undergo permanent deformation during the experiment.</p>
+                    </li>
+                </ul>
+                <p>After checking the Force Track box, enter the desired value in percent.</p>
+                <?rh-droptext_end ?>
+            </li>
+            <li class="p-LetterIndent" value="2">
+                <p class="LetterIndent">Uncheck the <span style="font-weight: bold; color: #00509f;">Force Track</span> box, if you want the to use a constant force (the <span style="font-weight: bold; color: #00509f;">Preload Force</span>) on the sample.</p>
+            </li>
+        </ol>
+        <p class="Notes">NOTE: &#160;If there is a need to maintain a constant force on the sample throughout the experiment, enter that force in the <span style="font-weight: bold; color: #00509f;">Preload Force</span> field and uncheck <span style="font-weight: bold; color: #00509f;">Force Track</span>.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet"><span style="font-weight: bold; color: #00509f;">Frequency:</span> &#160;A single frequency is used throughout the experiment. &#160;1 Hz is recommended.</p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet"><span style="font-weight: bold; color: #00509f;">Initial Amplitude:</span> &#160;This parameter is used to evaluate the stiffness of the sample in order to establish the limits of stress that the instrument will be able to apply at a certain frequency. This should be a small number, in the range of 2 to 5 µm.</p>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet"><span style="font-weight: bold; color: #00509f;">Isothermal Temperature &amp; Soak Time:</span> &#160;Stress/force sweeps for determining the linear viscoelastic region are performed isothermally. &#160;Ambient temperature is commonly used. &#160;When evaluating the material at another temperature [achievable temperature range with gas cooling accessory is -145 to 600°C], it is important to ensure thermal equilibrium is reached before initiating the strain sweep. &#160;A five-minute "soak time" is adequate for most materials.</p>
+            </li>
+        </ul>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet"><span style="font-weight: bold; color: #00509f;">Number of Sweeps:</span> &#160;A single stress sweep is sufficient for determination of linear viscoelastic response. &#160;Repetitive sweeps provide information about structural stability in "softer" materials. &#160;Elastomers, for example, can exhibit lower modulus on subsequent stress sweeps if the time between sweeps is to short to rebuild internal structure destroyed during the initial sweep.</p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet"><span style="font-weight: bold; color: #00509f;">Stress/Force Table:</span> &#160;&#160;The stress that should be used will vary from sample to sample based on the sample stiffness. An initial run may be performed with a large range and then you can select the limits for subsequent experiments. It is easier to choose the range using force values because the force range of the instrument is fixed, whereas the stress depends on the geometry and dimensions of the sample. Recommended force values are: &#160;0.01 to 10 N, logarithmically spaced, 5 points per decade. For more information on stress tables, click here <img src="OCEAN_ARROW_SM.GIF" style="border: none;" alt="" width="7" height="13" border="0" /> <a href="Frequency_Amplitude_Stress_Force_Tables.htm">Stress/force table</a>.</p>
+            </li>
+        </ul>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet"><span style="font-weight: bold; color: #00509f;">Additional Conditions:</span> &#160;There are additional experimental conditions that can be changed to optimize specific situations. &#160;These are accessed using <a href="Advanced_Parameters_Window.htm">Advanced Parameters</a> and <a href="Post_Test_Window.htm">Post-Test Conditions</a>. &#160;For most experiments, the system default values shown are recommended.</p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet"><span style="font-weight: bold; color: #00509f;">See also:</span> &#160;<a href="Guidelines_for_Running_Subambient_Experiments.htm">Guidelines for Running Subambient Experiments</a>.</p>
+            </li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p class="Bullet" style="text-align: center;"><span style="text-align: center;"><span><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="GIF/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /></span></span>
+        </p>
+        <h3><a name="Using the DMA Wizard"></a>Using the DMA Wizard <img src="GIF/BUTTON_WIZARD_32x32.gif" style="border: none;width: 32;height: 32;" alt="" border="0" />: &#160;</h3>
+        <p>Enter the desired parameters, then select <span style="font-weight: bold; color: #00509f;">Next</span> to proceed.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <h3><a name="Using the Experimental View Procedure Page"></a>Using the Experimental View <img src="GIF/Button_Experiment_View_32x32.gif" style="border: none;width: 32;height: 32;" alt="" border="0" /> Procedure Page:</h3>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent">Display the <span style="font-weight: bold; color: #00509f;">Procedure Page</span>. Select the desired experiment from the list of available preprogrammed templates.</p>
+            </li>
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent">Enter the desired parameters. When you have finished setting up this procedure, you can enter more information by selecting the <a href="Experimental_View_PaneNotes_Page.htm">Notes Page</a> and <a href="Experimental_View_PaneSummary.htm">Summary Page</a> for this run.</p>
+            </li>
+            <li class="p-NumberedIndent" value="3">
+                <p class="NumberedIndent">Click the <span style="font-weight: bold; color: #00509f;">Apply</span> button when finished to save these changes or the <span style="font-weight: bold; color: #00509f;">Append</span> button to save the changes to this run and add another run to the end of the sequence.</p>
+            </li>
+        </ol>
+        <p class="Notes">NOTE: &#160;You can use any test template as the basis for a custom test by selecting the desired test template from the list of tests, then click the <span style="font-weight: bold; color: #00509f;">Apply</span> button and change the test to Custom. Then you can click on the <span style="font-weight: bold; color: #00509f;">Procedure Page</span> and then the <span style="font-weight: bold; color: #00509f;">Editor</span> button to make the changes desired.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;" class="selected">Back to top</a>
+        </p>
+        <p>
+            <!--Metadata type="DesignerControl" startspan
+<object classid="clsid:FF80F713-5DC6-11d0-A7B4-00AADC53E937" id="RelatedTopics" 
+                 border="0" style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; 
+                 margin-right: 0px;" align="bottom">
+<param name="_Version" value="65536"  />
+<param name="_ExtentX" value="2408"  />
+<param name="_ExtentY" value="609"  />
+<param name="_StockProps" value="13"  />
+<param name="ForeColor" value="0"  />
+<param name="BackColor" value="12632256"  />
+<param name="UseButton" value="-1"  />
+<param name="UseText" value="0"  />
+<param name="ControlLabel" value="Related Topics"  />
+<param name="UseIcon" value="0"  />
+<param name="Items" value="Available DMA Clamps;Available_DMA_Clamps.htm$$**$$Available DMA Test Templates;Available_DMA_Tests.htm$$**$$Basic Steps Needed to Run a DMA Experiment;Basic_Steps_Needed_to_Run_a_DMA_Experiment_.htm$$**$$Creating a Custom Method in the Multistrain or Multistress Mode;Creating_a_Custom_Method_in_the_Multistrain_or_Multistress_Mode.htm$$**$$Handling Run Sequences;Handling_Run_Sequences.htm$$**$$Selecting a DMA Operating Mode;Selecting_a_DMA_Operating_Mode.htm$$**$$" 
+  />
+<param name="Image" value=""  />
+<param name="FontInfo" value="Arial,8,0,,"  />
+<param name="_CURRENTFILEPATH" value="D:\Q Series Help Source\QDMA Help\Setting_Up_a_Stress_Sweep_Experiment.htm" 
+  />
+<param name="_ID" value="RelatedTopics"  />
+<param name="UseMenu" value="-1"  />
+<param name="Frame" value=""  />
+<param name="Window" value=""  />
+</object>-->
+            <object classid="clsid:ADB880A6-D8FF-11CF-9377-00AA003B7A11" id="RelatedTopics" type="application/x-oleobject">
+                <param name="Command" value="Related Topics,MENU" />
+                <param name="Button" value="Text:Related Topics" />
+                <param name="Font" value="Arial,8,0,," />
+                <param name="Item1" value="Available DMA Clamps;Available_DMA_Clamps.htm" />
+                <param name="Item2" value="Available DMA Test Templates;Available_DMA_Tests.htm" />
+                <param name="Item3" value="Basic Steps Needed to Run a DMA Experiment;Basic_Steps_Needed_to_Run_a_DMA_Experiment_.htm" />
+                <param name="Item4" value="Creating a Custom Method in the Multistrain or Multistress Mode;Creating_a_Custom_Method_in_the_Multistrain_or_Multistress_Mode.htm" />
+                <param name="Item5" value="Handling Run Sequences;Handling_Run_Sequences.htm" />
+                <param name="Item6" value="Selecting a DMA Operating Mode;Selecting_a_DMA_Operating_Mode.htm" />
+            </object> <!--Metadata type="DesignerControl" endspan--></p>
+        <?rh-script_start ?>
+        <script type="text/javascript" language="JavaScript1.2">
+///*<![CDATA[*/
+        if( typeof( FilePopupInit ) != 'function' ) FilePopupInit = new Function();
+        if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+        FilePopupInit('a1');
+        TextPopupInit('a4', 'POPUP258554865');
+        TextPopupInit('a3', 'POPUP258609435');
+///*]]>*/</script>
+        <?rh-script_end ?>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

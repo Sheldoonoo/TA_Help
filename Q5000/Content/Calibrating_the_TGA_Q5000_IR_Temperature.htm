@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Calibrating the Instrument" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="date" content="05 14, 2001 3:51:10 PM" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="topic-status" content="In Progress" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="topic-priority" content="0" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="topic-time-estimate" content="0" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="topic-comment" content="" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="topic-id" content="Temperature_Calibration.htm" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="generator" content="Adobe RoboHelp 11" xmlns="http://www.w3.org/1999/xhtml" /><title xmlns="http://www.w3.org/1999/xhtml">Calibrating the TGA Q5000 IR Temperature</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" type="" xmlns="http://www.w3.org/1999/xhtml" />
+        <link href="HtmlHelp.css" rel="stylesheet" type="text/css" xmlns="http://www.w3.org/1999/xhtml" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <?rh-script_start ?>
+        <script src="ehlpdhtm.js" type="text/javascript" language="JavaScript1.2">
+        </script>
+        <?rh-script_end ?>
+        <h1><a href="javascript:BSSCPopup('Menu.htm');" title="Click" id="a1"><img src="Q5000 Images/ques_blue.jpg" style="border: none;" alt="" width="35" height="37" align="right" border="0" /></a><a name="top" id="top"></a>Calibrating the TGA Q5000 IR Temperature</h1>
+        <p>&#160;</p>
+        <p>Temperature calibration is useful for experiments in which precise transition temperatures are essential. To temperature calibrate the TGA, you need to analyze a high-purity magnetic standard for its curie temperature, and then enter the observed and correct values in the temperature calibration table.</p>
+        <p>There are two techniques for TGA temperature calibration recognized by the American Society for Testing and Materials. These techniques are described in ASTM Standards E914-83 and E1582-93. The latter, which is based on the Curie Point of paramagnetic metals, is recommended for the TA Instruments TGA's.</p>
+        <p>In this technique, a Curie standard is heated in a sample pan in a magnetic field. The Q5000 IR furnace is equipped with an electromagnet to facilitate this operation. As the standard goes through its Curie Point, its attraction to the magnet changes, appearing as a weight change. The extrapolated endset of this weight change is adjusted to agree with the material's known Curie Point Temperature. Up to five calibration points can be entered into the temperature calibration table. &#160;A multi-point calibration is more accurate than a one-point calibration.</p>
+        <h4>Basic Instructions</h4>
+        <p>Follow these basic instructions for Curie Temperature calibration or verification. Click the links to jump to the specific instructions for that item or scroll down to read the entire procedure.</p>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent"><a href="#Perform_the_Curie_Temperature_Experiment">Perform the experiment(s)</a>, which involves choosing one or more standards and running the experiments. You can do this one of two ways:</p>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">Automatically using <a href="#Setting_Up_Platinum_for_Curie_Temperature">AutoCurie Platinum setup</a> (recommended for first time calibration and for those using just one standard).</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">Manually using the <a href="#Manually_Determining_Curie_Temperature">templates</a> or <a href="Creating_Custom_Methods.htm">custom methods</a> (recommended for anyone using multiple standards)</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent" style="margin-top: 4.5pt;"><a href="#Analyze_the_Curie_Temperature_Data">Analyze the data.</a> You can do this one of several ways:</p>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">Automatically as part of the <a href="#Setting_Up_Platinum_for_Curie_Temperature">AutoCurie Platinum setup</a>.</p>
+                    </li>
+                    <li class="p-Bullet" value="2">
+                        <p class="Bullet"><a href="#Automatic_Analysis_Using_Post_Run_Actions">Automatically by defining Post Test Actions</a> (can be applied to templates).</p>
+                    </li>
+                    <li class="p-Bullet" value="3">
+                        <p class="Bullet"><a href="#Manual_Analysis">Manually by specifying the appropriate file then analyzing the data one of two ways</a>: (a) using <span style="font-weight: bold; color: #00509f;">Autoanalyze</span> (which chooses the analysis limits for you) or (b) using <span style="font-weight: bold; color: #00509f;">Analyze</span> (where you specify the desired analysis limits).</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="p-NumberedIndent" value="3">
+                <p class="NumberedIndent" style="margin-top: 4.5pt;">Choose from optional functions:</p>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet"><a href="Schedule_Page.htm">Scheduling</a> the calibration sequence (either created through Platinum or your own custom method).</p>
+                    </li>
+                    <li class="p-Bullet" value="2">
+                        <p class="Bullet">Enabling run and sequence <a href="Messaging_Page.htm">messaging</a>.</p>
+                    </li>
+                    <li class="p-Bullet" value="3">
+                        <p class="Bullet">Print out the .emf calibration file for your records. This file is created after either manual or automatic calibration and placed in the same folder used for your data files. It will be named for the sample name entered: <span style="font-style: italic;">e.g</span>., <span style="font-style: italic;">samplename</span>.emf.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="text-align: center;"><span style="text-align: center;"><span><img src="Q5000 Images/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Q5000 Images/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Q5000 Images/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Q5000 Images/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Q5000 Images/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Q5000 Images/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Q5000 Images/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Q5000 Images/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Q5000 Images/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /><img src="Q5000 Images/ocean_bullet_sm.gif" style="border: none;" alt="" width="11" height="11" border="0" /></span></span>
+        </p>
+        <h3><a name="Perform_the_Curie_Temperature_Experiment" id="Perform_the_Curie_Temperature_Experiment"></a>(1) &#160;Perform the Curie Temperature Experiment</h3>
+        <p>Perform the experiment(s), which involves choosing one or more standards and running the experiments. You can do this one of two ways:</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet">Automatically using <a href="#Setting_Up_Platinum_for_Curie_Temperature">AutoCurie Platinum setup</a> (recommended for first time calibration and for those using just one standard).</p>
+            </li>
+        </ul>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet">Manually using the <a href="#Manually_Determining_Curie_Temperature">templates</a> or <a href="Creating_Custom_Methods.htm">custom methods</a> (recommended for anyone using multiple standards)</p>
+            </li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h4><a name="Setting_Up_Platinum_for_Curie_Temperature" id="Setting_Up_Platinum_for_Curie_Temperature"></a>Setting Up Platinum for Curie Temperature</h4>
+        <p>The Q5000 is equipped with Curie temperature verification/calibration features accessed through the <a href="Introducing_Platinum.htm">Platinum</a> functions. These features provide the following:</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet">Curie Temperature Verification</p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet"><a href="Schedule_Page.htm">Scheduling</a> of verification/calibration experiments</p>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet"><a href="Messaging_Page.htm">Email and/or Windows Messaging</a> of process with results</p>
+            </li>
+            <li class="p-Bullet" value="4">
+                <p class="Bullet"><a href="Calibration_Report.htm">Calibration report</a>
+                </p>
+            </li>
+        </ul>
+        <p>To set up Curie temperature verification/calibration using <span style="font-weight: bold; color: #00509f;">Platinum</span>:</p>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent">Open the instrument control program for a Q5000 IR instrument. See <a href="TA_Instrument_Explorer_Window.htm">Using the TA Instrument Explorer</a> for instructions.</p>
+            </li>
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent">Choose the standard that was used for your experiments. (Only one standard can be used with Platinum.)</p>
+            </li>
+            <li class="p-NumberedIndent" value="3">
+                <p class="NumberedIndent">Select the <span style="font-weight: bold; color: #00509f;">Platinum</span> button, <img src="Q5000 Images/Button_Platinum.jpg" style="border: none;" alt="" width="113" height="29" border="0" /> , at the bottom left-hand side of the main instrument control window.</p>
+            </li>
+            <li class="p-NumberedIndent" value="4">
+                <p class="NumberedIndent">Click <span style="font-weight: bold; color: #00509f;">Curie Calibration</span> from the Automatic Tasks list on the left side of the window. Two options will be displayed. Choose the desired option:</p>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet"><span style="font-weight: bold; color: #00509f;">Use Existing Sequence</span>: &#160;This option leaves the current sequence in place allowing you to customize it or use it as is. After selecting this option, use the <a href="Understanding_the_Standard_Sequence_Pane.htm">Sequence Pane</a> to customize the experiment. Then proceed to <span style="font-weight: bold;">Step 6</span> below.</p>
+                    </li>
+                    <li class="p-Bullet" value="2">
+                        <p class="Bullet"><span style="font-weight: bold; color: #00509f;">Create New Sequence</span>: &#160;Used to set up a new test with the Platinum functions. This option will replace the current sequence. When you select this option, proceed to <span style="font-weight: bold;">Step 5</span>.</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="p-NumberedIndent" value="5">
+                <p class="NumberedIndent" style="margin-top: 4.5pt;">Creating a new sequence:</p>
+            </li>
+        </ol>
+        <ol start="1">
+            <li class="p-LetterIndent" value="1">
+                <p class="LetterIndent">Enter the Method parameters:</p>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet" style="font-weight: bold;"><font color="#00509F"><span style="color: #00509f;">Equilibrate a</span>t:</font> &#160;<span style="font-weight: normal;">Select a temperature that is up to 100°C below the literature Curie temperature of the material.</span></p>
+                        <p class="Bullet">Isothermal for: &#160;<span style="font-weight: normal; color: #000000;">Check this box to hold the sample at the equilibrate temperature for the desired amount of time BEFORE the magnet is applied for calibration. This is done to observe the effect of the magnet on the sample.</span></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet" style="font-weight: bold; color: #00509f;">Heating Rate: &#160;<span style="font-weight: normal; color: #000000;">Heat the material at the same heating rate that you will use in your subsequent experiments to 100°C above the literature Curie temperature.</span></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet" style="font-weight: bold; color: #000000;"><span style="color: #00509f;">Pan #</span><span style="font-weight: normal;">: Use the up/down arrows to choose the pan number containing your sample.</span>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="p-LetterIndent" value="2">
+                <p class="LetterIndent">Check the box next to the desired <span style="font-weight: bold; color: #00509f;">Standard Name</span>. Make sure that you verify the theoretical relative Curie temperature used for each standard. Edit the data if necessary. (Click here for more information on choosing/editing standards <img src="Q5000 Images/ocean_arrow_sm.gif" style="border: none;" alt="" width="7" height="13" border="0" /> <a href="Setting_Up_Calibration_Standards.htm">Setting Up Calibration Standards</a>.)</p>
+            </li>
+            <li class="p-LetterIndent" value="3">
+                <p class="LetterIndent">Choose your <span style="font-weight: bold; color: #00509f;">Settings</span>:</p>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">If you want to determine if your current calibration is acceptable, choose the Verification (<span style="font-weight: bold; color: #00509f;" xmlns="http://www.w3.org/1999/xhtml">Verification</span> is defined as a double-check of calibration, performed immediately after calibration, usually on the <span style="font-weight: bold;" xmlns="http://www.w3.org/1999/xhtml">same</span> sample to verify that the instrument has accepted the adjustments made during calibration.) radio button.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">If you wish to perform a full Curie calibration, choose the Calibration (<span style="font-weight: bold; color: #00509f;" xmlns="http://www.w3.org/1999/xhtml">Calibration</span> is defined as the adjustment of an instrument so that it provides correct theoretical value for a specific measurement on a well-characterized [certified] standard.) radio button.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">Check the <span style="font-weight: bold; color: #00509f;">Perform Calibration if Verification Fails</span> box to automatically perform the Curie calibration in the event the validation test does not fall within the acceptable validation criteria. Select the <span style="font-weight: bold; color: #00509f;">Pan #</span> by using the up/down arrows to choose the pan number containing your sample for the calibration experiment.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet">Check the <span style="font-weight: bold; color: #00509f;">Perform Verification after Calibration</span> box to automatically verify the new calibration, if desired.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet" style="margin-bottom: 6pt;">Enter the desired <span style="font-weight: bold; color: #00509f;">Verification Criteria.</span></p>
+                    </li>
+                </ul>
+            </li>
+            <li class="p-LetterIndent" value="4">
+                <p class="LetterIndent">Select <span style="font-weight: bold; color: #00509f;">Apply</span> to save the test setup.</p>
+            </li>
+        </ol>
+        <ol start="6">
+            <li class="p-NumberedIndent" value="6">
+                <p class="NumberedIndent" style="margin-top: 6pt;">Alter the <span style="font-weight: bold; color: #00509f;">Post Run Action</span>, if desired. The default Post Run Action is to DO (perform) the Curie calibration. You can change this option by selecting a run, right clicking to display the pop-up menu, and selecting Post Run Action. For example, you could select IF -- Successful Curie Calibration -- GO next sequence -- to begin your experimental sequence. See <a href="Selecting_Post_Test_Actions.htm">Selecting Post Test Actions</a> for more information.</p>
+            </li>
+            <li class="p-NumberedIndent" value="7">
+                <p class="NumberedIndent">Place the curie temperature sample in a <a href="Taring_the_Pan(s).htm">tared</a> TGA sample pan and position the pan on the sample tray in the numbered position chosen above.</p>
+            </li>
+            <li class="p-NumberedIndent" value="8">
+                <p class="NumberedIndent">Select the <a href="Schedule_Page.htm">Schedule page</a> to specify the time, day, and frequency of the calibration process.</p>
+            </li>
+            <li class="p-NumberedIndent" value="9">
+                <p class="NumberedIndent">Select the <a href="Messaging_Page.htm">Messaging page</a> to specify the notification options desired.</p>
+            </li>
+            <li class="p-NumberedIndent" value="10">
+                <p class="NumberedIndent">Select <span style="font-weight: bold; color: #00509f;">Start</span> to execute the sequence immediately, if desired. You may also wish to save this calibration sequence for future use. (Click on the <span style="font-weight: bold; color: #00509f;">Calibration</span> button on the left-hand side. Click on the <span style="color: #00509f; font-weight: bold;">Save</span> button, <img src="Q5000 Images/Button_Save_Sequence.gif" style="border: none;" alt="" width="26" height="27" border="0" />, at the top of the sequence pane.</p>
+            </li>
+        </ol>
+        <p style="font-size: 8pt;"><span><a href="#top" style="font-size: 8pt;">Back to top</a></span>
+        </p>
+        <h4><a name="Manually_Determining_Curie_Temperature" id="Manually_Determining_Curie_Temperature"></a>Manually Determining Curie Temperature (Using the Template)</h4>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent">Choose the standard that was used for your experiments. Make sure that you verify the theoretical Curie temperature used for each standard. Edit the data if necessary. (Click here for more information on choosing/editing standards <img src="Q5000 Images/ocean_arrow_sm.gif" style="border: none;" alt="" width="7" height="13" border="0" /> <a href="Setting_Up_Calibration_Standards.htm">Setting Up Calibration Standards</a>.) Multiple standards may be needed for this purpose. Choose standards whose curie temperature differs substantially; each pair of curie temperatures must differ from all other pairs by at least 10°C.</p>
+            </li>
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent"><a href="Taring_the_Pan(s).htm">Tare</a> the desired number of pans needed for the number of standards to be used for temperature calibration.</p>
+            </li>
+            <li class="p-NumberedIndent" value="3">
+                <p class="NumberedIndent">Select the <img src="Q5000 Images/Button_Calibration.jpg" style="border: none;" alt="" width="113" height="30" border="0" /> button to start a calibration sequence. If you wish to clear the current sequence, select <img src="Q5000 Images/Button_New_Squence_QNX.gif" style="border: none;" alt="" width="26" height="28" border="0" /> to open a new sequence.</p>
+            </li>
+            <li class="p-NumberedIndent" value="4">
+                <p class="NumberedIndent">Choose the "Calibration" <span style="font-weight: bold; color: #00509f;">Mode</span>.</p>
+            </li>
+            <li class="p-NumberedIndent" value="5">
+                <p class="NumberedIndent">Select the "Curie Point Cal" test from the <span style="font-weight: bold; color: #00509f;">Test</span> list. See <a href="Setting_Up_a_Curie_Point_Temperature_Calibration.htm">Setting Up a Curie Point Temperature Calibration</a> for more information.</p>
+            </li>
+            <li class="p-NumberedIndent" value="6">
+                <p class="NumberedIndent">Enter the requested sample information. The sample name MUST be the same as the chosen standard's name.</p>
+            </li>
+            <li class="p-NumberedIndent" value="7">
+                <p class="NumberedIndent">Place the curie temperature sample in a <a href="Taring_the_Pan(s).htm">tared</a> TGA sample pan and position the pan on the sample tray.</p>
+            </li>
+            <li class="p-NumberedIndent" value="8">
+                <p class="NumberedIndent">Click on the <span style="font-weight: bold; color: #00509f;">Procedure</span> tab. Enter the requested test parameters:</p>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet" style="font-weight: bold;"><font color="#00509F"><span style="color: #00509f;">Equilibrate a</span>t:</font> &#160;<span style="font-weight: normal;">Select a temperature that is up to 100°C below the literature Curie temperature of the material.</span></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet" style="font-weight: bold; color: #00509f;">Isothermal for: &#160;<span style="font-weight: normal; color: #000000;">Check this box to hold the sample at the equilibrate temperature for the desired amount of time BEFORE the magnet is applied for calibration. This is done to observe the effect of the magnet on the sample.</span></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet" style="font-weight: bold; color: #00509f;">Heating Rate: &#160;<span style="font-weight: normal; color: #000000;">Heat the material at the same heating rate that you will use in your subsequent experiments to 100°C above the literature Curie temperature.</span></p>
+                    </li>
+                </ul>
+            </li>
+            <li class="p-NumberedIndent" value="9">
+                <p class="NumberedIndent" style="margin-top: 4.5pt;">Click on the <span style="font-weight: bold; color: #00509f;">Notes</span> tab. Enter/verify the requested information.</p>
+            </li>
+            <li class="p-NumberedIndent" value="10">
+                <p class="NumberedIndent">Click on the <span style="font-weight: bold; color: #00509f;">Apply</span> button to save the experimental and sample parameters entered for this run.</p>
+            </li>
+            <li class="p-NumberedIndent" value="11">
+                <p class="NumberedIndent">If you wish to run multiple standards, click on the <span style="font-weight: bold; color: #00509f;">Copy Run/Append to End</span> button, <img src="Q5000 Images/Button_Copy_Run_AppendtoEnd.gif" style="border: none;" alt="" width="24" height="28" border="0" /> , to add another run to the sequence.</p>
+            </li>
+            <li class="p-NumberedIndent" value="12">
+                <p class="NumberedIndent">Repeat steps 1 through 10 for each temperature calibration standard.</p>
+            </li>
+        </ol>
+        <p class="Notes">NOTE: If you want to have the analysis of the data performed automatically using <span style="font-weight: bold; color: #00509f;">Post Run Actions</span>, skip to <a href="#Automatic_Analysis_Using_Post_Run_Actions">Automatic Analysis Using Post Run Actions</a> now. Otherwise, continue with the next step.</p>
+        <ol start="13">
+            <li class="p-NumberedIndent" value="13">
+                <p class="NumberedIndent">If more than one run is in the sequence list, schedule the first run in the sequence. (An arrow will appear next to the run number in the <a href="Understanding_the_Standard_Sequence_Pane.htm">Sequence Pane</a> for the scheduled run.) See <a href="Starting_a_run_and_or_sequence.htm">Starting a Run and/or Sequence</a> for more information.</p>
+            </li>
+            <li class="p-NumberedIndent" value="14">
+                <p class="NumberedIndent">Select <span style="font-weight: bold; color: #00509f;">Start</span> to begin the calibration run. Observe the Weight Loss % from <a href="Monitoring_Real_Time_Signals_(Signal_Display_Pane).htm">Signal Display</a>. The procedure will automatically turn on the magnet when required and run the experiment.</p>
+            </li>
+            <li class="p-NumberedIndent" value="15">
+                <p class="NumberedIndent"><a href="#Analyze_the_Curie_Temperature_Data">Analyze the Curie Temperature data</a> as directed in the next section.</p>
+            </li>
+            <li class="p-NumberedIndent" value="16">
+                <p class="NumberedIndent">Save the calibration sequence for future recall, if desired. Click on the <span style="color: #00509f; font-weight: bold;">Save</span> button, <img src="Q5000 Images/Button_Save_Sequence.gif" style="border: none;" alt="" width="26" height="27" border="0" />, at the top of the sequence pane.</p>
+            </li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Analyze_the_Curie_Temperature_Data" id="Analyze_the_Curie_Temperature_Data"></a>(2) Analyze the Curie Temperature Data</h3>
+        <p>Once the calibration run is complete, you can analyze the data using one of the following techniques:</p>
+        <ul>
+            <li class="p-Bullet" value="1">
+                <p class="Bullet">Automatically as part of the <a href="#Setting_Up_Platinum_for_Curie_Temperature">AutoCurie Platinum setup</a>.</p>
+            </li>
+            <li class="p-Bullet" value="2">
+                <p class="Bullet"><a href="#Automatic_Analysis_Using_Post_Run_Actions">Automatically by defining Post Test Actions</a> (can be applied to templates).</p>
+            </li>
+            <li class="p-Bullet" value="3">
+                <p class="Bullet"><a href="#Manual_Analysis">Manually by specifying the appropriate file then analyzing the data one of two ways</a>: (a) using <span style="font-weight: bold; color: #00509f;">Autoanalyze</span> (which chooses the analysis limits for you) or (b) using <span style="font-weight: bold; color: #00509f;">Analyze</span> (where you specify the desired analysis limits).</p>
+            </li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h4><a name="Manual_Analysis" id="Manual_Analysis"></a>Manual Analysis</h4>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent">Select <span style="font-weight: bold; color: #00509f;">Calibrate/Analysis</span> from the main menu. (See <a href="Analyzing_TGA_Calibration_Data.htm">Analyzing TGA Calibration Data</a> for more detailed information.)</p>
+            </li>
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent">Choose the standard that was used for your experiments. Make sure that you verify the theoretical Curie temperature used for each standard. Edit the data if necessary. (Click here for more information on choosing/editing standards <img src="Q5000 Images/ocean_arrow_sm.gif" style="border: none;" alt="" width="7" height="13" border="0" /> <a href="Setting_Up_Calibration_Standards.htm">Setting Up Calibration Standards</a>.)</p>
+            </li>
+            <li class="p-NumberedIndent" value="3">
+                <p class="NumberedIndent">Select the calibration file obtained above.</p>
+            </li>
+            <li class="p-NumberedIndent" value="4">
+                <p class="NumberedIndent">Determine the curie temperature by analyzing the extrapolated end point of the S-shaped curve using the data analysis program using one of two methods:</p>
+            </li>
+        </ol>
+        <ol start="1">
+            <li class="p-LetterIndent" value="1">
+                <p class="LetterIndent">Click on the <span style="color: #00509f; font-weight: bold;">Analyze</span> button (or choose <span style="font-weight: bold; color: #00509f;">Analyze</span> from the pop-up menu).</p>
+            </li>
+        </ol>
+        <p class="LetterIndent" style="margin-left: 56px;">or</p>
+        <ol start="2">
+            <li class="p-LetterIndent" value="2">
+                <p class="LetterIndent">Open Universal Analysis the select and analyze the Curie temperature verification data file</p>
+            </li>
+        </ol>
+        <ol start="5">
+            <li class="p-NumberedIndent" value="5">
+                <p class="NumberedIndent">Save the analysis. Right click on the curve and select the <span style="font-weight: bold; color: #00509f;">Accept Results</span> function. The values will be automatically entered in the Calibration table when the analysis has been saved.</p>
+            </li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h4><a name="Automatic_Analysis_Using_Post_Run_Actions" id="Automatic_Analysis_Using_Post_Run_Actions"></a>Automatic Analysis Using Post Run Actions</h4>
+        <p>This method utilizes <span style="font-weight: bold; color: #00509f;"><a href="Selecting_Post_Test_Actions.htm">Post Run Actions</a></span>. These are defined while setting up the run sequence and executed at the end of each test. The experimental Curie Temperature is automatically determined and the calibration data is sent to the instrument using this procedure.</p>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent"><a href="#Manually_Determining_Curie_Temperature">Set up the calibration run sequence manually</a> as described above.</p>
+            </li>
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent">Right click on the temperature calibration run number on the <a href="Understanding_the_Standard_Sequence_Pane.htm">Sequence Pane</a> to display the pop-up menu. Select <span style="font-weight: bold; color: #00509f;">Post Run Action</span>.</p>
+            </li>
+            <li class="p-NumberedIndent" value="3">
+                <p class="NumberedIndent">Select one of the following:</p>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet"><span style="font-weight: bold; color: #00509f;">IF</span> -- Successful <span style="font-weight: bold; color: #00509f;">Curie Calibration</span> -- <span style="font-weight: bold; color: #00509f;">GOTO</span> -- Run <span style="font-weight: bold; color: #00509f;">Number</span><span>. (This will begin the next run if the results meet the verification criteria.)</span></p>
+                    </li>
+                    <li class="p-Bullet" value="2">
+                        <p class="Bullet"><span style="font-weight: bold; color: #00509f;">DO</span> -- <span style="font-weight: bold; color: #00509f;">NONE</span><span>. (This will begin the next run after the verification run is complete with no dependency on the outcome of the verification criteria result.)</span></p>
+                    </li>
+                    <li class="p-Bullet" value="3">
+                        <p class="Bullet"><span style="font-weight: bold; color: #00509f;">IF</span> -- Successful <span style="font-weight: bold; color: #00509f;">Curie Calibration</span> -- <span style="font-weight: bold; color: #00509f;">GO next sequence</span>. (This will advance the standard run sequence if the results meet the verification criteria.)</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="p-NumberedIndent" value="4">
+                <p class="NumberedIndent" style="margin-top: 4.5pt;">Repeat steps 1 through 3 for each temperature calibration standard used.</p>
+            </li>
+            <li class="p-NumberedIndent" value="5">
+                <p class="NumberedIndent">Select <span style="font-weight: bold; color: #00509f;">Start</span> to begin the calibration run. Observe the Weight Loss % from <a href="Monitoring_Real_Time_Signals_(Signal_Display_Pane).htm">Signal Display</a>. The procedure will automatically turn on the magnet when required and run the experiment.</p>
+            </li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Entering_Temperature_Calibration_Data" id="Entering_Temperature_Calibration_Data"></a>Entering Temperature Calibration Data</h3>
+        <p>Select <span style="color: #00509f; font-weight: bold;">Calibrate/Temperature Table</span> to access the Temperature Calibration Table, which is used to input or reset temperature calibration data.</p>
+        <p>This window shows the temperature calibration table that the instrument applies to the collected data. Use this window to enter from one to five temperature calibration points (pairs of observed and correct temperature points). The observed and correct temperature corresponds to the experimental and theoretical transition temperature (<span style="font-style: italic;">e.g</span>., melting point) of the calibrant respectively.</p>
+        <p>Data is automatically entered into this table when you select <span style="font-weight: bold; color: #00509f;">Accept Results</span> through the <a href="#Analyze_the_Curie_Temperature_Data">Calibration Analysis function</a> (described above) or when using the <a href="#Setting_Up_Platinum_for_Curie_Temperature">AutoCurie Platinum setup</a>.</p>
+        <p class="Notes">NOTE: A multiple-point calibration is more accurate than a one-point calibration. A single-point calibration shifts the sample temperature by a constant amount. A two- or more-point calibration shifts the temperature by a constant amount below the first point, uses a smooth curve through the calibration points and maintains a constant temperature shift after the last point.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="Q5000 Images/ocean_arrow_sm.gif" style="border: none;" alt="" width="7" height="13" border="0" /> &#160;If these values are correct, select OK.</p>
+        <p>
+            <img src="Q5000 Images/ocean_arrow_sm.gif" style="border: none;" alt="" width="7" height="13" border="0" /> &#160;If new values are to be entered follow these steps:</p>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent">Select the <span style="font-weight: bold; color: #00509f;">Reset</span> button to remove all previously stored values.</p>
+            </li>
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent">Determine the curie temperature points.</p>
+            </li>
+            <li class="p-NumberedIndent" value="3">
+                <p class="NumberedIndent">Enter the <span style="font-weight: bold; color: #00509f;">Observed</span> and <span style="font-weight: bold; color: #00509f;">Correct</span> temperature points in the table.</p>
+            </li>
+            <li class="p-NumberedIndent" value="4">
+                <p class="NumberedIndent">Select <span style="font-weight: bold; color: #00509f;">Apply</span> when all points have been entered to save the settings to the instrument.</p>
+            </li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="font-size: 8pt;">
+            <!--Metadata type="DesignerControl" startspan
+<object classid="clsid:FF80F713-5DC6-11d0-A7B4-00AADC53E937" id="RelatedTopics" 
+                 border="0" style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; 
+                 margin-right: 0px;" align="bottom">
+<param name="_Version" value="65536"  />
+<param name="_ExtentX" value="2090"  />
+<param name="_ExtentY" value="582"  />
+<param name="_StockProps" value="13"  />
+<param name="ForeColor" value="0"  />
+<param name="BackColor" value="13160660"  />
+<param name="UseButton" value="-1"  />
+<param name="UseText" value="0"  />
+<param name="ControlLabel" value="Related Topics"  />
+<param name="UseIcon" value="0"  />
+<param name="Items" value="Available Q5000 Test Templates;Available_Q5000_Test_Templates.htm$$**$$Calibrating the Q5000 - Overview;Calibrating_the_Q5000.htm$$**$$Preparing Samples;Preparing_Samples.htm$$**$$Preparing Sealed TGA Pans;Preparing_Sealed_TGA_Pans.htm$$**$$Preweighing Your Samples;Preweighing_Your_Samples.htm$$**$$" 
+  />
+<param name="Image" value=""  />
+<param name="FontInfo" value="Arial,8,0,,"  />
+<param name="_CURRENTFILEPATH" value="C:\Tech Pubs Files\Q Series Help Source\Adv Q Series Help\Q5000 Help\Calibrating_the_TGA_Q5000_IR_Temperature.htm" 
+  />
+<param name="_ID" value="RelatedTopics"  />
+<param name="UseMenu" value="-1"  />
+<param name="Frame" value=""  />
+<param name="Window" value=""  />
+</object>-->
+            <object classid="clsid:ADB880A6-D8FF-11CF-9377-00AA003B7A11" id="RelatedTopics" type="application/x-oleobject">
+                <param name="Command" value="Related Topics,MENU" />
+                <param name="Button" value="Text:Related Topics" />
+                <param name="Font" value="Arial,8,0,," />
+                <param name="Item1" value="Available Q5000 Test Templates;Available_Q5000_Test_Templates.htm" />
+                <param name="Item2" value="Calibrating the Q5000 - Overview;Calibrating_the_Q5000.htm" />
+                <param name="Item3" value="Preparing Samples;Preparing_Samples.htm" />
+                <param name="Item4" value="Preparing Sealed TGA Pans;Preparing_Sealed_TGA_Pans.htm" />
+                <param name="Item5" value="Preweighing Your Samples;Preweighing_Your_Samples.htm" />
+            </object> <!--Metadata type="DesignerControl" endspan--></p>
+        <?rh-script_start ?>
+        <script type="text/javascript" language="JavaScript1.2">
+///*<![CDATA[*/
+        if( typeof( FilePopupInit ) != 'function' ) FilePopupInit = new Function();
+        if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+        FilePopupInit('a1');
+        TextPopupInit('a2', 'POPUP293523096');
+        TextPopupInit('a3', 'POPUP292907313');
+///*]]>*/</script>
+        <?rh-script_end ?>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

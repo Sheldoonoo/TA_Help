@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Error and Information Messages" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Cannot Change Cell Constant</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../WinUAerr.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor51"></a>Cannot Change Cell Constant</h1>
+        <p class="footnote_text"><span style="color: red;font-weight: bold;">The cell constant (Kcell) parameter has changed. The new value will not be applied to the data. Are you sure you want to change the cell constant?</span>
+        </p>
+        <p class="footnote_text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="footnote_text">Problem:</p>
+        <p>The Edit Parameter Block function is designed to permit virtually any change to a data file parameter block with the understanding that this function makes an exact copy of the current data file <span style="font-weight: bold;">without</span><span style="font-weight: bold;">changing the data</span> in any way. See also: <a href="../winhlp/Win_edit_param_block.htm">Edit Parameter Block window</a></p>
+        <p class="footnote_text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Some entries in the parameter block stand by themselves and can be changed to anything you like (<span style="font-style: italic;">e.g</span>., Sample, Operator, Run, etc.) Some entries should not be changed to inappropriate values because these entries tell the program how the data was acquired (<span style="font-style: italic;">e.g</span>., Module, Size, Time, etc.) And some entries, such as the cell constant (Kcell), cannot be changed at all because the change must be reflected in the data, and the data is <span style="font-weight: bold;">not changed</span> by the Edit Parameter Block function.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Solution:</p>
+        <p>To change the cell constant (Kcell) value, use the <a href="../winhlp/Win_Data_File_Info.htm">Data File Information</a> dialog. This change is permitted because, when you change Kcell on the Data File Information window, Universal Analysis backs out the original Kcell value from the parameter block and then applies the new Kcell value to every data point in the "primary" module signal.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

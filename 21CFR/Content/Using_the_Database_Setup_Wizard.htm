@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Setting Up the Database" MadCap:browseSequencePath="Setting Up the Database" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="21CFR.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Using the Database Setup Wizard</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor21"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;width: 35px;height: 37px;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Using the Database Setup Wizard</h1>
+        <p>&#160;</p>
+        <p class="NumberedIndent">Before beginning this procedure, perform the following 
+ steps:</p>
+        <ul>
+            <li class="Bullet" value="1">Power on the database server 
+ and make sure it is properly configured and visible to the controller. 
+ (It should be visible when browsing the network.)</li>
+            <li class="Bullet" value="2">Determine the Netbios name 
+ (name used in the Browse windows) of the database server.</li>
+            <li class="Bullet" value="3">Obtain the user name and 
+ password of the database administrator account.</li>
+            <li class="Bullet" value="4">Power on all licensed Integrity 
+ instruments and make sure they are connected and visible to the controller.</li>
+            <li class="Bullet" value="5">Determine the name to be 
+ given to the TA Instruments Database created during this procedure. (Ten 
+ [10] characters or less is recommended.)</li>
+        </ul>
+        <p>After the previous items have been accomplished, run the <span style="font-weight: bold;color: #00509f;">Database 
+ Setup Wizard</span> as follows:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Insert the 
+ TA Instruments Advantage Integrity software CD into your controller CD-ROM 
+ drive. The installation program will automatically begin. &#160;Press 
+ <span style="font-weight: bold;color: #00509f;">Next</span> to continue.</li>
+            <li class="NumberedIndent" value="2">Accept the 
+ software license, enter the requested information, and read the installation 
+ information. Then press <span style="font-weight: bold;color: #00509f;">Next</span> 
+ to proceed.</li>
+            <li class="NumberedIndent" value="3">Select <span style="font-weight: bold;color: #00509f;">Run Integrity Database Setup 
+ Wizard</span>, select the desired language from the <span style="font-weight: bold;color: #00509f;">Select 
+ Language</span> list, then select <span style="color: #00509f;font-weight: bold;">Next</span> 
+ to begin database configuration. (See also: <a href="Selecting_a_Language.htm">Selecting 
+ a Language</a>.)</li>
+        </ol>
+        <p class="Notes">NOTE: &#160;If 
+ the Oracle Client software is not installed on this computer, the Oracle 
+ Universal Installer will appear to install this component before running 
+ the Database Setup Wizard.</p>
+        <ol start="4" style="list-style: decimal;list-style-type: decimal;">
+            <li class="NumberedIndent" value="4">Select <span style="font-weight: bold;color: #00509f;">Next</span> on the Database 
+ Setup Wizard when you are ready to proceed.</li>
+            <li class="NumberedIndent" value="5">Enter the 
+ database information requested.. (This information can be found in the 
+ box with the database server when supplied by TA Instruments.):</li>
+            <ul style="list-style: decimal;" type="1">
+                <li class="Bullet" value="1"><span style="font-weight: bold;color: #00509f;">Database 
+ Server</span>: Computer name (also called the Host Name) of server. </li>
+            </ul>
+            <ul style="list-style: decimal;" type="1">
+                <li class="Bullet" style="margin-bottom: 6pt;" value="1"><span style="font-weight: bold;color: #00509f;">Database 
+ Administrator Account User Name and Password</span>: Database account 
+ that has Administrative (SYSDBA) rights so that program can create database 
+ objects on the server. </li>
+            </ul>
+            <li class="NumberedIndent" value="6">Select <span style="font-weight: bold;color: #00509f;">Next</span> when all the database 
+ information has been entered. &#160;If 
+ the database information is correct, the setup program will advance to 
+ the next window.</li>
+            <li class="NumberedIndent" value="7">Enter the 
+ desired database name (using 10 or less alphanumeric characters). &#160;Press 
+ <span style="font-weight: bold;color: #00509f;">Next</span> to proceed.</li>
+            <li class="NumberedIndent" value="8">Select <span style="font-weight: bold;color: #00509f;">Start Tasks</span> to begin 
+ creation of the database objects as listed in the task list. &#160;(You 
+ do not need to select [check] any of these items.) &#160;The 
+ progress of this operation can be viewed in the task log. &#160;Once 
+ the database creation is complete, a message box will be displayed.</li>
+            <li class="NumberedIndent" value="9">Select <span style="font-weight: bold;color: #00509f;">OK</span> to close the message 
+ box, then select <span style="font-weight: bold;color: #00509f;">Next</span> 
+ to advance to the next window.</li>
+        </ol>
+        <p class="NumberedIndent" style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p class="NumberedIndent">The Integrity-licensed instruments must be imported 
+ in the database as system modules of the CFR system. &#160;If 
+ the instruments are connected and visible from this location, you will 
+ see them in the <span style="font-weight: bold;color: #00509f;">Import 
+ Modules into the Database System</span> window. &#160;</p>
+        <ol start="10" style="list-style: decimal;list-style-type: decimal;">
+            <li class="NumberedIndent" value="10">Select <span style="font-weight: bold;color: #00509f;">Import</span> to add the displayed 
+ instruments (modules) in the database. &#160;(You 
+ do not need to select [check] any of these items.) &#160;All 
+ the instruments displayed in the list will be added. &#160;If 
+ an instrument is already in the database, it will not be added again. 
+ &#160;(You can 
+ select <span style="font-weight: bold;color: #00509f;">Refresh</span> 
+ to update this list as needed.)</li>
+            <li class="NumberedIndent" value="11">Notice that 
+ a check mark will be displayed next to its name as each one of the instruments 
+ is added to the database. &#160;Once 
+ all the instruments have been imported, select <span style="font-weight: bold;color: #00509f;">Next</span> 
+ to advance to the next window. A listing of all the database creation 
+ audit events appears in this window. &#160;</li>
+            <li class="NumberedIndent" value="12">Select <span style="font-weight: bold;color: #00509f;">Finish</span> to complete this 
+ process. &#160;A 
+ message box displaying the default user account information will be displayed.</li>
+        </ol>
+        <p><span style="font-weight: bold;">Important:</span> &#160;Record 
+ this default user account information so that you can obtain access to 
+ the <a href="Introducing_the_TA_System_Manager.htm">TA Instruments System 
+ Manager program</a>.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

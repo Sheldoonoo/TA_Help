@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using Autoanalysis" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>How is an Autoqueue Made?</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../WinUAmac.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>How is an Autoqueue Made?</h1>
+        <p class="footnote_text" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p style="border-bottom: 1.50pt solid teal;"><span style="color: teal;font-weight: bold;">Creating an Autoqueue Automatically</span>
+        </p>
+        <p><span style="color: black;font-style: italic;">Thermal Advantage</span><span style="color: black;">has been designed to allow you to take advantage of a technique that can be used to completely automate the collection and analysis of multiple data files. This Autoanalyze technique can be set up to automatically run as follows:</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><b>(1) </b><span style="color: black;font-weight: bold;">Create an Analysis Macro:</span>
+        </p>
+        <p class="Body_Text_2">The first thing you need to do is to open the Universal Analysis program to create the macro that will be used to analyze your data files. For this macro to work successfully, it must start with an "Open File" step (File/Open). When you create the macro you should use a file similar to the type to be autoanalyzed (<span style="font-style: italic;">e.g.</span>, DSC, MDSC, TGA, etc.). Later, when the experiment is complete, the autoanalysis <a href="Definition_of_a_Record.htm">record</a> (containing the finished data filenames) will be appended to the autoqueue. <span style="color: blue;font-weight: bold;">(NOTE: No spaces can be used in the directory or file names.)</span></p>
+        <p class="Body_Text_2" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent"><span style="color: blue;">NOTE: For more details on creating and editing macros, see the Universal Analysis online manual (Help/Manual) or use Acrobat Reader to access the Uamanual.pdf file contained on the CDROM.</span>
+        </p>
+        <p class="Body_Text_2" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Body_Text_2"><b>(2)</b> <span style="font-weight: bold;">Set Up Autoanalysis in Instrument Control:</span></p>
+        <p>Open the Instrument Control program for the desired instrument. Set up your experiment as you normally would. Access the Experimental Parameters window (for Autosamplers, use the Sequence Page). At the bottom of the window, check the Autoanalyze box, use the Browse button to select the macro file desired then select the macro you created in step (1) above. After you have finished setting up the experiment(s) and loaded the sample(s), start the experiment. As the controller finishes performing the experiment, it will create the record and add it to the autoqueue. See also: <a href="What_is_an_Autoqueue.htm">What is an Autoqueue?</a></p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>When a record is added to the autoqueue from the controller, a message box is displayed asking if you wish to process the autoqueue (autoanalyze) at this time. If you select No, then the record will be added to the autoqueue, but not processed. If you select Yes, then the record will be added to the autoqueue and the queue will begin to process starting with the first entry. If no response to this message box is made, after 60 seconds it will be assumed that Yes is the response and the autoqueue will be processed beginning with the first record. The results will be collected in the <a href="../winhlp/Menu_view_autoqueue_log.htm">Autoqueue Log</a>.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Body_Text_2" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p style="border-bottom: 1.50pt solid teal;"><span style="color: teal;font-weight: bold;">Creating an Autoqueue Manually</span>
+        </p>
+        <p>You can also use existing data files to manually create and run an autoqueue. This is a good way to take a collection of similar data files and perform the same analysis on each one.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: black;font-weight: bold;">(1)&#160;Create an Analysis Macro:</span>
+        </p>
+        <p class="Body_Text_2">The first thing you need to do is to open the Universal Analysis program to create the macro that will be used to analyze your data files. For this macro to work successfully, it must start with an "Open File" step (File/Open). When you create the macro you should use a file similar to the type to be autoanalyzed (<span style="font-style: italic;">e.g.</span>, DSC, MDSC, TGA, etc.). Later, when the experiment is complete, the autoanalysis <span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Definition_of_a_Record.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot"><a href="Definition_of_a_Record.htm">record</a> <![CDATA[ ]]></a></span>(containing the finished data filenames) will be appended to the autoqueue.</p>
+        <p class="Body_Text_2" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Body_Text_2">After the first "Open File" step, you will need to insert a "File Name" step using the <a href="Macro_Editor_Insert_menu_file_name.htm">Insert/File Name menu</a> item on the Macro Editor window. Select the radio button "Use default file name" as the file option. This will allow the files that are placed into the records to be automatically opened. Then you can proceed to capture the appropriate steps to perform the analysis that you desire for your data files. <a href="Macro_Editor_Menu_macros_save_file.htm">Save</a> the macro to the macro file when finished. <span style="color: blue;font-weight: bold;">(NOTE: No spaces can be used in the directory or file names.)</span></p>
+        <p class="Body_Text_2" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent"><span style="color: blue;">NOTE: For more details on creating and editing macros, see the Universal Analysis online manual (Help/Manual) or use Acrobat Reader to access the Uamanual.pdf file contained on the CDROM.</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="font-weight: bold;">(2)&#160;Manually Create an Autoqueue:</span>
+        </p>
+        <p>Open the Universal Analysis program. Select <a href="Macro_Editor_Menu_macros_autoqueue.htm">Macros/Autoqueue</a> to open the <a href="Win_Autoqueue.htm">Autoqueue window</a>. This window will be empty if there are no records currently in the autoqueue. If there are records in the autoqueue already, you can either delete them or append your new records to the existing list.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>To create a new record, select <a href="Autoqueue_menu_edit_append.htm">Edit/Append</a> from the Autoqueue menu. The <a href="Win_Autoqueue_Parameters.htm">Autoqueue Parameters window</a> is displayed. Use the Browse button to locate the first data file you want to add to the queue. Use the second Browse button to locate the macro file used in step (1) above. Click on the arrow next to the list of macros and select the macro created in step (1) above. Click the OK button. Your new record will be created and appended to the list (if any) in the autoqueue. You can reorder the list of records using the cut and paste options found in the Edit menu.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>When you have finished adding all the records that you want, select File/Run from the Autoqueue menu. The data files will be automatically processed (autoanalyzed) beginning with the first record. The results will be collected in the <a href="../winhlp/Menu_view_autoqueue_log.htm">Autoqueue Log</a>.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Body_Text"><span style="color: #0000ff;">NOTE: To stop autoanalysis of the autoqueue, press the Escape key.</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>See also:</p>
+        <p><a href="Introduction_to_Autoanalysis.htm">Introduction to Autoanalysis</a>
+        </p>
+        <p><a href="Autoqueue_Menu_file_run.htm">Run (Autoqueue)</a>
+        </p>
+        <p><a href="../winhlp/Menu_view_autoqueue_log.htm">Autoqueue Log</a>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent"><span style="color: blue;">NOTE: For more details on autoanalysis and the autoqueue, see the Universal Analysis online manual (Help/Manual) or use Acrobat Reader to access the Uamanual.pdf file contained on the CDROM.</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

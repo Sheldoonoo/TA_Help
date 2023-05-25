@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Troubleshooting" MadCap:browseSequencePath="Troubleshooting" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Setting Up the System Configuration</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor61"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../QDSC Images/ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Setting Up the System Configuration</h1>
+        <p>&#160;</p>
+        <p>Choose from any of the four possible system configurations when setting 
+ up and installing the TA Instruments Advantage Q Series® 
+ system. &#160;See 
+ the following descriptions for each type:</p>
+        <h3>
+            <img src="../QDSC Images/SchematicSysConfig1.gif" alt="Configuration #1" style="width: 409px;height: 262px;border-left-style: Solid;border-left-width: 2px;border-right-style: Solid;border-right-width: 2px;border-top-style: Solid;border-top-width: 2px;border-bottom-style: Solid;border-bottom-width: 2px;border-left-color: #808080;border-right-color: #808080;border-top-color: #808080;border-bottom-color: #808080;float: right;float: right;" width="409" height="262" align="right" border="2" />Configuration #1 (Standard)</h3>
+        <p><a name="kanchor62"></a>This standard system configuration (see the figure to the right) involves 
+ the connection of all the components (TA Controller PC and Instruments) 
+ in a private network environment. In this configuration, the following 
+ IP addressing will be used for the TA Controller PC:</p>
+        <ul>
+            <li value="1">IP Address: 172.23.191.X 
+ (X = 1-254, non conflicting)</li>
+            <li value="2">Subnet Mask: &#160;255.255.224.0 
+ </li>
+        </ul>
+        <h3>Configuration #2</h3>
+        <p>This configuration allows the TA Controller PC to be used to access 
+ both the instruments and the company network. &#160;See 
+ the figure below for a schematic of this type of configuration. </p>
+        <p style="text-align: center;" align="center">
+            <img src="../QDSC Images/SchematicSysConfig2.gif" alt="Configuration #2" style="width: 479px;height: 423px;border-left-style: Solid;border-left-width: 2px;border-right-style: Solid;border-right-width: 2px;border-top-style: Solid;border-top-width: 2px;border-bottom-style: Solid;border-bottom-width: 2px;border-left-color: #808080;border-right-color: #808080;border-top-color: #808080;border-bottom-color: #808080;float: none;" width="479" height="423" border="2" />
+        </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <ul>
+            <li value="1">TA Controller PC —Controller 
+ with 2 NIC Boards. (The two NIC boards should not be set to the same subnet.) 
+ </li>
+            <ul>
+                <li value="1">NIC #1 to access the 
+ instruments. &#160;The 
+ following IP addressing will be used on the TA Controller PC: &#160;&#160;IP 
+ Address: &#160;172.23.191.X 
+ (X=1-254, non conflicting); Subnet Mask: &#160;255.255.224.0. 
+ &#160;</li>
+                <li value="2">NIC #2 to access the 
+ company network. </li>
+            </ul>
+            <li value="2">Instrument(s)—The standard 
+ IP addressing is used (172.23.191.X). </li>
+        </ul>
+        <p class="Notes">NOTE: &#160;For 
+ use with a corporate network: &#160;This 
+ configuration requires the addition of a second Ethernet card in the controller 
+ computer that will be connected to the corporate network. &#160;(Only 
+ one Ethernet card is supplied with Controllers supplied by TA Instruments.) 
+ &#160;Each NIC 
+ must be on a different subnet.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3>Configuration #3</h3>
+        <p>This configuration allows you to place all of the devices on the company 
+ network and then connect the instruments to the controller via a virtual 
+ network. &#160;See 
+ the figure below for a schematic of this type of configuration.</p>
+        <p style="text-align: center;" align="center">
+            <img src="../QDSC Images/SchematicSysConfig3.gif" alt="Configuration #3" style="border-left-style: Solid;border-left-width: 2px;border-right-style: Solid;border-right-width: 2px;border-top-style: Solid;border-top-width: 2px;border-bottom-style: Solid;border-bottom-width: 2px;border-left-color: #808080;border-right-color: #808080;border-top-color: #808080;border-bottom-color: #808080;width: 596px;height: 328px;float: none;" width="596" height="328" border="2" />
+        </p>
+        <ul>
+            <li value="1">TA Controller PC - Controller 
+ with 1 NIC Board with two static IP addresses. &#160;”IP 
+ #1 to access the instruments.” &#160;IP 
+ Address: &#160;172.23.191.X 
+ (X=1-254, non conflicting); Subnet Mask: &#160;255.255.224.0. 
+ &#160;”IP #2 
+ to access the company network. ” &#160;</li>
+            <li value="2">Instrument(s) – The standard 
+ IP addressing is used (172.23.191.X). </li>
+            <li value="3">All devices are connected 
+ to the company network.</li>
+        </ul>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3>Configuration #4</h3>
+        <p>This configuration (see the figure below) allows all of the Advantage 
+ components to be connected directly to the company network. &#160;This 
+ configuration is only plausible if your company network addresses are 
+ compatible with our class limitations. &#160;The 
+ Q Series instruments use a real-time operating system that is sensitive 
+ to address classes. &#160;If 
+ your company network uses any of the three blocks of network address reserved 
+ for private internets (non-routable) as defined by RFC 1918 certain subnet 
+ restrictions apply; the address and subnet mask must define a range of 
+ addresses that is entirely within that block of non-routable addresses. 
+ &#160;If this 
+ condition is not met by your company network, then the instruments cannot 
+ be set up to be accessible by your entire company network. &#160;In 
+ addition, the Q Series instruments require the use of a static IP address, 
+ they will not work with DHCP.</p>
+        <p>In this configuration, you must first set up the system like configuration 
+ #3 (see above). &#160;This 
+ will allow you to communicate with the instruments and change their network 
+ settings. </p>
+        <p style="text-align: center;" align="center">
+            <img src="../QDSC Images/SchematicSysConfig4.gif" alt="Configuration #4" style="width: 556px;height: 298px;border-left-style: Solid;border-left-width: 2px;border-right-style: Solid;border-right-width: 2px;border-top-style: Solid;border-top-width: 2px;border-bottom-style: Solid;border-bottom-width: 2px;border-left-color: #808080;border-right-color: #808080;border-top-color: #808080;border-bottom-color: #808080;float: none;" width="556" height="298" border="2" />
+        </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

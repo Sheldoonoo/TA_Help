@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Analyzing Data Files" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Analyze Purity</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Analyze Purity</h1>
+        <h2><span style="font-weight: normal;">Select this item to perform the analysis on the current data file. The following guidelines should be considered when analyzing:</span>
+        </h2>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;Before analyzing the data, set up the analysis options by selecting Analyze/Purity/Options.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;When you select Analyze/Purity/Analyze, the markers are displayed on the graph to allow you to select the analysis limits.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;Select the desired analysis limits then select Accept Limits from the pop-up menu.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;Enter the Molecular Weight of the sample in g/mol when prompted.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;The program uses the vant Hoff equation to calculate your samples purity, performing a series of operations using the data file.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;First, there is an initial scan of the peak to find the baseline, peak area, and peak height, which are needed to calculate area segments.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent" style="margin-top: 0;text-indent: -18pt;margin-left: 18pt;margin-bottom: 2px;">&#160;A second scan divides the peak into the number of partial area segments specified on the <a href="Win_Purity_Options_Partial_Area_Page.htm">Purity Options - Partial Area Page</a> (25 is the default) to find the T<span style="font-size: 6pt;">S</span> versus 1/F curve. The segments are equally</p>
+        <p class="Normal_Indent" style="margin-top: 0; text-indent: -18pt; margin-left: 18pt; margin-bottom: 2px;">spaced along the 1/F axis. The first segment starts when the peak height is the specified percent of the maximum height or the input value (10 percent is the default). The last segment ends at the specified</p>
+        <p class="Normal_Indent" style="margin-top: 0; text-indent: -18pt; margin-left: 18pt; margin-bottom: 2px;">maximum percent of the total peak area or the input value (50 percent is the default).</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;<span style="color: blue;">NOTE: If the curve does not contain enough points to allow the specified number of segments, the allocation continues until the maximum partial area percent of the total peak is reached.</span></p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;A correction is made at the end of each segment for the temperature difference between the sample and sample thermocouple (using the onset slope value entered in the analysis options).</p>
+        <p class="Normal_Indent">&#160;</p>
+        <p class="Normal_Indent">Then a nonlinear least squares technique is used to approximate the area correction for the T<span style="font-size: 6pt;">S</span> versus 1/F curve. (This is done to linearize the usual curvature of the line, commonly attributed to undetected</p>
+        <p class="Normal_Indent">melting of the sample before peak start.)</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;A least-squares fit to a straight line is used to calculate the slope and intercept of the T<span style="font-size: 6pt;">S</span> versus the corrected 1/F curve.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;The corrected peak area is used to calculate the heat of fusion unless you have opted to used the uncorrected area, or have entered a known heat of fusion for the sample.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;Lastly, the vant Hoff equation is used to calculate the impurity level and convert it to the purity.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

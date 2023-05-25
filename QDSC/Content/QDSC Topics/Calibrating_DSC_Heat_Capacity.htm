@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="prc;FACS;sinusoidally;MFC;HiResolution;Inc;HiRes;PDF;Ctrl;uncheck;AutoLid;Tzero;collet;CAL;XT;RT;OPTC;Uncheck;Cal;PDSC;Y;X-Y;min;www.astm.org;seq;GPIB;IP;Q;CHROMEL;C;cal;spline;Premelt;Ethernet;Platinel;Englehard;E-curve;NBS;ALUMEL;T-axis;Hoskins;Dq;CHROMEL-constantan;SFI;alodined;¼-turn;preforming;subambient;NTFS;field(s;System--RCS;TMA;DSCs;DPC;Ctrl+X;Ctrl+E;Ctrl+C;Ctrl+V;mth;DFA;Tools\Data;number};cooler};time};Rs;Rr;Cr;tzr;cooler}{date}{time}.tzr.;DH;premelt;Cp;Tools\User;Preferences\Status;Slo;Blo;pkg;o-ring;name}\Program;UNC;Autofill;Calibration*;PID;W;SelectCalType;T;DLL;d;MSDOS;dll;OLE;Tools\Instrument;Files\TA;Instruments\Thermal;Advantage\Qseries\InstumentSW\[instrument;abs;XX;Vac;PCU;lid(s;MPa;Isotrack;lic;remapped;psi*;none**;RelatedTopicsButton;kPa;atm;Alodined;mode(s;¼;www.tainst.com.;Lukens;HELPLINE;secs;mol;dT;µV;PN;µg;c;pdf;KCp" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Calibrating the Instrument" MadCap:browseSequencePath="Calibrating the Instrument" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Calibrating DSC Heat Capacity</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a><a name="kanchor193"></a>Calibrating DSC Heat Capacity</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor194"></a><a name="kanchor195"></a><a name="kanchor196"></a>The type of heat capacity calibration that you should perform will depend 
+ upon whether you are calibrating the Q2000 or Q1000 in its standard operating 
+ mode, or when calibrating the Q2000, Q200, Q1000, or Q100 in the MDSC 
+ operating mode. </p>
+        <p class="Bullet" id="P2"><span style="font-weight: bold;color: #00509f;">Select from 
+ the following topics for more information:</span>
+        </p>
+        <ul>
+            <li value="1"><a href="#Heat%20capacity%20calibration%20Q1000">Heat 
+ Capacity Calibration for Q2000/Q1000 (standard)</a>
+            </li>
+            <li value="2"><a href="#Heat%20capacity%20calibration%20MDSC">Heat 
+ Capacity Calibration for MDSC</a>
+            </li>
+        </ul>
+        <h3><a name="Heat capacity calibration Q1000"></a>Heat Capacity (Q2000/Q1000) 
+ Calibration</h3>
+        <p>Heat capacity can be obtained in a single experiment with the DSC Q2000/Q1000. 
+ Heat capacity calibration is required to measure accurate sample heat 
+ capacity values. The calibration uses a standard material (such as sapphire) 
+ with a known heat capacity at a specific temperature of interest. Before 
+ performing the calibration experiment, the previously used heat capacity 
+ calibration values need to be manually set to the default value of 1.0. 
+ Calibration is typically done at a heating or cooling rate of 10 to 20 
+ °C/min. Since this calibration (measurement) uses the absolute heat flow 
+ signal (Cp = Heat Flow Rate/Heating Rate) to calculate the sample's heat 
+ capacity, the first segment of the method should be a "Zero Heat 
+ Flow" segment at a temperature in the middle of the temperature range 
+ for the experiment. This corrects for any drift in the heat flow signal, 
+ since the last calibration.</p>
+        <p>At the end of the experiment the heat capacity calibration constant 
+ is calculated by dividing the expected value of heat capacity by the measured 
+ value at a specific temperature. The calculated constant is then manually 
+ entered into the instrument control software on the accessed from the 
+ <span style="font-weight: bold;color: #00509f;">Calibrate/Cell/Temperature 
+ Table</span> menu, where it is automatically applied to future experiments. 
+ </p>
+        <p style="margin-bottom: 0;font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back 
+ to top</a>
+        </p>
+        <h4>Q2000/Q1000 Heat Capacity Calibration Procedure</h4>
+        <p>This heat capacity calibration is performed <span style="text-decoration: underline;">after</span> 
+ calibration of the DSC for Cell Resistance and Capacitance, Cell Constant 
+ and Temperature. (The calibration wizard can be used to perform the aforementioned 
+ calibrations. <span style="font-weight: bold;color: #00509f;">See also</span>: 
+ <a href="DSC_Calibration_Wizard_Intro.htm">DSC Calibration Wizard</a>) 
+ &#160;Heat capacity 
+ calibration is only done using the T4P heat flow signal on the Q2000/Q1000, 
+ and is only necessary if accurate heat capacity measurement is desired. 
+ Follow the instructions below:</p>
+        <p style="font-weight: bold;color: #00509f;">Sample Preparation</p>
+        <p style="color: #000000;font-weight: normal;">Prepare and load the calibration 
+ sample as directed in the following steps.</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Use the type 
+ of pan that will be used to run samples of interest. Generally this will 
+ be:</li>
+        </ol>
+        <ol start="1">
+            <li class="LetterIndent" value="1"><span style="font-style: italic;">For 
+ the Q2000:</span> Tzero™ 
+ pans (PN 901683.901) or Tzero low mass pans (PN 901670.901).</li>
+            <li class="LetterIndent" value="2"><span style="font-style: italic;">For 
+ the Q1000:</span> Crimped aluminum pans and lids (PN 900786.901 and PN 
+ 900779.901) or hermetic pans and lids (PN 900793.901 and 900794.901). 
+ </li>
+            <li class="LetterIndent" value="3"><span style="font-weight: bold;color: #00509f;">See 
+ also</span>: <a href="Selecting_a_Sample_Pan.htm">Selecting a Sample Pan</a></li>
+        </ol>
+        <ol start="2">
+            <li class="NumberedIndent" value="2">Select a 
+ pair of pans and lids that will be used for the sample and reference pans. 
+ It is good practice to match the weight of the two pans (with lids) to 
+ within 50 µg. However, when utilizing the T4P mode of the Q2000 or Q1000, 
+ it is not necessary to match the pan mass. &#160;Make 
+ sure that you weigh the pans and lids, and record their weights for use 
+ later in the procedure.</li>
+            <li class="NumberedIndent" value="3">Place the 
+ sapphire heat capacity calibration sample (PN 915079.901 for all Tzero 
+ pans (including standard Tzero pans) or PN 915079.902 for hermetic pans) 
+ into the sample pan and crimp the lid in place using the sample encapsulating 
+ press. Make sure that you record the mass of the sapphire for use later 
+ in the procedure. <span style="font-weight: bold;color: #00509f;">See 
+ also</span>: <a href="Encapsulating_a_DSC_Sample_Blue_or_Beige_Press.htm">Encapsulating 
+ a DSC Sample</a> &#160;</li>
+            <li class="NumberedIndent" value="4">Place the 
+ pans into the DSC cell when ready to perform the calibration experiment.</li>
+        </ol>
+        <p class="NumberedIndent" style="color: #00509f;font-weight: normal;font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p class="NumberedIndent" style="font-weight: bold;color: #00509f;">Instrument Preparation</p>
+        <p class="NumberedIndent" style="font-weight: bold;color: #00509f;"><span style="font-weight: normal;color: #000000;">Set 
+ up the instrument parameters as directed below:</span>
+        </p>
+        <ol>
+            <li class="NumberedIndent" value="1">Access the 
+ <span style="font-weight: bold;color: #00509f;">Experimental View//<a href="Experimental_View_Pane_Summary_Page.htm">Summary Page</a></span>. 
+ Select "Standard" from the <span style="font-weight: bold;color: #00509f;">Mode</span> 
+ drop-down list. Calibration of heat capacity is <span style="text-decoration: underline;">not</span> 
+ performed in the "Calibration" mode.</li>
+            <li class="NumberedIndent" value="2">Select <span style="font-weight: bold;color: #00509f;">Calibrate/Cell/Temperature 
+ Table</span> from the instrument control main menu. Set the <span style="font-weight: bold;color: #00509f;">Cp 
+ Constant</span> (Direct) to 1.0 prior to starting the experiment.</li>
+            <li class="NumberedIndent" value="3">Access the 
+ <span style="font-weight: bold;color: #00509f;">Experimental View/<a href="Experimental_View_Pane_Summary_Page.htm">Summary Page</a></span>again. 
+ </li>
+            <li class="NumberedIndent" value="4">Enter the 
+ requested sample information, including the <span style="font-weight: bold;color: #00509f;">Sample 
+ Name</span> and <span style="font-weight: bold;color: #00509f;">Sample 
+ Size</span> (mass). Enter the weight of the empty sample and reference 
+ pans (with lids). The software will correct for any difference in weight 
+ when the T4P signal is used.</li>
+            <li class="NumberedIndent" value="5">&#160;Select 
+ the<span style="font-weight: bold;color: #00509f;"> Pan Type.</span></li>
+            <li class="NumberedIndent" value="6"><span style="font-style: italic;">For 
+ &#160;Autosamplers 
+ only</span>: Select the <span style="font-weight: bold;color: #00509f;">Pan 
+ number</span> and <span style="font-weight: bold;color: #00509f;">Reference 
+ number</span>.</li>
+            <li class="NumberedIndent" value="7">Select a 
+ file name for the data to be analyzed later.</li>
+            <li class="NumberedIndent" value="8">Access the 
+ <span style="font-weight: bold;color: #00509f;">Notes Page</span>. Verify 
+ that the cell purge gas is ON and that the flow rate is correct. The same 
+ purge gas and flow rate should be used as were used for previous calibration 
+ experiments and which will also be used for actual sample runs.</li>
+            <li class="NumberedIndent" value="9">If a Refrigerated 
+ Cooling System (RCS) is being used, it should be running for at least 
+ one hour prior to calibration or performing any sample runs.</li>
+        </ol>
+        <p style="color: #00509f;font-weight: normal;font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="font-weight: bold;color: #00509f;">Experimental Conditions</p>
+        <p style="font-weight: bold;color: #00509f;"><span style="font-weight: normal;color: #000000;">Set 
+ up and run the following calibration experiment:</span>
+        </p>
+        <p>Access the <span style="font-weight: bold;color: #00509f;">Experimental 
+ View/Procedure Page</span>. Select a "Custom" test, then click 
+ on the <span style="font-weight: bold;color: #00509f;">Editor </span>button. 
+ See <a href="Creating_Custom_Methods.htm">Creating Custom Methods</a> 
+ for detailed instructions. Program and run a method as defined below where:</p>
+        <p style="text-indent: 40px;margin-left: 40px;"><span style="font-weight: bold;">a</span> 
+ = desired starting temperature</p>
+        <p style="text-indent: 40px;margin-left: 40px;"><span style="font-weight: bold;">b</span> 
+ = desired ending temperature</p>
+        <p style="text-indent: 40px;margin-left: 40px;"><span style="font-weight: bold;">c</span> 
+ = average of temperatures a and b</p>
+        <p style="margin-left: 40px;text-indent: 40px;"><span style="font-weight: bold;">d</span> 
+ = selected heating rate.</p>
+        <p><span style="text-indent: 40px;">Use the definitions above to create 
+ the following method:</span>
+        </p>
+        <p style="text-indent: 40px;margin-left: 40px;">1 &#160;Zero 
+ heat flow at <span style="font-weight: bold;">c</span></p>
+        <p style="text-indent: 40px;margin-left: 40px;">2 &#160;Sampling 
+ Interval 1.0 seconds/point</p>
+        <p style="text-indent: 40px;margin-left: 40px;">3 &#160;Equilibrate 
+ at <span style="font-weight: bold;">a</span></p>
+        <p style="text-indent: 40px;font-weight: normal;margin-left: 40px;">4 &#160;Isothermal 
+ for 5.0 minutes</p>
+        <p style="text-indent: 40px;margin-left: 40px;">5 &#160;Ramp<span style="font-weight: bold;"> d </span>°C/min<span style="font-weight: bold;">  <![CDATA[ ]]></span>to<span style="font-weight: bold;"> b</span></p>
+        <p>A heating rate of 10 to 20°C/min (<span style="font-weight: bold;">d 
+ </span>in step 2) provides the best combination of accuracy, precision, 
+ and resolution.</p>
+        <p style="color: #00509f;font-weight: normal;font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="font-weight: bold;color: #00509f;">Calculation and Input of 
+ Calibration Factor</p>
+        <p>After you have run the heat capacity calibration experiment outlined 
+ above, open the Universal Analysis program and follow these steps:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Open the 
+ calibration data file and plot the Heat Capacity signal versus Temperature.. 
+ Data should appear as seen in the figure below, with the exception of 
+ the labeled values.</li>
+        </ol>
+        <p style="margin-left: 40px;">
+            <img src="../QDSC Images/CpCal1.gif" alt="Figure 1 Heat Capacity versus Temperature" style="border: none;width: 500px;height: 375px;float: none;border-style: none;border-style: none;" width="500" height="375" border="0" />
+        </p>
+        <ol start="2">
+            <li class="NumberedIndent" value="2">At approximately 
+ the same temperature as that used to zero the heat flow signal, which 
+ is the midpoint of the desired temperature range, select <span style="font-weight: bold;color: #00509f;">Analyze/Curve 
+ Value at X</span> from the main menu. Move the cursor to the desired temperature 
+ to have the program label the value of the curve as seen in the figure 
+ above.</li>
+            <li class="NumberedIndent" value="3">Refer to 
+ the table of heat capacity values for sapphire as a function of temperature 
+ as found in TA Instruments Technical Note 008. Click on the following 
+ link to open an Acrobat Reader pdf file and see Table 1  <a href="../PDF files/MDSCTable.pdf" target="_blank">Open Heat Capacity Tables</a>. &#160;From 
+ the table obtain the theoretical value of sapphire from the temperature 
+ selected in Step 2.</li>
+            <li class="NumberedIndent" value="4">Calculate 
+ the heat capacity calibration factor using the following formula (also 
+ shown in the figure above):</li>
+        </ol>
+        <p style="text-indent: 40px;">KCp (Direct) = Theoretical (Table) Value 
+ / Measured Value</p>
+        <ol start="6" style="list-style: decimal;list-style-type: decimal;">
+            <li class="NumberedIndent" value="6">Enter the 
+ calibration factor into the instrument control software. This is done 
+ by selecting <span style="font-weight: bold;color: #00509f;">Calibrate</span> 
+ then <span style="font-weight: bold;color: #00509f;">Cell/Temperature 
+ Table</span> from the main menu and choosing the <span style="font-weight: bold;color: #00509f;">Cell 
+ Calibration</span> tab. Set the <span style="font-weight: bold;color: #00509f;">Cp 
+ Constant (Direct)</span> to the value determined above. Generally, the 
+ constant should be in the range of 0.90 to 1.10.</li>
+        </ol>
+        <p>
+            <img src="../QDSC Images/CellCalibrationTab.jpg" alt="Cell Calibration Tab" style="border: none;width: 428px;height: 330px;float: none;border-style: none;border-style: none;" width="428" height="330" border="0" />
+        </p>
+        <p>Calibration is now complete and the instrument can be used to measure 
+ the heat capacity of actual samples. It can be done with a single experiment 
+ simply by saving the signal "Heat Capacity" as one of the stored 
+ signals in the file. <span style="font-weight: bold;color: #00509f;">See 
+ also</span>: &#160;<a href="Selecting_Signals_to_Store.htm">Selecting 
+ Signals to Store</a></p>
+        <p class="Notes">NOTE: For the most accurate heat capacity values it is recommended 
+ to calculate KCp (Direct) at each temperature of interest. &#160;This 
+ can be done easily by exporting temperature and heat capacity data to 
+ Microsoft® 
+ Excel for calculation.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><a name="Heat capacity calibration MDSC"></a>Heat Capacity (MDSC) Calibration</h3>
+        <p style="margin-bottom: 0;">MDSC heat capacity calibration is only required 
+ if it is desirable to measure the absolute value of the sample's heat 
+ capacity. &#160;The 
+ calibration uses a standard material (such as sapphire) with a known heat 
+ capacity at a specific temperature of interest. Before performing the 
+ calibration experiment, previously used calibration values need to be 
+ manually set for both Heat Capacity and Reversing Heat Capacity to the 
+ default values of 1.0. Except for heating rate, the calibration experiment 
+ should be run under similar conditions (pan type, modulation amplitude, 
+ and period) as will be used for subsequent samples. The heating rate can 
+ be set to a nominal value of 2 to 3 °C/min or the calibration experiment 
+ can be performed isothermally, if only calibrating the Reversing Cp signal.</p>
+        <p style="margin-bottom: 0;">At the end of the experiment the calibration 
+ constants for the Total and Reversing Heat Capacity signals are calculated 
+ by dividing the theoretical value of heat capacity, at the desired temperature, 
+ by the measured value. &#160;The 
+ constants are then manually entered into the instrument control software 
+ on the accessed from the <span style="font-weight: bold;color: #00509f;">Calibrate</span> 
+ menu, where they are automatically applied to future experiments.</p>
+        <p>Modulated DSC® 
+ and MDSC® 
+ are registered trademarks of TA Instruments—Waters 
+ LLC.</p>
+        <p style="margin-bottom: 0;">Modulated DSC® 
+ and MDSC® 
+ are terms which describe proprietary technology invented by Dr. Mike Reading 
+ of ICI Paints (Slough UK) and patented by TA Instruments—Waters 
+ LLC (U.S. Patent Nos. B1 5,224,775; 5,248,199; 5,335,993; 5,346,306). 
+ &#160;</p>
+        <p style="margin-bottom: 0;font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back 
+ to top</a>
+        </p>
+        <h4>MDSC Heat Capacity Calibration Procedure</h4>
+        <p>This heat capacity calibration is performed <span style="text-decoration: underline;">after</span> 
+ calibration of the DSC for Cell Resistance and Capacitance, Cell Constant 
+ and Temperature. (The calibration wizard can be used to perform the aforementioned 
+ calibrations. <span style="font-weight: bold;color: #00509f;">See also</span>: 
+ <a href="DSC_Calibration_Wizard_Intro.htm">DSC Calibration Wizard</a>) 
+ &#160;MDSC Heat 
+ capacity calibration can be done on the Q200/Q100 (requires MDSC option) 
+ or Q2000/Q1000 and is not necessary unless it is desired to measure absolute 
+ sample heat capacity. Follow the instructions below:</p>
+        <p style="font-weight: bold;color: #00509f;">Sample Preparation</p>
+        <p style="color: #000000;font-weight: normal;">Prepare and load the calibration 
+ sample as directed in the following steps.</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Use the type 
+ of pan that will be used to run samples of interest. Generally this will 
+ be:</li>
+        </ol>
+        <ol start="1">
+            <li class="LetterIndent" value="1"><span style="font-style: italic;">For 
+ the Q2000:</span> Tzero pans (PN 901683.901) or Tzero low mass pans (PN 
+ 901670.901).</li>
+            <li class="LetterIndent" value="2"><span style="font-style: italic;">For 
+ the Q1000:</span> Crimped aluminum pans and lids (PN 900786.901 and PN 
+ 900779.901) or hermetic pans and lids (PN 900793.901 and 900794.901). 
+ </li>
+            <li class="LetterIndent" value="3"><span style="font-weight: bold;color: #00509f;">See 
+ also</span>: <a href="Selecting_a_Sample_Pan.htm">Selecting a Sample Pan</a></li>
+        </ol>
+        <ol start="2">
+            <li class="NumberedIndent" value="2">Select a 
+ pair of pans and lids that will be used for the sample and reference pans. 
+ It is good practice to match the weight of the two pans (with lids) to 
+ within 50 µg. However, when utilizing the T4P mode of the Q2000 or Q1000, 
+ it is not necessary to match the pan mass. &#160;Make 
+ sure that you weigh the pans and lids, and record their weights for use 
+ later in the procedure.</li>
+            <li class="NumberedIndent" value="3">Place the 
+ sapphire heat capacity calibration sample (PN 915079.901 for all Tzero 
+ pans (including standard Tzero pans) or PN 915079.902 for hermetic pans) 
+ into the sample pan and crimp the lid in place using the sample encapsulating 
+ press. Make sure that you record the mass of the sapphire for use later 
+ in the procedure. <span style="font-weight: bold;color: #00509f;">See 
+ also</span>: <a href="Encapsulating_a_DSC_Sample_Blue_or_Beige_Press.htm">Encapsulating 
+ a DSC Sample</a> &#160;</li>
+        </ol>
+        <p class="Notes">NOTE: &#160;When 
+ using hermetic pans with solid samples (such as the sapphire calibration 
+ sample), it is recommended that the lid be inverted to provide good thermal 
+ conduct between the sample and both the top and bottom of the pan. This 
+ will minimize thermal gradients and provide a more accurate measurement 
+ of heat capacity. The bottom of the pan should be checked for flatness 
+ after crimping. If there appears to be any roundness, it can be flattened 
+ with light pressure by using the flat portion of the tweezers and any 
+ flat surface. &#160;</p>
+        <ol start="4" style="list-style: decimal;list-style-type: decimal;">
+            <li class="NumberedIndent" value="4">Place the 
+ pans into the DSC cell when ready to perform the calibration experiment.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="font-size: 8pt;">&#160;</p>
+        <p class="NumberedIndent" style="font-weight: bold;color: #00509f;">Instrument Preparation</p>
+        <p class="NumberedIndent" style="font-weight: bold;color: #00509f;"><span style="font-weight: normal;color: #000000;">Set 
+ up the instrument parameters as directed below:</span>
+        </p>
+        <ol>
+            <li class="NumberedIndent" value="1">Access the 
+ <span style="font-weight: bold;color: #00509f;">Experimental View/Summary 
+ Page</span>. Select "Modulated" from the <span style="font-weight: bold;color: #00509f;">Mode</span> 
+ drop-down list. Calibration of heat capacity is <span style="text-decoration: underline;">not</span> 
+ performed in the "Calibration" mode.</li>
+            <li class="NumberedIndent" value="2">Select <span style="font-weight: bold;color: #00509f;">Calibrate/Cell/Temperature 
+ Table</span> from the instrument control main menu. In the MDSC section 
+ of the page set the <span style="font-weight: bold;color: #00509f;">Cp 
+ Constant</span> (Total) and the <span style="font-weight: bold;color: #00509f;">Cp 
+ Constant</span> (Reversing) calibration values to 1.0 prior to starting 
+ the experiment.</li>
+            <li class="NumberedIndent" value="3">Access the 
+ <span style="font-weight: bold;color: #00509f;">Experimental View/Summary 
+ Page</span>. Enter the sample name and sample size (mass). Enter the weight 
+ of the empty sample and reference pans (with lids). The software will 
+ correct for any difference in weight if the T4P signal is being used (Q2000/Q1000 
+ only).</li>
+            <li class="NumberedIndent" value="4">Select a 
+ file name for the data to be analyzed later.</li>
+            <li class="NumberedIndent" value="5">Access the 
+ <span style="font-weight: bold;color: #00509f;">Notes Page</span>. Verify 
+ that the cell purge gas is ON and that the flow rate is correct. The same 
+ purge gas and flow rate should be used as were used for previous calibration 
+ experiments and which will also be used for actual sample runs.</li>
+            <li class="NumberedIndent" value="6">If you are 
+ using a Refrigerated Cooling System (RCS), it should be running for at 
+ least one hour prior to calibration or performing any sample runs.</li>
+            <li class="NumberedIndent" value="7">Access the 
+ <span style="font-weight: bold;color: #00509f;">Experimental View/Summary 
+ Page</span>. Click the <img src="../QDSC Images/BUTTON_SIGNALS_SAVED_27x26.bmp" style="border: none;float: none;border-style: none;border-style: none;width: 27;height: 26;" border="0" /> button to open the <span style="font-weight: bold;color: #00509f;">Signal 
+ Selection</span> window. Verify that the Heat Capacity and Reversing Cp 
+ signals are being saved to the data file. See <a href="Selecting_Signals_to_Store.htm">Selecting 
+ Signals to Store</a> for information.</li>
+        </ol>
+        <p style="color: #00509f;font-weight: normal;font-size: 8pt;"><a href="#top" style="font-size: 8pt;"><span style="text-decoration: none;">B</span><span style="font-size: 8pt;">ack to top</span></a>
+        </p>
+        <p style="font-weight: bold;color: #00509f;">Experimental Conditions</p>
+        <p style="font-weight: bold;color: #00509f;"><span style="font-weight: normal;color: #000000;">Set 
+ up and run the following calibration experiment:</span>
+        </p>
+        <ol>
+            <li class="NumberedIndent" value="1">Since there 
+ are no transitions in the sapphire standard, a heating rate of 2°C/min 
+ is recommended.</li>
+            <li class="NumberedIndent" value="2">Access the 
+ <span style="font-weight: bold;color: #00509f;">Experimental View/Procedure 
+ Page</span>. Select a "Custom" test, then click on the <span style="font-weight: bold;color: #00509f;">Editor </span>button. See <a href="Creating_Custom_Methods.htm">Creating Custom Methods</a> for detailed 
+ instructions. Program and run a method as defined below where:</li>
+        </ol>
+        <p style="text-indent: 40px;margin-left: 40px;"><span style="font-weight: bold;">a</span> 
+ = desired starting temperature</p>
+        <p style="text-indent: 40px;margin-left: 40px;"><span style="font-weight: bold;">b</span> 
+ = desired ending temperature</p>
+        <p style="text-indent: 40px;margin-left: 40px;"><span style="font-weight: bold;">c</span> 
+ = average of temperatures a and b</p>
+        <p style="text-indent: 40px;">Use the definitions above to create the following 
+ method:</p>
+        <p style="text-indent: 40px;margin-left: 40px;">1 &#160;Zero 
+ heat flow at <span style="font-weight: bold;">c</span></p>
+        <p style="text-indent: 40px;margin-left: 40px;">2 &#160;Sampling 
+ Interval 1.0 seconds/point</p>
+        <p style="text-indent: 40px;margin-left: 40px;">3 &#160;Equilibrate 
+ at <span style="font-weight: bold;">a</span></p>
+        <p style="text-indent: 40px;font-weight: normal;margin-left: 40px;">4 &#160;Modulated 
+ +/- 1.0°C every 100 to 120 seconds</p>
+        <p style="text-indent: 40px;font-weight: normal;margin-left: 40px;">5 &#160;Isothermal 
+ for 5.0 minutes</p>
+        <p style="text-indent: 40px;margin-left: 40px;">6 &#160;Ramp<span style="font-weight: bold;">  <![CDATA[ ]]></span>2°C/min<span style="font-weight: bold;">  <![CDATA[ ]]></span>to<span style="font-weight: bold;"> b</span></p>
+        <p>The modulation period selected for measuring absolute heat capacity 
+ is dependent on the pan type selected. A modulation period of 100 seconds 
+ is recommended when using either standard aluminum pans or the Tzero low 
+ mass aluminum pans. Use a longer period of 120 seconds when using either 
+ aluminum hermetic pans or Tzero aluminum pans. &#160;It 
+ should be noted that the period of modulation for the specified Tzero 
+ pan is the same no matter which lid is chosen. &#160;The 
+ longer period provides more time for the heat to flow and thus improves 
+ both accuracy and precision.</p>
+        <p class="numberedindent" style="font-size: 8pt;">&#160;</p>
+        <p class="numberedindent" style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="font-weight: bold;color: #00509f;"><span style="font-weight: bold;color: #00509f;">Calculation 
+ and Input of Calibration Factor</span>
+        </p>
+        <p>After the calibration experiment is complete, open the Universal Analysis 
+ program and follow these steps:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">Open the 
+ calibration data file and plot the Heat Capacity and Reversing Cp signals 
+ versus Temperature. Data should appear as seen in the figure below, with 
+ the exception of the labeled values.</li>
+        </ol>
+        <p>
+            <img src="../QDSC Images/CpCal2.gif" alt="Figure 3 Heat Capacity and Reversing Cp Signals versus Temperature" style="border: none;width: 500px;height: 375px;float: none;border-style: none;border-style: none;" width="500" height="375" border="0" />
+        </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <ol start="2">
+            <li class="NumberedIndent" value="2">Select the 
+ Heat Capacity signal by clicking on it. At approximately the same temperature 
+ as that used to zero the heat flow signal, which is the midpoint of the 
+ desired temperature range, select <span style="font-weight: bold;color: #00509f;">Analyze/Curve 
+ Value at X</span> from the main menu. Move the cursor to the desired temperature 
+ to have the program label the value of the curve in the figure above.</li>
+            <li class="NumberedIndent" value="3">Select the 
+ Reversing Cp by clicking on it. Repeat the measurement as described in 
+ the previous step. The plot seen above should be similar to your results.</li>
+            <li class="NumberedIndent" value="4">Refer to 
+ the table of heat capacity values for sapphire as a function of temperature 
+ as found in TA Instruments Technical Note 008. Click on the following 
+ link to open an Acrobat Reader pdf file and see Table 1:  <a href="../PDF files/MDSCTable.pdf" target="_blank">Specific Heat Capacity Tables</a>. From the 
+ table obtain the theoretical value of sapphire for the temperature selected 
+ in steps 2 and 3.</li>
+            <li class="NumberedIndent" value="5">Calculate 
+ the heat capacity calibration factor for each signal using the following 
+ formulas:</li>
+        </ol>
+        <p style="text-indent: 40px;">KCp (Total) = Theoretical (Table) Value / 
+ Measured Value</p>
+        <p style="text-indent: 40px;"><span style="text-indent: 40px;">KCp (Reversing) 
+ = Theoretical (Table) Value / Measured Value</span>
+        </p>
+        <ol start="7" style="list-style: decimal;list-style-type: decimal;" MadCap:continue="true">
+            <li class="NumberedIndent" value="6">Enter the 
+ calibration factor into the instrument control software. This is done 
+ by selecting <span style="font-weight: bold;color: #00509f;">Calibrate</span> 
+ then <span style="font-weight: bold;color: #00509f;">Cell/Temperature 
+ Table</span> from the main menu and choosing the <span style="font-weight: bold;color: #00509f;">Cell 
+ Calibration</span> tab. Input each of the measured calibration values. 
+ Generally, the calibration values should be in the range of 0.90 to 1.10.</li>
+        </ol>
+        <p style="margin-bottom: 0;">
+            <img src="../QDSC Images/CellCalibrationTab.jpg" alt="Cell Calibration Tab" style="border: none;width: 428px;height: 330px;float: none;border-style: none;border-style: none;" width="428" height="330" border="0" />
+        </p>
+        <p style="margin-bottom: 0;">Calibration is now complete and the instrument 
+ can be used to measure the heat capacity of actual samples using the Reversing 
+ Cp (Rev Cp) signal. <span style="font-weight: bold;color: #00509f;">See 
+ also</span>: &#160;<a href="Selecting_Signals_to_Store.htm">Selecting 
+ Signals to Store</a></p>
+        <p class="Notes">NOTE: When using MDSC to calculate the absolute Cp it is 
+ ONLY necessary to utilize the Reversing Cp signal.</p>
+        <p class="Notes">NOTE: For the most quantitative absolute heat capacity values 
+ of a sample it is recommended that you calculate KCp (Direct) at each 
+ temperature of interest. This can be done easily by exporting temperature 
+ and heat capacity data to Microsoft Excel for calculation. The existing 
+ spreadsheet can be altered and then reopened in Universal Analysis.</p>
+        <p style="margin-bottom: 0;font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back 
+ to top</a>
+        </p>
+        <p style="margin-bottom: 0;font-size: 8pt;"><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Calibrating the Autosampler|Calibrating_the_Autosampler.htm||Calibrating the DSC Pressure Cell|Calibrating_the_DSC_Pressure_Cell.htm||Calibrating the DSC|Calibrating_the_DSC.htm||Calibrating the Mass Flow Controller|Calibrating_the_Mass_Flow_Controller.htm||Calibrating the Q1000/Q100 Autosampler|Calibrating_the_Q1000_Q100_Autosampler.htm||Calibrating the Q2000/Q200/Auto Q20 Autosampler|Calibrating_the_Q2000_Q200_Auto_Q20_Autosampler.htm||Calibrating the T1 Baseline|Calibrating_the_T1_Baseline.htm||Calibrating Tzero|Calibrating_Tzero.htm||Calibration Report|Calibration_Report.htm||Configuring and Using Multiple Calibration Sets|Configuring_and_Using_Multiple_Calibration_Sets.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

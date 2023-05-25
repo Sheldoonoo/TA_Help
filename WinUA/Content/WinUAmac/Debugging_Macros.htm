@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Debugging Macros</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../WinUAmac.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Debugging Macros</h1>
+        <p>After you have finished capturing a macro, you may run it only to find that it does not execute the way you expected. Errors can occur with the macro process due to the following:</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Normal_Indent">A change was made in the state of the program. A dialog or option may have been changed and that change affects the way the program operates.</p>
+            </li>
+            <li style="font-size: 10pt;" value="2">
+                <p class="Normal_Indent">Editing was done to the macro that has resulted in a now incorrect sequence of macro steps for the current state of the program.</p>
+            </li>
+            <li style="font-size: 10pt;" value="3">
+                <p class="Normal_Indent">An insert option is not referencing the correct step number, is positioned in an improper place, or was inserted to replace a step that was not removed.</p>
+            </li>
+            <li style="font-size: 10pt;" value="4">
+                <p class="Normal_Indent">When a macro was being executed, Universal Analysis was not run in the foreground (<span style="font-style: italic;">e.g.</span>, switching to another program will result in an error in the macro).</p>
+            </li>
+        </ul>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>One of the ways to debug a macro is to observe the point in the macro file where an error is reported.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Normal_Indent">Open the macro and display the <a href="Win_Macro_Editor_program.htm">Macro Editor window</a>. Run the macro. If you encounter an error when the macro runs, the macro will halt at the point of the error. The step <span style="text-decoration: underline;">above</span> the highlighted one is the step that couldnt be executed. Make sure that the step displayed can be conducted based on the current state of the program.</p>
+            </li>
+        </ul>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Normal_Indent">Temporarily insert a <a href="Macro_Editor_Insert_Menu_stop_macro.htm">Stop Macro</a> step just ahead of the problem. When the macro execution stops, proceed through the macro, one step at a time from the stopping point, using the Single Step function to locate the problem. . When you use the Single Step function, the highlighted step as shown in the Macro Editor is the next step to be executed. The executing step is the step before the highlighted one.</p>
+            </li>
+        </ul>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Normal_Indent">You can also stop execution of the macro by pressing Escape when you are close to the error point and answer "Yes" to stop the macro. When the macro execution stops, proceed through the macro, one step at a time from the stopping point, using the <a href="Macro_Editor_Menu_macros_single_step.htm">Single Step</a> function to locate the problem.</p>
+            </li>
+        </ul>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Normal_Indent">An entry for every analysis record processed through the autoqueue is recorded in the Autoqueue Log. An indicator next to the record shows whether that record was successful (OK) or not successful (!!).</p>
+            </li>
+        </ul>
+        <p class="Normal_Indent">&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

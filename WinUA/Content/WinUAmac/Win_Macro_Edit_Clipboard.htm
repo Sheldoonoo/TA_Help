@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Macro Edit Clipboard Window</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../WinUAmac.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor283"></a>Macro Edit Clipboard Window</h1>
+        <p>The Edit Clipboard macro step is used to display a dialog box in which you can view and edit the contents of the Windows clipboard. This is useful for entering custom text or multiple parameter values.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;For example, a previous set of macro steps can be used to copy text from an edit field in a window to the clipboard. (Right click in the edit field and select Copy.) The <span style="color: teal;font-weight: bold;">Macro Edit Clipboard</span> dialog box is the displayed to permit you to edit the text or enter new text. Subsequent macro steps can then retrieve the text from the clipboard. (See <a href="Win_Macro_Assign_Variable.htm">Assign Variable</a> and <a href="Autoqueue_Menu_edit_paste.htm">Paste</a>.)</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;If the clipboard contains text at the time that the <span style="color: teal;font-weight: bold;">Edit Clipboard</span> step is executed, then the current text is displayed in a multi-line edit field for the user to accept or modify.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">&#160;If the clipboard contains no text, or if the <span style="color: teal;font-weight: bold;">Clear</span> checkbox is checked, then the edit field is cleared prior to opening the dialog. There is no program-imposed limit on the amount of text that can be edited or entered.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">1.&#160;Select (highlight) the desired position (step number) for the macro step insertion.</p>
+        <p class="Normal_Indent">2.&#160;Select Insert/<a href="Macro_Editor_Insert_menu_edit_clipboard.htm">Edit Clipboard</a> from the Macro Editor menu. The Macro Edit Clipboard window is displayed.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>To use this window:</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">3.&#160;Enter the <span style="color: teal;font-weight: bold;">Display Text</span> to be used in the dialog.</p>
+        <p class="Normal_Indent">4.&#160;Check the <span style="color: teal;font-weight: bold;">Append clipboard</span> box to append the current contexts of the clipboard to the dialogs display text.</p>
+        <p class="Normal_Indent">5.&#160;Check the <span style="color: teal;font-weight: bold;">Leading space</span> box to insert a space between the display text and any appended clipboard text.</p>
+        <p class="Normal_Indent">6.&#160;Check the <span style="color: teal;font-weight: bold;">Beep</span> box, if you want the beeper to sound as the dialog opens.</p>
+        <p class="Normal_Indent">7.&#160;Check the <span style="color: teal;font-weight: bold;">Horizontal Scroll Bar</span> box, if you want the edit field to have a horizontal scroll bar.</p>
+        <p class="Normal_Indent">8.&#160;Check the <span style="color: teal;font-weight: bold;">Vertical Scroll Bar</span> box, if you want the edit field to have a vertical scroll bar.</p>
+        <p class="Normal_Indent">9.&#160;Enter the number of <span style="color: teal;font-weight: bold;">Lines</span> to display in the edit field (this defines the vertical size of the edit field).</p>
+        <p class="Normal_Indent">10.&#160;Enter the number of <span style="color: teal;font-weight: bold;">Columns</span> to display in the edit field (this defines the Horizontal size of the edit field).</p>
+        <p class="Normal_Indent">11.&#160;Check the <span style="color: teal;font-weight: bold;">Clear</span> box if you want to clear the edit field (discard any existing clipboard text).</p>
+        <p class="Normal_Indent">12.&#160;Select <span style="color: teal;font-weight: bold;">Clear clipboard before assigning edit text</span> to replace any text currently on the clipboard with the entered text. Select <span style="color: teal;font-weight: bold;">Append edit text to existing clipboard text</span> to append the entered text to any text already on the clipboard.</p>
+        <p class="Normal_Indent">13.&#160;Click OK when finished. The step will be inserted at the selected position.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>See also:</p>
+        <p><a href="Win_Macro_Assign_Variable.htm">Macro Assign Variable Window</a>
+        </p>
+        <p><a href="Win_Macro_Assign_Clipboard.htm">Macro Assign Clipboard Window</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

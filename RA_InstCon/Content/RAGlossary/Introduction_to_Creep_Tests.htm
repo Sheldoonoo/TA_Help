@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Designing a Test" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="RA_InstCon.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Introduction to Creep tests</title>
+        <meta name="copyright" value="All information copyright © 1999  TA Instruments" />
+        <link rel="StyleSheet" href="HtmlHelp.css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="ehlpdhtm.js">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 style="margin-left: 0px;"><a name="kanchor704"></a><a name="top"></a>Introduction to Creep Tests</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor705"></a><a name="kanchor706"></a><a name="kanchor707"></a><a name="kanchor708"></a><a name="kanchor709"></a>Many important processes are driven by very low stresses, such as those 
+ produced by gravity or surface tension. These include settling and creaming 
+ in dispersions, levelling after application in surface coatings, and slumping 
+ and sagging in paints. Moreover the handling properties of some materials 
+ are affected by elasticity; the ability to recover in some part their 
+ original shape after forced deformation. </p>
+        <p>These properties can be investigated using a creep test, in which a 
+ very low shearing stress (force acting over an area), <span style="font-family: Symbol;">s</span><a name="kanchor710"></a><a name="kanchor711"></a>, 
+ is applied to the sample, and the resulting strain (displacement), <span style="font-family: Symbol;">g</span><a name="kanchor712"></a><a name="kanchor713"></a>, is monitored. It is usual to plot the compliance, 
+ J, defined as the strain divided by the stress, against time. If a low 
+ stress is placed on a <span style="font-style: italic;">solid</span><a name="kanchor714"></a> sample, 
+ it will respond by deforming almost instantaneously to a new position, 
+ and then stopping. When the stress is removed, the sample will immediately 
+ recover its original dimensions. The compliance will depend on the material: 
+ the stiffer the material, the lower the compliance. Typical values are 
+ about 10<span style="vertical-align: super;">-3</span> / Pa for a 2% gelatin 
+ solution in water, 5 x 10<span style="vertical-align: super;">-5</span> 
+ / Pa for foam rubber, 3 x 10<span style="vertical-align: super;">-7</span> 
+ / Pa for natural rubber, and 2&#160;x 10<span style="vertical-align: super;">-9</span> 
+ / Pa for nylon. Figure 1 shows creep behavior for an ideal solid with 
+ a compliance of 10<span style="vertical-align: super;">-3</span><a name="kanchor715"></a> / Pa, 
+ the stress being applied at time zero and removed after 1000 sec.</p>
+        <p>&#160;</p>
+        <p style="text-align: center;" align="center">
+            <img src="BMP00000.gif" alt="image\BMP00000.gif" style="width: 287px;height: 209px;border-style: none;border-style: none;" width="287" height="209" border="0" />
+        </p>
+        <p style="text-align: center;" align="center">Figure 1: Creep curve for an ideal solid with a compliance 
+ of 10<span style="vertical-align: super;">-3</span> Pa<span style="vertical-align: super;">-1</span>, 
+ with stress applied for 1000 seconds, then removed.</p>
+        <p>&#160;</p>
+        <p><a name="kanchor716"></a>If the stress is placed on a liquid material, it will deform continuously, 
+ the rate of deformation being inversely proportional to the viscosity 
+ of the liquid. When the stress is removed the sample will cease to deform, 
+ and will not show any recovery. Typical values of viscosity are 1 mPa 
+ s (milliPascal second) for water, 1 Pa s for glycerine, and about 1000 
+ Pa for polymer melts. Figure 2 shows a creep curve for an ideal liquid 
+ of viscosity 1 Pa s.</p>
+        <p>&#160;</p>
+        <p style="text-align: center;" align="center">
+            <img src="BMP00001.gif" alt="image\BMP00001.gif" style="width: 287px;height: 209px;border-style: none;border-style: none;" width="287" height="209" border="0" />
+        </p>
+        <p style="text-align: center;" align="center">Figure 2: Creep curve for an ideal liquid of viscosity 
+ 1 Pa s, with stress applied for 1000 seconds, then removed</p>
+        <p>&#160;</p>
+        <p>Many industrial materials are neither completely solid nor completely 
+ liquid. They show properties that are some way between these limiting 
+ forms of behavior, and are called viscoelastic. When a stress is placed 
+ on a viscoelastic material, the deformation will be retarded. When the 
+ stress is removed, the recovery will also be retarded (Figure 3).</p>
+        <p>&#160;</p>
+        <p style="text-align: center;" align="center">
+            <img src="BMP00002.gif" alt="image\BMP00002.gif" style="width: 287px;height: 209px;border-style: none;border-style: none;" width="287" height="209" border="0" />
+        </p>
+        <p style="text-align: center;" align="center">Figure 3: Creep curve for a viscoelastic material showing 
+ retarded deformation, with stress applied for 1000 seconds then removed.</p>
+        <p>&#160;</p>
+        <p><a name="kanchor717"></a>In some cases, a sample will show both retarded deformation and continuous 
+ flow, in which case recovery after removal of the stress will be incomplete 
+ (Figure 4).</p>
+        <p style="text-align: center;" align="center">
+            <img src="BMP00003.gif" alt="image\BMP00003.gif" style="width: 287px;height: 209px;border-style: none;border-style: none;" width="287" height="209" border="0" />
+        </p>
+        <p style="text-align: center;" align="center">Figure 4: Creep curve for a viscoelastic material showing 
+ continuous flow, with stress applied for 1000 seconds, then removed.</p>
+        <p>&#160;</p>
+        <p>The elastic properties of the material are then available from the retarded 
+ deformation and the recovery parts of the curve, while the continuous 
+ flow part provides the viscosity at the applied stress. This is identical 
+ to the low shear viscosity obtained from a flow curve.</p>
+        <p>&#160;</p>
+        <p>For dilute dispersions of monodisperse hard spheres, the settling rate 
+ can be predicted form Stokes’ law combined with Archimedes’ principle 
+ (Equation 1)</p>
+        <p>&#160;</p>
+        <p>
+            <img src="BMP00004.gif" alt="image\BMP00004.gif" style="width: 135px;height: 55px;border-style: none;border-style: none;" width="135" height="55" border="0" /><span style="font-size: 12pt;">&#160;&#160;&#160;&#160;&#160;(1)</span>
+        </p>
+        <p>&#160;</p>
+        <p><a name="kanchor718"></a>where V is the sedimentation velocity, r is the particle radius, g is 
+ the acceleration due to gravity, <span style="font-family: Symbol;">r</span><span style="vertical-align: sub;">p</span> 
+ and <span style="font-family: Symbol;">r</span><span style="vertical-align: sub;">m</span> 
+ are the density of the particles and medium respectively, and <span style="font-family: Symbol;">h</span> is the viscosity.</p>
+        <p>&#160;</p>
+        <p>Most industrial dispersions do not fulfill the criteria for this expression, 
+ but the viscosity will nonetheless give a qualitative indication of the 
+ relative stability to sedimentation of comparable dispersions. In some 
+ cases the stability against particle aggregation or emulsion coalescence 
+ can also be predicted from the low shear viscosity. Food “stabilisers”, 
+ for example, do not impart stability in the thermodynamic sense, but reduce 
+ the rate of particle motion by increasing the viscosity of the medium. 
+ Similar expressions to Equation 1 exist to predict levelling after application 
+ in surface coatings, and sagging or slumping in paint films.</p>
+        <p>&#160;</p>
+        <p><a name="kanchor719"></a>It is also important that industrial and biological materials should 
+ have the correct degree of elasticity. A printing ink, for example, will 
+ fail to enter the nip if it is too elastic, but will give poor dot definition 
+ if it insufficiently so. Contact adhesives are lightly cross-linked, and 
+ therefore elastic, to prevent excessive surface wetting. The texture and 
+ feel of foodstuffs is in part due to elasticity; butter has relatively 
+ low elasticity, jam is highly elastic. Some industrial materials are formulated 
+ to be viscoelastic to prevent dripping. After pouring, the ruptured stream 
+ will recoil rather than drip.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

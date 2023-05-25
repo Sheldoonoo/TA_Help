@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Navigator Commands|Command Listing by Section|General Commands" MadCap:browseSequencePath="General Commands" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="RA_Navigator2.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>LoadVariablesFromFile</title>
+        <link rel="StyleSheet" href="TAHtmlHelp.css" />
+        <style>
+        </style>
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="ehlpdhtm.js">
+        </script>
+        <h1><span lang="EN-US"><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;width: 35px;height: 37px;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span></span><a name="kanchor114"></a>LoadVariablesFromFile</h1>
+        <p>Loads and sets the values for all of the variables contained in the 
+ given variables file. Any variables already defined will be overwritten 
+ with the value contained in the variable file.</p>
+        <p class="Syntax"><span style="font-weight: bold;">Syntax</span>
+        </p>
+        <p class="Syntax">LoadVariablesFromFile(&lt;FileName&gt;)</p>
+        <p><span style="font-style: normal;">The default extension for navigator 
+ variable files is NAVVAR</span><span style="font-style: normal;"><br />
+Variable files can be created by means of the </span><a href="StoreVariablesToFile.htm"><span style="font-style: normal;">StoreVariablesToFile</span></a><span style="font-style: normal;"> 
+ command. They are simple text files and so can also be created by, for 
+ example, the program Notepad</span>
+        </p>
+        <p style="font-weight: bold;color: #00509f;">Example</p>
+        <p><span style="font-style: italic;">Code</span>
+        </p>
+        <p class="Code"><span style="font-style: italic;">&#160;V0=1.23</span>
+            <br />
+&#160;S1="Hello"<br />
+&#160;V1=-6.3e-3<br />
+&#160;V2 =V0 * V1<br />
+&#160;StoreVariablesToFile ("c:\ta\rheology\scripts\myvars.navvar")</p>
+        <p><span style="font-style: italic;">Variables file (</span> c:\ta\rheology\scripts\myvars.navvar<span style="font-style: italic;"> )</span></p>
+        <p class="Code" style="margin-bottom: 0;"><span style="font-style: italic;">&#160;V0=1.230</span>
+            <br />
+&#160;S1="Hello"<br />
+&#160;V1=-6.300E-3<br />
+&#160;V2=-7.749E-3 </p>
+        <p class="Code" style="margin-bottom: 0;">&#160;</p>
+        <p><a href="General_Commands_Overview.htm">Return to General Commands Overview</a>
+        </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

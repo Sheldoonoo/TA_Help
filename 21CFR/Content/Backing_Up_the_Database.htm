@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:browseSequencePath="Setting Up the Database" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="21CFR.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Backing Up the Database</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor84"></a><a name="top"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="ques_blue.jpg" style="border: none;width: 35px;height: 37px;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span>Backing 
+ Up the Database</h1>
+        <p>&#160;</p>
+        <p>It is extremely important to regularly back up the information in the 
+ Oracle® database (see <a href="Trademarks_and_Patents.htm">Trademarks 
+ and Patents</a><a name="kanchor85"></a> for trademark information). &#160;Daily 
+ backup to a reliable utility is recommended to best maintain the integrity 
+ of the system and allow retrieval of data, if necessary. </p>
+        <p>When looking to purchase a backup utility you may want to consider the 
+ following minimum attributes: &#160;</p>
+        <ul>
+            <li class="Bullet" value="1">Ability to backup a live 
+ (active) database</li>
+            <li class="Bullet" value="2">Job scheduling capability</li>
+            <li class="Bullet" value="3">Record sorting functions</li>
+            <li class="Bullet" value="4">Administration from a computer 
+ networked to the server (if desirable).</li>
+        </ul>
+        <p>In many cases, the backup operation may start and/or restart the database. 
+ Therefore we recommend scheduling your backup operation during times when 
+ the database has the least amount of use. &#160;</p>
+        <p>In addition to backing up the files to specified hard-disk drive folder, 
+ the utility used for backup should include a method to transfer the backup 
+ files to a longer-term media such as tape, CD-R, or DVD-R. </p>
+        <p>There are many ways to backup and recover information contained in Oracle 
+ databases. &#160;This 
+ section provides information that you can use to determine the type of 
+ system best suited for your needs.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3>Built-in Oracle® Facilities</h3>
+        <p>Oracle's Enterprise Manager supplies a backup utility and associated 
+ documentation that can be accessed through the Oracle 9i server CD-ROMs. 
+ &#160;To access 
+ this utility, Oracle Management Server (OMS) must be installed on at least 
+ one of your Oracle servers. &#160;This 
+ is installed from the Oracle 9i Server CD set. </p>
+        <p>For more information on the Oracle backup utility, access the following 
+ website: &#160;&#160;http://www.orafaq.com/faqdbabr.htm.</p>
+        <p>In additon to the utility described above, a command-line based utility 
+ is automatically installed on all Oracle servers in the %OraHome%\bin 
+ folder named Ocopy.exe. &#160;The 
+ syntax is similar to the standard copy command (<span style="font-style: italic;">i.e</span>., 
+ 'copy x:\databasefiles.dbf &#160;y:\backupdir'). 
+ &#160;This command 
+ will copy active database files, but it will stop the database before 
+ performing the backup. &#160;Refer 
+ to your &#160;Oracle 
+ documentation for further information.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3>Additional Backup Utilities</h3>
+        <p>As an alternative to the built-in Oracle backup system, you may want 
+ to consider one of the following:</p>
+        <ul>
+            <li class="Bullet" value="1">The DDS/4 Tape drive option 
+ offered by TA Instruments includes an evaluation version of Veritas Backup 
+ Exec, which includes an Oracle agent. For more information, a fairly comprehensive 
+ list of Oracle Backup Solutions Program partners (BSP) is available at 
+ http://technet.oracle.com/deploy/availability/htdocs/bsp.htm.</li>
+        </ul>
+        <ul>
+            <li class="Bullet" value="1">There are several Graphical 
+ User Interface (GUI)-based, basic functionality programs available. &#160;One 
+ of the more widely used utilities is the DBBackup package available at 
+ http://www.kiesoft.com/oraback. This utility features such the ability 
+ to backup a live database, direct support for tape devices, support for 
+ CD-R/RW &amp; DVD-R, etc. &#160;</li>
+        </ul>
+        <p>Should you require more information than we have presented here regarding 
+ backup utilities, please contact your TA Instruments representative at 
+ the office nearest your location (see <a href="TA_Instruments_Offices.htm">TA 
+ Instruments Offices</a> ).</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

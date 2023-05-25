@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Analyzing Data Files" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Performing MDSC® Phase Correction</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor37"></a>Performing MDSC® Phase Correction</h1>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p style="border-bottom: 1.00pt solid teal;"><span style="color: teal;font-weight: bold;">What is Phase Correction?</span>
+        </p>
+        <p>Modulated DSC (MDSC®) analysis has generally been used to measure the heat capacity (Cp) of a material. However, the MDSC technique can also be used to calculate phase-lag and its contribution to the measured heat capacity signal. The <span style="font-style: italic;">Thermal Advantage</span> Universal Analysis program contains algorithms that allow you to calculate the Reversing Heat Capacity and Nonreversing Heat Capacity signals, as well as the <span style="color: blue;">phase corrected</span> <span style="color: black;">Reversing Heat Flow and Nonreversing Heat Flow signals. Total heat flow is not affected by deviations in the heat flow phase. MDSC phase correction can be done using the automatic calculations as follows:</span></p>
+        <ol style="font-size: 10pt;">
+            <li style="margin-top: 0;margin-bottom: 0;font-family: Arial;font-size: 10pt;" value="1">Gather the data. When you are gathering data to be analyzed for MDSC phase correction, make sure that certain signals have been saved to the data file. Use the <span style="font-style: italic;">Thermal Advantage</span> Mode Parameters window in the DSC Instrument Control program to save the following signals: Heat Flow, Reversing Heat Flow, Nonreversing Heat Flow, Complex Heat Capacity (Cp), and Heat Flow Phase.<br /><br />If the Complex Heat Capacity and Heat Flow Phase signals are contained in the data file, the MDSC phase correction options will be available during the use of the program.<br /><br /></li>
+            <li style="margin-top: 0; margin-bottom: 0; font-family: Arial; font-size: 10pt;" value="2">Start Universal Analysis and open the MDSC data file.<br /><br /></li>
+            <li style="margin-top: 0; margin-bottom: 0; font-family: Arial; font-size: 10pt;" value="3">Plot these signals using the <a href="Win_Signal_Selection.htm">Signal Selection Window</a>: Heat Flow, Complex Heat Capacity (Cp), and Heat Flow Phase. <span style="color: blue;">NOTE: There are additional heat capacity signals, labeled "Reversing Cp" and "Kinetic Cp." Reversing Cp is identical to Complex Cp and Kinetic Cp is equal to zero, until the phase correction is performed.</span><br /><br /></li>
+            <li style="font-family: Arial;font-size: 10pt;" value="4">Determine where you wish to place the phase correction limits by examining the signals. Use one of the Curve Value functions, if necessary, to determine point values.<br /><br /></li>
+            <li style="font-family: Arial; font-size: 10pt;" value="5">Select Graph/Instrument Parameters, then select the MDSC phase correction mode and the start and stop limits on the Instrument Parameters  MDSC Window. The following phase corrections will be performed on the curve:<br /><br /><ul><li style="font-family: Arial;font-size: 10pt;" value="1">The Heat Flow Phase signal is shifted and rotated to zero baseline as specified on the MDSC phase correction window.</li><li style="font-family: Arial;font-size: 10pt;" value="2">The Reversing Heat Capacity and Kinetic Heat Capacity signals are calculated.</li><li style="font-family: Arial;font-size: 10pt;" value="3">The original Reversing Heat Flow and Nonreversing Heat Flow signals are recalculated with phase correction applied.</li></ul></li>
+        </ol>
+        <p>See also:</p>
+        <p><a href="Choosing_the_Phase_Correction_Range.htm">Choosing the Phase Correction Range</a>
+        </p>
+        <p><a href="Curve_Shift_and_Curve_Rotation_Calculations.htm">Curve Shift and Curve Rotation Calculations</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

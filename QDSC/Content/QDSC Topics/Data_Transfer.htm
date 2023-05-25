@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="prc;FACS;sinusoidally;MFC;HiResolution;Inc;HiRes;PDF;Ctrl;uncheck;AutoLid;Tzero;collet;CAL;XT;RT;OPTC;Uncheck;Cal;PDSC;Y;X-Y;min;www.astm.org;seq;GPIB;IP;Q;CHROMEL;C;cal;spline;Premelt;Ethernet;Platinel;Englehard;E-curve;NBS;ALUMEL;T-axis;Hoskins;Dq;CHROMEL-constantan;SFI;alodined;¼-turn;preforming;subambient;NTFS;field(s;System--RCS;TMA;DSCs;DPC;Ctrl+X;Ctrl+E;Ctrl+C;Ctrl+V;mth;DFA;Tools\Data" MadCap:conditions="Primary.QDSC" MadCap:tocPath="Troubleshooting" MadCap:browseSequencePath="Using the Instrument" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="QDSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Data File Transfer</title>
+        <link rel="StyleSheet" href="../HtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor271"></a><b><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../QDSC Images/ques_blue.jpg" style="border: none;width: 35px;height: 37px;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a><a name="kanchor272"></a>Data Transfer</b>
+        </h1>
+        <p>&#160;</p>
+        <p>The Data Transfer function allows data to be manually transferred from 
+ the instrument to a specified location and file. The instrument can only 
+ store data from one experiment at a time; therefore, to save the data 
+ it must be transferred from the instrument prior to the start of the next 
+ run. The data is normally transferred automatically from the instrument 
+ to the controller; however, if the Data File Acceptor (DFA) fails to transfer 
+ the data file successfully at the end of the run, the software will automatically 
+ post an error message indicating that the file was not received from the 
+ instrument. </p>
+        <p>The procedure listed below occurs automatically when: </p>
+        <ol>
+            <li class="NumberedIndent" value="1">The Data 
+ File Acceptor (DFA) fails to receive the data at the end of the run. It 
+ will halt the current sequence and then post the following message. Click 
+ <span style="font-weight: bold;color: #00509f;">OK</span>.<img src="../QDSC Images/DataTransfer-1.gif" alt="Data File Acceptor Fails" style="border: none;width: 369px;height: 119px;margin-left: 0px;margin-right: 0px;margin-top: 4px;margin-bottom: 4px;float: none;border-style: none;" width="369" height="119" border="0" /></li>
+            <li class="NumberedIndent" value="2">A second 
+ message will then prompt you to manually transfer the file. Click <span style="font-weight: bold;color: #00509f;">Yes</span> to open the Data 
+ Transfer window or <span style="font-weight: bold;color: #00509f;">No</span> 
+ to cancel.<img src="../QDSC Images/DataTransfer-2.gif" alt="Do you want to manually transfer the file?" style="border: none;width: 576px;height: 103px;margin-left: 0px;margin-right: 0px;margin-top: 4px;margin-bottom: 4px;float: none;border-style: none;" width="576" height="103" border="0" /></li>
+            <li class="NumberedIndent" value="3">When <span style="font-weight: bold;color: #00509f;">Yes</span> is selected, the 
+ <span style="font-weight: bold;color: #00509f;">Data Transfer </span>window 
+ will appear. Click the Browse button to specify the data file path and 
+ name and then click the <span style="font-weight: bold;color: #00509f;">Transfer</span><a name="kanchor273"></a><a name="kanchor274"></a> 
+ button to start transferring the data. <img src="../QDSC Images/DataTransfer-3.gif" alt="Data Transfer Window" style="border: none;width: 473px;height: 210px;margin-left: 0px;margin-right: 0px;margin-top: 4px;margin-bottom: 4px;float: none;border-style: none;" width="473" height="210" border="0" /></li>
+            <li class="NumberedIndent" value="4">When the 
+ file transfer is complete, click the <span style="font-weight: bold;color: #00509f;">Close</span> 
+ button to exit.</li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3><b style="font-weight: bold;">Selecting Data Transfer from Main Tool 
+ Bar</b>
+        </h3>
+        <ol>
+            <li class="NumberedIndent" value="1">Select <span style="font-weight: bold;color: #00509f;">Tools\Data Transfer</span> 
+ from the main menu.</li>
+            <li class="NumberedIndent" value="2">Click the 
+ Browse button to specify a Data File Path and file name.</li>
+            <li class="NumberedIndent" value="3">Click the 
+ <span style="font-weight: bold;color: #00509f;">Transfer </span>button 
+ to start the process.</li>
+            <li class="NumberedIndent" value="4">The DFA Status 
+ will switch from:</li>
+            <ol>
+                <li class="LetterIndent" value="1"><span style="font-weight: bold;color: #00509f;">Idle 
+ to Connecting:</span><a name="kanchor275"></a> When the data file transfer process has started. 
+ </li>
+                <li class="LetterIndent" value="2"><span style="font-weight: bold;color: #00509f;">Connecting 
+ to Receiving:</span> When the controller starts receiving the data file 
+ from the instrument.</li>
+                <li class="LetterIndent" value="3"><span style="font-weight: bold;color: #00509f;">Receiving 
+ to Completed:</span> When the data file transfer process has finished.</li>
+            </ol>
+            <li class="NumberedIndent" value="5">When the 
+ data file transfer is complete, select the <span style="font-weight: bold;color: #00509f;">Close</span> 
+ button to exit.</li>
+        </ol>
+        <p>
+            <img src="../QDSC Images/DataTransfer-4.gif" alt="Data Transfer Window" style="border: none;width: 473px;height: 210px;float: none;border-style: none;" width="473" height="210" border="0" />
+        </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

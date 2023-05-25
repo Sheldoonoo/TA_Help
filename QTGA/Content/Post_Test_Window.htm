@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpCheckList.First Draft,RoboHelpCheckList.Added To TOC,RoboHelpStatus.In Progress" MadCap:tocPath="Setting Up Experimental Parameters|Entering Instrument Parameters" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="qtga.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Entering Post Test Options</title>
+        <link rel="StyleSheet" href="HtmlHelp.css" type="" />
+        <link href="HtmlHelp.css" rel="stylesheet" type="text/css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="gif/ques_blue.jpg" style="border: none;" alt="" width="35" height="37" align="right" border="0" /></a></span><a name="top" id="top"></a>Entering Post Test Options</h1>
+        <p>&#160;</p>
+        <p>Select the <a href="Procedure_Page.htm">Procedure Page</a>, then click the <span style="font-weight: bold;color: #00509f;">Post Test</span> button to access the <span style="font-weight: bold;color: #00509f;">Post Test Parameters</span> window, which is used to define functions that will occur at the end of a run. Method-end conditions are functions that can be automatically executed at the end of a run to increase turn-around time between experiments:</p>
+        <ol>
+            <li class="p-NumberedIndent" value="1">
+                <p class="NumberedIndent">Select the radio button next to the desired option for the TGA Furnace: <span class="dropspot" style="font-weight: bold;color: #00509f;">Open furnace and unload</span> or <span style="font-weight: bold;color: #00509f;">Closed</span>. Select the option that best suits your needs:</p>
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Furnace Open and Unload</span> will automatically open the furnace at the end of the method and unload the sample pan on the platform. If an EGA furnace is attached, the furnace will not open until the temperature is below 500°C.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p class="Notes">NOTE: The EGA (Evolved Gas Analysis) furnace is designed to allow gases that evolve during sample decomposition within the sample tube to be vented to a spectrometer. The EGA is and optional furnace for the TGA.</p>
+        <ul>
+            <li style="list-style: none;display: inline;">
+                <ul>
+                    <li class="p-Bullet" value="1">
+                        <p class="Bullet"><span style="font-weight: bold;color: #00509f;">Furnace Closed</span> leaves the furnace shut at the end of the method. If a standard furnace is attached, Furnace Closed will override the Air Cool option.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p class="Cautions">CAUTION: During vacuum operation, select Furnace Closed to prevent instrument damage. The vacuum must be released before furnace opens.</p>
+        <p style="margin-bottom: 0;margin-left: 80px;">This option is grayed when the TGA is operated as an Autosampler (AutoTGA) because the furnace must always open and unload between runs. However, if a run sequence is not currently in progress, you may disable the Autosampler function by accessing <span style="color: #00509f;"><a href="Selecting_the_Instrument_Preferences.htm#Selecting%20TGA%20Autosampler%20Options" style="font-weight: normal;">User Preferences/ Autosampler Page</a></span> and unchecking the “<span style="font-weight: bold;color: #00509f;">Disable autosampler</span>” option.</p>
+        <p style="margin-bottom: 0;margin-left: 80px;">If you have an Autosampler that is enabled, the Autosampler Stop Options will override the post-test options for the last run in the sequence (or when there is only one run in the sequence).</p>
+        <ol start="2" style="list-style: decimal;">
+            <li class="p-NumberedIndent" value="2">
+                <p class="NumberedIndent">Check the <span style="font-weight: bold;color: #00509f;">Air Cool</span> box, if you want to have the furnace open and allow room air to cool the sample for a defined amount of time. This function will open (on) or close (off) the internal solenoid valve connected to the Air Cool connector on the exterior of the instrument. &#160;If you check this option, you must also enter the amount of time for air cooling to last. NOTE: &#160;The standard furnace cannot air cool if the furnace is closed.</p>
+            </li>
+            <li class="p-NumberedIndent" value="3">
+                <p class="NumberedIndent">Select <span style="font-weight: bold;color: #00509f;">OK</span> to save settings.</p>
+            </li>
+        </ol>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Error and Information Messages" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Different X Signals</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../WinUAerr.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Different X Signals</h1>
+        <p><span style="color: red;font-weight: bold;">X signal types are not compatible.</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Problem:</p>
+        <p>You attempted to create a curve overlay plot that contains files with different X-axis units [<span style="font-style: italic;">e.g</span>., Temperature (°C) in one file and Temperature (°F) in the other], or different X-axis signal types [<span style="font-style: italic;">e.g</span>., Heat Flow (W/g) in one file and Heat Capacity (J/g/°C) in the other], or different X-axis scaling types [<span style="font-style: italic;">e.g</span>., Storage Modulus (MPa) in one file and Log of Storage Modulus (MPa) in the other].</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>Solution:</p>
+        <p>The X-axis signal units for each curve in a curve overlay plot must be the same. Use the <a href="../winhlp/Button_units.htm">Units button</a> on each data files <a href="../winhlp/Win_Data_File_Info.htm">Data File Information window</a> to display the <a href="../winhlp/Win_Units_Selection.htm">Units Selection window</a>. Then select the same signal units for the overlay X-axis signal. Whenever files with different X signals are selected for the overlay plot, verify that the X signals have the same units, even though their names may be different. Also, verify that the axis scaling type (linear, log, inverse, inverse x 1000, or derivative log) is the same.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

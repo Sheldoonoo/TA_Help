@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Auto Weight Change Limits Window</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Auto Weight Change Limits Window</h1>
+        <p>Use this window to determine the way analysis limits are chosen for repeat analyses on materials that you expect to exhibit similar thermal plots. This option is particularly useful when used in combination with the <a href="../WinUAmac/Introduction_to_Autoanalysis.htm">Autoanalysis option</a>. The Auto Weight Change Limits window is available and can be displayed when you perform a TGA weight change analysis.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>You can set up and use the Auto Weight Change Limits function as follows:</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">1.&#160;Open a good representative TGA data file for the material(s) being analyzed.</p>
+        <p class="Normal_Indent">2.&#160;Plot both the weight and derivative signals. Click on the weight curve.</p>
+        <p class="Normal_Indent">3.&#160;Select Analyze/Weight Change from the menu, the cursors (markers) will be displayed.</p>
+        <p class="Normal_Indent">4.&#160;Position the cursors so they include the desired area that you want to analyze for weight change.</p>
+        <p class="Normal_Indent">5.&#160;Right click to display the pop-up analysis menu, and choose Auto Limits from the menu.</p>
+        <p class="Normal_Indent">6.&#160;If you want the program to always use the exact position of the cursors that you will choose, select the <a href="Radio_button_auto_limits_cursor.htm">Use cursor position</a> radio button for one or both limits. <span style="color: blue;">NOTE: Selecting the Use cursor position radio buttons for both limits is the same as selecting Accept Limits from the</span><a href="Menu_analyze_popup.htm">Analyze pop-up menu</a><span style="color: blue;">.</span> This will let you select a start or stop limit using the cursors for each successive analysis.</p>
+        <p class="Normal_Indent">7.&#160;If you want to allow the program to determine the weight change using the derivative fraction (which is the recommended option), click on the <span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Radio_button_auto_limits_fraction.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Derivative fraction</a></span> radio button and enter your own value or click the Default button to use the program default derivative fraction of 0.05. See also: <a href="What_is_the_Derivative_Fraction.htm">What is the Derivative Faction?</a></p>
+        <p class="Normal_Indent">8.&#160;Select one of the buttons that will determine how this information is used:</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Double_Indent">If you select the <a href="Button_OK.htm">OK button</a>, these options are used for this session only.</p>
+            </li>
+            <li style="font-size: 10pt;" value="2">
+                <p class="Double_Indent">If you select the <a href="Button_Save.htm">Save button</a>, these options are saved as in the initialization (.ini) file and will be recalled each time the program is started.</p>
+            </li>
+            <li style="font-size: 10pt;" value="3">
+                <p class="Double_Indent">If you select the <a href="Button_Cancel.htm">Cancel button</a>, the operation will be aborted.</p>
+            </li>
+        </ul>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: blue;">NOTE: The default derivative fraction of 0.05 (5 percent) is recommended for both Point 1 and Point 2. If you do not use the default value, it is recommended that you use the same derivative fraction for both points.</span>
+        </p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p>When doing a succession of weight change analyses on the same curve, the derivative fraction used for the Point 2 of the first step should be the same as the fraction used for Point 1 of the next step.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Body_Text">NOTE: If the program does not locate an adjacent peak to use for the midpoint determination, it will use the end of the data curve.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: black;">After you set up the Auto Limits options, you can open similar data files and perform the analysis quickly by selecting Auto Limits from the pop-up analysis menu and simply clicking the OK button to use the stored limits.</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

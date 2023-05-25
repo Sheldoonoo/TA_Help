@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Theory, Equations, and Charts" MadCap:browseSequencePath="Theory, Equations, and Charts" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="RA_InstCon.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Introducing Multiwave Frequency (MWF) Testing</title>
+        <meta name="copyright" value="All information copyright © 1998-2003 TA Instruments" />
+        <link rel="StyleSheet" href="TAHtmlHelp.css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" language="JavaScript1.2" src="../RAGlossary/ehlpdhtm.js">
+        </script>
+        <h1><a name="kanchor726"></a><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="Menu.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot" title="Click"><img src="../QUES_BLUE.JPG" style="border: none;width: 35px;height: 37px;border-style: none;float: right;border-style: none;float: right;" width="35" height="37" align="right" border="0" /></a></span><a name="top"></a>Introducing Multiwave Frequency (MWF) Testing</h1>
+        <p>&#160;</p>
+        <p><a name="kanchor727"></a><a name="kanchor728"></a><a name="kanchor729"></a><a name="kanchor730"></a><a name="kanchor731"></a><a name="kanchor732"></a><a name="kanchor733"></a><a name="kanchor734"></a>During a multiwave frequency (MWF) experiment, data is gathered at not 
+ only for a single frequency, but also for additional (higher than the 
+ fundamental) values, known as harmonic multipliers. The data for all frequency 
+ values is gathered in the same time it would take to measure just the 
+ fundamental frequency in a standard oscillatory test. These attributes 
+ of the MWF technique allow it to be used either as a means to save time 
+ when performing frequency sweeps (especially at low frequencies), or as 
+ a method of study the viscoelastic properties of a material as a function 
+ of both frequency and time/temperature (for instance, when studying a 
+ change of state such as cure or gelation.</p>
+        <p>There are two main areas where the technique is useful</p>
+        <ul>
+            <li style="margin-left: -20px;" class="Bullet" value="1"><a name="kanchor735"></a><a name="kanchor736"></a>A quality control, routine, 
+ or highly repetitive type of experiment where a rheological dynamic "fingerprint" 
+ of the material is all that is required. A measurement at low frequencies 
+ (e.g., 0.5 Hz), a medium frequency (e.g., 5 Hz) and a high frequency (e.g., 
+ 20 Hz) could give a measurement of the material’s property in its viscous, 
+ transition and elastic regions.</li>
+            <li style="margin-left: -20px;" class="Bullet" value="2"><a name="kanchor737"></a>Where fast changing or curing 
+ samples are being measured. MWF obviates the need to do repeat tests at 
+ different frequencies by obtaining the maximum amount of rheological data 
+ from a single experiment.</li>
+        </ul>
+        <p>Validation of the technique is made difficult due to the time-varying 
+ nature of the experiment. The frequencies chosen must be high compared 
+ with the time of the experiment, so that the rheological properties do 
+ not change significantly within one cycle of the fundamental.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><a name="kanchor738"></a><a name="kanchor739"></a>The MWF technique must be used with care. Careful validation of the 
+ torques and amplitudes used and produced must be conducted initially. 
+ More information regarding the expected results must be obtained prior 
+ to an actual experiment than in a standard oscillation experiment. Used 
+ with care, however, the technique is extremely useful and time saving.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <h3>Performing a MWF Test</h3>
+        <p><a name="kanchor740"></a>The software allows any integer harmonic multiplier up to the 40<span style="vertical-align: super;">th</span><a name="kanchor741"></a><a name="kanchor742"></a><a name="kanchor743"></a> to be added together with the 
+ fundamental. The ratio of the torque amplitude can be, if required, adjusted 
+ at each frequency relative to the fundamental. This is an important feature 
+ since the amplitude will decrease with increasing frequency for the same 
+ applied stress, for most materials. Inertial effects, both fluid and instrument 
+ based, will reduce the amplitude of the strain wave. This can lead to 
+ very small amplitude signals (possibly at or below the instrument resolution) 
+ at the highest harmonic multiplier. To overcome this potential problem, 
+ the torque at each harmonic multiplier is selected to be higher than the 
+ fundamental by a user definable ratio, such that the strain amplitude 
+ at the higher frequencies is of similar order to that of the fundamental.</p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><a name="kanchor744"></a>To ensure that the resulting data is meaningful and valid, it is necessary 
+ to ensure that the minimum and maximum torques used are within the working 
+ range of the instrument. At any given instant, the torques at the different 
+ harmonic multipliers will add together in a mathematically complex way. 
+ The worst case is when all of the harmonic multipliers are in phase with 
+ the fundamental. It is important, therefore, to ensure that the instrument 
+ has sufficient torque to achieve the desired strain.</p>
+        <p>It is also necessary to ensure that the total strains do not add up 
+ to a value that is greater than the linear viscoelastic limit of the material 
+ under test. The best way to validate a MWF technique with a material is 
+ described below.</p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <ol>
+            <li class="NumberedIndent" value="1">Perform a 
+ torque sweep to establish the linear viscoelastic region (LVR) at a particular 
+ frequency, such as 1 Hz.</li>
+            <li class="NumberedIndent" value="2">Determine 
+ the strain at which you start to see departure from linear behavior.</li>
+            <li class="NumberedIndent" value="3"><a name="kanchor745"></a><a name="kanchor746"></a>Divide this 
+ displacement value by the number of frequencies that you wish to include 
+ in your multiwave procedure. This should be limited to a maximum of five 
+ for good resolution of the individual waveforms.</li>
+            <li class="NumberedIndent" value="4">The value 
+ you derive for the strain should be within the instrument's working range. 
+ If it is not, then the number of frequencies chosen will need to be less 
+ than five. This is to ensure that, if you get waveform reinforcement, 
+ you do not exceed the sample’s LVR.</li>
+            <li class="NumberedIndent" value="5"><a name="kanchor747"></a>Perform a 
+ controlled strain frequency sweep over the range of interest, using the 
+ strain derived in step 2.</li>
+            <li class="NumberedIndent" value="6">Make a note 
+ of the torque value in the data table for the lowest frequency.</li>
+            <li class="NumberedIndent" value="7">Choose the 
+ other frequencies (greater than the fundamental selected in the previous 
+ step) at which you wish to measure.</li>
+            <li class="NumberedIndent" value="8">Divide these 
+ frequencies by the fundamental frequency to determine the closest harmonic 
+ multipliers.</li>
+            <li class="NumberedIndent" value="9">Look up the 
+ torque values nearest to the frequencies of interest and divide by the 
+ torque at the fundamental. Enter these values as the torque ratio at each 
+ harmonic multiplier.</li>
+        </ol>
+        <p style="color: #00509f;font-weight: normal;font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <p style="font-weight: bold;color: #00509f;"><a name="kanchor748"></a>Notes:</p>
+        <ul>
+            <li class="Bullet" value="1">Samples with small LVR’s 
+ will not be suitable for MWF. </li>
+            <li class="Bullet" value="2">Validation of the LVR at 
+ higher and lower frequencies is also advisable.</li>
+            <li class="Bullet" value="3">In a time or temperature 
+ sweep, the frequency of the test is your fundamental and the strain is 
+ that derived in step 2.</li>
+            <li class="Bullet" value="4">If the material changes during 
+ the experiment, so may its LVR.</li>
+            <li class="Bullet" value="5"><a name="kanchor749"></a>In a frequency sweep the 
+ start and end frequency and number of points determine the fundamentals 
+ and the strain is as derived in step 2.</li>
+        </ul>
+        <p><a class="MCRelatedTopics_relatedTopics_1_0" href="javascript:void(0);" onclick="FMCLinkControl( event, this, null ); return false;" onkeydown="this.MCKeydown = true;" MadCap:topics="Concepts of Test Design|Concepts_of_Test_Design.htm"><img src="../SkinSupport/RelatedTopics.gif" style="border: none;margin-right: 5px;" alt="Related Topics Icon" />Related Topics</a>
+        </p>
+        <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

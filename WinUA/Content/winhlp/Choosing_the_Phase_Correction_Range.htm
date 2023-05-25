@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Choosing the Phase Correction Range</title>
+        <meta name="copyright" value="© 2000 TA Instruments-Waters LLC" />
+        <link rel="StyleSheet" href="../winuahlp.css" type="text/css" />
+        <script language="JavaScript" title="BSSC Special Effects" src="../ehlpdhtm.js" type="text/javascript"> /*<![CDATA[*/ /*]]>*/</script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Choosing the Phase Correction Range</h1>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p style="border-bottom: 1.00pt solid teal;"><span style="color: teal;font-weight: bold;">What is Phase Correction?</span>
+        </p>
+        <p>Modulated DSC (MDSC®) analysis has generally been used to measure the heat capacity (Cp) of a material. However, the MDSC technique can also be used to calculate phase-lag and its contribution to the measured heat capacity signal. The <span style="font-style: italic;">Thermal Advantage</span> Universal Analysis program contains algorithms that allow you to calculate the Reversing Heat Capacity and Nonreversing Heat Capacity signals, as well as the <span style="color: blue;">phase corrected</span><span style="color: black;">Reversing Heat Flow and Nonreversing Heat Flow signals. Total heat flow is not affected by deviations in the heat flow phase.</span></p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p><span style="color: black;">To perform MDSC phase corrections,</span><a href="Performing_MDSC_Phase_Correction.htm">click here for instructions</a>,<span style="color: black;">then follow the steps displayed. Part of the procedure involves choosing the phase correction range. When selecting the limits to define the phase correction range, you should consider the following factors:</span></p>
+        <p style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Normal_Indent"><span style="color: teal;font-weight: bold;">Transition of Interest</span>  Phase lag is generally more predominant during a transition, but negligible in the baseline region. Transitions containing large kinetic (nonreversing) heat flows tend to contain the highest degree of phase lag.</p>
+            </li>
+        </ul>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">
+                <p class="Normal_Indent"><span style="color: teal;font-weight: bold;">Baseline and Purge Gas</span>  The phase correction algorithm uses the Heat Flow Phase signal to calculate the Reversing Cp and Kinetic Cp signals. The accuracy of these signals depends on a flat Heat Flow Phase baseline.</p>
+            </li>
+        </ul>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">If you use helium as the purge gas, the Heat Flow Phase baseline will be flat with a slight positive slope. If you use nitrogen as the purge gas, the decrease thermal conductivity of nitrogen can cause some baseline curvature.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">Narrow temperature ranges will also minimize the total degree of curvature across the selected region.</p>
+        <p class="Normal_Indent" style="margin-top: 0;margin-bottom: 0;">&#160;</p>
+        <p class="Normal_Indent">Therefore, for the best phase correction results, select a narrow phase correction range that contains a flat Heat Flow Phase baseline.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

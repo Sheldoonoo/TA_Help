@@ -1,0 +1,4 @@
+var xmlHelpSystemData = "";
+xmlHelpSystemData += '<?xml version=\"1.0\" encoding=\"utf-8\"?>';
+xmlHelpSystemData += '<WebHelpSystem DefaultUrl=\"Content/Welcome_to_TA_Instruments_Advant.htm\" Toc=\"Data/Toc.xml\" Index=\"Data/Index.xml\" Concepts=\"Data/Concepts.xml\" Glossary=\"Content/Glossary.htm\" SearchDatabase=\"Data/Search.xml\" Alias=\"Data/Alias.xml\" Synonyms=\"Data/Synonyms.xml\" Skin=\"Data/SkinFirst/Skin.xml\" Skins=\"First,main,opening,popup,Secondary\" BuildTime=\"1/25/2016 11:13:32 AM\" BuildVersion=\"11.1.0.17275\" TargetType=\"WebHelp\" SkinTemplateFolder=\"Skin/\" InPreviewMode=\"false\" MoveOutputContentToRoot=\"false\" MakeFileLowerCase=\"false\" UseCustomTopicFileExtension=\"false\" PreventExternalUrls=\"false\" EnableResponsiveOutput=\"false\" IncludeGlossarySearchResults=\"true\" ResultsPerPage=\"20\" />';
+CMCXmlParser._FilePathToXmlStringMap.Add('HelpSystem', xmlHelpSystemData);
